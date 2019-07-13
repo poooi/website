@@ -6,6 +6,7 @@
     "tslint-plugin-prettier"
   ],
   "rules": {
-    "prettier": true
+    "prettier": true,
+    "no-implicit-dependencies": [true, ["@testing-library/react"]]
   }
 }
