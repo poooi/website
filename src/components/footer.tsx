@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { first, split } from 'lodash'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -11,13 +10,15 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
+import { getPurelanguage } from '../utils'
+
 import styles from './footer.module.css'
 
 export const Footer = () => {
   const { t, i18n } = useTranslation()
 
   const { language } = i18n
-  const pureLanguage = first(split(language, '-'))
+  const pureLanguage = getPurelanguage(language)
 
   return (
     <div className={styles.footer}>

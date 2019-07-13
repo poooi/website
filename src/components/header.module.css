@@ -1,0 +1,13 @@
+.header {
+  padding: 10px;
+  min-height: 50px;
+}
+
+.languages > a {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.languages > a.active {
+  text-decoration: underline;
+}
