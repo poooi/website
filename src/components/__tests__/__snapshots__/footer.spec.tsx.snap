@@ -11,7 +11,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-weibo fa-w-16 "
+        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-2x "
         data-icon="weibo"
         data-prefix="fab"
         focusable="false"
@@ -31,7 +31,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-discord fa-w-14 "
+        class="svg-inline--fa fa-discord fa-w-14 fa-fw fa-2x "
         data-icon="discord"
         data-prefix="fab"
         focusable="false"
@@ -51,7 +51,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-github fa-w-16 "
+        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x "
         data-icon="github"
         data-prefix="fab"
         focusable="false"
@@ -71,7 +71,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-heart fa-w-16 "
+        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-2x "
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -100,7 +100,7 @@ exports[`<Footer /> renders with zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-weibo fa-w-16 "
+        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-2x "
         data-icon="weibo"
         data-prefix="fab"
         focusable="false"
@@ -120,7 +120,7 @@ exports[`<Footer /> renders with zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-telegram fa-w-16 "
+        class="svg-inline--fa fa-telegram fa-w-16 fa-fw fa-2x "
         data-icon="telegram"
         data-prefix="fab"
         focusable="false"
@@ -140,7 +140,7 @@ exports[`<Footer /> renders with zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-github fa-w-16 "
+        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x "
         data-icon="github"
         data-prefix="fab"
         focusable="false"
@@ -160,7 +160,7 @@ exports[`<Footer /> renders with zh 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-heart fa-w-16 "
+        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-2x "
         data-icon="heart"
         data-prefix="fas"
         focusable="false"

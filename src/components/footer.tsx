@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +13,11 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 import { getPurelanguage } from '../utils'
 
-import styles from './footer.module.css'
+import styles from './footer.module.scss'
+
+const Icon = ({ icon }: { icon: IconProp }) => (
+  <FontAwesomeIcon icon={icon} size="2x" fixedWidth={true} />
+)
 
 export const Footer = () => {
   const { t, i18n } = useTranslation()
@@ -23,22 +28,22 @@ export const Footer = () => {
   return (
     <div className={styles.footer}>
       <a href="http://weibo.com/letspoi" title={t('weibo')}>
-        <FontAwesomeIcon icon={faWeibo} />
+        <Icon icon={faWeibo} />
       </a>
       {pureLanguage === 'zh' ? (
         <a href={t('telegram-group-link')} title={t('telegram')}>
-          <FontAwesomeIcon icon={faTelegram} />
+          <Icon icon={faTelegram} />
         </a>
       ) : (
         <a href={t('discord-channel-link')} title={t('Discord sub-channel')}>
-          <FontAwesomeIcon icon={faDiscord} />
+          <Icon icon={faDiscord} />
         </a>
       )}
       <a href="https://github.com/poooi/poi" title={t('github')}>
-        <FontAwesomeIcon icon={faGithub} />
+        <Icon icon={faGithub} />
       </a>
       <a href="https://opencollective.com/poi" title={t('opencollective')}>
-        <FontAwesomeIcon icon={faHeart} />
+        <Icon icon={faHeart} />
       </a>
     </div>
   )
