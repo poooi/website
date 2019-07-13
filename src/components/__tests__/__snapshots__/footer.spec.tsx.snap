@@ -96,7 +96,7 @@ exports[`<Footer /> renders with zh 1`] = `
   >
     <a
       href="http://weibo.com/letspoi"
-      title="weibo"
+      title="Weibo"
     >
       <svg
         aria-hidden="true"
@@ -115,8 +115,8 @@ exports[`<Footer /> renders with zh 1`] = `
       </svg>
     </a>
     <a
-      href="telegram-group-link"
-      title="telegram"
+      href="https://t.me/joinchat/AoMUpkCr6B8uH7EUewq6eQ"
+      title="Telegram"
     >
       <svg
         aria-hidden="true"
@@ -136,7 +136,7 @@ exports[`<Footer /> renders with zh 1`] = `
     </a>
     <a
       href="https://github.com/poooi/poi"
-      title="github"
+      title="GitHub"
     >
       <svg
         aria-hidden="true"
@@ -156,7 +156,7 @@ exports[`<Footer /> renders with zh 1`] = `
     </a>
     <a
       href="https://opencollective.com/poi"
-      title="opencollective"
+      title="Help us via OpenCollective"
     >
       <svg
         aria-hidden="true"
