@@ -8,13 +8,13 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     <div
       class="header"
     >
-      download-for linux-x64
+      Download for Linux (x64)
     </div>
     <a
       href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
     >
       <button
-        class="button stable"
+        class="button"
       >
         <div>
           v10.3.0
@@ -22,7 +22,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         <div
           class="description"
         >
-          stable-hint
+          Stable, for most users
         </div>
       </button>
     </a>
@@ -38,7 +38,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         <div
           class="description"
         >
-          beta-hint
+          Beta, for new features
         </div>
       </button>
     </a>
@@ -54,13 +54,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
     <div
       class="header"
     >
-      download-for chiba
+      Download for chiba
     </div>
     <a
       href="https://github.com/poooi/poi/releases"
     >
       <button
-        class="button stable"
+        class="button"
       >
         <div>
           v10.3.0
@@ -68,7 +68,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         <div
           class="description"
         >
-          stable-hint
+          Stable, for most users
         </div>
       </button>
     </a>
@@ -84,7 +84,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         <div
           class="description"
         >
-          beta-hint
+          Beta, for new features
         </div>
       </button>
     </a>
@@ -100,13 +100,13 @@ exports[`<DownloadCards /> renders without beta 1`] = `
     <div
       class="header"
     >
-      download-for linux-x64
+      Download for Linux (x64)
     </div>
     <a
       href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
     >
       <button
-        class="button stable"
+        class="button"
       >
         <div>
           v10.3.0
@@ -114,7 +114,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
         <div
           class="description"
         >
-          stable-hint
+          Stable, for most users
         </div>
       </button>
     </a>

@@ -6,3 +6,15 @@ import 'snapshot-diff' // for typings
 import 'snapshot-diff/extend-expect'
 
 import './i18n'
+
+window.matchMedia =
+  window.matchMedia ||
+  (() => ({
+    matches: false,
+    addListener() {
+      /* do nothing */
+    },
+    removeListener() {
+      /* do nothing */
+    },
+  }))
