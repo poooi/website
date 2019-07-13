@@ -1,4 +1,4 @@
-import { render, wait } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import { DownloadCards } from '../download-cards'
