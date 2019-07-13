@@ -49,7 +49,7 @@ export const DownloadCards = ({ target, version }: IProps) => {
         {t('download-for')} {t(target)}
       </div>
       <a href={getDownloadLink(version.stable, target)}>
-        <button className={classNames(styles.button, styles.stable)}>
+        <button className={styles.button}>
           <div>{version.stable}</div>
           <div className={styles.description}>{t('stable-hint')}</div>
         </button>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './github-ribbon.module.css'
+import styles from './github-ribbon.module.scss'
 
 export const GitHubRibbon = () => (
   <a
