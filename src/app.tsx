@@ -1,3 +1,5 @@
+import { Fabric } from 'office-ui-fabric-react/lib/Fabric'
+import { initializeIcons } from 'office-ui-fabric-react/lib/Icons'
 import React from 'react'
 
 import { Content } from './components/content'
@@ -9,9 +11,11 @@ import './i18n'
 
 import styles from './app.module.css'
 
+initializeIcons()
+
 export const App = () => {
   return (
-    <div className={styles.container}>
+    <Fabric className={styles.container}>
       <GitHubRibbon />
       <div className={styles.ground} />
       <div className={styles.wrapper}>
@@ -19,6 +23,6 @@ export const App = () => {
         <Content />
         <Footer />
       </div>
-    </div>
+    </Fabric>
   )
 }
