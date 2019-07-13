@@ -1,0 +1,1047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="title"
+    >
+      <img
+        class="logo"
+        src="poi.png"
+      />
+      <span
+        class="name"
+      >
+        POI
+      </span>
+    </div>
+    <div
+      class="description"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class=""
+          style="width: 0px;"
+        >
+          <div
+            class="Typist "
+          >
+            <span
+              class="Cursor Cursor--blinking"
+            >
+              _
+            </span>
+          </div>
+        </div>
+        <div
+          class="mirror hide"
+          data-testid="typing"
+        >
+          Scalable KanColle browser and tool.
+        </div>
+      </div>
+    </div>
+    <div
+      class="slider"
+    >
+      <div
+        class="slick-slider slick-initialized"
+        dir="ltr"
+      >
+        <button
+          class="slick-arrow slick-prev"
+          data-role="none"
+          style="display: block;"
+          type="button"
+        >
+           Previous
+        </button>
+        <div
+          class="slick-list"
+        >
+          <div
+            class="slick-track"
+            style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+          >
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="-1"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="0"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Linux (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="1"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Debian / Ubuntu (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi_10.3.0_amd64.deb"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi_10.4.0_amd64.deb"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="2"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Fedora / CentOS (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.x86_64.rpm"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.x86_64.rpm"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="3"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for macOS (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.dmg"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.dmg"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="4"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x86) Portable
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0-ia32-win.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-ia32-win.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="5"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x86)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide"
+              data-index="6"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x64) Portable
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0-win.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-win.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="false"
+              class="slick-slide slick-active slick-current"
+              data-index="7"
+              style="outline: none; width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="8"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Linux (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="9"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Debian / Ubuntu (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi_10.3.0_amd64.deb"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi_10.4.0_amd64.deb"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="10"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Fedora / CentOS (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.x86_64.rpm"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.x86_64.rpm"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="11"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for macOS (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.dmg"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.dmg"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="12"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x86) Portable
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0-ia32-win.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-ia32-win.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="13"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x86)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="14"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x64) Portable
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0-win.7z"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-win.7z"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="slick-slide slick-cloned"
+              data-index="15"
+              style="width: 0px;"
+              tabindex="-1"
+            >
+              <div>
+                <div
+                  style="width: 100%; display: inline-block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="container"
+                  >
+                    <div
+                      class="header"
+                    >
+                      Download for Windows (x64)
+                    </div>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+                    >
+                      <button
+                        class="button"
+                      >
+                        <div>
+                          v10.3.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Stable, for most users
+                        </div>
+                      </button>
+                    </a>
+                    <a
+                      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
+                    >
+                      <button
+                        class="button beta"
+                      >
+                        <div>
+                          v10.4.0
+                        </div>
+                        <div
+                          class="description"
+                        >
+                          Beta, for new features
+                        </div>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="slick-arrow slick-next"
+          data-role="none"
+          style="display: block;"
+          type="button"
+        >
+           Next
+        </button>
+      </div>
+    </div>
+    <div
+      class="others"
+    >
+      <a
+        href="https://npm.taobao.org/mirrors/poi"
+        target="_blank"
+      >
+        Other versions...
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -10,7 +10,7 @@ import { TypeCat } from './type-cat'
 import poi from '../assets/poi.png'
 import styles from './content.module.css'
 
-function getSettings() {
+export const getSettings = () => {
   const { os, cpu } = new UAParser().getResult()
   let initialSlide = 0
   if (os.name === 'Linux') {
