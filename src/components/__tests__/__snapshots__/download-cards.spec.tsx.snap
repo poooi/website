@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DownloadCards /> renders with beta 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      download-for linux-x64
+    </div>
+    <a
+      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+    >
+      <button
+        class="button stable"
+      >
+        <div>
+          v10.3.0
+        </div>
+        <div
+          class="description"
+        >
+          stable-hint
+        </div>
+      </button>
+    </a>
+    <a
+      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+    >
+      <button
+        class="button beta"
+      >
+        <div>
+          v10.4.0
+        </div>
+        <div
+          class="description"
+        >
+          beta-hint
+        </div>
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DownloadCards /> renders with invalid target 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      download-for chiba
+    </div>
+    <a
+      href="https://github.com/poooi/poi/releases"
+    >
+      <button
+        class="button stable"
+      >
+        <div>
+          v10.3.0
+        </div>
+        <div
+          class="description"
+        >
+          stable-hint
+        </div>
+      </button>
+    </a>
+    <a
+      href="https://github.com/poooi/poi/releases"
+    >
+      <button
+        class="button beta"
+      >
+        <div>
+          v10.4.0
+        </div>
+        <div
+          class="description"
+        >
+          beta-hint
+        </div>
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DownloadCards /> renders without beta 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      download-for linux-x64
+    </div>
+    <a
+      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+    >
+      <button
+        class="button stable"
+      >
+        <div>
+          v10.3.0
+        </div>
+        <div
+          class="description"
+        >
+          stable-hint
+        </div>
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;

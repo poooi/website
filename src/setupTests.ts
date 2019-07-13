@@ -3,3 +3,5 @@
 import '@testing-library/jest-dom/extend-expect'
 import '@testing-library/react/cleanup-after-each'
 import 'snapshot-diff/extend-expect'
+
+import './i18n'

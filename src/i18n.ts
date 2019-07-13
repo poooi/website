@@ -8,10 +8,10 @@ import zhCN from './resources/i18n/zh-CN.json'
 import zhTW from './resources/i18n/zh-TW.json'
 
 const resources = {
-  'en-US': { translations: enUS },
-  'ja-JP': { translations: jaJP },
-  'zh-CN': { translations: zhCN },
-  'zh-TW': { translations: zhTW },
+  'en-US': { translation: enUS },
+  'ja-JP': { translation: jaJP },
+  'zh-CN': { translation: zhCN },
+  'zh-TW': { translation: zhTW },
 }
 
 i18n
