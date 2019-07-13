@@ -15,7 +15,7 @@ exports[`<Content /> renders 1`] = `
       <span
         class="name"
       >
-        POI
+        poi
       </span>
     </div>
     <div
