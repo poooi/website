@@ -21,9 +21,9 @@ i18n
   .use(initReactI18next)
   .init({
     debug: process.env.NODE_ENV === 'development',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
     },
-    lng: 'en',
     resources,
   })
