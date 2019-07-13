@@ -6,8 +6,8 @@ import { getPurelanguage } from '../utils'
 import styles from './header.module.css'
 
 export const languages = {
-  'en-US': 'English',
-  'ja-JP': '日本語',
+  en: 'English',
+  ja: '日本語',
   'zh-CN': '简体中文',
   'zh-TW': '正體中文',
 }
@@ -25,7 +25,7 @@ export const Header = () => {
             key={lang}
             onClick={() => i18n.changeLanguage(lang)}
             className={classNames({
-              [styles.active]: getPurelanguage(lang) === pureLangue,
+              [styles.active]: lang === pureLangue || i18n.language === lang,
             })}
           >
             {languages[lang as keyof typeof languages]}
