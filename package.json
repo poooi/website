@@ -22,6 +22,8 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "lint": "tslint --project .",
+    "typecheck": "tsc --noEmit --project .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
