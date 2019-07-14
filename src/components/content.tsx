@@ -1,3 +1,5 @@
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classnames from 'classnames'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useMemo, useState } from 'react'
@@ -93,6 +95,10 @@ const Description = styled.div`
   }
 `
 
+const FullListLink = styled.a`
+  line-height: 300%;
+`
+
 export const Content = () => {
   const { t } = useTranslation()
 
@@ -112,6 +118,7 @@ export const Content = () => {
       <div className={styles.title}>
         <img
           src={poi}
+          alt="poi"
           className={classnames(styles.logo, {
             [styles.aprilfoolsday]:
               new Date().getMonth() === 3 && new Date().getDate() === 1,
@@ -124,17 +131,21 @@ export const Content = () => {
       </Description>
       <DownloadCards target={selected} version={version} />
       <CenterContainer>
-        {t('Choose another platform')}
         <StyledDropdown
+          label={t('Choose another platform')}
           options={options}
           selectedKey={selected}
           onChange={(_, item) => setSelected(item!.key as string)}
         />
       </CenterContainer>
       <CenterContainer>
-        <a href="https://npm.taobao.org/mirrors/poi" target="_blank">
-          {t('other-versions')}
-        </a>
+        <FullListLink
+          href="https://npm.taobao.org/mirrors/poi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t('other-versions')} <FontAwesomeIcon icon={faExternalLinkAlt} />
+        </FullListLink>
       </CenterContainer>
     </div>
   )
