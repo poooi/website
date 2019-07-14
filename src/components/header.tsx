@@ -1,3 +1,5 @@
+import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classNames from 'classnames'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
@@ -13,7 +15,7 @@ export const languages = {
 }
 
 const Container = styled.div`
-  min-height: 40px;
+  height: 60px;
 
   background-color: white;
   border-bottom: 1px solid #eee;
@@ -23,16 +25,50 @@ const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
   display: flex;
+  font-size: 20px;
 `
 
-const LanguageList = styled.div``
+const LinkItem = styled.a`
+  padding: 0 1ex;
+  line-height: 60px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
 
-const LanguageItem = styled.a<{ active: boolean }>`
-  padding: 0 5px;
-  line-height: 40px;
+  :hover {
+    ::before {
+      content: '';
+      display: block;
+      background-color: #333;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+`
+
+const Spacer = styled.div`
+  flex: 1;
+`
+
+const LanguageList = styled.div`
+  display: flex;
+  align-items: center;
+  .svg-inline--fa {
+    padding-right: 1ex;
+  }
+`
+
+const LanguageItem = styled.a<{ active?: boolean }>`
+  padding: 0 1ex;
+  line-height: 60px;
   display: inline-block;
   cursor: pointer;
   position: relative;
+  font-size: 16px;
 
   ${props =>
     props.active &&
@@ -51,14 +87,20 @@ const LanguageItem = styled.a<{ active: boolean }>`
 `
 
 export const Header = () => {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const pureLangue = getPurelanguage(i18n.language)
 
   return (
     <Container>
       <Wrapper>
+        <div>
+          <LinkItem>{t('Explore')}</LinkItem>
+          <LinkItem>{t('Plugins')}</LinkItem>
+        </div>
+        <Spacer />
         <LanguageList data-testid="language-list">
+          <FontAwesomeIcon icon={faLanguage} />
           {Object.keys(languages).map(lang => (
             <LanguageItem
               key={lang}
