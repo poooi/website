@@ -26,7 +26,6 @@ exports[`<Content /> renders 1`] = `
       >
         <div
           class=""
-          style="width: 0px;"
         >
           <div
             class="Typist "
@@ -43,6 +42,11 @@ exports[`<Content /> renders 1`] = `
           data-testid="typing"
         >
           Scalable KanColle browser and tool.
+          <span
+            class="mirror"
+          >
+            _
+          </span>
         </div>
       </div>
     </div>

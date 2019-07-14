@@ -43,7 +43,6 @@ export class TypeCat extends React.Component<IProps, IState> {
           className={classNames({
             [styles.hide]: this.state.stage !== 'typing',
           })}
-          style={{ width: this.state.width }}
         >
           <Typist
             cursor={{
@@ -65,6 +64,7 @@ export class TypeCat extends React.Component<IProps, IState> {
           data-testid={this.state.stage}
         >
           {this.props.text}
+          <span className={styles.mirror}>_</span>
         </div>
       </div>
     )
