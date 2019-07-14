@@ -36,6 +36,8 @@ const LinkItem = styled.a`
   transition: 0.3s;
   position: relative;
 
+  display: none;
+
   :hover {
     ::before {
       content: '';
