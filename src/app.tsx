@@ -1,5 +1,4 @@
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric'
-import { initializeIcons } from 'office-ui-fabric-react/lib/Icons'
+import { Fabric, initializeIcons } from 'office-ui-fabric-react'
 import React from 'react'
 
 import { Content } from './components/content'

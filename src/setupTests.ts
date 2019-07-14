@@ -1,5 +1,6 @@
-/* tslint:disable no-implicit-dependencies no-submodule-imports */
+import { setIconOptions } from 'office-ui-fabric-react'
 
+/* tslint:disable no-implicit-dependencies */
 import '@testing-library/jest-dom/extend-expect'
 import '@testing-library/react/cleanup-after-each'
 import 'snapshot-diff' // for typings
@@ -18,3 +19,8 @@ window.matchMedia =
       /* do nothing */
     },
   }))
+
+// Suppress icon warnings.
+setIconOptions({
+  disableWarnings: true,
+})

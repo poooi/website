@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown'
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
