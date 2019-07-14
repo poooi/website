@@ -13,6 +13,9 @@
   height: 100%;
   width: 100%;
   z-index: -10;
+  background: url('./assets/background.png');
+  opacity: 0.05;
+  background-size: cover;
 }
 
 .wrapper {
