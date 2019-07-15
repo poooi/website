@@ -22,7 +22,9 @@ const Container = styled(Fabric)`
 
 const Canvas = styled.canvas`
   z-index: -1;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
 `
 
 const Wrapper = styled.div`
@@ -97,6 +99,8 @@ export const App = () => {
 
     cvs.width = w * pr
     cvs.height = h * pr
+    cvs.style.width = `${w}px`
+    cvs.style.height = `${h}px`
     ctx.scale(pr, pr)
     ctx.clearRect(0, 0, w, h)
 
