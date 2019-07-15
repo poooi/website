@@ -11,5 +11,10 @@
     "jsx-no-lambda": false,
     "no-submodule-imports": false,
     "no-console": [true, "log"]
+  },
+  "linterOptions": {
+    "exclude": [
+        "node_modules/**"
+    ]
   }
 }
