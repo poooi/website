@@ -3,10 +3,10 @@
 exports[`<TypeCat /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="container"
+    class="sc-bdVaJa crtefa"
   >
     <div
-      class=""
+      class="sc-bwzfXH itrWxH"
     >
       <div
         class="Typist "
@@ -19,12 +19,12 @@ exports[`<TypeCat /> renders 1`] = `
       </div>
     </div>
     <div
-      class="mirror hide"
+      class="sc-bwzfXH hSjhtd"
       data-testid="typing"
     >
       Hello World
       <span
-        class="mirror"
+        style="opacity: 0;"
       >
         _
       </span>

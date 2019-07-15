@@ -20,13 +20,13 @@ exports[`<Content /> renders 1`] = `
       </span>
     </div>
     <div
-      class="sc-htpNat kcWMnM"
+      class="sc-htoDjs gGXSJf"
     >
       <div
-        class="container"
+        class="sc-ifAKCX kWQbT"
       >
         <div
-          class=""
+          class="sc-EHOje gYoJOI"
         >
           <div
             class="Typist "
@@ -39,12 +39,12 @@ exports[`<Content /> renders 1`] = `
           </div>
         </div>
         <div
-          class="mirror hide"
+          class="sc-EHOje dZEEWs"
           data-testid="typing"
         >
           Scalable KanColle browser and tool.
           <span
-            class="mirror"
+            style="opacity: 0;"
           >
             _
           </span>
@@ -52,10 +52,10 @@ exports[`<Content /> renders 1`] = `
       </div>
     </div>
     <div
-      class="container"
+      class="sc-bdVaJa jJvhef"
     >
       <div
-        class="header"
+        class="sc-bwzfXH gFmFes"
       >
         Download for Windows (x64)
       </div>
@@ -63,13 +63,13 @@ exports[`<Content /> renders 1`] = `
         href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
       >
         <button
-          class="button"
+          class="sc-htpNat dTVKEt"
         >
           <div>
             v10.3.0
           </div>
           <div
-            class="description"
+            class="sc-bxivhb gEfMvB"
           >
             Stable, for most users
           </div>
@@ -79,13 +79,13 @@ exports[`<Content /> renders 1`] = `
         href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
       >
         <button
-          class="button beta"
+          class="sc-htpNat bNQWrr"
         >
           <div>
             v10.4.0
           </div>
           <div
-            class="description"
+            class="sc-bxivhb gEfMvB"
           >
             Beta, for new features
           </div>
@@ -93,10 +93,10 @@ exports[`<Content /> renders 1`] = `
       </a>
     </div>
     <div
-      class="sc-bwzfXH hiyGaY"
+      class="sc-gzVnrw jLKqTl"
     >
       <div
-        class="ms-Dropdown-container sc-bdVaJa hgXUtv root-46"
+        class="ms-Dropdown-container sc-bZQynM hIuxSW root-46"
       >
         <label
           class="ms-Label ms-Dropdown-label label-64"
@@ -144,10 +144,10 @@ exports[`<Content /> renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-bwzfXH hiyGaY"
+      class="sc-gzVnrw jLKqTl"
     >
       <a
-        class="sc-bxivhb ipvMWe"
+        class="sc-dnqmqq TwgdY"
         href="https://npm.taobao.org/mirrors/poi"
         rel="noopener noreferrer"
         target="_blank"
