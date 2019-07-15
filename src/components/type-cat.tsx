@@ -1,8 +1,33 @@
-import classNames from 'classnames'
 import React from 'react'
 import Typist from 'react-typist'
+import styled from 'styled-components'
 
-import styles from './type-cat.module.css'
+const Container = styled.div`
+  display: inline-block;
+  margin: 20px 10px;
+`
+
+const Mirror = styled.div<{ show: boolean; hide?: boolean }>`
+  opacity: ${props => (props.show ? 1 : 0)};
+  display: ${props => props.hide && 'none'};
+
+  .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`
 
 interface IProps {
   text: string
@@ -19,12 +44,9 @@ export class TypeCat extends React.Component<IProps, IState> {
     width: 0,
   }
 
-  private mirror = React.createRef<HTMLDivElement>()
-
   public componentDidMount() {
     this.setState({
       stage: 'typing',
-      width: this.mirror.current!.getBoundingClientRect().width,
     })
   }
 
@@ -38,12 +60,8 @@ export class TypeCat extends React.Component<IProps, IState> {
 
   public render() {
     return (
-      <div className={styles.container}>
-        <div
-          className={classNames({
-            [styles.hide]: this.state.stage !== 'typing',
-          })}
-        >
+      <Container>
+        <Mirror hide={this.state.stage !== 'typing'} show={true}>
           <Typist
             cursor={{
               element: '_',
@@ -53,20 +71,16 @@ export class TypeCat extends React.Component<IProps, IState> {
           >
             {this.props.text}
           </Typist>
-        </div>
-        <div
-          ref={this.mirror}
-          className={classNames({
-            [styles.mirror]: true,
-            [styles.hide]: this.state.stage === 'typing',
-            [styles.show]: this.state.stage === 'done',
-          })}
+        </Mirror>
+        <Mirror
+          show={this.state.stage === 'done'}
+          hide={this.state.stage === 'typing'}
           data-testid={this.state.stage}
         >
           {this.props.text}
-          <span className={styles.mirror}>_</span>
-        </div>
-      </div>
+          <span style={{ opacity: 0 }}>_</span>
+        </Mirror>
+      </Container>
     )
   }
 }
