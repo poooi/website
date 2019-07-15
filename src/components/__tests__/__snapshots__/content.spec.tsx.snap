@@ -29,14 +29,8 @@ exports[`<Content /> renders 1`] = `
           class="sc-EHOje gYoJOI"
         >
           <div
-            class="Typist "
-          >
-            <span
-              class="Cursor Cursor--blinking"
-            >
-              _
-            </span>
-          </div>
+            data-testid="typist"
+          />
         </div>
         <div
           class="sc-EHOje dZEEWs"
@@ -52,7 +46,7 @@ exports[`<Content /> renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdVaJa jJvhef"
+      class="sc-bdVaJa gbaexa"
     >
       <div
         class="sc-bwzfXH gFmFes"
@@ -60,13 +54,14 @@ exports[`<Content /> renders 1`] = `
         Download for Windows (x64)
       </div>
       <a
-        href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-setup-10.3.0.exe"
+        data-testid="download-stable-version"
+        href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
       >
         <button
           class="sc-htpNat dTVKEt"
         >
           <div>
-            v10.3.0
+            v10.4.0
           </div>
           <div
             class="sc-bxivhb gEfMvB"
@@ -75,31 +70,15 @@ exports[`<Content /> renders 1`] = `
           </div>
         </button>
       </a>
-      <a
-        href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
-      >
-        <button
-          class="sc-htpNat bNQWrr"
-        >
-          <div>
-            v10.4.0
-          </div>
-          <div
-            class="sc-bxivhb gEfMvB"
-          >
-            Beta, for new features
-          </div>
-        </button>
-      </a>
     </div>
     <div
       class="sc-gZMcBi hlXFsd"
     >
       <div
-        class="ms-Dropdown-container sc-iwsKbI jSRktV root-46"
+        class="ms-Dropdown-container sc-iwsKbI jSRktV root-50"
       >
         <label
-          class="ms-Label ms-Dropdown-label label-64"
+          class="ms-Label ms-Dropdown-label label-68"
           for="Dropdown1"
           id="Dropdown1-label"
         >
@@ -109,7 +88,7 @@ exports[`<Content /> renders 1`] = `
           aria-describedby="Dropdown1-option"
           aria-expanded="false"
           aria-labelledby="Dropdown1-label"
-          class="ms-Dropdown dropdown-48"
+          class="ms-Dropdown dropdown-52"
           data-is-focusable="true"
           id="Dropdown1"
           role="listbox"
@@ -122,7 +101,7 @@ exports[`<Content /> renders 1`] = `
             aria-posinset="8"
             aria-selected="true"
             aria-setsize="8"
-            class="ms-Dropdown-title title-49"
+            class="ms-Dropdown-title title-53"
             id="Dropdown1-option"
             role="option"
           >
@@ -131,11 +110,11 @@ exports[`<Content /> renders 1`] = `
             </span>
           </span>
           <span
-            class="ms-Dropdown-caretDownWrapper caretDownWrapper-50"
+            class="ms-Dropdown-caretDownWrapper caretDownWrapper-54"
           >
             <i
               aria-hidden="true"
-              class="ms-Dropdown-caretDown caretDown-65"
+              class="ms-Dropdown-caretDown caretDown-69"
               data-icon-name="ChevronDown"
               role="presentation"
             />

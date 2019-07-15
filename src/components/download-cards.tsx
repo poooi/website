@@ -1,5 +1,7 @@
+import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { lt } from 'semver'
 import styled from 'styled-components'
 
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
@@ -30,7 +32,11 @@ function getDownloadLink(version: string, target: string) {
 
 const Container = styled.div`
   text-align: center;
-  margin-bottom: 3em;
+  min-height: 150px;
+
+  .ms-Spinner-label {
+    font-size: 20px;
+  }
 `
 
 const Header = styled.div`
@@ -71,10 +77,9 @@ const Description = styled.div`
   font-size: 14px;
 `
 
-interface IVersion {
-  stable: string
-  beta: string
-  betaAvailable: boolean
+export interface IVersion {
+  version: string
+  betaVersion: string
 }
 
 interface IProps {
@@ -84,24 +89,34 @@ interface IProps {
 
 export const DownloadCards = ({ target, version }: IProps) => {
   const { t } = useTranslation()
+
   return (
     <Container>
       <Header>
         {t('download-for')} {t(target)}
       </Header>
-      <a href={getDownloadLink(version.stable, target)}>
-        <Button>
-          <div>{version.stable}</div>
-          <Description>{t('stable-hint')}</Description>
-        </Button>
-      </a>
-      {version.betaAvailable && (
-        <a href={getDownloadLink(version.beta, target)}>
-          <Button isBeta={true}>
-            <div>{version.beta}</div>
-            <Description>{t('beta-hint')}</Description>
-          </Button>
-        </a>
+      {version.version ? (
+        <>
+          <a
+            href={getDownloadLink(version.version, target)}
+            data-testid="download-stable-version"
+          >
+            <Button>
+              <div>{version.version}</div>
+              <Description>{t('stable-hint')}</Description>
+            </Button>
+          </a>
+          {lt(version.betaVersion, version.version) && (
+            <a href={getDownloadLink(version.betaVersion, target)}>
+              <Button isBeta={true}>
+                <div>{version.betaVersion}</div>
+                <Description>{t('beta-hint')}</Description>
+              </Button>
+            </a>
+          )}
+        </>
+      ) : (
+        <Spinner label={t('lsc')} size={SpinnerSize.large} />
       )}
     </Container>
   )

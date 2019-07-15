@@ -9,14 +9,8 @@ exports[`<TypeCat /> renders 1`] = `
       class="sc-bwzfXH itrWxH"
     >
       <div
-        class="Typist "
-      >
-        <span
-          class="Cursor Cursor--blinking"
-        >
-          _
-        </span>
-      </div>
+        data-testid="typist"
+      />
     </div>
     <div
       class="sc-bwzfXH hSjhtd"

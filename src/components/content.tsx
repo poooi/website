@@ -1,12 +1,12 @@
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { UAParser } from 'ua-parser-js'
 
-import { DownloadCards } from './download-cards'
+import { DownloadCards, IVersion } from './download-cards'
 import { TypeCat } from './type-cat'
 
 import poi from '../assets/poi.png'
@@ -54,12 +54,6 @@ const getTargetIndex = () => {
     return 5
   }
   return 0
-}
-
-const version = {
-  beta: 'v10.4.0',
-  betaAvailable: true,
-  stable: 'v10.3.0',
 }
 
 const targets = [
@@ -140,6 +134,22 @@ export const Content = () => {
   )
 
   const [selected, setSelected] = useState(targets[getTargetIndex()])
+
+  const [version, setVersion] = useState<IVersion>(({} as any) as IVersion)
+
+  useEffect(() => {
+    const getUpdate = async () => {
+      try {
+        const resp = await fetch('https://poi.io/update/latest.json')
+        const result: IVersion = await resp.json()
+        setVersion(result)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    getUpdate()
+  }, [])
 
   return (
     <Container>

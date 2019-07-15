@@ -8,9 +8,8 @@ describe('<DownloadCards />', () => {
     <DownloadCards
       target="linux-x64"
       version={{
-        beta: 'v10.4.0',
-        betaAvailable: true,
-        stable: 'v10.3.0',
+        betaVersion: 'v10.5.0',
+        version: 'v10.4.0',
       }}
     />,
   )
@@ -24,9 +23,8 @@ describe('<DownloadCards />', () => {
       <DownloadCards
         target="linux-x64"
         version={{
-          beta: 'v10.4.0',
-          betaAvailable: false,
-          stable: 'v10.3.0',
+          betaVersion: 'v10.3.0',
+          version: 'v10.4.0',
         }}
       />,
     )
@@ -38,9 +36,8 @@ describe('<DownloadCards />', () => {
       <DownloadCards
         target="chiba"
         version={{
-          beta: 'v10.4.0',
-          betaAvailable: true,
-          stable: 'v10.3.0',
+          betaVersion: 'v10.5.0',
+          version: 'v10.4.0',
         }}
       />,
     )

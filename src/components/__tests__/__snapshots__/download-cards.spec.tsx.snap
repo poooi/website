@@ -3,7 +3,7 @@
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jJvhef"
+    class="sc-bdVaJa gbaexa"
   >
     <div
       class="sc-bwzfXH gFmFes"
@@ -11,26 +11,11 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       Download for Linux (x64)
     </div>
     <a
-      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
-    >
-      <button
-        class="sc-htpNat dTVKEt"
-      >
-        <div>
-          v10.3.0
-        </div>
-        <div
-          class="sc-bxivhb gEfMvB"
-        >
-          Stable, for most users
-        </div>
-      </button>
-    </a>
-    <a
+      data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="sc-htpNat bNQWrr"
+        class="sc-htpNat dTVKEt"
       >
         <div>
           v10.4.0
@@ -38,7 +23,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         <div
           class="sc-bxivhb gEfMvB"
         >
-          Beta, for new features
+          Stable, for most users
         </div>
       </button>
     </a>
@@ -49,7 +34,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
 exports[`<DownloadCards /> renders with invalid target 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jJvhef"
+    class="sc-bdVaJa gbaexa"
   >
     <div
       class="sc-bwzfXH gFmFes"
@@ -57,26 +42,11 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       Download for chiba
     </div>
     <a
+      data-testid="download-stable-version"
       href="https://github.com/poooi/poi/releases"
     >
       <button
         class="sc-htpNat dTVKEt"
-      >
-        <div>
-          v10.3.0
-        </div>
-        <div
-          class="sc-bxivhb gEfMvB"
-        >
-          Stable, for most users
-        </div>
-      </button>
-    </a>
-    <a
-      href="https://github.com/poooi/poi/releases"
-    >
-      <button
-        class="sc-htpNat bNQWrr"
       >
         <div>
           v10.4.0
@@ -84,7 +54,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         <div
           class="sc-bxivhb gEfMvB"
         >
-          Beta, for new features
+          Stable, for most users
         </div>
       </button>
     </a>
@@ -95,7 +65,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 exports[`<DownloadCards /> renders without beta 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jJvhef"
+    class="sc-bdVaJa gbaexa"
   >
     <div
       class="sc-bwzfXH gFmFes"
@@ -103,10 +73,27 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       Download for Linux (x64)
     </div>
     <a
-      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+      data-testid="download-stable-version"
+      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
         class="sc-htpNat dTVKEt"
+      >
+        <div>
+          v10.4.0
+        </div>
+        <div
+          class="sc-bxivhb gEfMvB"
+        >
+          Stable, for most users
+        </div>
+      </button>
+    </a>
+    <a
+      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
+    >
+      <button
+        class="sc-htpNat bNQWrr"
       >
         <div>
           v10.3.0
@@ -114,7 +101,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
         <div
           class="sc-bxivhb gEfMvB"
         >
-          Stable, for most users
+          Beta, for new features
         </div>
       </button>
     </a>

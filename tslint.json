@@ -9,6 +9,7 @@
     "prettier": true,
     "no-implicit-dependencies": [true, ["@testing-library/react"]],
     "jsx-no-lambda": false,
-    "no-submodule-imports": false
+    "no-submodule-imports": false,
+    "no-console": [true, "log"]
   }
 }
