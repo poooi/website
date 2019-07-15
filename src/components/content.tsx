@@ -58,7 +58,7 @@ const getTargetIndex = () => {
 
 const targets = [
   'linux-x64',
-  'linux-x64',
+  'linux-deb-x64',
   'linux-rpm-x64',
   'macos-x64',
   'win-ia32',
