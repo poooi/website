@@ -1,6 +1,5 @@
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import classnames from 'classnames'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -11,7 +10,6 @@ import { DownloadCards } from './download-cards'
 import { TypeCat } from './type-cat'
 
 import poi from '../assets/poi.png'
-import styles from './content.module.css'
 
 export const getSettings = () => {
   const { os, cpu } = new UAParser().getResult()
@@ -75,6 +73,36 @@ const targets = [
   'win-x64-setup',
 ]
 
+const Container = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+const Title = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+`
+
+const Logo = styled.img`
+  height: 150px;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+`
+
+const Name = styled.span`
+  font-size: 100px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 200px;
+  }
+`
+
 const StyledDropdown = styled(Dropdown)`
   width: 20em;
 `
@@ -114,18 +142,11 @@ export const Content = () => {
   const [selected, setSelected] = useState(targets[getTargetIndex()])
 
   return (
-    <div className={styles.container}>
-      <div className={styles.title}>
-        <img
-          src={poi}
-          alt="poi"
-          className={classnames(styles.logo, {
-            [styles.aprilfoolsday]:
-              new Date().getMonth() === 3 && new Date().getDate() === 1,
-          })}
-        />
-        <span className={styles.name}>{t('name')}</span>
-      </div>
+    <Container>
+      <Title>
+        <Logo src={poi} alt="poi" />
+        <Name>{t('name')}</Name>
+      </Title>
       <Description>
         <TypeCat text={t('description')} />
       </Description>
@@ -147,6 +168,6 @@ export const Content = () => {
           {t('other-versions')} <FontAwesomeIcon icon={faExternalLinkAlt} />
         </FullListLink>
       </CenterContainer>
-    </div>
+    </Container>
   )
 }
