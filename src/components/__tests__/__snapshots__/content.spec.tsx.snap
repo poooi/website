@@ -3,24 +3,24 @@
 exports[`<Content /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="container"
+    class="sc-bZQynM gSJnjk"
   >
-    <div
-      class="title"
+    <h1
+      class="sc-gzVnrw eJmVhY"
     >
       <img
         alt="poi"
-        class="logo"
+        class="sc-htoDjs jvwLIY"
         src="poi.png"
       />
       <span
-        class="name"
+        class="sc-dnqmqq bcJpYV"
       >
         poi
       </span>
-    </div>
+    </h1>
     <div
-      class="sc-htoDjs gGXSJf"
+      class="sc-gqjmRU iaGhZ"
     >
       <div
         class="sc-ifAKCX kWQbT"
@@ -93,10 +93,10 @@ exports[`<Content /> renders 1`] = `
       </a>
     </div>
     <div
-      class="sc-gzVnrw jLKqTl"
+      class="sc-gZMcBi hlXFsd"
     >
       <div
-        class="ms-Dropdown-container sc-bZQynM hIuxSW root-46"
+        class="ms-Dropdown-container sc-iwsKbI jSRktV root-46"
       >
         <label
           class="ms-Label ms-Dropdown-label label-64"
@@ -144,10 +144,10 @@ exports[`<Content /> renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-gzVnrw jLKqTl"
+      class="sc-gZMcBi hlXFsd"
     >
       <a
-        class="sc-dnqmqq TwgdY"
+        class="sc-VigVT ecCZLv"
         href="https://npm.taobao.org/mirrors/poi"
         rel="noopener noreferrer"
         target="_blank"
