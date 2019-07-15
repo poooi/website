@@ -7,7 +7,6 @@ import styled from 'styled-components'
 
 import { Content } from './components/content'
 import { Footer } from './components/footer'
-import { GitHubRibbon } from './components/github-ribbon'
 import { Header } from './components/header'
 
 import './i18n'
@@ -120,7 +119,6 @@ export const App = () => {
 
   return (
     <Container>
-      <GitHubRibbon />
       <Canvas ref={canvas} />
       <Wrapper>
         <Header />
