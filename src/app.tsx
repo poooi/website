@@ -3,7 +3,10 @@ import times from 'lodash/times'
 import { Fabric, initializeIcons } from 'office-ui-fabric-react'
 import random from 'random'
 import React, { useCallback, useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
+
+import { getLocaleFontFamily } from './theme'
 
 import { Content } from './components/content'
 import { Footer } from './components/footer'
@@ -27,12 +30,13 @@ const Canvas = styled.canvas`
   left: 0;
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ fontFamily?: string }>`
   color: #333;
   flex: 1;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
+  font-family: ${props => props.fontFamily};
 `
 
 /**
@@ -121,10 +125,14 @@ export const App = () => {
     window.addEventListener('resize', debounce(drawCanvas, 100))
   }, [])
 
+  const { i18n } = useTranslation()
+
+  const fontFamily = getLocaleFontFamily(i18n.language)
+
   return (
     <Container>
       <Canvas ref={canvas} />
-      <Wrapper>
+      <Wrapper fontFamily={fontFamily}>
         <Header />
         <Content />
         <Footer />
