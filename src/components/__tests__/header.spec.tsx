@@ -1,3 +1,4 @@
+import { getByText } from '@testing-library/dom'
 import { act, fireEvent, render } from '@testing-library/react'
 import _ from 'lodash'
 import React from 'react'
@@ -7,23 +8,24 @@ import { Header, languages } from '../header'
 
 describe('<Header />', () => {
   it('renders', () => {
-    const { asFragment, getByText } = render(<Header />)
+    const { asFragment, getByTestId, baseElement } = render(<Header />)
+    const dropdown = getByTestId('language-dropdown')
+    fireEvent.click(dropdown)
+    const layer = baseElement.querySelector('.ms-Layer')
+    expect(layer).toBeDefined()
     expect(asFragment()).toMatchSnapshot()
-    expect(getByText('English')).toMatchInlineSnapshot(`
-      <a
-        class="sc-EHOje bOTOim"
-        title="English"
-      >
-        English
-      </a>
-    `)
+    expect(layer).toMatchSnapshot()
   })
 
   it('changes language', () => {
-    const { getByText, asFragment } = render(<Header />)
+    const { getByTestId, asFragment, baseElement } = render(<Header />)
     const origin = asFragment()
     _.each(languages, (value, name) => {
-      fireEvent.click(getByText(value))
+      const dropdown = getByTestId('language-dropdown')
+      fireEvent.click(dropdown)
+      const layer = baseElement.querySelector('.ms-Layer')
+      expect(layer).toBeDefined()
+      fireEvent.click(getByText(layer as HTMLElement, value))
       expect(i18n.language).toBe(name)
       expect(origin).toMatchDiffSnapshot(asFragment(), {}, name)
     })

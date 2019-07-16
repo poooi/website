@@ -1,9 +1,10 @@
 import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import classNames from 'classnames'
+import map from 'lodash/map'
+import { Dropdown } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import { getExactLanguage } from '../utils'
 
@@ -13,6 +14,11 @@ export const languages = {
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
+
+const options = map(languages, (value, key) => ({
+  key,
+  text: value,
+}))
 
 const Container = styled.div`
   height: 60px;
@@ -59,33 +65,15 @@ const Spacer = styled.div`
 const LanguageList = styled.div`
   display: flex;
   align-items: center;
+  height: 60px;
+
   .svg-inline--fa {
     padding-right: 1ex;
   }
 `
 
-const LanguageItem = styled.a<{ active?: boolean }>`
-  padding: 0 1ex;
-  line-height: 60px;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  font-size: 16px;
-
-  ${props =>
-    props.active &&
-    css`
-      ::before {
-        content: '';
-        display: block;
-        background-color: #333;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-      }
-    `}
+const StyledDropdown = styled(Dropdown)`
+  width: 6em;
 `
 
 export const Header = () => {
@@ -103,16 +91,13 @@ export const Header = () => {
         <Spacer />
         <LanguageList data-testid="language-list">
           <FontAwesomeIcon icon={faLanguage} />
-          {Object.keys(languages).map(lang => (
-            <LanguageItem
-              key={lang}
-              title={languages[lang as keyof typeof languages]}
-              onClick={() => i18n.changeLanguage(lang)}
-              active={lang === exact}
-            >
-              {languages[lang as keyof typeof languages]}
-            </LanguageItem>
-          ))}
+          <StyledDropdown
+            data-testid="language-dropdown"
+            options={options}
+            placeholder="Language"
+            selectedKey={exact}
+            onChange={(event, item) => i18n.changeLanguage(item!.key as string)}
+          />
         </LanguageList>
       </Wrapper>
     </Container>

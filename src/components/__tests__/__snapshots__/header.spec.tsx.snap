@@ -2,12 +2,42 @@
 
 exports[`<Header /> changes language: en 1`] = `
 "Snapshot Diff:
-Compared values have no visual difference."
+- First value
++ Second value
+
+@@ -53,11 +53,11 @@
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+                aria-label=\\"English\\"
+-               aria-live=\\"off\\"
++               aria-live=\\"assertive\\"
+                aria-posinset=\\"1\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\""
 `;
 
 exports[`<Header /> changes language: en 2`] = `
 "Snapshot Diff:
-Compared values have no visual difference."
+- First value
++ Second value
+
+@@ -53,11 +53,11 @@
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+                aria-label=\\"English\\"
+-               aria-live=\\"off\\"
++               aria-live=\\"assertive\\"
+                aria-posinset=\\"1\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\""
 `;
 
 exports[`<Header /> changes language: ja 1`] = `
@@ -34,26 +64,32 @@ exports[`<Header /> changes language: ja 1`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,17 +38,17 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"日本語\\"
-          >
-            日本語
-          </a>
-          <a"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"日本語\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"2\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 日本語
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> changes language: ja 2`] = `
@@ -80,26 +116,32 @@ exports[`<Header /> changes language: ja 2`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,17 +38,17 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"日本語\\"
-          >
-            日本語
-          </a>
-          <a"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"日本語\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"2\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 日本語
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> changes language: zh-Hans 1`] = `
@@ -126,32 +168,32 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,11 +38,11 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
-@@ -50,11 +50,11 @@
-            title=\\"日本語\\"
-          >
-            日本語
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"简体中文\\"
-          >
-            简体中文
-          </a>
-          <a"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"简体中文\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"3\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 简体中文
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> changes language: zh-Hans 2`] = `
@@ -178,32 +220,32 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,11 +38,11 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
-@@ -50,11 +50,11 @@
-            title=\\"日本語\\"
-          >
-            日本語
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"简体中文\\"
-          >
-            简体中文
-          </a>
-          <a"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"简体中文\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"3\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 简体中文
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> changes language: zh-Hant 1`] = `
@@ -230,32 +272,32 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,11 +38,11 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
-@@ -56,11 +56,11 @@
-            title=\\"简体中文\\"
-          >
-            简体中文
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"繁體中文\\"
-          >
-            繁體中文
-          </a>
-        </div>"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"繁體中文\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"4\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 繁體中文
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> changes language: zh-Hant 2`] = `
@@ -282,32 +324,32 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
         <div
           class=\\"sc-bxivhb hYiooe\\"
         />
-@@ -38,11 +38,11 @@
-              d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
-              fill=\\"currentColor\\"
-            />
-          </svg>
-          <a
--           class=\\"sc-EHOje bOTOim\\"
-+           class=\\"sc-EHOje hgcoFM\\"
-            title=\\"English\\"
-          >
-            English
-          </a>
-          <a
-@@ -56,11 +56,11 @@
-            title=\\"简体中文\\"
-          >
-            简体中文
-          </a>
-          <a
--           class=\\"sc-EHOje hgcoFM\\"
-+           class=\\"sc-EHOje bOTOim\\"
-            title=\\"繁體中文\\"
-          >
-            繁體中文
-          </a>
-        </div>"
+@@ -52,21 +52,21 @@
+              role=\\"listbox\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                aria-atomic=\\"true\\"
+-               aria-label=\\"English\\"
+-               aria-live=\\"off\\"
+-               aria-posinset=\\"1\\"
++               aria-label=\\"繁體中文\\"
++               aria-live=\\"assertive\\"
++               aria-posinset=\\"4\\"
+                aria-selected=\\"true\\"
+                aria-setsize=\\"4\\"
+                class=\\"ms-Dropdown-title title-49\\"
+                id=\\"Dropdown15-option\\"
+                role=\\"option\\"
+              >
+                <span>
+-                 English
++                 繁體中文
+                </span>
+              </span>
+              <span
+                class=\\"ms-Dropdown-caretDownWrapper caretDownWrapper-50\\"
+              >"
 `;
 
 exports[`<Header /> renders 1`] = `
@@ -334,7 +376,7 @@ exports[`<Header /> renders 1`] = `
         class="sc-bxivhb hYiooe"
       />
       <div
-        class="sc-ifAKCX fsCAIN"
+        class="sc-ifAKCX gZtAIR"
         data-testid="language-list"
       >
         <svg
@@ -352,32 +394,176 @@ exports[`<Header /> renders 1`] = `
             fill="currentColor"
           />
         </svg>
-        <a
-          class="sc-EHOje bOTOim"
-          title="English"
+        <div
+          class="ms-Dropdown-container sc-EHOje iAoReq root-46"
         >
-          English
-        </a>
-        <a
-          class="sc-EHOje hgcoFM"
-          title="日本語"
-        >
-          日本語
-        </a>
-        <a
-          class="sc-EHOje hgcoFM"
-          title="简体中文"
-        >
-          简体中文
-        </a>
-        <a
-          class="sc-EHOje hgcoFM"
-          title="繁體中文"
-        >
-          繁體中文
-        </a>
+          <div
+            aria-activedescendant="Dropdown1-list0"
+            aria-describedby="Dropdown1-option"
+            aria-expanded="true"
+            aria-owns="Dropdown1-list"
+            class="ms-Dropdown is-open dropdown-65"
+            data-is-focusable="true"
+            data-testid="language-dropdown"
+            id="Dropdown1"
+            role="listbox"
+            tabindex="0"
+          >
+            <span
+              aria-atomic="true"
+              aria-label="English"
+              aria-live="off"
+              aria-posinset="1"
+              aria-selected="true"
+              aria-setsize="4"
+              class="ms-Dropdown-title title-66"
+              id="Dropdown1-option"
+              role="option"
+            >
+              <span>
+                English
+              </span>
+            </span>
+            <span
+              class="ms-Dropdown-caretDownWrapper caretDownWrapper-50"
+            >
+              <i
+                aria-hidden="true"
+                class="ms-Dropdown-caretDown caretDown-64"
+                data-icon-name="ChevronDown"
+                role="presentation"
+              />
+            </span>
+          </div>
+          <span
+            class="ms-layer"
+          />
+        </div>
       </div>
     </div>
   </div>
 </DocumentFragment>
+`;
+
+exports[`<Header /> renders 2`] = `
+<div
+  class="ms-Layer ms-Layer--fixed root-67"
+  data-portal-element="true"
+>
+  <div
+    class="ms-Fabric ms-Layer-content content-69"
+  >
+    <div
+      class="ms-Callout-container container-70"
+    >
+      <div
+        class="ms-Callout ms-Dropdown-callout callout-71"
+        style="opacity: 0; filter: opacity(0);"
+        tabindex="-1"
+      >
+        <div
+          class="ms-Callout-main calloutMain-74"
+          style="outline: none; max-height: 752px;"
+        >
+          <div
+            class="dropdownItemsWrapper-54"
+            tabindex="0"
+          >
+            <div
+              class="ms-FocusZone css-75 ms-Dropdown-items dropdownItems-55"
+              data-focuszone-id="FocusZone2"
+              id="Dropdown1-list"
+              role="listbox"
+            >
+              <button
+                aria-selected="true"
+                class="ms-Button ms-Button--action ms-Button--command ms-Dropdown-item dropdownItemSelected-76"
+                data-index="0"
+                data-is-focusable="true"
+                id="Dropdown1-list0"
+                role="option"
+                tabindex="0"
+                title="English"
+                type="button"
+              >
+                <div
+                  class="ms-Button-flexContainer flexContainer-77"
+                >
+                  <span
+                    class="ms-Dropdown-optionText dropdownOptionText-62"
+                  >
+                    English
+                  </span>
+                </div>
+              </button>
+              <button
+                aria-selected="false"
+                class="ms-Button ms-Button--action ms-Button--command ms-Dropdown-item dropdownItem-84"
+                data-index="1"
+                data-is-focusable="true"
+                id="Dropdown1-list1"
+                role="option"
+                tabindex="-1"
+                title="日本語"
+                type="button"
+              >
+                <div
+                  class="ms-Button-flexContainer flexContainer-77"
+                >
+                  <span
+                    class="ms-Dropdown-optionText dropdownOptionText-62"
+                  >
+                    日本語
+                  </span>
+                </div>
+              </button>
+              <button
+                aria-selected="false"
+                class="ms-Button ms-Button--action ms-Button--command ms-Dropdown-item dropdownItem-84"
+                data-index="2"
+                data-is-focusable="true"
+                id="Dropdown1-list2"
+                role="option"
+                tabindex="-1"
+                title="简体中文"
+                type="button"
+              >
+                <div
+                  class="ms-Button-flexContainer flexContainer-77"
+                >
+                  <span
+                    class="ms-Dropdown-optionText dropdownOptionText-62"
+                  >
+                    简体中文
+                  </span>
+                </div>
+              </button>
+              <button
+                aria-selected="false"
+                class="ms-Button ms-Button--action ms-Button--command ms-Dropdown-item dropdownItem-84"
+                data-index="3"
+                data-is-focusable="true"
+                id="Dropdown1-list3"
+                role="option"
+                tabindex="-1"
+                title="繁體中文"
+                type="button"
+              >
+                <div
+                  class="ms-Button-flexContainer flexContainer-77"
+                >
+                  <span
+                    class="ms-Dropdown-optionText dropdownOptionText-62"
+                  >
+                    繁體中文
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
