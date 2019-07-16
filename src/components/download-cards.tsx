@@ -1,8 +1,8 @@
-import classNames from 'classnames'
+import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-
-import styles from './download-cards.module.css'
+import { lt } from 'semver'
+import styled from 'styled-components'
 
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
 
@@ -30,10 +30,56 @@ function getDownloadLink(version: string, target: string) {
   }
 }
 
-interface IVersion {
-  stable: string
-  beta: string
-  betaAvailable: boolean
+const Container = styled.div`
+  text-align: center;
+  min-height: 150px;
+
+  .ms-Spinner-label {
+    font-size: 20px;
+  }
+`
+
+const Header = styled.div`
+  font-size: 22px;
+  margin-bottom: 2vh;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+`
+
+const Button = styled.button<{ isBeta?: boolean }>`
+  background-color: rgba(255, 255, 255, 0.75);
+  border: #333 solid 1px;
+  border-radius: 1px;
+  color: #333;
+  cursor: pointer;
+  display: inline;
+  display: ${props => props.isBeta && 'none'};
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  transition: all 300ms;
+  min-width: 12em;
+
+  :hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: ${props => props.isBeta && 'inline'};
+  }
+}
+`
+
+const Description = styled.div`
+  font-size: 14px;
+`
+
+export interface IVersion {
+  version: string
+  betaVersion: string
 }
 
 interface IProps {
@@ -43,25 +89,35 @@ interface IProps {
 
 export const DownloadCards = ({ target, version }: IProps) => {
   const { t } = useTranslation()
+
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <Container>
+      <Header>
         {t('download-for')} {t(target)}
-      </div>
-      <a href={getDownloadLink(version.stable, target)}>
-        <button className={styles.button}>
-          <div>{version.stable}</div>
-          <div className={styles.description}>{t('stable-hint')}</div>
-        </button>
-      </a>
-      {version.betaAvailable && (
-        <a href={getDownloadLink(version.beta, target)}>
-          <button className={classNames(styles.button, styles.beta)}>
-            <div>{version.beta}</div>
-            <div className={styles.description}>{t('beta-hint')}</div>
-          </button>
-        </a>
+      </Header>
+      {version.version ? (
+        <>
+          <a
+            href={getDownloadLink(version.version, target)}
+            data-testid="download-stable-version"
+          >
+            <Button>
+              <div>{version.version}</div>
+              <Description>{t('stable-hint')}</Description>
+            </Button>
+          </a>
+          {lt(version.betaVersion, version.version) && (
+            <a href={getDownloadLink(version.betaVersion, target)}>
+              <Button isBeta={true}>
+                <div>{version.betaVersion}</div>
+                <Description>{t('beta-hint')}</Description>
+              </Button>
+            </a>
+          )}
+        </>
+      ) : (
+        <Spinner label={t('lsc')} size={SpinnerSize.large} />
       )}
-    </div>
+    </Container>
   )
 }

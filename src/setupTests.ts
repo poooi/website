@@ -1,7 +1,9 @@
-/* tslint:disable no-implicit-dependencies no-submodule-imports */
+import { setIconOptions } from 'office-ui-fabric-react'
 
+/* tslint:disable no-implicit-dependencies */
 import '@testing-library/jest-dom/extend-expect'
 import '@testing-library/react/cleanup-after-each'
+import 'jest-canvas-mock'
 import 'snapshot-diff' // for typings
 import 'snapshot-diff/extend-expect'
 
@@ -18,3 +20,8 @@ window.matchMedia =
       /* do nothing */
     },
   }))
+
+// Suppress icon warnings.
+setIconOptions({
+  disableWarnings: true,
+})

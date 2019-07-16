@@ -11,7 +11,8 @@ describe('<Header />', () => {
     expect(asFragment()).toMatchSnapshot()
     expect(getByText('English')).toMatchInlineSnapshot(`
       <a
-        class="active"
+        class="sc-EHOje bOTOim"
+        title="English"
       >
         English
       </a>

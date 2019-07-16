@@ -1,7 +1,7 @@
 {
   "language": "正體中文",
-  "name": "POI",
-  "description": "一個可擴展的艦隊 Collection 瀏覽器",
+  "name": "poi",
+  "description": "可擴展的「艦隊 Collection」瀏覽器",
   "github": "GitHub",
   "telegram": "Telegram",
   "opencollective": "Help us via OpenCollective",
@@ -17,8 +17,12 @@
   "win-x64-setup": "64 位 Windows 安裝包",
   "stable-hint": "正式版，適合大部分人使用",
   "beta-hint": "測試版，包含最新的功能",
-  "other-versions": "下載其他版本",
+  "other-versions": "瀏覽完整列表",
   "telegram-group-link": "https://t.me/joinchat/AoMUpkCr6B8uH7EUewq6eQ",
   "discord-channel-link": "https://discordapp.com/channels/118339803660943369/367575898313981952",
-  "Discord sub-channel": "Discord 頻道"
+  "Discord sub-channel": "Discord 頻道",
+  "Choose another platform": "選擇其它平臺",
+  "Explore": "功能簡介",
+  "Plugins": "擴展列表",
+  "lsc": "大型建造中"
 }

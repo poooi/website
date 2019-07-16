@@ -1,10 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+import { hydrate, render } from 'react-dom'
 
 import { App } from './app'
 import './index.css'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const rootElement = document.getElementById('root')
+if (rootElement!.hasChildNodes()) {
+  hydrate(<App />, rootElement)
+} else {
+  render(<App />, rootElement)
+}

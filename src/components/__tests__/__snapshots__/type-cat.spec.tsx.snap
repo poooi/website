@@ -3,27 +3,25 @@
 exports[`<TypeCat /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="container"
+    class="sc-bdVaJa crtefa"
   >
     <div
-      class=""
-      style="width: 0px;"
+      class="sc-bwzfXH itrWxH"
     >
       <div
-        class="Typist "
-      >
-        <span
-          class="Cursor Cursor--blinking"
-        >
-          _
-        </span>
-      </div>
+        data-testid="typist"
+      />
     </div>
     <div
-      class="mirror hide"
+      class="sc-bwzfXH hSjhtd"
       data-testid="typing"
     >
       Hello World
+      <span
+        style="opacity: 0;"
+      >
+        _
+      </span>
     </div>
   </div>
 </DocumentFragment>

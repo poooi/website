@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Hiragino Sans GB", "Hiragino Sans GB W3", "wenquanyi micro hei", sans-serif;
 }
 
 a, a:focus {
