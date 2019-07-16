@@ -5,7 +5,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { css } from 'styled-components'
 
-import { getPurelanguage } from '../utils'
+import { getExactLanguage } from '../utils'
 
 export const languages = {
   en: 'English',
@@ -91,7 +91,7 @@ const LanguageItem = styled.a<{ active?: boolean }>`
 export const Header = () => {
   const { t, i18n } = useTranslation()
 
-  const pureLangue = getPurelanguage(i18n.language)
+  const exact = getExactLanguage(i18n.language)
 
   return (
     <Container>
@@ -108,7 +108,7 @@ export const Header = () => {
               key={lang}
               title={languages[lang as keyof typeof languages]}
               onClick={() => i18n.changeLanguage(lang)}
-              active={lang === pureLangue || i18n.language === lang}
+              active={lang === exact}
             >
               {languages[lang as keyof typeof languages]}
             </LanguageItem>

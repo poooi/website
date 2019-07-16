@@ -12,7 +12,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-import { getPurelanguage } from '../utils'
+import { getExactLanguage } from '../utils'
 
 const Icon = ({ icon }: { icon: IconProp }) => (
   <FontAwesomeIcon icon={icon} size="2x" fixedWidth={true} />
@@ -44,14 +44,14 @@ export const Footer = () => {
   const { t, i18n } = useTranslation()
 
   const { language } = i18n
-  const pureLanguage = getPurelanguage(language)
+  const exact = getExactLanguage(language)
 
   return (
     <Container>
       <a href="http://weibo.com/letspoi" title={t('weibo')}>
         <Icon icon={faWeibo} />
       </a>
-      {pureLanguage === 'zh' ? (
+      {['zh-Hans', 'zh-Hant'].includes(exact) ? (
         <a href={t('telegram-group-link')} title={t('telegram')}>
           <Icon icon={faTelegram} />
         </a>
