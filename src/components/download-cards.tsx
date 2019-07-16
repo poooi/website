@@ -49,7 +49,7 @@ const Header = styled.div`
 `
 
 const Button = styled.button<{ isBeta?: boolean }>`
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.75);
   border: #333 solid 1px;
   border-radius: 1px;
   color: #333;
