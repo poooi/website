@@ -4,9 +4,9 @@ import { Fabric, initializeIcons } from 'office-ui-fabric-react'
 import random from 'random'
 import React, { useCallback, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
-import { getLocaleFontFamily } from './theme'
+import { darkTheme, getLocaleFontFamily, lightTheme } from './theme'
 
 import { Content } from './components/content'
 import { Footer } from './components/footer'
@@ -31,7 +31,7 @@ const Canvas = styled.canvas`
 `
 
 const Wrapper = styled.div<{ fontFamily?: string }>`
-  color: #333;
+  color: ${props => props.theme.palette.neutralPrimary};
   flex: 1;
   line-height: 1.5;
   display: flex;
@@ -130,13 +130,15 @@ export const App = () => {
   const fontFamily = getLocaleFontFamily(i18n.language)
 
   return (
-    <Container>
-      <Canvas ref={canvas} />
-      <Wrapper fontFamily={fontFamily}>
-        <Header />
-        <Content />
-        <Footer />
-      </Wrapper>
-    </Container>
+    <ThemeProvider theme={lightTheme}>
+      <Container>
+        <Canvas ref={canvas} />
+        <Wrapper fontFamily={fontFamily}>
+          <Header />
+          <Content />
+          <Footer />
+        </Wrapper>
+      </Container>
+    </ThemeProvider>
   )
 }

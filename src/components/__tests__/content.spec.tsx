@@ -1,5 +1,6 @@
-import { act, render, waitForElement } from '@testing-library/react'
+import { waitForElement } from '@testing-library/react'
 import React from 'react'
+import { renderWithTheme } from '../../testing-utils'
 
 import { Content } from '../content'
 
@@ -24,7 +25,7 @@ describe('<Content />', () => {
   })
 
   it('renders', async () => {
-    const { asFragment, getByTestId } = render(<Content />)
+    const { asFragment, getByTestId } = renderWithTheme(<Content />)
     await waitForElement(() => getByTestId('download-stable-version'))
     expect(asFragment()).toMatchSnapshot()
   })

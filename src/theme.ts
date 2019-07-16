@@ -1,4 +1,9 @@
-import { createFontStyles } from '@uifabric/styling'
+import { createFontStyles, IPalette } from '@uifabric/styling'
+import { loadTheme } from 'office-ui-fabric-react'
+import { DefaultTheme } from 'styled-components'
+
+import colorDark from './resources/colors/dark.json'
+import colorLight from './resources/colors/light.json'
 
 export const enFontStyles = createFontStyles(null)
 export const jaFontStyles = createFontStyles('ja')
@@ -15,3 +20,13 @@ const localeFontFamilyMap = {
 export const getLocaleFontFamily = (locale: string) =>
   localeFontFamilyMap[locale as keyof typeof localeFontFamilyMap] ||
   localeFontFamilyMap.en
+
+export const darkTheme: DefaultTheme = {
+  palette: colorDark as IPalette,
+}
+
+export const lightTheme: DefaultTheme = {
+  palette: colorLight as IPalette,
+}
+
+loadTheme(lightTheme)

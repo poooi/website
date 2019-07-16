@@ -15,7 +15,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="sc-htpNat kYJlDc"
+        class="sc-htpNat kEBVTB"
       >
         <div>
           v10.4.0
@@ -46,7 +46,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       href="https://github.com/poooi/poi/releases"
     >
       <button
-        class="sc-htpNat kYJlDc"
+        class="sc-htpNat kEBVTB"
       >
         <div>
           v10.4.0
@@ -77,7 +77,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="sc-htpNat kYJlDc"
+        class="sc-htpNat kEBVTB"
       >
         <div>
           v10.4.0
@@ -93,7 +93,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
     >
       <button
-        class="sc-htpNat fHGylf"
+        class="sc-htpNat jBXyeu"
       >
         <div>
           v10.3.0

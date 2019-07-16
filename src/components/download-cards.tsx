@@ -1,4 +1,5 @@
 import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
+import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
@@ -49,10 +50,10 @@ const Header = styled.div`
 `
 
 const Button = styled.button<{ isBeta?: boolean }>`
-  background-color: rgba(255, 255, 255, 0.75);
-  border: #333 solid 1px;
+  background-color: ${props => rgba(props.theme.palette.white, 0.75)};
+  border: ${props => props.theme.palette.neutralDark} solid 1px;
   border-radius: 1px;
-  color: #333;
+  color: ${props => props.theme.palette.neutralDark};
   cursor: pointer;
   display: inline;
   display: ${props => props.isBeta && 'none'};
@@ -63,7 +64,7 @@ const Button = styled.button<{ isBeta?: boolean }>`
   min-width: 12em;
 
   :hover {
-    background-color: #333;
+    background-color: ${props => rgba(props.theme.palette.themePrimary, 0.75)};
     color: #fff;
   }
 

@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 
+import { renderWithTheme } from '../../testing-utils'
 import { DownloadCards } from '../download-cards'
 
 describe('<DownloadCards />', () => {
-  const { asFragment, rerender } = render(
+  const { asFragment, rerender } = renderWithTheme(
     <DownloadCards
       target="linux-x64"
       version={{
