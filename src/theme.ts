@@ -8,8 +8,8 @@ export const zhHantFontStyles = createFontStyles('zh-hant')
 const localeFontFamilyMap = {
   en: enFontStyles.medium.fontFamily,
   ja: jaFontStyles.medium.fontFamily,
-  'zh-CN': zhHansFontStyles.medium.fontFamily,
-  'zh-TW': zhHansFontStyles.medium.fontFamily,
+  'zh-Hans': zhHansFontStyles.medium.fontFamily,
+  'zh-Hant': zhHansFontStyles.medium.fontFamily,
 }
 
 export const getLocaleFontFamily = (locale: string) =>

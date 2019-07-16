@@ -102,7 +102,7 @@ exports[`<Header /> changes language: ja 2`] = `
           <a"
 `;
 
-exports[`<Header /> changes language: zh-CN 1`] = `
+exports[`<Header /> changes language: zh-Hans 1`] = `
 "Snapshot Diff:
 - First value
 + Second value
@@ -154,7 +154,7 @@ exports[`<Header /> changes language: zh-CN 1`] = `
           <a"
 `;
 
-exports[`<Header /> changes language: zh-CN 2`] = `
+exports[`<Header /> changes language: zh-Hans 2`] = `
 "Snapshot Diff:
 - First value
 + Second value
@@ -206,7 +206,7 @@ exports[`<Header /> changes language: zh-CN 2`] = `
           <a"
 `;
 
-exports[`<Header /> changes language: zh-TW 1`] = `
+exports[`<Header /> changes language: zh-Hant 1`] = `
 "Snapshot Diff:
 - First value
 + Second value
@@ -251,14 +251,14 @@ exports[`<Header /> changes language: zh-TW 1`] = `
           <a
 -           class=\\"sc-EHOje hgcoFM\\"
 +           class=\\"sc-EHOje bOTOim\\"
-            title=\\"正體中文\\"
+            title=\\"繁體中文\\"
           >
-            正體中文
+            繁體中文
           </a>
         </div>"
 `;
 
-exports[`<Header /> changes language: zh-TW 2`] = `
+exports[`<Header /> changes language: zh-Hant 2`] = `
 "Snapshot Diff:
 - First value
 + Second value
@@ -303,9 +303,9 @@ exports[`<Header /> changes language: zh-TW 2`] = `
           <a
 -           class=\\"sc-EHOje hgcoFM\\"
 +           class=\\"sc-EHOje bOTOim\\"
-            title=\\"正體中文\\"
+            title=\\"繁體中文\\"
           >
-            正體中文
+            繁體中文
           </a>
         </div>"
 `;
@@ -372,9 +372,9 @@ exports[`<Header /> renders 1`] = `
         </a>
         <a
           class="sc-EHOje hgcoFM"
-          title="正體中文"
+          title="繁體中文"
         >
-          正體中文
+          繁體中文
         </a>
       </div>
     </div>

@@ -10,8 +10,8 @@ import { getPurelanguage } from '../utils'
 export const languages = {
   en: 'English',
   ja: '日本語',
-  'zh-CN': '简体中文',
-  'zh-TW': '正體中文',
+  'zh-Hans': '简体中文',
+  'zh-Hant': '繁體中文',
 }
 
 const Container = styled.div`
