@@ -2,6 +2,9 @@ import * as Sentry from '@sentry/browser'
 import React from 'react'
 import { hydrate, render } from 'react-dom'
 
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
+
 import { App } from './app'
 import './index.css'
 
