@@ -1,8 +1,15 @@
+import * as Sentry from '@sentry/browser'
 import React from 'react'
 import { hydrate, render } from 'react-dom'
 
 import { App } from './app'
 import './index.css'
+
+if (process.env.NODE_ENV === 'production') {
+  Sentry.init({
+    dsn: 'https://119091520e0b47809be0b51bd6313c6d@sentry.io/1505313',
+  })
+}
 
 const rootElement = document.getElementById('root')
 if (rootElement!.hasChildNodes()) {

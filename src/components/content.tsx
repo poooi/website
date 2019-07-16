@@ -1,5 +1,6 @@
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as Sentry from '@sentry/browser'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -145,6 +146,7 @@ export const Content = () => {
         setVersion(result)
       } catch (e) {
         console.error(e)
+        Sentry.captureException(e)
       }
     }
 
