@@ -1,6 +1,6 @@
 import debounce from 'lodash/debounce'
 import times from 'lodash/times'
-import { Fabric, initializeIcons } from 'office-ui-fabric-react'
+import { Fabric, initializeIcons, loadTheme } from 'office-ui-fabric-react'
 import random from 'random'
 import React, { useCallback, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -30,13 +30,12 @@ const Canvas = styled.canvas`
   left: 0;
 `
 
-const Wrapper = styled.div<{ fontFamily?: string }>`
+const Wrapper = styled.div`
   color: ${props => props.theme.palette.neutralPrimary};
   flex: 1;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  font-family: ${props => props.fontFamily};
 `
 
 /**
@@ -129,11 +128,19 @@ export const App = () => {
 
   const fontFamily = getLocaleFontFamily(i18n.language)
 
+  useEffect(() => {
+    loadTheme({
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
+  }, [i18n.language])
+
   return (
     <ThemeProvider theme={lightTheme}>
       <Container>
         <Canvas ref={canvas} />
-        <Wrapper fontFamily={fontFamily}>
+        <Wrapper>
           <Header />
           <Content />
           <Footer />
