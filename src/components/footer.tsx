@@ -15,7 +15,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { getExactLanguage } from '../utils'
 
 const Icon = ({ icon }: { icon: IconProp }) => (
-  <FontAwesomeIcon icon={icon} size="2x" fixedWidth={true} />
+  <FontAwesomeIcon icon={icon} size="lg" fixedWidth={true} />
 )
 
 const Container = styled.div`
@@ -48,23 +48,28 @@ export const Footer = () => {
 
   return (
     <Container>
-      <a href="http://weibo.com/letspoi" title={t('weibo')}>
+      <a href="http://weibo.com/letspoi">
         <Icon icon={faWeibo} />
+        {t('weibo')}
       </a>
       {['zh-Hans', 'zh-Hant'].includes(exact) ? (
-        <a href={t('telegram-group-link')} title={t('telegram')}>
+        <a href={t('telegram-group-link')}>
           <Icon icon={faTelegram} />
+          {t('telegram')}
         </a>
       ) : (
-        <a href={t('discord-channel-link')} title={t('Discord sub-channel')}>
+        <a href={t('discord-channel-link')}>
           <Icon icon={faDiscord} />
+          {t('Discord sub-channel')}
         </a>
       )}
-      <a href="https://github.com/poooi/poi" title={t('github')}>
+      <a href="https://github.com/poooi/poi">
         <Icon icon={faGithub} />
+        {t('github')}
       </a>
-      <a href="https://opencollective.com/poi" title={t('opencollective')}>
+      <a href="https://opencollective.com/poi">
         <Icon icon={faHeart} />
+        {t('opencollective')}
       </a>
     </Container>
   )
