@@ -1,5 +1,6 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Separator } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
@@ -22,15 +23,15 @@ const Container = styled.div`
   text-align: center;
   min-height: 50px;
   line-height: 50px;
-  margin-top: 50px;
   margin-bottom: 1em;
+  color: ${props => props.theme.palette.neutralSecondary};
 
   a {
-    margin: 0 10px;
+    margin: 0 1em;
     transition: 0.3s;
 
     :hover {
-      opacity: 0.8;
+      color: ${props => props.theme.palette.themePrimary};
     }
   }
 
@@ -38,6 +39,10 @@ const Container = styled.div`
     height: 30px;
     width: 30px;
   }
+`
+
+const Copyright = styled.span`
+  margin-right: 4em;
 `
 
 export const Footer = () => {
@@ -48,15 +53,18 @@ export const Footer = () => {
 
   return (
     <Container>
-      <a href="http://weibo.com/letspoi">
-        <Icon icon={faWeibo} />
-        {t('weibo')}
-      </a>
+      <Copyright>© {new Date().getFullYear()} poi Contributors</Copyright>
       {['zh-Hans', 'zh-Hant'].includes(lang) ? (
-        <a href={t('telegram-group-link')}>
-          <Icon icon={faTelegram} />
-          {t('telegram')}
-        </a>
+        <>
+          <a href="http://weibo.com/letspoi">
+            <Icon icon={faWeibo} />
+            {t('weibo')}
+          </a>
+          <a href={t('telegram-group-link')}>
+            <Icon icon={faTelegram} />
+            {t('telegram')}
+          </a>
+        </>
       ) : (
         <a href={t('discord-channel-link')}>
           <Icon icon={faDiscord} />
