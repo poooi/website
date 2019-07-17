@@ -1,17 +1,14 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Separator } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
-import {
-  faDiscord,
-  faGithub,
-  faTelegram,
-  faWeibo,
-} from '@fortawesome/free-brands-svg-icons'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram'
+import { faWeibo } from '@fortawesome/free-brands-svg-icons/faWeibo'
+import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 
 import { getExactLanguage } from '../utils'
 
@@ -29,15 +26,11 @@ const Container = styled.div`
   a {
     margin: 0 1em;
     transition: 0.3s;
+    cursor: pointer;
 
     :hover {
       color: ${props => props.theme.palette.themePrimary};
     }
-  }
-
-  img {
-    height: 30px;
-    width: 30px;
   }
 `
 
