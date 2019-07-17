@@ -1,8 +1,9 @@
 import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
+import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { Dropdown } from 'office-ui-fabric-react'
-import React from 'react'
+import { CommandBarButton } from 'office-ui-fabric-react'
+import React, { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
@@ -14,11 +15,6 @@ export const languages = {
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
-
-const options = map(languages, (value, key) => ({
-  key,
-  text: value,
-}))
 
 const Container = styled.div`
   height: 60px;
@@ -62,24 +58,43 @@ const Spacer = styled.div`
   flex: 1;
 `
 
-const LanguageList = styled.div`
+const CommandBar = styled.div`
   display: flex;
   align-items: center;
   height: 60px;
+  line-height: 60px;
 
-  .svg-inline--fa {
-    padding-right: 1ex;
+  button {
+    height: 60px;
+    padding: 0 1ex;
   }
 `
 
-const StyledDropdown = styled(Dropdown)`
-  width: 6em;
+const Icon = styled(FontAwesomeIcon)`
+  margin-right: 1ex;
 `
 
-export const Header = () => {
+interface IProps {
+  onChangeTheme: () => void
+  isDark: boolean
+}
+
+export const Header = ({ onChangeTheme, isDark }: IProps) => {
   const { t, i18n } = useTranslation()
 
   const lang = getExactLanguage(i18n.language)
+
+  const options = useMemo(
+    () =>
+      map(languages, (value, key) => ({
+        key,
+        onClick: () => {
+          i18n.changeLanguage(key)
+        },
+        text: value,
+      })),
+    [i18n.changeLanguage],
+  )
 
   return (
     <Container>
@@ -89,16 +104,22 @@ export const Header = () => {
           <LinkItem>{t('Plugins')}</LinkItem>
         </div>
         <Spacer />
-        <LanguageList data-testid="language-list">
-          <FontAwesomeIcon icon={faLanguage} />
-          <StyledDropdown
+        <CommandBar>
+          <CommandBarButton onClick={onChangeTheme}>
+            <Icon icon={faSwatchbook} />
+            {t('current-theme')}
+            {t(isDark ? 'Chibaheit' : 'Lilywhite')}
+          </CommandBarButton>
+          <CommandBarButton
+            menuProps={{
+              items: options,
+            }}
             data-testid="language-dropdown"
-            options={options}
-            placeholder="Language"
-            selectedKey={lang}
-            onChange={(event, item) => i18n.changeLanguage(item!.key as string)}
-          />
-        </LanguageList>
+          >
+            <Icon icon={faLanguage} />
+            {t('language')}
+          </CommandBarButton>
+        </CommandBar>
       </Wrapper>
     </Container>
   )

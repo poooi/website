@@ -2,7 +2,7 @@ import debounce from 'lodash/debounce'
 import times from 'lodash/times'
 import { Fabric, initializeIcons, loadTheme } from 'office-ui-fabric-react'
 import random from 'random'
-import React, { useCallback, useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { ThemeProvider } from 'styled-components'
 
@@ -117,7 +117,7 @@ export const App = () => {
 
       drawHexagone(ctx, x, y, 50, 'transparent', 'rgba(0, 0, 0, 0.1)')
     })
-  }, [])
+  }, [canvas])
 
   useEffect(() => {
     drawCanvas()
@@ -136,12 +136,14 @@ export const App = () => {
     })
   }, [i18n.language])
 
+  const [isDark, setIsDark] = useState(false)
+
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <Container>
         <Canvas ref={canvas} />
         <Wrapper>
-          <Header />
+          <Header onChangeTheme={() => setIsDark(!isDark)} isDark={isDark} />
           <Content />
           <Footer />
         </Wrapper>

@@ -1,5 +1,5 @@
 {
-  "language": "正體中文",
+  "language": "繁體中文",
   "name": "poi",
   "description": "可擴展的「艦隊 Collection」瀏覽器",
   "github": "GitHub",
@@ -24,5 +24,8 @@
   "Choose another platform": "選擇其它平臺",
   "Explore": "功能簡介",
   "Plugins": "擴展列表",
-  "lsc": "大型建造中"
+  "lsc": "大型建造中",
+  "current-theme": "主題：",
+  "Chibaheit": "吃吧黑特",
+  "Lilywhite": "莉莉白"
 }
