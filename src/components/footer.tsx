@@ -44,7 +44,7 @@ export const Footer = () => {
   const { t, i18n } = useTranslation()
 
   const { language } = i18n
-  const exact = getExactLanguage(language)
+  const lang = getExactLanguage(language)
 
   return (
     <Container>
@@ -52,7 +52,7 @@ export const Footer = () => {
         <Icon icon={faWeibo} />
         {t('weibo')}
       </a>
-      {['zh-Hans', 'zh-Hant'].includes(exact) ? (
+      {['zh-Hans', 'zh-Hant'].includes(lang) ? (
         <a href={t('telegram-group-link')}>
           <Icon icon={faTelegram} />
           {t('telegram')}

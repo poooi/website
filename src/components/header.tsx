@@ -79,7 +79,7 @@ const StyledDropdown = styled(Dropdown)`
 export const Header = () => {
   const { t, i18n } = useTranslation()
 
-  const exact = getExactLanguage(i18n.language)
+  const lang = getExactLanguage(i18n.language)
 
   return (
     <Container>
@@ -95,7 +95,7 @@ export const Header = () => {
             data-testid="language-dropdown"
             options={options}
             placeholder="Language"
-            selectedKey={exact}
+            selectedKey={lang}
             onChange={(event, item) => i18n.changeLanguage(item!.key as string)}
           />
         </LanguageList>
