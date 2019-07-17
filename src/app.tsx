@@ -123,7 +123,7 @@ export const App = () => {
   useEffect(() => {
     drawCanvas()
     window.addEventListener('resize', debounce(drawCanvas, 100))
-  }, [])
+  }, [drawCanvas])
 
   const { i18n } = useTranslation()
 
