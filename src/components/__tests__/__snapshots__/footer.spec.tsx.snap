@@ -7,11 +7,10 @@ exports[`<Footer /> renders with non zh 1`] = `
   >
     <a
       href="http://weibo.com/letspoi"
-      title="Weibo"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-lg "
         data-icon="weibo"
         data-prefix="fab"
         focusable="false"
@@ -24,14 +23,14 @@ exports[`<Footer /> renders with non zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Weibo
     </a>
     <a
       href="https://discordapp.com/channels/118339803660943369/367575898313981952"
-      title="Discord sub-channel"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-discord fa-w-14 fa-fw fa-2x "
+        class="svg-inline--fa fa-discord fa-w-14 fa-fw fa-lg "
         data-icon="discord"
         data-prefix="fab"
         focusable="false"
@@ -44,14 +43,14 @@ exports[`<Footer /> renders with non zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Discord
     </a>
     <a
       href="https://github.com/poooi/poi"
-      title="GitHub"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-lg "
         data-icon="github"
         data-prefix="fab"
         focusable="false"
@@ -64,14 +63,14 @@ exports[`<Footer /> renders with non zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      GitHub
     </a>
     <a
       href="https://opencollective.com/poi"
-      title="Help us via OpenCollective"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-lg "
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -84,6 +83,7 @@ exports[`<Footer /> renders with non zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Help us via OpenCollective
     </a>
   </div>
 </DocumentFragment>
@@ -96,11 +96,10 @@ exports[`<Footer /> renders with zh 1`] = `
   >
     <a
       href="http://weibo.com/letspoi"
-      title="Weibo"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-weibo fa-w-16 fa-fw fa-lg "
         data-icon="weibo"
         data-prefix="fab"
         focusable="false"
@@ -113,14 +112,14 @@ exports[`<Footer /> renders with zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Weibo
     </a>
     <a
       href="https://t.me/joinchat/AoMUpkCr6B8uH7EUewq6eQ"
-      title="Telegram"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-telegram fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-telegram fa-w-16 fa-fw fa-lg "
         data-icon="telegram"
         data-prefix="fab"
         focusable="false"
@@ -133,14 +132,14 @@ exports[`<Footer /> renders with zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Telegram
     </a>
     <a
       href="https://github.com/poooi/poi"
-      title="GitHub"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-github fa-w-16 fa-fw fa-lg "
         data-icon="github"
         data-prefix="fab"
         focusable="false"
@@ -153,14 +152,14 @@ exports[`<Footer /> renders with zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      GitHub
     </a>
     <a
       href="https://opencollective.com/poi"
-      title="Help us via OpenCollective"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-2x "
+        class="svg-inline--fa fa-heart fa-w-16 fa-fw fa-lg "
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -173,6 +172,7 @@ exports[`<Footer /> renders with zh 1`] = `
           fill="currentColor"
         />
       </svg>
+      Help us via OpenCollective
     </a>
   </div>
 </DocumentFragment>
