@@ -19,8 +19,7 @@ export const languages = {
 const Container = styled.div`
   height: 60px;
 
-  background-color: white;
-  border-bottom: 1px solid #eee;
+  background-color: ${props => props.theme.palette.white};
 `
 
 const Wrapper = styled.div`
@@ -65,7 +64,7 @@ const CommandBar = styled.div`
   line-height: 60px;
 
   button {
-    height: 60px;
+    height: 44px;
     padding: 0 1ex;
   }
 `

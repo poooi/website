@@ -1,6 +1,7 @@
 import debounce from 'lodash/debounce'
 import times from 'lodash/times'
 import { Fabric, initializeIcons, loadTheme } from 'office-ui-fabric-react'
+import { rgba } from 'polished'
 import random from 'random'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -28,6 +29,8 @@ const Canvas = styled.canvas`
   position: fixed;
   top: 0;
   left: 0;
+  background-color: ${props => props.theme.palette.white};
+  transition: 0.3s;
 `
 
 const Wrapper = styled.div`
@@ -87,7 +90,23 @@ const getRandomXY = (w: number, h: number) => {
   return { x, y }
 }
 
+const choiceDark = localStorage.getItem('theme') === 'dark'
+
 export const App = () => {
+  const { i18n } = useTranslation()
+
+  const fontFamily = getLocaleFontFamily(i18n.language)
+
+  useEffect(() => {
+    loadTheme({
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
+  }, [i18n.language])
+
+  const [isDark, setIsDark] = useState(choiceDark)
+
   const canvas = useRef<HTMLCanvasElement>(null)
 
   const drawCanvas = useCallback(() => {
@@ -110,33 +129,39 @@ export const App = () => {
     times(30, () => {
       const { x, y } = getRandomXY(w, h)
 
-      drawHexagone(ctx, x, y, 50, 'rgba(0, 0, 0, 0.1)', 'transparent')
+      drawHexagone(
+        ctx,
+        x,
+        y,
+        50,
+        `${rgba((isDark ? darkTheme : lightTheme).palette.black, 0.1)}`,
+        'transparent',
+      )
     })
     times(30, () => {
       const { x, y } = getRandomXY(w, h)
 
-      drawHexagone(ctx, x, y, 50, 'transparent', 'rgba(0, 0, 0, 0.1)')
+      drawHexagone(
+        ctx,
+        x,
+        y,
+        50,
+        'transparent',
+        `${rgba((isDark ? darkTheme : lightTheme).palette.black, 0.1)}`,
+      )
     })
-  }, [canvas])
+  }, [canvas, isDark])
 
   useEffect(() => {
     drawCanvas()
     window.addEventListener('resize', debounce(drawCanvas, 100))
-  }, [drawCanvas])
-
-  const { i18n } = useTranslation()
-
-  const fontFamily = getLocaleFontFamily(i18n.language)
+  }, [])
 
   useEffect(() => {
-    loadTheme({
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-  }, [i18n.language])
-
-  const [isDark, setIsDark] = useState(false)
+    loadTheme(isDark ? darkTheme : lightTheme)
+    drawCanvas()
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  }, [isDark])
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>

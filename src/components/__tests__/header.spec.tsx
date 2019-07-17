@@ -1,9 +1,10 @@
 import { getByText } from '@testing-library/dom'
-import { act, fireEvent, render } from '@testing-library/react'
+import { act, fireEvent } from '@testing-library/react'
 import _ from 'lodash'
 import React from 'react'
 
 import { i18n } from '../../i18n'
+import { renderWithTheme } from '../../testing-utils'
 import { Header, languages } from '../header'
 
 const noop = () => {
@@ -12,7 +13,7 @@ const noop = () => {
 
 describe('<Header />', () => {
   it('renders', () => {
-    const { asFragment, getByTestId, baseElement } = render(
+    const { asFragment, getByTestId, baseElement } = renderWithTheme(
       <Header isDark={true} onChangeTheme={noop} />,
     )
     const dropdown = getByTestId('language-dropdown')
@@ -24,7 +25,7 @@ describe('<Header />', () => {
   })
 
   it('changes language', () => {
-    const { getByTestId, asFragment, baseElement, debug } = render(
+    const { getByTestId, asFragment, baseElement, debug } = renderWithTheme(
       <Header isDark={true} onChangeTheme={noop} />,
     )
     const origin = asFragment()

@@ -5,6 +5,8 @@ import { hydrate, render } from 'react-dom'
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
 
+import 'modern-normalize/modern-normalize.css'
+
 import { App } from './app'
 import './index.css'
 

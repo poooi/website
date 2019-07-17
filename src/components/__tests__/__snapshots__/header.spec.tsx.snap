@@ -325,7 +325,7 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
 exports[`<Header /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kFhlbX"
+    class="sc-bdVaJa krFcVk"
   >
     <div
       class="sc-bwzfXH hYWPlG"
@@ -346,7 +346,7 @@ exports[`<Header /> renders 1`] = `
         class="sc-bxivhb hYiooe"
       />
       <div
-        class="sc-ifAKCX iaTSb"
+        class="sc-ifAKCX gmRkjb"
       >
         <button
           class="ms-Button ms-Button--commandBar root-46"
