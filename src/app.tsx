@@ -99,6 +99,7 @@ export const App = () => {
 
   useEffect(() => {
     loadTheme({
+      ...(isDark ? darkTheme : lightTheme),
       defaultFontStyle: {
         fontFamily,
       },
@@ -158,7 +159,12 @@ export const App = () => {
   }, [])
 
   useEffect(() => {
-    loadTheme(isDark ? darkTheme : lightTheme)
+    loadTheme({
+      ...(isDark ? darkTheme : lightTheme),
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
     drawCanvas()
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
   }, [isDark])

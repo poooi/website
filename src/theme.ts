@@ -28,5 +28,3 @@ export const darkTheme: DefaultTheme = {
 export const lightTheme: DefaultTheme = {
   palette: colorLight as IPalette,
 }
-
-loadTheme(lightTheme)
