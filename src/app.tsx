@@ -5,7 +5,7 @@ import { rgba } from 'polished'
 import random from 'random'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import { darkTheme, getLocaleFontFamily, lightTheme } from './theme'
 
@@ -16,6 +16,13 @@ import { Header } from './components/header'
 import './i18n'
 
 initializeIcons()
+
+const GlobalStyle = createGlobalStyle`
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+`
 
 const Container = styled(Fabric)`
   height: 100vh;
@@ -172,6 +179,7 @@ export const App = () => {
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <Container>
+        <GlobalStyle />
         <Canvas ref={canvas} />
         <Wrapper>
           <Header onChangeTheme={() => setIsDark(!isDark)} isDark={isDark} />
