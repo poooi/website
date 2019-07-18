@@ -3,9 +3,11 @@ import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
 import { CommandBarButton } from 'office-ui-fabric-react'
-import React, { useMemo } from 'react'
+import React, { useContext, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
+
+import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
 
 import { getExactLanguage } from '../utils'
 
@@ -73,15 +75,11 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: 1ex;
 `
 
-interface IProps {
-  onChangeTheme: () => void
-  isDark: boolean
-}
-
-export const Header = ({ onChangeTheme, isDark }: IProps) => {
+export const Header = () => {
   const { t, i18n } = useTranslation()
 
-  const lang = getExactLanguage(i18n.language)
+  const dispatch = useContext(DispatchThemeChangeContext)
+  const isDark = useContext(ThemeIsDarkContext)
 
   const options = useMemo(
     () =>
@@ -104,7 +102,7 @@ export const Header = ({ onChangeTheme, isDark }: IProps) => {
         </div>
         <Spacer />
         <CommandBar>
-          <CommandBarButton onClick={onChangeTheme}>
+          <CommandBarButton onClick={dispatch}>
             <Icon icon={faSwatchbook} />
             {t('current-theme')}
             {t(isDark ? 'Chibaheit' : 'Lilywhite')}
