@@ -1,12 +1,10 @@
-import { Fabric, initializeIcons, loadTheme } from 'office-ui-fabric-react'
-import React, { useEffect, useReducer } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Fabric, initializeIcons } from 'office-ui-fabric-react'
+import React, { useReducer } from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import {
   darkTheme,
   DispatchThemeChangeContext,
-  getLocaleFontFamily,
   lightTheme,
   ThemeIsDarkContext,
 } from './theme'
@@ -45,23 +43,10 @@ const Wrapper = styled.div`
 const choiceDark = localStorage.getItem('theme') === 'dark'
 
 export const App = () => {
-  const { i18n } = useTranslation()
-
-  const fontFamily = getLocaleFontFamily(i18n.language)
-
   const [isDark, dispatch] = useReducer(
     (state: boolean, value: any) => !state,
     choiceDark,
   )
-
-  useEffect(() => {
-    loadTheme({
-      ...(isDark ? darkTheme : lightTheme),
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-  }, [i18n.language, isDark])
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>

@@ -2,12 +2,18 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { CommandBarButton } from 'office-ui-fabric-react'
-import React, { useContext, useMemo, useState } from 'react'
+import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
+import React, { useContext, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
-import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
+import {
+  darkTheme,
+  DispatchThemeChangeContext,
+  getLocaleFontFamily,
+  lightTheme,
+  ThemeIsDarkContext,
+} from '../theme'
 
 import { getExactLanguage } from '../utils'
 
@@ -78,6 +84,8 @@ const Icon = styled(FontAwesomeIcon)`
 export const Header = () => {
   const { t, i18n } = useTranslation()
 
+  const fontFamily = getLocaleFontFamily(i18n.language)
+
   const dispatch = useContext(DispatchThemeChangeContext)
   const isDark = useContext(ThemeIsDarkContext)
 
@@ -92,6 +100,15 @@ export const Header = () => {
       })),
     [i18n.changeLanguage],
   )
+
+  useEffect(() => {
+    loadTheme({
+      ...(isDark ? darkTheme : lightTheme),
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
+  }, [i18n.language, isDark])
 
   return (
     <Container>
