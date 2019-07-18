@@ -13,9 +13,7 @@ const noop = () => {
 
 describe('<Header />', () => {
   it('renders', () => {
-    const { asFragment, getByTestId, baseElement } = renderWithTheme(
-      <Header isDark={true} onChangeTheme={noop} />,
-    )
+    const { asFragment, getByTestId, baseElement } = renderWithTheme(<Header />)
     const dropdown = getByTestId('language-dropdown')
     fireEvent.click(dropdown)
     const layer = baseElement.querySelector('.ms-Layer')
@@ -26,7 +24,7 @@ describe('<Header />', () => {
 
   it('changes language', () => {
     const { getByTestId, asFragment, baseElement, debug } = renderWithTheme(
-      <Header isDark={true} onChangeTheme={noop} />,
+      <Header />,
     )
     const origin = asFragment()
     _.each(languages, (value, name) => {
