@@ -22,29 +22,6 @@ const Title = styled.h1`
   font-weight: normal;
 `
 
-const Loading = styled.div`
-  display: flex;
-  justify-content: center;
-  color: ${props => props.theme.palette.themePrimary};
-  font-size: 2em;
-
-  animation: loading 2s infinite;
-
-  @keyframes loading {
-    0% {
-      opacity: 0.2;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0.2;
-    }
-  }
-`
-
 const Name = styled.span`
   font-size: 100px;
 
@@ -117,7 +94,7 @@ export const Content = () => {
       <Description>
         <TypeCat text={t('description')} />
       </Description>
-      <Suspense fallback={<Loading>{t('Now Loading')}</Loading>}>
+      <Suspense fallback={<div />}>
         <IconLoader />
         <Download />
       </Suspense>
