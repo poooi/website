@@ -1,5 +1,5 @@
 import { createFontStyles, IPalette } from '@uifabric/styling'
-import { loadTheme } from 'office-ui-fabric-react'
+import { createContext } from 'react'
 import { DefaultTheme } from 'styled-components'
 
 import colorDark from './resources/colors/dark.json'
@@ -28,3 +28,11 @@ export const darkTheme: DefaultTheme = {
 export const lightTheme: DefaultTheme = {
   palette: colorLight as IPalette,
 }
+
+export const DispatchThemeChangeContext = createContext<(value: any) => void>(
+  () => {
+    /* */
+  },
+)
+
+export const ThemeIsDarkContext = createContext<boolean>(true)
