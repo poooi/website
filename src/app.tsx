@@ -1,4 +1,3 @@
-import { Fabric, initializeIcons } from 'office-ui-fabric-react'
 import React, { useReducer } from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
@@ -16,8 +15,6 @@ import { Header } from './components/header'
 
 import './i18n'
 
-initializeIcons()
-
 const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
@@ -25,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Container = styled(Fabric)`
+const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;

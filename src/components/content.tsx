@@ -7,6 +7,7 @@ import { TypeCat } from './type-cat'
 import poi from '../assets/poi.png'
 
 const Download = lazy(() => import('./download'))
+const IconLoader = lazy(() => import('./icon-loader'))
 
 const Container = styled.div`
   flex: 1;
@@ -60,6 +61,7 @@ export const Content = () => {
         <TypeCat text={t('description')} />
       </Description>
       <Suspense fallback={<div />}>
+        <IconLoader />
         <Download />
       </Suspense>
     </Container>
