@@ -1,4 +1,4 @@
-import { getByText } from '@testing-library/dom'
+import { getByText, wait } from '@testing-library/dom'
 import { act, fireEvent } from '@testing-library/react'
 import _ from 'lodash'
 import React from 'react'
@@ -12,10 +12,10 @@ const noop = () => {
 }
 
 describe('<Header />', () => {
-  it('renders', () => {
+  it('renders', async () => {
     const { asFragment, getByTestId, baseElement } = renderWithTheme(<Header />)
-    const dropdown = getByTestId('language-dropdown')
-    fireEvent.click(dropdown)
+    await wait(() => getByTestId('language-dropdown'))
+    fireEvent.click(getByTestId('language-dropdown'))
     const layer = baseElement.querySelector('.ms-Layer')
     expect(layer).toBeDefined()
     expect(asFragment()).toMatchSnapshot()
@@ -28,8 +28,7 @@ describe('<Header />', () => {
     )
     const origin = asFragment()
     _.each(languages, (value, name) => {
-      const dropdown = getByTestId('language-dropdown')
-      fireEvent.click(dropdown)
+      fireEvent.click(getByTestId('language-dropdown'))
       const layer = baseElement.querySelector('.ms-ContextualMenu-list.is-open')
       expect(layer).toBeTruthy()
       fireEvent.click(getByText(layer as HTMLElement, value))
