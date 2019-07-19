@@ -8008,10 +8008,10 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-office-ui-fabric-react@^7.11.1:
-  version "7.11.1"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.11.1.tgz#b6b287101ddc0377fb6e6c48d8648ac7aa38302e"
-  integrity sha512-D8tvqSB+7jTX7TNV3MKpPUIlu27W9qwFnoWEbTSarS8a//ALtAFp93CowXDJ1b7medh+rGjWQlUXFdtsB3PQew==
+office-ui-fabric-react@^7.12.0:
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.12.0.tgz#fb89f884cfe0ad83f851a824c301be9770824560"
+  integrity sha512-YyOYrJju23Y3gvVk6RF1eSp+AtvG1tYvRsfNHWqJFcMI9HXRHaYrgdEXfTVTvrHDV3DMICg8gVvMNZUSrhvLLA==
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
     "@uifabric/foundation" "^7.0.3"
