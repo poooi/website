@@ -5,7 +5,7 @@ import map from 'lodash/map'
 import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
 import React, { useContext, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import {
   darkTheme,
@@ -21,6 +21,12 @@ export const languages = {
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
+
+const GlobalFontFamily = createGlobalStyle<{ fontFamily?: string }>`
+  body {
+    font-family: ${props => props.fontFamily};
+  }
+`
 
 const CommandBar = styled.div`
   display: flex;
@@ -69,6 +75,7 @@ const HeaderCommand = () => {
 
   return (
     <CommandBar>
+      <GlobalFontFamily fontFamily={fontFamily} />
       <CommandBarButton onClick={dispatch}>
         <Icon icon={faSwatchbook} />
         {t('current-theme')}
