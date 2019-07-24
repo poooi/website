@@ -3,7 +3,7 @@ import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
 import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
-import React, { useContext, useEffect, useMemo } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { createGlobalStyle } from 'styled-components'
 
@@ -47,7 +47,9 @@ const Icon = styled(FontAwesomeIcon)`
 const HeaderCommand = () => {
   const { t, i18n } = useTranslation()
 
-  const fontFamily = getLocaleFontFamily(i18n.language)
+  const [fontFamily, setFontfamily] = useState(
+    getLocaleFontFamily(i18n.language),
+  )
 
   const dispatch = useContext(DispatchThemeChangeContext)
   const isDark = useContext(ThemeIsDarkContext)
@@ -65,13 +67,12 @@ const HeaderCommand = () => {
   )
 
   useEffect(() => {
-    loadTheme({
-      ...(isDark ? darkTheme : lightTheme),
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-  }, [i18n.language, isDark])
+    loadTheme(isDark ? darkTheme : lightTheme)
+  }, [isDark])
+
+  useEffect(() => {
+    setFontfamily(getLocaleFontFamily(i18n.language))
+  }, [i18n.language])
 
   return (
     <CommandBar>
