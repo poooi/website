@@ -1,6 +1,6 @@
 import { render, RenderResult } from '@testing-library/react'
 import React, { ReactElement } from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components/macro'
 import { lightTheme } from './theme'
 
 export const renderWithTheme = (node: ReactElement): RenderResult => {

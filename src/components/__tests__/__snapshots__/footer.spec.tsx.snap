@@ -3,10 +3,10 @@
 exports[`<Footer /> renders with non zh 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gcvdrk"
+    class="footer__Container-iekji0-0 jhtRTb"
   >
     <span
-      class="sc-bwzfXH elurnn"
+      class="footer__Copyright-iekji0-1 HyyQe"
     >
       © 2019 poi Contributors
     </span>
@@ -77,10 +77,10 @@ exports[`<Footer /> renders with non zh 1`] = `
 exports[`<Footer /> renders with zh 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gcvdrk"
+    class="footer__Container-iekji0-0 jhtRTb"
   >
     <span
-      class="sc-bwzfXH elurnn"
+      class="footer__Copyright-iekji0-1 HyyQe"
     >
       © 2019 poi Contributors
     </span>

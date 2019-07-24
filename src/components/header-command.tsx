@@ -5,7 +5,7 @@ import map from 'lodash/map'
 import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components/macro'
 
 import {
   darkTheme,

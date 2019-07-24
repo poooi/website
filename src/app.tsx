@@ -1,5 +1,8 @@
 import React, { useReducer } from 'react'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import styled, {
+  createGlobalStyle,
+  ThemeProvider,
+} from 'styled-components/macro'
 
 import {
   darkTheme,

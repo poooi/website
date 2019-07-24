@@ -3,17 +3,17 @@
 exports[`<TypeCat /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa crtefa"
+    class="type-cat__Container-sc-1aso1bi-0 hfpvjP"
   >
     <div
-      class="sc-bwzfXH itrWxH"
+      class="type-cat__Mirror-sc-1aso1bi-1 iFyfZZ"
     >
       <div
         data-testid="typist"
       />
     </div>
     <div
-      class="sc-bwzfXH hSjhtd"
+      class="type-cat__Mirror-sc-1aso1bi-1 bOeZEH"
       data-testid="typing"
     >
       Hello World

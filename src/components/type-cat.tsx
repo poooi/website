@@ -1,6 +1,6 @@
 import React from 'react'
 import Typist from 'react-typist'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 const Container = styled.div`
   display: inline-block;

@@ -19,20 +19,20 @@ exports[`<Header /> changes language: ja 1`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           機能紹介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           プラグイン一覧
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -71,20 +71,20 @@ exports[`<Header /> changes language: ja 2`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           機能紹介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           プラグイン一覧
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -123,20 +123,20 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           功能简介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           插件列表
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -175,20 +175,20 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           功能简介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           插件列表
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -227,20 +227,20 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           功能簡介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           擴展列表
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -279,20 +279,20 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
       >
         <div>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Explore
 +           功能簡介
           </a>
           <a
-            class=\\"sc-htpNat jwNqkS\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
           >
 -           Plugins
 +           擴展列表
           </a>
         </div>
         <div
-          class=\\"sc-bxivhb hYiooe\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
 @@ -44,11 +44,11 @@
                 <path
@@ -325,28 +325,28 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
 exports[`<Header /> renders 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa krFcVk"
+    class="header__Container-sc-1tvdqys-0 hMXnJ"
   >
     <div
-      class="sc-bwzfXH hYWPlG"
+      class="header__Wrapper-sc-1tvdqys-1 UEolp"
     >
       <div>
         <a
-          class="sc-htpNat jwNqkS"
+          class="header__LinkItem-sc-1tvdqys-2 jbpaBb"
         >
           Explore
         </a>
         <a
-          class="sc-htpNat jwNqkS"
+          class="header__LinkItem-sc-1tvdqys-2 jbpaBb"
         >
           Plugins
         </a>
       </div>
       <div
-        class="sc-bxivhb hYiooe"
+        class="header__Spacer-sc-1tvdqys-3 jcPYuy"
       />
       <div
-        class="sc-ifAKCX gmRkjb"
+        class="header-command__CommandBar-sc-12edzi8-0 kVKwvn"
       >
         <button
           class="ms-Button ms-Button--commandBar root-55"
@@ -358,7 +358,7 @@ exports[`<Header /> renders 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-swatchbook fa-w-16 sc-EHOje fWsleF"
+              class="svg-inline--fa fa-swatchbook fa-w-16 header-command__Icon-sc-12edzi8-1 ljyjkW"
               data-icon="swatchbook"
               data-prefix="fas"
               focusable="false"
@@ -388,7 +388,7 @@ exports[`<Header /> renders 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-language fa-w-20 sc-EHOje fWsleF"
+              class="svg-inline--fa fa-language fa-w-20 header-command__Icon-sc-12edzi8-1 ljyjkW"
               data-icon="language"
               data-prefix="fas"
               focusable="false"

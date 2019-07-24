@@ -1,6 +1,6 @@
 import { createFontStyles, IPalette } from '@uifabric/styling'
 import { createContext } from 'react'
-import { DefaultTheme } from 'styled-components'
+import { DefaultTheme } from 'styled-components/macro'
 
 import colorDark from './resources/colors/dark.json'
 import colorLight from './resources/colors/light.json'

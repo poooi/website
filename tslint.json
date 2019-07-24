@@ -10,7 +10,8 @@
     "no-implicit-dependencies": [true, ["@testing-library/react", "@testing-library/dom"]],
     "jsx-no-lambda": false,
     "no-submodule-imports": false,
-    "no-console": [true, "log"]
+    "no-console": [true, "log"],
+    "import-blacklist": [true, "styled-components"]
   },
   "linterOptions": {
     "exclude": [

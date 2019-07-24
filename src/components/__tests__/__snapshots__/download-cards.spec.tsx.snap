@@ -3,10 +3,10 @@
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gbaexa"
+    class="download-cards__Container-k88p0k-0 bLXmwT"
   >
     <div
-      class="sc-bwzfXH gFmFes"
+      class="download-cards__Header-k88p0k-1 iGWqQb"
     >
       Download for Linux (x64)
     </div>
@@ -15,13 +15,13 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="sc-htpNat kEBVTB"
+        class="download-cards__Button-k88p0k-2 jBgiZI"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="sc-bxivhb gEfMvB"
+          class="download-cards__Description-k88p0k-3 fGTQht"
         >
           Stable, for most users
         </div>
@@ -34,10 +34,10 @@ exports[`<DownloadCards /> renders with beta 1`] = `
 exports[`<DownloadCards /> renders with invalid target 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gbaexa"
+    class="download-cards__Container-k88p0k-0 bLXmwT"
   >
     <div
-      class="sc-bwzfXH gFmFes"
+      class="download-cards__Header-k88p0k-1 iGWqQb"
     >
       Download for chiba
     </div>
@@ -46,13 +46,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       href="https://github.com/poooi/poi/releases"
     >
       <button
-        class="sc-htpNat kEBVTB"
+        class="download-cards__Button-k88p0k-2 jBgiZI"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="sc-bxivhb gEfMvB"
+          class="download-cards__Description-k88p0k-3 fGTQht"
         >
           Stable, for most users
         </div>
@@ -65,10 +65,10 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 exports[`<DownloadCards /> renders without beta 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gbaexa"
+    class="download-cards__Container-k88p0k-0 bLXmwT"
   >
     <div
-      class="sc-bwzfXH gFmFes"
+      class="download-cards__Header-k88p0k-1 iGWqQb"
     >
       Download for Linux (x64)
     </div>
@@ -77,13 +77,13 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="sc-htpNat kEBVTB"
+        class="download-cards__Button-k88p0k-2 jBgiZI"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="sc-bxivhb gEfMvB"
+          class="download-cards__Description-k88p0k-3 fGTQht"
         >
           Stable, for most users
         </div>
@@ -93,13 +93,13 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
     >
       <button
-        class="sc-htpNat jBXyeu"
+        class="download-cards__Button-k88p0k-2 iwDgCG"
       >
         <div>
           v10.3.0
         </div>
         <div
-          class="sc-bxivhb gEfMvB"
+          class="download-cards__Description-k88p0k-3 fGTQht"
         >
           Beta, for new features
         </div>

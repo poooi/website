@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 import { TypeCat } from './type-cat'
 

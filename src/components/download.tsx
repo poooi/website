@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { UAParser } from 'ua-parser-js'
 
 import { DownloadCards, IVersion } from './download-cards'

@@ -3,7 +3,7 @@ import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
 
