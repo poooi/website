@@ -1780,7 +1780,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.3.1", "@uifabric/styling@^7.4.0":
+"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-7.4.0.tgz#898d5e6b8028cd3e12cc3aa8a2c19c180b9fc52f"
   integrity sha512-JsTqeaQ5Tp/i8FcvzZg/a4u8+RwLrNZv9JywLnyiFbd5l6hwL+UjlOoajHLpJew+7eFqV2S/YGv/ButXpJi0vg==
@@ -5623,10 +5623,10 @@ i18next-browser-languagedetector@^3.0.2:
   resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-3.0.2.tgz#dddfdfae8702d79aeae13682063b3d05c3614a03"
   integrity sha512-0gQK7FAHDPsJGHvPlfIgXZlZUHlgQy0I6WFFotvreK8m0fG33lkq7jvBvef/8cFeJYBtjYR9GbQF6/DxGCaneA==
 
-i18next@^17.0.6:
-  version "17.0.6"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.6.tgz#01079cc2bcef408139ea8ce24d18ac0d512fbe85"
-  integrity sha512-bdNhzhcM6RG5m82RypVguCrAQNie/ycxW0Q5C6K9UDWD5hqApZfdJFbj4Ikz9jxIR+Ja1eg0yCQLhlCT+opwIg==
+i18next@^17.0.8:
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.8.tgz#0c7113a88ad156eb37b9025d83a7684e1bbc2e18"
+  integrity sha512-oojOrqEPQzKo1HDMDDOl19zTM/EaDwBRPobUSD4kEjNoTi2oERvUbngK2lkIm9nOGddh55jbMGbm6fusMBeoKQ==
   dependencies:
     "@babel/runtime" "^7.3.1"
 
