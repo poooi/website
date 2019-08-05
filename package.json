@@ -20,7 +20,7 @@
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
-    "react-i18next": "^10.11.4",
+    "react-i18next": "^10.11.5",
     "react-scripts": "3.0.1",
     "react-typist": "^2.0.5",
     "semver": "^6.3.0",
