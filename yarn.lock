@@ -1780,7 +1780,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.3.1", "@uifabric/styling@^7.4.0":
+"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-7.4.0.tgz#898d5e6b8028cd3e12cc3aa8a2c19c180b9fc52f"
   integrity sha512-JsTqeaQ5Tp/i8FcvzZg/a4u8+RwLrNZv9JywLnyiFbd5l6hwL+UjlOoajHLpJew+7eFqV2S/YGv/ButXpJi0vg==
@@ -8066,10 +8066,10 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-office-ui-fabric-react@^7.19.1:
-  version "7.19.1"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.19.1.tgz#985021c2b85c2509d817237309badcc9da1d55ae"
-  integrity sha512-mBRxC7Np73jqKt8nXSu6jCFYFL/qcuXP1hwqvAkQylefTUoXJ7fD001SScrySWLokD5TAb+k4pQsmliErR7B8w==
+office-ui-fabric-react@^7.20.0:
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.20.0.tgz#aefae63039153cb3e5abf79f57cfc60a17080a97"
+  integrity sha512-5SlEAWQ46fvVxTgrgGDZQScHjNJ9UE7YQvTe8kFbq4sbQd9z+DekGTfEI0UsLVTGQZ8L46heTjcQsGT6PvLUcg==
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
     "@uifabric/foundation" "^7.0.3"
