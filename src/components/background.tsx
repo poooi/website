@@ -123,15 +123,5 @@ export const Background = () => {
     window.addEventListener('resize', drawCanvasRef.current)
   }, [canvas, theme])
 
-  // useEffect(() => {
-  //   loadTheme({
-  //     ...(isDark ? darkTheme : lightTheme),
-  //     defaultFontStyle: {
-  //       fontFamily,
-  //     },
-  //   })
-  //   drawCanvas()
-  //   localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  // }, [isDark])
   return <Canvas ref={canvas} />
 }

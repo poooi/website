@@ -67,8 +67,22 @@ const HeaderCommand = () => {
   )
 
   useEffect(() => {
-    loadTheme(isDark ? darkTheme : lightTheme)
-  }, [isDark])
+    loadTheme({
+      ...(isDark ? darkTheme : lightTheme),
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
+  }, [])
+
+  useEffect(() => {
+    loadTheme({
+      ...(isDark ? darkTheme : lightTheme),
+      defaultFontStyle: {
+        fontFamily,
+      },
+    })
+  }, [i18n.language, isDark])
 
   useEffect(() => {
     setFontfamily(getLocaleFontFamily(i18n.language))
