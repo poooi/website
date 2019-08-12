@@ -121,12 +121,10 @@ exports[`<Content /> renders 1`] = `
           >
             <i
               aria-hidden="true"
-              class="ms-Dropdown-caretDown caretDown-70"
+              class="ms-Dropdown-caretDown caretDown-69"
               data-icon-name="ChevronDown"
               role="presentation"
-            >
-              
-            </i>
+            />
           </span>
         </div>
       </div>
