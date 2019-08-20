@@ -7,7 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "@sentry/browser": "^5.6.1",
+    "@sentry/browser": "^5.6.2",
     "@uifabric/styling": "^7.5.0",
     "classnames": "^2.2.6",
     "i18next": "^17.0.11",
