@@ -1749,10 +1749,10 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.4.1", "@uifabric/styling@^7.5.1":
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-7.5.1.tgz#05d4a2d188b7efb56200bb2a983b1fb3ed8c32d0"
-  integrity sha512-WXp45zgll6GgViVkmduFDkRnJw0SMwHXYj5VO7WbSqRF1sg0ZpUpBvaaWKWJvMYJ7sqNSGG8jTDvC4UYZcIF+w==
+"@uifabric/styling@^7.2.1", "@uifabric/styling@^7.4.1", "@uifabric/styling@^7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-7.6.0.tgz#433083e623030cb441522f4c473101a69cad5c7d"
+  integrity sha512-noOUxhcolVxi59TiaO4bBMxAgKWMWCJ0OS+nRLafdCwSkrIf6l+Fs3L/1xRFgNoANcqdLxnfE5DG/7QC0NNW3g==
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
     "@uifabric/merge-styles" "^7.4.0"
