@@ -1611,10 +1611,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-typist@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/react-typist/-/react-typist-2.0.0.tgz#8ba6135efbd731757aff38d07c201a7d27cef84f"
-  integrity sha512-whoNrWBhxBGhLTnSO05TYjjRJIzPmU1PEiguZFanTG/vru9uYAwGeo3q8OgKYRYwIUedEV6FjmbSBR5a9ETtfg==
+"@types/react-typist@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-typist/-/react-typist-2.0.1.tgz#c3d8d9dc29598737a6b53b087404c0e10485b119"
+  integrity sha512-SxKLwnX8feAB565481AuwezqJ+DWjtri6pgGLzw3SzX/o/UT9kadp1A6fBrRNqJiGOsxh59NE+7KOOVeTkVV0Q==
   dependencies:
     "@types/react" "*"
 
