@@ -9672,10 +9672,10 @@ react-error-overlay@^6.0.1:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.1.tgz#b8d3cf9bb991c02883225c48044cb3ee20413e0f"
   integrity sha512-V9yoTr6MeZXPPd4nV/05eCBvGH9cGzc52FN8fs0O0TVQ3HYYf1n7EgZVtHbldRq5xU9zEzoXIITjYNIfxDDdUw==
 
-react-i18next@^10.12.3:
-  version "10.12.3"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.12.3.tgz#50a537a0892a818f643bc1154d568a9f8fbb1aa2"
-  integrity sha512-D9AkjKA4C4B72CX3Fd33ZCv2wfxfYnNRofybik8+2J6yW7307K8ay6mMECBVCtbSOpyfg+PFIyC4dy9OaIvNTA==
+react-i18next@^10.12.4:
+  version "10.12.4"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.12.4.tgz#181d8ff4f64b2f6a738a524a092a43e728ad807a"
+  integrity sha512-4Mmbp3VOcVwppuawSgJsboM0PPtm/GcwglpuUwvGVHbTPX/LeTdCyFIL/SNWN6XmU0Kw3Hs2FXvNIqNQQPh+pA==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"
