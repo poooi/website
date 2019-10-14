@@ -82,10 +82,10 @@ exports[`<Content /> renders 1`] = `
       class="download__CenterContainer-sc-96zveq-0 gbpixt"
     >
       <div
-        class="ms-Dropdown-container download__StyledDropdown-sc-96zveq-2 kamXyI root-53"
+        class="ms-Dropdown-container download__StyledDropdown-sc-96zveq-2 kamXyI root-50"
       >
         <label
-          class="ms-Label ms-Dropdown-label label-71"
+          class="ms-Label ms-Dropdown-label label-68"
           for="Dropdown1"
           id="Dropdown1-label"
         >
@@ -95,7 +95,7 @@ exports[`<Content /> renders 1`] = `
           aria-describedby="Dropdown1-option"
           aria-expanded="false"
           aria-labelledby="Dropdown1-label"
-          class="ms-Dropdown dropdown-55"
+          class="ms-Dropdown dropdown-52"
           data-is-focusable="true"
           id="Dropdown1"
           role="listbox"
@@ -103,13 +103,12 @@ exports[`<Content /> renders 1`] = `
         >
           <span
             aria-atomic="true"
-            aria-invalid="false"
             aria-label="Windows (x64)"
-            aria-live="polite"
+            aria-live="off"
             aria-posinset="8"
             aria-selected="true"
             aria-setsize="8"
-            class="ms-Dropdown-title title-56"
+            class="ms-Dropdown-title title-53"
             id="Dropdown1-option"
             role="option"
           >
@@ -118,12 +117,13 @@ exports[`<Content /> renders 1`] = `
             </span>
           </span>
           <span
-            class="ms-Dropdown-caretDownWrapper caretDownWrapper-57"
+            class="ms-Dropdown-caretDownWrapper caretDownWrapper-54"
           >
             <i
               aria-hidden="true"
-              class="ms-Dropdown-caretDown caretDown-72"
+              class="ms-Dropdown-caretDown caretDown-69"
               data-icon-name="ChevronDown"
+              role="presentation"
             />
           </span>
         </div>
