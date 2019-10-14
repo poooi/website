@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 import styled, {
   createGlobalStyle,
   ThemeProvider,
@@ -49,6 +49,10 @@ export const App = () => {
     (state: boolean, value: any) => !state,
     choiceDark,
   )
+
+  useEffect(() => {
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  }, [isDark])
 
   return (
     <CustomizerContext.Provider
