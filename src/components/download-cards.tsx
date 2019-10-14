@@ -107,7 +107,7 @@ export const DownloadCards = ({ target, version }: IProps) => {
               <Description>{t('stable-hint')}</Description>
             </Button>
           </a>
-          {lt(version.betaVersion, version.version) && (
+          {lt(version.version, version.betaVersion) && (
             <a href={getDownloadLink(version.betaVersion, target)}>
               <Button isBeta={true}>
                 <div>{version.betaVersion}</div>
