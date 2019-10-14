@@ -16,26 +16,26 @@ exports[`<Header /> changes language: en 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar root-49\\"
++           class=\\"ms-Button ms-Button--commandBar root-99\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
-            <div
-              class=\\"ms-Button-flexContainer flexContainer-47\\"
-@@ -50,11 +50,11 @@
-            </div>
+            <span
+              class=\\"ms-Button-flexContainer flexContainer-50\\"
+@@ -51,11 +51,11 @@
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
           >
-            <div"
+            <span"
 `;
 
 exports[`<Header /> changes language: ja 1`] = `
@@ -62,7 +62,7 @@ exports[`<Header /> changes language: ja 1`] = `
         <div
           class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
-@@ -44,11 +44,11 @@
+@@ -45,11 +45,11 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -70,12 +70,12 @@ exports[`<Header /> changes language: ja 1`] = `
               </svg>
 -             Theme Chibaheit
 +             テーマ：チバハイト
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
-@@ -73,11 +73,11 @@
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -85,7 +85,7 @@ exports[`<Header /> changes language: ja 1`] = `
 +             日本語
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -114,7 +114,7 @@ exports[`<Header /> changes language: ja 2`] = `
         <div
           class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
         />
-@@ -44,11 +44,11 @@
+@@ -45,11 +45,11 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -122,12 +122,12 @@ exports[`<Header /> changes language: ja 2`] = `
               </svg>
 -             Theme Chibaheit
 +             テーマ：チバハイト
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
-@@ -73,11 +73,11 @@
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -137,7 +137,7 @@ exports[`<Header /> changes language: ja 2`] = `
 +             日本語
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -170,14 +170,14 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-91\\"
+-           class=\\"ms-Button ms-Button--commandBar root-49\\"
++           class=\\"ms-Button ms-Button--commandBar root-88\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
-            <div
-              class=\\"ms-Button-flexContainer flexContainer-47\\"
-@@ -44,17 +44,17 @@
+            <span
+              class=\\"ms-Button-flexContainer flexContainer-50\\"
+@@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -185,19 +185,19 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
               </svg>
 -             Theme Chibaheit
 +             主题：吃吧黑特
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-91\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-88\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
           >
-            <div
-@@ -73,11 +73,11 @@
+            <span
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -207,7 +207,7 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
 +             简体中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -240,14 +240,14 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-91\\"
+-           class=\\"ms-Button ms-Button--commandBar root-49\\"
++           class=\\"ms-Button ms-Button--commandBar root-88\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
-            <div
-              class=\\"ms-Button-flexContainer flexContainer-47\\"
-@@ -44,17 +44,17 @@
+            <span
+              class=\\"ms-Button-flexContainer flexContainer-50\\"
+@@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -255,19 +255,19 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
               </svg>
 -             Theme Chibaheit
 +             主题：吃吧黑特
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-91\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-88\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
           >
-            <div
-@@ -73,11 +73,11 @@
+            <span
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -277,7 +277,7 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
 +             简体中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -310,14 +310,14 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar root-49\\"
++           class=\\"ms-Button ms-Button--commandBar root-99\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
-            <div
-              class=\\"ms-Button-flexContainer flexContainer-47\\"
-@@ -44,17 +44,17 @@
+            <span
+              class=\\"ms-Button-flexContainer flexContainer-50\\"
+@@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -325,19 +325,19 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
               </svg>
 -             Theme Chibaheit
 +             主題：吃吧黑特
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
           >
-            <div
-@@ -73,11 +73,11 @@
+            <span
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -347,7 +347,7 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
 +             繁體中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -380,14 +380,14 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar root-49\\"
++           class=\\"ms-Button ms-Button--commandBar root-99\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
-            <div
-              class=\\"ms-Button-flexContainer flexContainer-47\\"
-@@ -44,17 +44,17 @@
+            <span
+              class=\\"ms-Button-flexContainer flexContainer-50\\"
+@@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
                   fill=\\"currentColor\\"
@@ -395,19 +395,19 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
               </svg>
 -             Theme Chibaheit
 +             主題：吃吧黑特
-            </div>
+            </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar root-55\\"
-+           class=\\"ms-Button ms-Button--commandBar root-102\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
           >
-            <div
-@@ -73,11 +73,11 @@
+            <span
+@@ -75,11 +75,11 @@
                 <path
                   d=\\"M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z\\"
                   fill=\\"currentColor\\"
@@ -417,7 +417,7 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
 +             繁體中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Button-menuIcon menuIcon-58\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -449,12 +449,13 @@ exports[`<Header /> renders 1`] = `
         class="header-command__CommandBar-sc-12edzi8-0 kVKwvn"
       >
         <button
-          class="ms-Button ms-Button--commandBar root-55"
+          class="ms-Button ms-Button--commandBar root-49"
           data-is-focusable="true"
           type="button"
         >
-          <div
-            class="ms-Button-flexContainer flexContainer-47"
+          <span
+            class="ms-Button-flexContainer flexContainer-50"
+            data-automationid="splitbuttonprimary"
           >
             <svg
               aria-hidden="true"
@@ -472,19 +473,20 @@ exports[`<Header /> renders 1`] = `
               />
             </svg>
             Theme Chibaheit
-          </div>
+          </span>
         </button>
         <button
           aria-expanded="true"
           aria-haspopup="true"
           aria-owns="id__4-menu"
-          class="ms-Button ms-Button--commandBar is-expanded root-59"
+          class="ms-Button ms-Button--commandBar is-expanded ms-Button--hasMenu root-57"
           data-is-focusable="true"
           data-testid="language-dropdown"
           type="button"
         >
-          <div
-            class="ms-Button-flexContainer flexContainer-47"
+          <span
+            class="ms-Button-flexContainer flexContainer-50"
+            data-automationid="splitbuttonprimary"
           >
             <svg
               aria-hidden="true"
@@ -504,14 +506,14 @@ exports[`<Header /> renders 1`] = `
             English
             <i
               aria-hidden="true"
-              class="ms-Button-menuIcon is-expanded menuIcon-61"
+              class="ms-Icon root-37 ms-Button-menuIcon is-expanded menuIcon-58"
               data-icon-name="ChevronDown"
               role="presentation"
             />
             <span
               class="ms-layer"
             />
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -521,55 +523,54 @@ exports[`<Header /> renders 1`] = `
 
 exports[`<Header /> renders 2`] = `
 <div
-  class="ms-Layer ms-Layer--fixed root-82"
+  class="ms-Layer ms-Layer--fixed root-79"
   data-portal-element="true"
 >
   <div
-    class="ms-Fabric ms-Layer-content content-84"
+    class="ms-Fabric ms-Layer-content content-81"
   >
     <div
-      class="ms-Callout-container container-85"
+      class="ms-Callout-container container-82"
     >
       <div
-        class="ms-Callout ms-ContextualMenu-Callout root-86"
+        class="ms-Callout ms-ContextualMenu-Callout root-83"
         style="opacity: 0; filter: opacity(0);"
         tabindex="-1"
       >
         <div
-          class="ms-Callout-main calloutMain-89"
+          class="ms-Callout-main calloutMain-86"
           style="outline: none; max-height: 752px;"
         >
           <div
-            class="ms-ContextualMenu-container container-63"
+            class="ms-ContextualMenu-container container-60"
             id="id__4-menu"
             tabindex="-1"
           >
             <div
-              class="ms-FocusZone css-90 ms-ContextualMenu is-open ms-BaseButton-menuhost root-62"
+              class="ms-FocusZone css-87 ms-ContextualMenu is-open ms-BaseButton-menuhost root-59"
               data-focuszone-id="FocusZone8"
-              role="presentation"
             >
               <ul
-                class="ms-ContextualMenu-list is-open list-64"
+                class="ms-ContextualMenu-list is-open list-61"
                 role="menu"
               >
                 <li
-                  class="ms-ContextualMenu-item item-67"
+                  class="ms-ContextualMenu-item item-64"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="1"
                     aria-setsize="4"
-                    class="ms-ContextualMenu-link root-69"
+                    class="ms-ContextualMenu-link root-66"
                     role="menuitem"
                     tabindex="0"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-73"
+                      class="ms-ContextualMenu-linkContent linkContent-70"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-79"
+                        class="ms-ContextualMenu-itemText label-76"
                       >
                         English
                       </span>
@@ -577,22 +578,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-67"
+                  class="ms-ContextualMenu-item item-64"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="2"
                     aria-setsize="4"
-                    class="ms-ContextualMenu-link root-69"
+                    class="ms-ContextualMenu-link root-66"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-73"
+                      class="ms-ContextualMenu-linkContent linkContent-70"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-79"
+                        class="ms-ContextualMenu-itemText label-76"
                       >
                         日本語
                       </span>
@@ -600,22 +601,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-67"
+                  class="ms-ContextualMenu-item item-64"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="3"
                     aria-setsize="4"
-                    class="ms-ContextualMenu-link root-69"
+                    class="ms-ContextualMenu-link root-66"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-73"
+                      class="ms-ContextualMenu-linkContent linkContent-70"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-79"
+                        class="ms-ContextualMenu-itemText label-76"
                       >
                         简体中文
                       </span>
@@ -623,22 +624,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-67"
+                  class="ms-ContextualMenu-item item-64"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="4"
                     aria-setsize="4"
-                    class="ms-ContextualMenu-link root-69"
+                    class="ms-ContextualMenu-link root-66"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-73"
+                      class="ms-ContextualMenu-linkContent linkContent-70"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-79"
+                        class="ms-ContextualMenu-itemText label-76"
                       >
                         繁體中文
                       </span>

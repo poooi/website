@@ -2,7 +2,12 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
+import {
+  CommandBarButton,
+  CustomizerContext,
+  getTheme,
+  loadTheme,
+} from 'office-ui-fabric-react'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { createGlobalStyle } from 'styled-components/macro'
@@ -68,23 +73,10 @@ const HeaderCommand = () => {
 
   useEffect(() => {
     loadTheme({
-      ...(isDark ? darkTheme : lightTheme),
       defaultFontStyle: {
         fontFamily,
       },
     })
-  }, [])
-
-  useEffect(() => {
-    loadTheme({
-      ...(isDark ? darkTheme : lightTheme),
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-  }, [i18n.language, isDark])
-
-  useEffect(() => {
     setFontfamily(getLocaleFontFamily(i18n.language))
   }, [i18n.language])
 

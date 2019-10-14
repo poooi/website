@@ -11,6 +11,8 @@ import {
   ThemeIsDarkContext,
 } from './theme'
 
+import { CustomizerContext } from 'office-ui-fabric-react'
+
 import { Background } from './components/background'
 import { Content } from './components/content'
 import { Footer } from './components/footer'
@@ -49,20 +51,29 @@ export const App = () => {
   )
 
   return (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-      <DispatchThemeChangeContext.Provider value={dispatch}>
-        <ThemeIsDarkContext.Provider value={isDark}>
-          <GlobalStyle />
-          <Background />
-          <Container>
-            <Wrapper>
-              <Header />
-              <Content />
-              <Footer />
-            </Wrapper>
-          </Container>
-        </ThemeIsDarkContext.Provider>
-      </DispatchThemeChangeContext.Provider>
-    </ThemeProvider>
+    <CustomizerContext.Provider
+      value={{
+        customizations: {
+          scopedSettings: {},
+          settings: { theme: isDark ? darkTheme : lightTheme },
+        },
+      }}
+    >
+      <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+        <DispatchThemeChangeContext.Provider value={dispatch}>
+          <ThemeIsDarkContext.Provider value={isDark}>
+            <GlobalStyle />
+            <Background />
+            <Container>
+              <Wrapper>
+                <Header />
+                <Content />
+                <Footer />
+              </Wrapper>
+            </Container>
+          </ThemeIsDarkContext.Provider>
+        </DispatchThemeChangeContext.Provider>
+      </ThemeProvider>
+    </CustomizerContext.Provider>
   )
 }

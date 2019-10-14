@@ -1,4 +1,4 @@
-import { createFontStyles, IPalette } from '@uifabric/styling'
+import { createFontStyles, createTheme, IPalette } from '@uifabric/styling'
 import { createContext } from 'react'
 import { DefaultTheme } from 'styled-components/macro'
 
@@ -21,13 +21,13 @@ export const getLocaleFontFamily = (locale: string) =>
   localeFontFamilyMap[locale as keyof typeof localeFontFamilyMap] ||
   localeFontFamilyMap.en
 
-export const darkTheme: DefaultTheme = {
+export const darkTheme: DefaultTheme = createTheme({
   palette: colorDark as IPalette,
-}
+})
 
-export const lightTheme: DefaultTheme = {
+export const lightTheme: DefaultTheme = createTheme({
   palette: colorLight as IPalette,
-}
+})
 
 export const DispatchThemeChangeContext = createContext<(value: any) => void>(
   () => {
