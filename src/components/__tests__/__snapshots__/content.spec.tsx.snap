@@ -77,6 +77,22 @@ exports[`<Content /> renders 1`] = `
           </div>
         </button>
       </a>
+      <a
+        href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-setup-10.5.0.exe"
+      >
+        <button
+          class="download-cards__Button-k88p0k-2 iwDgCG"
+        >
+          <div>
+            v10.5.0
+          </div>
+          <div
+            class="download-cards__Description-k88p0k-3 fGTQht"
+          >
+            Beta, for new features
+          </div>
+        </button>
+      </a>
     </div>
     <div
       class="download__CenterContainer-sc-96zveq-0 gbpixt"

@@ -27,6 +27,22 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         </div>
       </button>
     </a>
+    <a
+      href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
+    >
+      <button
+        class="download-cards__Button-k88p0k-2 iwDgCG"
+      >
+        <div>
+          v10.5.0
+        </div>
+        <div
+          class="download-cards__Description-k88p0k-3 fGTQht"
+        >
+          Beta, for new features
+        </div>
+      </button>
+    </a>
   </div>
 </DocumentFragment>
 `;
@@ -58,6 +74,22 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         </div>
       </button>
     </a>
+    <a
+      href="https://github.com/poooi/poi/releases"
+    >
+      <button
+        class="download-cards__Button-k88p0k-2 iwDgCG"
+      >
+        <div>
+          v10.5.0
+        </div>
+        <div
+          class="download-cards__Description-k88p0k-3 fGTQht"
+        >
+          Beta, for new features
+        </div>
+      </button>
+    </a>
   </div>
 </DocumentFragment>
 `;
@@ -86,22 +118,6 @@ exports[`<DownloadCards /> renders without beta 1`] = `
           class="download-cards__Description-k88p0k-3 fGTQht"
         >
           Stable, for most users
-        </div>
-      </button>
-    </a>
-    <a
-      href="https://npm.taobao.org/mirrors/poi/v10.3.0/poi-10.3.0.7z"
-    >
-      <button
-        class="download-cards__Button-k88p0k-2 iwDgCG"
-      >
-        <div>
-          v10.3.0
-        </div>
-        <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
-        >
-          Beta, for new features
         </div>
       </button>
     </a>
