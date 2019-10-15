@@ -1,5 +1,6 @@
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import map from 'lodash/map'
 import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -8,35 +9,35 @@ import { UAParser } from 'ua-parser-js'
 
 import { DownloadCards, IVersion } from './download-cards'
 
-const getTargetIndex = () => {
-  const { os, cpu } = new UAParser().getResult()
-  if (os.name === 'Linux') {
-    return 0
-  } else if (os.name === 'Debian' || os.name === 'Ubuntu') {
-    return 1
-  } else if (os.name === 'CentOS' || os.name === 'Fedora') {
-    return 2
-  } else if (os.name === 'Mac OS') {
-    return 3
-  } else if (os.name === 'Windows') {
-    if (cpu.architecture === 'ia64' || cpu.architecture === 'amd64') {
-      return 7
-    }
-    return 5
-  }
-  return 0
+enum targets {
+  linux = 'linux-x64',
+  linuxDeb = 'linux-deb-x64',
+  linuxRpm = 'linux-rpm-x64',
+  macos = 'macos-x64',
+  win64Setup = 'win-x64-setup',
+  win64 = 'win-x64',
+  win32Setup = 'win-ia32-setup',
+  win32 = 'win-ia32',
 }
 
-const targets = [
-  'linux-x64',
-  'linux-deb-x64',
-  'linux-rpm-x64',
-  'macos-x64',
-  'win-ia32',
-  'win-ia32-setup',
-  'win-x64',
-  'win-x64-setup',
-]
+const getTarget = () => {
+  const { os, cpu } = new UAParser().getResult()
+  if (os.name === 'Linux') {
+    return targets.linux
+  } else if (os.name === 'Debian' || os.name === 'Ubuntu') {
+    return targets.linuxDeb
+  } else if (os.name === 'CentOS' || os.name === 'Fedora') {
+    return targets.linuxRpm
+  } else if (os.name === 'Mac OS') {
+    return targets.macos
+  } else if (os.name === 'Windows') {
+    if (cpu.architecture === 'ia64' || cpu.architecture === 'amd64') {
+      return targets.win64Setup
+    }
+    return targets.win32Setup
+  }
+  return targets.linux
+}
 
 const CenterContainer = styled.div`
   display: flex;
@@ -57,7 +58,7 @@ const Download = () => {
 
   const options: IDropdownOption[] = useMemo(
     () =>
-      targets.map(target => ({
+      map(targets, target => ({
         key: target,
         text: t(target),
       })),
@@ -80,7 +81,7 @@ const Download = () => {
     getUpdate()
   }, [])
 
-  const [selected, setSelected] = useState(targets[getTargetIndex()])
+  const [selected, setSelected] = useState(getTarget())
   return (
     <>
       <DownloadCards target={selected} version={version} />
@@ -89,7 +90,7 @@ const Download = () => {
           label={t('Choose another platform')}
           options={options}
           selectedKey={selected}
-          onChange={(_, item) => setSelected(item!.key as string)}
+          onChange={(_, item) => setSelected(item!.key as targets)}
         />
       </CenterContainer>
       <CenterContainer>
