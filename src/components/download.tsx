@@ -59,13 +59,14 @@ const Download = () => {
     <>
       <DownloadCards target={autoDetectedTarget} version={version} />
       <CenterContainer>
-        <FullListLink onClick={() => setIsOpen(true)}>
+        <FullListLink onClick={() => setIsOpen(true)} data-testid="open-dialog">
           {t('Choose another platform')}
         </FullListLink>
       </CenterContainer>
       <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
-        <ModalContainer>
+        <ModalContainer data-testid="modal-container">
           <CloseButton
+            data-testid="close-dialog"
             onClick={() => setIsOpen(false)}
             ariaLabel={t('Close dialog')}
           >
