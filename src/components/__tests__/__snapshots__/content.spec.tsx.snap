@@ -97,80 +97,27 @@ exports[`<Content /> renders 1`] = `
     <div
       class="download__CenterContainer-sc-96zveq-0 gbpixt"
     >
-      <div
-        class="ms-Dropdown-container download__StyledDropdown-sc-96zveq-2 kamXyI root-53"
+      <button
+        class="ms-Button ms-Button--action ms-Button--command download__FullListLink-sc-96zveq-1 bnJSD root-53"
+        data-is-focusable="true"
+        type="button"
       >
-        <label
-          class="ms-Label ms-Dropdown-label label-71"
-          for="Dropdown1"
-          id="Dropdown1-label"
-        >
-          Choose another platform
-        </label>
-        <div
-          aria-describedby="Dropdown1-option"
-          aria-expanded="false"
-          aria-labelledby="Dropdown1-label"
-          class="ms-Dropdown dropdown-55"
-          data-is-focusable="true"
-          id="Dropdown1"
-          role="listbox"
-          tabindex="0"
+        <span
+          class="ms-Button-flexContainer flexContainer-54"
+          data-automationid="splitbuttonprimary"
         >
           <span
-            aria-atomic="true"
-            aria-invalid="false"
-            aria-label="Windows (x64)"
-            aria-live="polite"
-            aria-posinset="5"
-            aria-selected="true"
-            aria-setsize="8"
-            class="ms-Dropdown-title title-56"
-            id="Dropdown1-option"
-            role="option"
+            class="ms-Button-textContainer textContainer-55"
           >
-            <span>
-              Windows (x64)
+            <span
+              class="ms-Button-label label-57"
+              id="id__1"
+            >
+              Choose another platform
             </span>
           </span>
-          <span
-            class="ms-Dropdown-caretDownWrapper caretDownWrapper-57"
-          >
-            <i
-              aria-hidden="true"
-              class="ms-Dropdown-caretDown caretDown-72"
-              data-icon-name="ChevronDown"
-            />
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      class="download__CenterContainer-sc-96zveq-0 gbpixt"
-    >
-      <a
-        class="download__FullListLink-sc-96zveq-1 hNOSxa"
-        href="https://npm.taobao.org/mirrors/poi"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Check the complete list 
-        <svg
-          aria-hidden="true"
-          class="svg-inline--fa fa-external-link-alt fa-w-16 "
-          data-icon="external-link-alt"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
-            fill="currentColor"
-          />
-        </svg>
-      </a>
+        </span>
+      </button>
     </div>
   </div>
 </DocumentFragment>

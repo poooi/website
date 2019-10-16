@@ -5,31 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
 import styled from 'styled-components/macro'
 
-const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
-
-function getDownloadLink(version: string, target: string) {
-  const pure = version.substring(1)
-  switch (target) {
-    case 'linux-x64':
-      return `${BASE_URI}/${version}/poi-${pure}.7z`
-    case 'linux-deb-x64':
-      return `${BASE_URI}/${version}/poi_${pure}_amd64.deb`
-    case 'linux-rpm-x64':
-      return `${BASE_URI}/${version}/poi-${pure}.x86_64.rpm`
-    case 'macos-x64':
-      return `${BASE_URI}/${version}/poi-${pure}.dmg`
-    case 'win-ia32':
-      return `${BASE_URI}/${version}/poi-${pure}-ia32-win.7z`
-    case 'win-ia32-setup':
-      return `${BASE_URI}/${version}/poi-setup-${pure}.exe`
-    case 'win-x64':
-      return `${BASE_URI}/${version}/poi-${pure}-win.7z`
-    case 'win-x64-setup':
-      return `${BASE_URI}/${version}/poi-setup-${pure}.exe`
-    default:
-      return 'https://github.com/poooi/poi/releases'
-  }
-}
+import { IVersion, targets } from '../model'
+import { getDownloadLink } from './utils'
 
 const Container = styled.div`
   text-align: center;
@@ -78,13 +55,8 @@ const Description = styled.div`
   font-size: 14px;
 `
 
-export interface IVersion {
-  version: string
-  betaVersion: string
-}
-
 interface IProps {
-  target: string
+  target: targets
   version: IVersion
 }
 

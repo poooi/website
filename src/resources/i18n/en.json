@@ -25,5 +25,14 @@
   "current-theme": "Theme ",
   "Chibaheit": "Chibaheit",
   "Lilywhite": "Lilywhite",
-  "Now Loading": "Now Loading"
+  "Now Loading": "Now Loading",
+  "Stable": "Stable",
+  "Beta": "Beta",
+  "Others": "Others",
+  "HostedAt": "Hosted at {{site}}",
+  "Old versions": "Old versions",
+  "Windows nightlies": "Windows nightlies",
+  "Linux and macOS nightlies": "Linux and macOS nightlies",
+  "Source code": "Source code",
+  "Close dialog": "Close dialog"
 }

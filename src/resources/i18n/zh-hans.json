@@ -28,5 +28,14 @@
   "current-theme": "主题：",
   "Chibaheit": "吃吧黑特",
   "Lilywhite": "莉莉白",
-  "Now Loading": "少女祈祷中"
+  "Now Loading": "少女祈祷中",
+  "Stable": "正式版",
+  "Beta": "测试版",
+  "Others": "其它",
+  "HostedAt": "托管于 {{site}}",
+  "Old versions": "历史版本",
+  "Windows nightlies": "Windows 每夜构建",
+  "Linux and macOS nightlies": "Linux 与 macOS 每夜构建",
+  "Source code": "源代码",
+  "Close dialog": "关闭弹出框"
 }

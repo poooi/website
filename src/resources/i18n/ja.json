@@ -28,5 +28,14 @@
   "current-theme": "テーマ：",
   "Chibaheit": "チバハイト",
   "Lilywhite": "リリーホワイト",
-  "Now Loading": "少女祈祷中"
+  "Now Loading": "少女祈祷中",
+  "Stable": "安定版",
+  "Beta": "開発版",
+  "Others": "他",
+  "HostedAt": "{{site}} でホストされています",
+  "Old versions": "古いバージョン",
+  "Windows nightlies": "Windows デイリービルド",
+  "Linux and macOS nightlies": "Linux と macOS デイリービルド",
+  "Source code": "ソースコード",
+  "Close dialog": "ダイアログを閉じる"
 }

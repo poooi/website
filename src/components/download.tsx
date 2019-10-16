@@ -1,24 +1,14 @@
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt'
+import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import map from 'lodash/map'
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react'
-import React, { useEffect, useMemo, useState } from 'react'
+import { ActionButton, Modal } from 'office-ui-fabric-react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 import { UAParser } from 'ua-parser-js'
 
-import { DownloadCards, IVersion } from './download-cards'
-
-enum targets {
-  linux = 'linux-x64',
-  linuxDeb = 'linux-deb-x64',
-  linuxRpm = 'linux-rpm-x64',
-  macos = 'macos-x64',
-  win64Setup = 'win-x64-setup',
-  win64 = 'win-x64',
-  win32Setup = 'win-ia32-setup',
-  win32 = 'win-ia32',
-}
+import { IVersion, targets } from '../model'
+import { DownloadCards } from './download-cards'
+import { TargetList } from './target-list'
 
 const getTarget = () => {
   const { os, cpu } = new UAParser().getResult()
@@ -45,25 +35,27 @@ const CenterContainer = styled.div`
   margin: 0 auto;
 `
 
-const FullListLink = styled.a`
-  line-height: 300%;
+const FullListLink = styled(ActionButton)`
+  font-size: 1em;
 `
 
-const StyledDropdown = styled(Dropdown)`
-  width: 20em;
+const ModalContainer = styled.div`
+  width: 80vw;
+  height: 90vh;
+  max-width: 1440px;
+  max-height: 720px;
+  padding: 2em;
+`
+
+const CloseButton = styled(ActionButton)`
+  position: absolute;
+  right: 1em;
+  top: 1ex;
+  font-size: 2em;
 `
 
 const Download = () => {
   const { t } = useTranslation()
-
-  const options: IDropdownOption[] = useMemo(
-    () =>
-      map(targets, target => ({
-        key: target,
-        text: t(target),
-      })),
-    [t],
-  )
 
   const [version, setVersion] = useState<IVersion>(({} as any) as IVersion)
 
@@ -82,26 +74,26 @@ const Download = () => {
   }, [])
 
   const [selected, setSelected] = useState(getTarget())
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <DownloadCards target={selected} version={version} />
       <CenterContainer>
-        <StyledDropdown
-          label={t('Choose another platform')}
-          options={options}
-          selectedKey={selected}
-          onChange={(_, item) => setSelected(item!.key as targets)}
-        />
-      </CenterContainer>
-      <CenterContainer>
-        <FullListLink
-          href="https://npm.taobao.org/mirrors/poi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('other-versions')} <FontAwesomeIcon icon={faExternalLinkAlt} />
+        <FullListLink onClick={() => setIsOpen(true)}>
+          {t('Choose another platform')}
         </FullListLink>
       </CenterContainer>
+      <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
+        <ModalContainer>
+          <CloseButton
+            onClick={() => setIsOpen(false)}
+            ariaLabel={t('Close dialog')}
+          >
+            <FontAwesomeIcon icon={faTimes} />
+          </CloseButton>
+          <TargetList version={version} />
+        </ModalContainer>
+      </Modal>
     </>
   )
 }
