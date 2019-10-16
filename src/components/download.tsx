@@ -4,30 +4,11 @@ import { ActionButton, Modal } from 'office-ui-fabric-react'
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
-import { UAParser } from 'ua-parser-js'
 
-import { IVersion, targets } from '../model'
+import { IVersion } from '../model'
 import { DownloadCards } from './download-cards'
 import { TargetList } from './target-list'
-
-const getTarget = () => {
-  const { os, cpu } = new UAParser().getResult()
-  if (os.name === 'Linux') {
-    return targets.linux
-  } else if (os.name === 'Debian' || os.name === 'Ubuntu') {
-    return targets.linuxDeb
-  } else if (os.name === 'CentOS' || os.name === 'Fedora') {
-    return targets.linuxRpm
-  } else if (os.name === 'Mac OS') {
-    return targets.macos
-  } else if (os.name === 'Windows') {
-    if (cpu.architecture === 'ia64' || cpu.architecture === 'amd64') {
-      return targets.win64Setup
-    }
-    return targets.win32Setup
-  }
-  return targets.linux
-}
+import { autoDetectedTarget } from './utils'
 
 const CenterContainer = styled.div`
   display: flex;
@@ -73,11 +54,10 @@ const Download = () => {
     getUpdate()
   }, [])
 
-  const [selected, setSelected] = useState(getTarget())
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <DownloadCards target={selected} version={version} />
+      <DownloadCards target={autoDetectedTarget} version={version} />
       <CenterContainer>
         <FullListLink onClick={() => setIsOpen(true)}>
           {t('Choose another platform')}

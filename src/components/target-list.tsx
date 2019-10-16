@@ -1,11 +1,12 @@
 import map from 'lodash/map'
+import sortBy from 'lodash/sortBy'
 import { CompoundButton } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
 import styled from 'styled-components/macro'
 import { IVersion, targets } from '../model'
-import { getDownloadLink } from './utils'
+import { autoDetectedTarget, getDownloadLink } from './utils'
 
 const DownloadList = styled.div`
   display: flex;
@@ -20,14 +21,17 @@ interface IProps {
   version: IVersion
 }
 
+const sortedTargets = sortBy(targets, target => target !== autoDetectedTarget)
+
 export const TargetList = ({ version }: IProps) => {
   const { t } = useTranslation()
   return (
     <>
       <h2>{t('Stable')}</h2>
       <DownloadList>
-        {map(targets, target => (
+        {map(sortedTargets, target => (
           <CompoundButton
+            primary={autoDetectedTarget === target}
             key={target}
             secondaryText={version.version}
             href={getDownloadLink(version.version, target)}
@@ -41,8 +45,9 @@ export const TargetList = ({ version }: IProps) => {
         <>
           <h2>{t('Beta')}</h2>
           <DownloadList>
-            {map(targets, target => (
+            {map(sortedTargets, target => (
               <CompoundButton
+                primary={autoDetectedTarget === target}
                 key={target}
                 secondaryText={version.betaVersion}
                 href={getDownloadLink(version.betaVersion, target)}
