@@ -27,6 +27,7 @@ const Container = styled.div`
     margin: 0 1em;
     transition: 0.3s;
     cursor: pointer;
+    white-space: nowrap;
 
     :hover {
       color: ${props => props.theme.palette.themePrimary};
@@ -36,6 +37,7 @@ const Container = styled.div`
 
 const Copyright = styled.span`
   margin-right: 4em;
+  white-space: nowrap;
 `
 
 export const Footer = () => {
