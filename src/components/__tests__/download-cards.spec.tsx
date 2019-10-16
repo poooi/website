@@ -1,12 +1,13 @@
 import React from 'react'
 
+import { targets } from '../../model'
 import { renderWithTheme } from '../../testing-utils'
 import { DownloadCards } from '../download-cards'
 
 describe('<DownloadCards />', () => {
   const { asFragment, rerender } = renderWithTheme(
     <DownloadCards
-      target="linux-x64"
+      target={targets.linux}
       version={{
         betaVersion: 'v10.5.0',
         version: 'v10.4.0',
@@ -21,7 +22,7 @@ describe('<DownloadCards />', () => {
   it('renders without beta', () => {
     rerender(
       <DownloadCards
-        target="linux-x64"
+        target={targets.linux}
         version={{
           betaVersion: 'v10.3.0',
           version: 'v10.4.0',
@@ -34,7 +35,7 @@ describe('<DownloadCards />', () => {
   it('renders with invalid target', () => {
     rerender(
       <DownloadCards
-        target="chiba"
+        target={'chiba' as targets}
         version={{
           betaVersion: 'v10.5.0',
           version: 'v10.4.0',
