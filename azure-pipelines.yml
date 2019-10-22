@@ -33,3 +33,13 @@ steps:
 - script: |
     yarn test --coverage
   displayName: 'Test'
+
+- task: CopyFiles@2
+  inputs:
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: build/**/*
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
