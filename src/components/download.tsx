@@ -43,7 +43,7 @@ const Download = () => {
   useEffect(() => {
     const getUpdate = async () => {
       try {
-        const resp = await fetch('https://poi.io/update/latest.json')
+        const resp = await fetch('/update/latest.json')
         const result: IVersion = await resp.json()
         setVersion(result)
       } catch (e) {
