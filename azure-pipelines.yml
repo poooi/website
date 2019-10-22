@@ -3,6 +3,7 @@ pool:
 
 variables:
   CI: true
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 trigger:
   branches:
@@ -17,6 +18,12 @@ steps:
   inputs:
     versionSpec: '>=12.3.1'
   displayName: 'Install Node.js'
+
+- task: CacheBeta@0
+  inputs:
+    key: yarn | $(Agent.OS) | yarn.lock
+    path: $(YARN_CACHE_FOLDER)
+  displayName: Cache Yarn packages
 
 - script: |
     yarn install --frozen-lockfile
@@ -33,6 +40,10 @@ steps:
 - script: |
     yarn test --coverage
   displayName: 'Test'
+
+- script: |
+    yarn build
+  displayName: 'Build'
 
 - task: CopyFiles@2
   inputs:
