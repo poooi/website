@@ -17,7 +17,7 @@
     "office-ui-fabric-react": "7.53.1",
     "polished": "^3.4.1",
     "random": "^2.1.1",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.10.2",
     "react-i18next": "^10.13.1",
