@@ -65,9 +65,7 @@ export const DownloadCards = ({ target, version }: IProps) => {
 
   return (
     <Container>
-      <Header>
-        {t('download-for')} {t(target)}
-      </Header>
+      <Header>{t('download-for', { version: t(target) })}</Header>
       {version.version ? (
         <>
           <a

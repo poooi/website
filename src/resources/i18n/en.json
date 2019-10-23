@@ -6,7 +6,7 @@
   "telegram": "Telegram",
   "opencollective": "OpenCollective",
   "weibo": "Weibo",
-  "download-for": "Download for ",
+  "download-for": "Download for {{version}}",
   "linux-x64": "Linux (x64)",
   "linux-deb-x64": "Debian / Ubuntu (x64)",
   "linux-rpm-x64": "Fedora / CentOS (x64)",
