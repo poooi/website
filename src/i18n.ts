@@ -3,12 +3,14 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
 import en from './resources/i18n/en.json'
+import fr from './resources/i18n/fr.json'
 import ja from './resources/i18n/ja.json'
 import zhHans from './resources/i18n/zh-hans.json'
 import zhHant from './resources/i18n/zh-hant.json'
 
 const resources = {
   en: { translation: en },
+  fr: { translation: fr },
   ja: { translation: ja },
   'zh-Hans': { translation: zhHans },
   'zh-Hant': { translation: zhHant },

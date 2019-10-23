@@ -6,12 +6,14 @@ import colorDark from './resources/colors/dark.json'
 import colorLight from './resources/colors/light.json'
 
 export const enFontStyles = createFontStyles(null)
+export const frFontStyles = createFontStyles('fr')
 export const jaFontStyles = createFontStyles('ja')
 export const zhHansFontStyles = createFontStyles('zh-hans')
 export const zhHantFontStyles = createFontStyles('zh-hant')
 
 const localeFontFamilyMap = {
   en: enFontStyles.medium.fontFamily,
+  fr: frFontStyles.medium.fontFamily,
   ja: jaFontStyles.medium.fontFamily,
   'zh-Hans': zhHansFontStyles.medium.fontFamily,
   'zh-Hant': zhHansFontStyles.medium.fontFamily,
