@@ -1,11 +1,20 @@
+import trimStart from 'lodash/trimStart'
+import { valid } from 'semver'
 import { UAParser } from 'ua-parser-js'
 
 import { targets } from '../model'
 
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
+const DEFAULT_URI = 'https://github.com/poooi/poi/releases'
 
-export const getDownloadLink = (version: string, target: targets) => {
-  const pure = version.substring(1)
+export const getDownloadLink = (
+  version: string | undefined,
+  target: targets,
+) => {
+  const pure = trimStart(version, 'v')
+  if (!valid(pure)) {
+    return DEFAULT_URI
+  }
   switch (target) {
     case targets.linux:
       return `${BASE_URI}/${version}/poi-${pure}.7z`
@@ -24,7 +33,7 @@ export const getDownloadLink = (version: string, target: targets) => {
     case targets.win64Setup:
       return `${BASE_URI}/${version}/poi-setup-${pure}.exe`
     default:
-      return 'https://github.com/poooi/poi/releases'
+      return DEFAULT_URI
   }
 }
 
