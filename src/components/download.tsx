@@ -59,9 +59,14 @@ const Download = () => {
     <>
       <DownloadCards target={autoDetectedTarget} version={version} />
       <CenterContainer>
-        <FullListLink onClick={() => setIsOpen(true)} data-testid="open-dialog">
-          {t('Choose another platform')}
-        </FullListLink>
+        {version.version && (
+          <FullListLink
+            onClick={() => setIsOpen(true)}
+            data-testid="open-dialog"
+          >
+            {t('Choose another platform')}
+          </FullListLink>
+        )}
       </CenterContainer>
       <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
         <ModalContainer data-testid="modal-container">
