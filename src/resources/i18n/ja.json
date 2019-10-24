@@ -37,5 +37,7 @@
   "Windows nightlies": "Windows デイリービルド",
   "Linux and macOS nightlies": "Linux と macOS デイリービルド",
   "Source code": "ソースコード",
-  "Close dialog": "ダイアログを閉じる"
+  "Close dialog": "ダイアログを閉じる",
+  "error-message": "ああ、ウェブページは 🐢 になっています。 修正します。",
+  "Reload": "再起動"
 }

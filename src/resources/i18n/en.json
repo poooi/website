@@ -35,5 +35,7 @@
   "Windows nightlies": "Windows nightlies",
   "Linux and macOS nightlies": "Linux and macOS nightlies",
   "Source code": "Source code",
-  "Close dialog": "Close dialog"
+  "Close dialog": "Close dialog",
+  "error-message": "Ah, the webpage has become 🐢. We will fix it.",
+  "Reload": "Reload"
 }

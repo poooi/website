@@ -37,5 +37,7 @@
   "Windows nightlies": "Windows 每夜构建",
   "Linux and macOS nightlies": "Linux 与 macOS 每夜构建",
   "Source code": "源代码",
-  "Close dialog": "关闭弹出框"
+  "Close dialog": "关闭弹出框",
+  "error-message": "啊啦啦，网页变成了 🐢。我们会进行修复。",
+  "Reload": "重新载入"
 }
