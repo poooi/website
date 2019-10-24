@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 
+import { ErrorBoundary } from './error-boundary'
 import { TypeCat } from './type-cat'
 
 import poi from '../assets/poi.png'
@@ -87,17 +88,19 @@ export const Content = () => {
   const { t } = useTranslation()
   return (
     <Container>
-      <Title>
-        <Logo />
-        <Name>{t('name')}</Name>
-      </Title>
-      <Description>
-        <TypeCat text={t('description')} />
-      </Description>
-      <Suspense fallback={<div />}>
-        <IconLoader />
-        <Download />
-      </Suspense>
+      <ErrorBoundary>
+        <Title>
+          <Logo />
+          <Name>{t('name')}</Name>
+        </Title>
+        <Description>
+          <TypeCat text={t('description')} />
+        </Description>
+        <Suspense fallback={<div />}>
+          <IconLoader />
+          <Download />
+        </Suspense>
+      </ErrorBoundary>
     </Container>
   )
 }

@@ -34,5 +34,7 @@
   "Windows nightlies": "Nightlies Windows",
   "Linux and macOS nightlies": "Nightlies Linux et macOS",
   "Source code": "Code source",
-  "Close dialog": "Fermer le dialogue"
+  "Close dialog": "Fermer le dialogue",
+  "error-message": "Ah, la page Web est devenue 🐢. Nous allons le réparer.",
+  "Reload": "Rechargez"
 }

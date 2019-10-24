@@ -502,7 +502,7 @@ exports[`<Content /> with beta < stable renders 1`] = `
           >
             <span
               class="ms-Button-label label-57"
-              id="id__72"
+              id="id__73"
             >
               Choose another platform
             </span>
@@ -1271,7 +1271,7 @@ exports[`<Content /> with beta > stable renders 1`] = `
           >
             <span
               class="ms-Button-label label-57"
-              id="id__1"
+              id="id__2"
             >
               Choose another platform
             </span>
