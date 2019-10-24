@@ -42,12 +42,20 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 
-const choiceDark = localStorage.getItem('theme') === 'dark'
+const getDefaultIsDark = (): boolean => {
+  if (localStorage.getItem('theme')) {
+    return localStorage.getItem('theme') === 'dark'
+  }
+  return (
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  )
+}
 
 export const App = () => {
   const [isDark, dispatch] = useReducer(
     (state: boolean, value: any) => !state,
-    choiceDark,
+    getDefaultIsDark(),
   )
 
   useEffect(() => {
