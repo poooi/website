@@ -39,8 +39,7 @@ steps:
   displayName: 'Typecheck'
 
 - script: |
-    yarn test --coverage
-    yarn codecov
+    yarn test --coverage && yarn codecov
   displayName: 'Test'
 
 - script: |
