@@ -2,11 +2,36 @@
 
 exports[`<Footer /> renders with non zh 1`] = `
 <DocumentFragment>
-  <div
-    class="footer__Container-iekji0-0 cZvOov"
+  .c0 {
+  text-align: center;
+  min-height: 50px;
+  line-height: 50px;
+  margin-bottom: 1em;
+  color: #1f1f1f;
+}
+
+.c0 a {
+  margin: 0 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.c0 a:hover {
+  color: #106BA3;
+}
+
+.c1 {
+  margin-right: 4em;
+  white-space: nowrap;
+}
+
+<div
+    class="c0"
   >
     <span
-      class="footer__Copyright-iekji0-1 loJRma"
+      class="c1"
     >
       © 2019 poi Contributors
     </span>
@@ -76,11 +101,36 @@ exports[`<Footer /> renders with non zh 1`] = `
 
 exports[`<Footer /> renders with zh 1`] = `
 <DocumentFragment>
-  <div
-    class="footer__Container-iekji0-0 cZvOov"
+  .c0 {
+  text-align: center;
+  min-height: 50px;
+  line-height: 50px;
+  margin-bottom: 1em;
+  color: #1f1f1f;
+}
+
+.c0 a {
+  margin: 0 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.c0 a:hover {
+  color: #106BA3;
+}
+
+.c1 {
+  margin-right: 4em;
+  white-space: nowrap;
+}
+
+<div
+    class="c0"
   >
     <span
-      class="footer__Copyright-iekji0-1 loJRma"
+      class="c1"
     >
       © 2019 poi Contributors
     </span>

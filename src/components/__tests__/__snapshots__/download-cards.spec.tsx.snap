@@ -2,11 +2,82 @@
 
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
-  <div
-    class="download-cards__Container-k88p0k-0 bLXmwT"
+  .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c1 {
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,0.75);
+  border: #646464 solid 1px;
+  border-radius: 1px;
+  color: #646464;
+  cursor: pointer;
+  display: inline;
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  min-width: 12em;
+}
+
+.c2:hover {
+  background-color: rgba(16,107,163,0.75);
+  color: #fff;
+}
+
+.c4 {
+  background-color: rgba(255,255,255,0.75);
+  border: #646464 solid 1px;
+  border-radius: 1px;
+  color: #646464;
+  cursor: pointer;
+  display: inline;
+  display: none;
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  min-width: 12em;
+}
+
+.c4:hover {
+  background-color: rgba(16,107,163,0.75);
+  color: #fff;
+}
+
+.c3 {
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: inline;
+  }
+}
+
+<div
+    class="c0"
   >
     <div
-      class="download-cards__Header-k88p0k-1 iGWqQb"
+      class="c1"
     >
       Download for Linux (x64)
     </div>
@@ -15,13 +86,13 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="download-cards__Button-k88p0k-2 jBgiZI"
+        class="c2"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
+          class="c3"
         >
           Stable, for most users
         </div>
@@ -31,13 +102,13 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
     >
       <button
-        class="download-cards__Button-k88p0k-2 iwDgCG"
+        class="c4"
       >
         <div>
           v10.5.0
         </div>
         <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
+          class="c3"
         >
           Beta, for new features
         </div>
@@ -49,11 +120,82 @@ exports[`<DownloadCards /> renders with beta 1`] = `
 
 exports[`<DownloadCards /> renders with invalid target 1`] = `
 <DocumentFragment>
-  <div
-    class="download-cards__Container-k88p0k-0 bLXmwT"
+  .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c1 {
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,0.75);
+  border: #646464 solid 1px;
+  border-radius: 1px;
+  color: #646464;
+  cursor: pointer;
+  display: inline;
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  min-width: 12em;
+}
+
+.c2:hover {
+  background-color: rgba(16,107,163,0.75);
+  color: #fff;
+}
+
+.c4 {
+  background-color: rgba(255,255,255,0.75);
+  border: #646464 solid 1px;
+  border-radius: 1px;
+  color: #646464;
+  cursor: pointer;
+  display: inline;
+  display: none;
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  min-width: 12em;
+}
+
+.c4:hover {
+  background-color: rgba(16,107,163,0.75);
+  color: #fff;
+}
+
+.c3 {
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: inline;
+  }
+}
+
+<div
+    class="c0"
   >
     <div
-      class="download-cards__Header-k88p0k-1 iGWqQb"
+      class="c1"
     >
       Download for chiba
     </div>
@@ -62,13 +204,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       href="https://github.com/poooi/poi/releases"
     >
       <button
-        class="download-cards__Button-k88p0k-2 jBgiZI"
+        class="c2"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
+          class="c3"
         >
           Stable, for most users
         </div>
@@ -78,13 +220,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       href="https://github.com/poooi/poi/releases"
     >
       <button
-        class="download-cards__Button-k88p0k-2 iwDgCG"
+        class="c4"
       >
         <div>
           v10.5.0
         </div>
         <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
+          class="c3"
         >
           Beta, for new features
         </div>
@@ -96,11 +238,55 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 
 exports[`<DownloadCards /> renders without beta 1`] = `
 <DocumentFragment>
-  <div
-    class="download-cards__Container-k88p0k-0 bLXmwT"
+  .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c1 {
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,0.75);
+  border: #646464 solid 1px;
+  border-radius: 1px;
+  color: #646464;
+  cursor: pointer;
+  display: inline;
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 4px 8px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  min-width: 12em;
+}
+
+.c2:hover {
+  background-color: rgba(16,107,163,0.75);
+  color: #fff;
+}
+
+.c3 {
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    font-size: 26px;
+  }
+}
+
+<div
+    class="c0"
   >
     <div
-      class="download-cards__Header-k88p0k-1 iGWqQb"
+      class="c1"
     >
       Download for Linux (x64)
     </div>
@@ -109,13 +295,13 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <button
-        class="download-cards__Button-k88p0k-2 jBgiZI"
+        class="c2"
       >
         <div>
           v10.4.0
         </div>
         <div
-          class="download-cards__Description-k88p0k-3 fGTQht"
+          class="c3"
         >
           Stable, for most users
         </div>
