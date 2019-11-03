@@ -39,7 +39,7 @@ steps:
   displayName: 'Typecheck'
 
 - script: |
-    yarn test --coverage && yarn codecov
+    yarn test:ci
   displayName: 'Test'
 
 - script: |
@@ -55,3 +55,15 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: '**/junit.xml'
+
+- task: PublishCodeCoverageResults@1
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/cobertura-coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
