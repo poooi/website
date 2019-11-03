@@ -2,18 +2,44 @@
 
 exports[`<TypeCat /> renders 1`] = `
 <DocumentFragment>
-  <div
-    class="type-cat__Container-sc-1aso1bi-0 hfpvjP"
+  .c0 {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.c1 {
+  opacity: 1;
+}
+
+.c1 .Cursor--blinking {
+  opacity: 1;
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+.c2 {
+  opacity: 0;
+  display: none;
+}
+
+.c2 .Cursor--blinking {
+  opacity: 1;
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="type-cat__Mirror-sc-1aso1bi-1 iFyfZZ"
+      class="c1"
     >
       <div
         data-testid="typist"
       />
     </div>
     <div
-      class="type-cat__Mirror-sc-1aso1bi-1 bOeZEH"
+      class="c2"
       data-testid="typing"
     >
       Hello World
