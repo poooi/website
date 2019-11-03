@@ -4,7 +4,6 @@ pool:
 variables:
   CI: true
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
-  CODECOV_TOKEN: $(codecovToken)
 
 trigger:
   branches:
@@ -24,6 +23,9 @@ steps:
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
+    restoreKeys: |
+      yarn | $(Agent.OS)
+      yarn
   displayName: Cache Yarn packages
 
 - script: |
@@ -69,5 +71,7 @@ steps:
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 
 - script: |
-    bash <(curl -s https://codecov.io/bash) -t $(codecovToken) -B $(Build.SourceBranch)
-  displayName: 'Publish code coverage to Codecov'
+    cat ./coverage/lcov.info | yarn coveralls
+  displayName: 'Publish code coverage to Coveralls'
+  env:
+    COVERALLS_REPO_TOKEN: $(coverageServiceToken)
