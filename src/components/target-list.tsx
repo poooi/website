@@ -80,7 +80,7 @@ export const TargetList = ({ version }: IProps) => {
           {t('Windows nightlies')}
         </CompoundButton>
         <CompoundButton
-          href="https://poidb.0u0.moe/nightly"
+          href="https://nightly.poi.moe/"
           target="_blank"
           rel="noopener noreferrer"
           secondaryText={t('HostedAt', { site: 'poi.moe' })}
