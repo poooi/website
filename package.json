@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:ci": "react-scripts test --coverage --reporters=default --reporters=jest-junit --coverageReporters=cobertura"
+    "test:ci": "react-scripts test --coverage --reporters=default --reporters=jest-junit --coverageReporters=cobertura --coverageReporters=lcov"
   },
   "browserslist": {
     "production": [
@@ -65,6 +65,7 @@
     "@types/semver": "^6.2.0",
     "@types/styled-components": "^4.1.20",
     "@types/ua-parser-js": "^0.7.33",
+    "@poooi/coveralls": "^3.0.7",
     "husky": "^3.0.9",
     "jest-canvas-mock": "^2.1.2",
     "jest-junit": "^9.0.0",
