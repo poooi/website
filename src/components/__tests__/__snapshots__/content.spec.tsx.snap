@@ -375,7 +375,7 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
       aria-label="Linux and macOS nightlies"
       class="ms-Button ms-Button--compound root-77"
       data-is-focusable="true"
-      href="https://poidb.0u0.moe/nightly"
+      href="https://nightly.poi.moe/"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -1332,7 +1332,7 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
       aria-label="Linux and macOS nightlies"
       class="ms-Button ms-Button--compound root-77"
       data-is-focusable="true"
-      href="https://poidb.0u0.moe/nightly"
+      href="https://nightly.poi.moe/"
       rel="noopener noreferrer"
       target="_blank"
     >
