@@ -1789,13 +1789,6 @@
     lodash.unescape "4.0.1"
     semver "^6.3.0"
 
-"@uifabric/example-data@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@uifabric/example-data/-/example-data-7.0.1.tgz#8d5104ffbfa5c5b2589fa60f753932e536fd1003"
-  integrity sha512-HWw2lAbF5Fn1NhmxxEpzgWrprEsQ7+Ut71zpAHdCJoVCVeesHl03gY/obBIz8ogrufW0RIlkrNSredy6uRzYDQ==
-  dependencies:
-    tslib "^1.7.1"
-
 "@uifabric/foundation@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@uifabric/foundation/-/foundation-7.4.4.tgz#f9e01b37710ee95b3f2e82418f480b8b3fd879a2"
@@ -8248,13 +8241,12 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-office-ui-fabric-react@7.53.1:
-  version "7.53.1"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.53.1.tgz#ce55f41f52833296bcf0a450e68e2acd3a243c75"
-  integrity sha512-f5xaArgs2BCphD3rhAOUBgdusKpBqLU/MLBCsG69ZQGm9u4y1JRQCgUmF1VPfXM+etGyTTtmJS4kigFeDhhSWg==
+office-ui-fabric-react@^7.57.2:
+  version "7.57.2"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.57.2.tgz#2bc9109ddf651297e9733478cb839f79efb44474"
+  integrity sha512-GuyZWrkgiNx8b7z9+n6SzMwWvgLOxJfCwedQqVyAKObsNjYLXOLAfjmf8bGHeGxyws8ERGJCjjX13qbXYebTBw==
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
-    "@uifabric/example-data" "^7.0.1"
     "@uifabric/foundation" "^7.4.4"
     "@uifabric/icons" "^7.3.0"
     "@uifabric/merge-styles" "^7.8.0"

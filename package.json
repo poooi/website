@@ -14,7 +14,7 @@
     "i18next-browser-languagedetector": "^4.0.1",
     "lodash": "^4.17.15",
     "modern-normalize": "^0.5.0",
-    "office-ui-fabric-react": "7.53.1",
+    "office-ui-fabric-react": "^7.57.2",
     "polished": "^3.4.2",
     "random": "^2.1.1",
     "react": "^16.11.0",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "@poooi/coveralls": "^3.0.7",
     "@testing-library/dom": "^6.10.1",
     "@testing-library/jest-dom": "^4.2.3",
     "@testing-library/react": "^9.3.2",
@@ -65,7 +66,6 @@
     "@types/semver": "^6.2.0",
     "@types/styled-components": "^4.1.21",
     "@types/ua-parser-js": "^0.7.33",
-    "@poooi/coveralls": "^3.0.7",
     "husky": "^3.0.9",
     "jest-canvas-mock": "^2.1.2",
     "jest-junit": "^9.0.0",
@@ -81,5 +81,10 @@
     "tslint-react": "^4.1.0",
     "typescript": "^3.7.2",
     "typescript-plugin-css-modules": "^2.0.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "office-ui-fabric-react/lib/(.*)$": "office-ui-fabric-react/lib-commonjs/$1"
+    }
   }
 }
