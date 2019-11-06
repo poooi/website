@@ -63,7 +63,7 @@
     "@types/react-dom": "^16.9.3",
     "@types/react-typist": "^2.0.1",
     "@types/semver": "^6.2.0",
-    "@types/styled-components": "^4.1.20",
+    "@types/styled-components": "^4.1.21",
     "@types/ua-parser-js": "^0.7.33",
     "@poooi/coveralls": "^3.0.7",
     "husky": "^3.0.9",
