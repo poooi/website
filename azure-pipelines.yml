@@ -73,5 +73,6 @@ steps:
 - script: |
     cat ./coverage/lcov.info | yarn coveralls
   displayName: 'Publish code coverage to Coveralls'
+  continueOnError: true
   env:
     COVERALLS_REPO_TOKEN: $(coverageServiceToken)
