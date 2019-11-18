@@ -8281,10 +8281,10 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-office-ui-fabric-react@^7.60.1:
-  version "7.60.1"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.60.1.tgz#a0c5135fe90d644a4828c65f4978e98f6daa18df"
-  integrity sha512-j/NmAExI/bRYwDBLEzdMv+ecKImSFWypp2ec7iZnQGAl+1SZ9yPPV6/9iK7fb5aYjQKPKy/CIx6GDZrUjkAaHQ==
+office-ui-fabric-react@^7.61.1:
+  version "7.61.1"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.61.1.tgz#8c87c5f7f02dca2a4372f5117e72f6fdcaba3c62"
+  integrity sha512-DtvRY7cOPBSDpbDgtwp4RcRp36J9BQhsR+a1liTdFCtFrcDxzxBu/ToGuvXo6N0pnk1cKWlrmHn8TBrlf8ilQw==
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
     "@uifabric/foundation" "^7.5.0"
@@ -8292,7 +8292,7 @@ office-ui-fabric-react@^7.60.1:
     "@uifabric/merge-styles" "^7.8.1"
     "@uifabric/react-hooks" "^7.0.1"
     "@uifabric/set-version" "^7.0.2"
-    "@uifabric/styling" "^7.7.2"
+    "@uifabric/styling" "^7.7.3"
     "@uifabric/utilities" "^7.5.0"
     prop-types "^15.5.10"
     tslib "^1.7.1"
