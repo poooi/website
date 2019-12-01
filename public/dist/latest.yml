@@ -1,8 +1,8 @@
-version: 10.3.0
+version: 10.4.0
 files:
-  - url: poi-setup-10.3.0.exe
-    sha512: ZBJGtOby6HRp7Xr9IhQvQJUeLHA5EJEDazjSJYZckzlN7mOaKFyF7ADKlC2xo3ithzGWlSufjGKiUht7IJMy6A==
-    size: 122186281
-path: poi-setup-10.3.0.exe
-sha512: ZBJGtOby6HRp7Xr9IhQvQJUeLHA5EJEDazjSJYZckzlN7mOaKFyF7ADKlC2xo3ithzGWlSufjGKiUht7IJMy6A==
-releaseDate: '2019-05-26T19:19:56.226Z'
+  - url: poi-setup-10.4.0.exe
+    sha512: Rd4D/5l8ixGhqEfNIo+TUjkJtafMzKeMgRNT297DMM/aNtrrEsT2FqtEaOvyAt5xPkptIZkuC7Q64pCX8w0ekA==
+    size: 130244564
+path: poi-setup-10.4.0.exe
+sha512: Rd4D/5l8ixGhqEfNIo+TUjkJtafMzKeMgRNT297DMM/aNtrrEsT2FqtEaOvyAt5xPkptIZkuC7Q64pCX8w0ekA==
+releaseDate: '2019-12-01T04:22:20.656Z'

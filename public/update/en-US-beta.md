@@ -1,7 +1,5 @@
 ## POI v10.4.0 changelog
 
-### Warning: separate window mode is not working in this beta version!
-
 ### Features
 
 - Upgrade to electron@6 (Chromium@76)
