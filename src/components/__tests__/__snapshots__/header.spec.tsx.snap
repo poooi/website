@@ -17,7 +17,7 @@ exports[`<Header /> changes language: en 2`] = `
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-99\\"
++           class=\\"ms-Button ms-Button--commandBar root-100\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
@@ -30,7 +30,7 @@ exports[`<Header /> changes language: en 2`] = `
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
 -           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -171,7 +171,7 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-88\\"
++           class=\\"ms-Button ms-Button--commandBar root-89\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
@@ -191,7 +191,7 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
 -           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-88\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-89\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -241,7 +241,7 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-88\\"
++           class=\\"ms-Button ms-Button--commandBar root-89\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
@@ -261,7 +261,7 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
 -           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-88\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-89\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -311,7 +311,7 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-99\\"
++           class=\\"ms-Button ms-Button--commandBar root-100\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
@@ -331,7 +331,7 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
 -           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -381,7 +381,7 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-99\\"
++           class=\\"ms-Button ms-Button--commandBar root-100\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
@@ -401,7 +401,7 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
 -           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-99\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -595,15 +595,15 @@ exports[`<Header /> renders 2`] = `
     class="ms-Fabric ms-Layer-content content-81"
   >
     <div
-      class="ms-Callout-container container-82"
+      class="ms-Callout-container container-83"
     >
       <div
-        class="ms-Callout ms-ContextualMenu-Callout root-83"
+        class="ms-Callout ms-ContextualMenu-Callout root-84"
         style="opacity: 0; filter: opacity(0);"
         tabindex="-1"
       >
         <div
-          class="ms-Callout-main calloutMain-86"
+          class="ms-Callout-main calloutMain-87"
           style="outline: none; max-height: 752px;"
         >
           <div
@@ -612,7 +612,7 @@ exports[`<Header /> renders 2`] = `
             tabindex="-1"
           >
             <div
-              class="ms-FocusZone css-87 ms-ContextualMenu is-open ms-BaseButton-menuhost root-59"
+              class="ms-FocusZone css-88 ms-ContextualMenu is-open ms-BaseButton-menuhost root-59"
               data-focuszone-id="FocusZone8"
             >
               <ul
