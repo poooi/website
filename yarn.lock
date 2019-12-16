@@ -12591,10 +12591,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript-plugin-css-modules@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.1.1.tgz#0b6309fd26a1609629a812266a77834685866608"
-  integrity sha512-Usd2NP3/RQ07PYHv3FVBWeHjIKXvy6MsrwRNeGZUV4xZBbfurBRPFCcaqAC/xtTKEy1Jv0d5n4tVGZ4C8VKFlw==
+typescript-plugin-css-modules@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.1.2.tgz#c12b9bf1da6eab9ad7a72422e4bcc890da9acf1d"
+  integrity sha512-SMZjhSii0C86eviPv4Rv/p+0/M52LUlZLeA0lZcaxyljok/i/YG0Q8u9+Cc9r/rFd36IX+v5JQiJx3z4K0Dtyg==
   dependencies:
     dotenv "^8.2.0"
     icss-utils "^4.1.1"
