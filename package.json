@@ -25,7 +25,7 @@
     "react-typist": "^2.0.5",
     "semver": "^6.3.0",
     "styled-components": "^4.4.1",
-    "ua-parser-js": "^0.7.20"
+    "ua-parser-js": "^0.7.21"
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
