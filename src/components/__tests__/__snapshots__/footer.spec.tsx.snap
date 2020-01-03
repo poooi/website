@@ -33,7 +33,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     <span
       class="c1"
     >
-      © 2019 poi Contributors
+      © 2020 poi Contributors
     </span>
     <a
       href="https://discordapp.com/channels/118339803660943369/367575898313981952"
@@ -132,7 +132,7 @@ exports[`<Footer /> renders with zh 1`] = `
     <span
       class="c1"
     >
-      © 2019 poi Contributors
+      © 2020 poi Contributors
     </span>
     <a
       href="http://weibo.com/letspoi"
