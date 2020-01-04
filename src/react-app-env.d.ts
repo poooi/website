@@ -1,1 +1,3 @@
-// <reference types="react-scripts" />
+/* eslint-disable */
+
+/// <reference types="react-scripts" />
