@@ -5,7 +5,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
 import styled from 'styled-components/macro'
-import { IVersion, targets } from '../model'
+import { Version, targets } from '../model'
 import { autoDetectedTarget, getDownloadLink } from './utils'
 
 const DownloadList = styled.div`
@@ -17,13 +17,13 @@ const DownloadList = styled.div`
   }
 `
 
-interface IProps {
-  version: IVersion
+interface Props {
+  version: Version
 }
 
 const sortedTargets = sortBy(targets, target => target !== autoDetectedTarget)
 
-export const TargetList = ({ version }: IProps) => {
+export const TargetList = ({ version }: Props) => {
   const { t } = useTranslation()
   return (
     <>

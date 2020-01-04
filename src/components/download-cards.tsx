@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { lt } from 'semver'
 import styled from 'styled-components/macro'
 
-import { IVersion, targets } from '../model'
+import { Version, targets } from '../model'
 import { getDownloadLink } from './utils'
 
 const Container = styled.div`
@@ -55,12 +55,12 @@ const Description = styled.div`
   font-size: 14px;
 `
 
-interface IProps {
+interface Props {
   target: targets
-  version: IVersion
+  version: Version
 }
 
-export const DownloadCards = ({ target, version }: IProps) => {
+export const DownloadCards = ({ target, version }: Props) => {
   const { t } = useTranslation()
 
   return (
@@ -79,7 +79,7 @@ export const DownloadCards = ({ target, version }: IProps) => {
           </a>
           {lt(version.version, version.betaVersion) && (
             <a href={getDownloadLink(version.betaVersion, target)}>
-              <Button isBeta={true}>
+              <Button isBeta>
                 <div>{version.betaVersion}</div>
                 <Description>{t('beta-hint')}</Description>
               </Button>

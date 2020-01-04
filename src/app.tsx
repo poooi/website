@@ -3,6 +3,7 @@ import styled, {
   createGlobalStyle,
   ThemeProvider,
 } from 'styled-components/macro'
+import { CustomizerContext } from 'office-ui-fabric-react'
 
 import {
   darkTheme,
@@ -11,7 +12,6 @@ import {
   ThemeIsDarkContext,
 } from './theme'
 
-import { CustomizerContext } from 'office-ui-fabric-react'
 
 import { Background } from './components/background'
 import { Content } from './components/content'

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withTranslation, WithTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 
-interface IState {
+interface State {
   hasError: boolean
 }
 
@@ -20,7 +20,7 @@ const Text = styled.div`
 `
 
 export const ErrorBoundary = withTranslation()(
-  class ErrorBoundaryBase extends Component<WithTranslation, IState> {
+  class ErrorBoundaryBase extends Component<WithTranslation, State> {
     public state = {
       hasError: false,
     }
@@ -41,7 +41,7 @@ export const ErrorBoundary = withTranslation()(
           <Container>
             <Text>{t('error-message')}</Text>
             <div>
-              <button onClick={this.handleReload}>{t('Reload')}</button>
+              <button type="button" onClick={this.handleReload}>{t('Reload')}</button>
             </div>
           </Container>
         )

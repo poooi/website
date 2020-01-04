@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 
-import { IVersion } from '../model'
+import { Version } from '../model'
 import { DownloadCards } from './download-cards'
 import { TargetList } from './target-list'
 import { autoDetectedTarget } from './utils'
@@ -38,13 +38,13 @@ const CloseButton = styled(ActionButton)`
 const Download = () => {
   const { t } = useTranslation()
 
-  const [version, setVersion] = useState<IVersion>(({} as any) as IVersion)
+  const [version, setVersion] = useState<Version>(({} as any) as Version)
 
   useEffect(() => {
     const getUpdate = async () => {
       try {
         const resp = await fetch('/update/latest.json')
-        const result: IVersion = await resp.json()
+        const result: Version = await resp.json()
         setVersion(result)
       } catch (e) {
         console.error(e)
