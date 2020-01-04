@@ -1,6 +1,6 @@
 import { setIconOptions } from 'office-ui-fabric-react'
 
-/* tslint:disable no-implicit-dependencies */
+/* eslint-disable import/no-extraneous-dependencies */
 import '@testing-library/jest-dom/extend-expect'
 import 'jest-canvas-mock'
 import 'jest-styled-components'

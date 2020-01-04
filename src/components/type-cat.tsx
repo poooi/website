@@ -29,19 +29,17 @@ const Mirror = styled.div<{ show: boolean; hide?: boolean }>`
   }
 `
 
-interface IProps {
+interface Props {
   text: string
 }
 
-interface IState {
+interface State {
   stage: string
-  width: number
 }
 
-export class TypeCat extends React.Component<IProps, IState> {
+export class TypeCat extends React.Component<Props, State> {
   public state = {
     stage: 'loaded',
-    width: 0,
   }
 
   public componentDidMount() {
@@ -59,9 +57,11 @@ export class TypeCat extends React.Component<IProps, IState> {
   }
 
   public render() {
+    const { stage } = this.state
+    const { text } = this.props
     return (
       <Container>
-        <Mirror hide={this.state.stage !== 'typing'} show={true}>
+        <Mirror hide={stage !== 'typing'} show>
           <Typist
             cursor={{
               element: '_',
@@ -69,15 +69,15 @@ export class TypeCat extends React.Component<IProps, IState> {
             }}
             onTypingDone={this.handleTypingDone}
           >
-            {this.props.text}
+            {text}
           </Typist>
         </Mirror>
         <Mirror
-          show={this.state.stage === 'done'}
-          hide={this.state.stage === 'typing'}
-          data-testid={this.state.stage}
+          show={stage === 'done'}
+          hide={stage === 'typing'}
+          data-testid={stage}
         >
-          {this.props.text}
+          {text}
           <span style={{ opacity: 0 }}>_</span>
         </Mirror>
       </Container>

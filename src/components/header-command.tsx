@@ -62,7 +62,7 @@ const HeaderCommand = () => {
         },
         text: value,
       })),
-    [i18n.changeLanguage], // eslint-disable-line react-hooks/exhaustive-deps
+    [i18n.changeLanguage],
   )
 
   useEffect(() => {
@@ -72,7 +72,7 @@ const HeaderCommand = () => {
       },
     })
     setFontfamily(getLocaleFontFamily(i18n.language))
-  }, [i18n.language]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [i18n.language])
 
   return (
     <CommandBar>

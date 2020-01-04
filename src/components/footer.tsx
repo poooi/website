@@ -13,7 +13,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 import { getExactLanguage } from '../utils'
 
 const Icon = ({ icon }: { icon: IconProp }) => (
-  <FontAwesomeIcon icon={icon} size="lg" fixedWidth={true} />
+  <FontAwesomeIcon icon={icon} size="lg" fixedWidth />
 )
 
 const Container = styled.div`
@@ -48,7 +48,9 @@ export const Footer = () => {
 
   return (
     <Container>
-      <Copyright>© {new Date().getFullYear()} poi Contributors</Copyright>
+      <Copyright>
+        {`© ${new Date().getFullYear()} poi Contributors`}
+      </Copyright>
       {['zh-Hans', 'zh-Hant'].includes(lang) ? (
         <>
           <a href="http://weibo.com/letspoi">

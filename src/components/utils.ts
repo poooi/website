@@ -41,13 +41,17 @@ const detectTarget = () => {
   const { os, cpu } = new UAParser().getResult()
   if (os.name === 'Linux') {
     return targets.linux
-  } else if (os.name === 'Debian' || os.name === 'Ubuntu') {
+  }
+  if (os.name === 'Debian' || os.name === 'Ubuntu') {
     return targets.linuxDeb
-  } else if (os.name === 'CentOS' || os.name === 'Fedora') {
+  }
+  if (os.name === 'CentOS' || os.name === 'Fedora') {
     return targets.linuxRpm
-  } else if (os.name === 'Mac OS') {
+  }
+  if (os.name === 'Mac OS') {
     return targets.macos
-  } else if (os.name === 'Windows') {
+  }
+  if (os.name === 'Windows') {
     if (cpu.architecture === 'ia64' || cpu.architecture === 'amd64') {
       return targets.win64Setup
     }

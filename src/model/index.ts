@@ -1,4 +1,4 @@
-export interface IVersion {
+export interface Version {
   version: string
   betaVersion: string
 }
