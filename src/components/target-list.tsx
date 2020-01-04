@@ -3,7 +3,7 @@ import sortBy from 'lodash/sortBy'
 import { CompoundButton } from 'office-ui-fabric-react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { lt } from 'semver'
+import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'
 import { Version, targets } from '../model'
 import { autoDetectedTarget, getDownloadLink } from './utils'
@@ -41,7 +41,7 @@ export const TargetList = ({ version }: Props) => {
           </CompoundButton>
         ))}
       </DownloadList>
-      {version.version && lt(version.version, version.betaVersion) && (
+      {version.version && compareVersions.compare(version.version, version.betaVersion, '<') && (
         <>
           <h2>{t('Beta')}</h2>
           <DownloadList>

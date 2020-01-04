@@ -2,7 +2,7 @@ import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
 import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { lt } from 'semver'
+import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'
 
 import { Version, targets } from '../model'
@@ -77,7 +77,7 @@ export const DownloadCards = ({ target, version }: Props) => {
               <Description>{t('stable-hint')}</Description>
             </Button>
           </a>
-          {lt(version.version, version.betaVersion) && (
+          {compareVersions.compare(version.version, version.betaVersion, '<') && (
             <a href={getDownloadLink(version.betaVersion, target)}>
               <Button isBeta>
                 <div>{version.betaVersion}</div>

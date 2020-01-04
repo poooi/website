@@ -1,5 +1,4 @@
 import trimStart from 'lodash/trimStart'
-import { valid } from 'semver'
 import { UAParser } from 'ua-parser-js'
 
 import { targets } from '../model'
@@ -7,12 +6,16 @@ import { targets } from '../model'
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
 const DEFAULT_URI = 'https://github.com/poooi/poi/releases'
 
+// the semver-regex package does not support `-beta.0` prerelase version, have to host one here
+// copied from https://regex101.com/r/vkijKf/1/ which is suggested by semver.org
+const semverRegex = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
+
 export const getDownloadLink = (
   version: string | undefined,
   target: targets,
 ) => {
   const pure = trimStart(version, 'v')
-  if (!valid(pure)) {
+  if (!semverRegex.test(pure)) {
     return DEFAULT_URI
   }
   switch (target) {
