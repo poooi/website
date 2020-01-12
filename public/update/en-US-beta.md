@@ -9,6 +9,10 @@
 - Add support of new air base attack api
 - Add option to select screenshot method
 - Add memory monitoring back to performance monitor
+- Add pin button to minimap
+- Add `Special Attack` indicator in fleet panel
+- Miscellaneous UI/UE improvements
+- [macOS] Add support of auto-update
 
 ### Fixes
 
