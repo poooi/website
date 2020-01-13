@@ -1,3 +1,9 @@
+## POI v10.5.1 changelog
+
+### Fixes
+
+- Fix crash when no fleet data available
+
 ## POI v10.5.0 changelog
 
 ### Features
