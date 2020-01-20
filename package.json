@@ -85,7 +85,7 @@
     "prettier": "^1.19.1",
     "snapshot-diff": "^0.6.2",
     "source-map-explorer": "^2.2.2",
-    "typescript": "^3.7.4",
+    "typescript": "^3.7.5",
     "typescript-plugin-css-modules": "^2.1.2"
   },
   "jest": {
