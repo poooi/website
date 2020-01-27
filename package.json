@@ -61,7 +61,7 @@
     "@types/lodash": "^4.14.149",
     "@types/random": "^2.1.0",
     "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
+    "@types/react-dom": "^16.9.5",
     "@types/react-typist": "^2.0.1",
     "@types/semver": "^6.2.0",
     "@types/styled-components": "^4.4.2",
