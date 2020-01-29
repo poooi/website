@@ -592,7 +592,8 @@ exports[`<Header /> renders 2`] = `
   data-portal-element="true"
 >
   <div
-    class="ms-Fabric ms-Layer-content content-81"
+    class="ms-Fabric is-focusHidden ms-Fabric--isFocusHidden ms-Layer-content content-81"
+    dir="ltr"
   >
     <div
       class="ms-Callout-container container-83"
