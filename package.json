@@ -19,7 +19,7 @@
     "polished": "^3.4.2",
     "random": "^2.1.1",
     "react": "^16.12.0",
-    "react-app-polyfill": "^1.0.5",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.12.0",
     "react-i18next": "^11.3.1",
     "react-scripts": "3.3.0",
