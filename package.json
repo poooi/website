@@ -11,7 +11,7 @@
     "@uifabric/styling": "^7.10.16",
     "classnames": "^2.2.6",
     "compare-versions": "^3.6.0",
-    "i18next": "^19.1.0",
+    "i18next": "^19.3.2",
     "i18next-browser-languagedetector": "^4.0.2",
     "lodash": "^4.17.15",
     "modern-normalize": "^0.6.0",
