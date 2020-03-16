@@ -2336,10 +2336,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/random@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@types/random/-/random-2.1.0.tgz#f5cfaa60573e85de110b6e0970caf5d5b58efbb3"
-  integrity sha512-EQ5YQwEnHx5W/KzaWr3hOAP+CxGFRgpPH1450koXcI2ZJO47zarN9U0eAumk9X1e4Oc8rZlfOVMaY+RPte8NFA==
+"@types/random@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@types/random/-/random-2.1.1.tgz#6f125add1deaf9f8f4765a4d12326f16ee6f951e"
+  integrity sha512-TsVl/iU0dkOAm84OcnDhLXXtSJtlxb6W/Ue1vkETsH3s/xfranVHqqQA2aTB7Xv1snvNiENrA0oH9/KZ0I9UNg==
 
 "@types/react-dom@*", "@types/react-dom@^16.9.5":
   version "16.9.5"
