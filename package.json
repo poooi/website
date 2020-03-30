@@ -22,7 +22,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.0",
     "react-i18next": "^11.3.4",
-    "react-scripts": "3.4.0",
+    "react-scripts": "3.4.1",
     "react-typist": "^2.0.5",
     "styled-components": "^4.4.1",
     "ua-parser-js": "^0.7.21"
