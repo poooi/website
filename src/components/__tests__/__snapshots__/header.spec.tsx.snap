@@ -16,21 +16,21 @@ exports[`<Header /> changes language: en 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar root-40\\"
++           class=\\"ms-Button ms-Button--commandBar root-91\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
             <span
-              class=\\"ms-Button-flexContainer flexContainer-50\\"
+              class=\\"ms-Button-flexContainer flexContainer-41\\"
 @@ -51,11 +51,11 @@
             </span>
           </button>
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-40\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-91\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -85,7 +85,7 @@ exports[`<Header /> changes language: ja 1`] = `
 +             日本語
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -137,7 +137,7 @@ exports[`<Header /> changes language: ja 2`] = `
 +             日本語
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -170,13 +170,13 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-89\\"
+-           class=\\"ms-Button ms-Button--commandBar root-40\\"
++           class=\\"ms-Button ms-Button--commandBar root-80\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
             <span
-              class=\\"ms-Button-flexContainer flexContainer-50\\"
+              class=\\"ms-Button-flexContainer flexContainer-41\\"
 @@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
@@ -190,8 +190,8 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-89\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-40\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-80\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -207,7 +207,7 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
 +             简体中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -240,13 +240,13 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-89\\"
+-           class=\\"ms-Button ms-Button--commandBar root-40\\"
++           class=\\"ms-Button ms-Button--commandBar root-80\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
             <span
-              class=\\"ms-Button-flexContainer flexContainer-50\\"
+              class=\\"ms-Button-flexContainer flexContainer-41\\"
 @@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
@@ -260,8 +260,8 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-89\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-40\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-80\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -277,7 +277,7 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
 +             简体中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -310,13 +310,13 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar root-40\\"
++           class=\\"ms-Button ms-Button--commandBar root-91\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
             <span
-              class=\\"ms-Button-flexContainer flexContainer-50\\"
+              class=\\"ms-Button-flexContainer flexContainer-41\\"
 @@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
@@ -330,8 +330,8 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-40\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-91\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -347,7 +347,7 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
 +             繁體中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -380,13 +380,13 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
           class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
         >
           <button
--           class=\\"ms-Button ms-Button--commandBar root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar root-40\\"
++           class=\\"ms-Button ms-Button--commandBar root-91\\"
             data-is-focusable=\\"true\\"
             type=\\"button\\"
           >
             <span
-              class=\\"ms-Button-flexContainer flexContainer-50\\"
+              class=\\"ms-Button-flexContainer flexContainer-41\\"
 @@ -45,17 +45,17 @@
                 <path
                   d=\\"M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z\\"
@@ -400,8 +400,8 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
           <button
             aria-expanded=\\"false\\"
             aria-haspopup=\\"true\\"
--           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-49\\"
-+           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-100\\"
+-           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-40\\"
++           class=\\"ms-Button ms-Button--commandBar ms-Button--hasMenu root-91\\"
             data-is-focusable=\\"true\\"
             data-testid=\\"language-dropdown\\"
             type=\\"button\\"
@@ -417,7 +417,7 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
 +             繁體中文
               <i
                 aria-hidden=\\"true\\"
-                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-54\\"
+                class=\\"ms-Icon root-37 ms-Button-menuIcon menuIcon-45\\"
                 data-icon-name=\\"ChevronDown\\"
                 role=\\"presentation\\""
 `;
@@ -514,12 +514,12 @@ exports[`<Header /> renders 1`] = `
         class="c4"
       >
         <button
-          class="ms-Button ms-Button--commandBar root-49"
+          class="ms-Button ms-Button--commandBar root-40"
           data-is-focusable="true"
           type="button"
         >
           <span
-            class="ms-Button-flexContainer flexContainer-50"
+            class="ms-Button-flexContainer flexContainer-41"
             data-automationid="splitbuttonprimary"
           >
             <svg
@@ -544,13 +544,13 @@ exports[`<Header /> renders 1`] = `
           aria-expanded="true"
           aria-haspopup="true"
           aria-owns="id__4-menu"
-          class="ms-Button ms-Button--commandBar is-expanded ms-Button--hasMenu root-57"
+          class="ms-Button ms-Button--commandBar is-expanded ms-Button--hasMenu root-48"
           data-is-focusable="true"
           data-testid="language-dropdown"
           type="button"
         >
           <span
-            class="ms-Button-flexContainer flexContainer-50"
+            class="ms-Button-flexContainer flexContainer-41"
             data-automationid="splitbuttonprimary"
           >
             <svg
@@ -571,7 +571,7 @@ exports[`<Header /> renders 1`] = `
             English
             <i
               aria-hidden="true"
-              class="ms-Icon root-37 ms-Button-menuIcon is-expanded menuIcon-58"
+              class="ms-Icon root-37 ms-Button-menuIcon is-expanded menuIcon-49"
               data-icon-name="ChevronDown"
               role="presentation"
             />
@@ -588,55 +588,54 @@ exports[`<Header /> renders 1`] = `
 
 exports[`<Header /> renders 2`] = `
 <div
-  class="ms-Layer ms-Layer--fixed root-79"
+  class="ms-Layer ms-Layer--fixed root-70"
   data-portal-element="true"
 >
   <div
-    class="ms-Fabric is-focusHidden ms-Fabric--isFocusHidden ms-Layer-content content-81"
-    dir="ltr"
+    class="ms-Fabric ms-Layer-content content-72"
   >
     <div
-      class="ms-Callout-container container-83"
+      class="ms-Callout-container container-74"
     >
       <div
-        class="ms-Callout ms-ContextualMenu-Callout root-84"
+        class="ms-Callout ms-ContextualMenu-Callout root-75"
         style="opacity: 0; filter: opacity(0);"
         tabindex="-1"
       >
         <div
-          class="ms-Callout-main calloutMain-87"
+          class="ms-Callout-main calloutMain-78"
           style="outline: none; max-height: 752px;"
         >
           <div
-            class="ms-ContextualMenu-container container-60"
+            class="ms-ContextualMenu-container container-51"
             id="id__4-menu"
             tabindex="-1"
           >
             <div
-              class="ms-FocusZone css-88 ms-ContextualMenu is-open ms-BaseButton-menuhost root-59"
+              class="ms-FocusZone css-79 ms-ContextualMenu is-open ms-BaseButton-menuhost root-50"
               data-focuszone-id="FocusZone8"
             >
               <ul
-                class="ms-ContextualMenu-list is-open list-61"
+                class="ms-ContextualMenu-list is-open list-52"
                 role="menu"
               >
                 <li
-                  class="ms-ContextualMenu-item item-64"
+                  class="ms-ContextualMenu-item item-55"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="1"
                     aria-setsize="5"
-                    class="ms-ContextualMenu-link root-66"
+                    class="ms-ContextualMenu-link root-57"
                     role="menuitem"
                     tabindex="0"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-70"
+                      class="ms-ContextualMenu-linkContent linkContent-61"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-76"
+                        class="ms-ContextualMenu-itemText label-67"
                       >
                         English
                       </span>
@@ -644,22 +643,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-64"
+                  class="ms-ContextualMenu-item item-55"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="2"
                     aria-setsize="5"
-                    class="ms-ContextualMenu-link root-66"
+                    class="ms-ContextualMenu-link root-57"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-70"
+                      class="ms-ContextualMenu-linkContent linkContent-61"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-76"
+                        class="ms-ContextualMenu-itemText label-67"
                       >
                         français
                       </span>
@@ -667,22 +666,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-64"
+                  class="ms-ContextualMenu-item item-55"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="3"
                     aria-setsize="5"
-                    class="ms-ContextualMenu-link root-66"
+                    class="ms-ContextualMenu-link root-57"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-70"
+                      class="ms-ContextualMenu-linkContent linkContent-61"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-76"
+                        class="ms-ContextualMenu-itemText label-67"
                       >
                         日本語
                       </span>
@@ -690,22 +689,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-64"
+                  class="ms-ContextualMenu-item item-55"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="4"
                     aria-setsize="5"
-                    class="ms-ContextualMenu-link root-66"
+                    class="ms-ContextualMenu-link root-57"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-70"
+                      class="ms-ContextualMenu-linkContent linkContent-61"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-76"
+                        class="ms-ContextualMenu-itemText label-67"
                       >
                         简体中文
                       </span>
@@ -713,22 +712,22 @@ exports[`<Header /> renders 2`] = `
                   </button>
                 </li>
                 <li
-                  class="ms-ContextualMenu-item item-64"
+                  class="ms-ContextualMenu-item item-55"
                   role="presentation"
                 >
                   <button
                     aria-disabled="false"
                     aria-posinset="5"
                     aria-setsize="5"
-                    class="ms-ContextualMenu-link root-66"
+                    class="ms-ContextualMenu-link root-57"
                     role="menuitem"
                     tabindex="-1"
                   >
                     <div
-                      class="ms-ContextualMenu-linkContent linkContent-70"
+                      class="ms-ContextualMenu-linkContent linkContent-61"
                     >
                       <span
-                        class="ms-ContextualMenu-itemText label-76"
+                        class="ms-ContextualMenu-itemText label-67"
                       >
                         繁體中文
                       </span>

@@ -37,13 +37,13 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="ms-Button ms-Button--action ms-Button--command c1 root-53"
+    class="ms-Button ms-Button--action ms-Button--command c1 root-45"
     data-is-focusable="true"
     data-testid="close-dialog"
     type="button"
   >
     <span
-      class="ms-Button-flexContainer flexContainer-54"
+      class="ms-Button-flexContainer flexContainer-46"
       data-automationid="splitbuttonprimary"
     >
       <svg
@@ -72,25 +72,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__84"
       aria-label="Stable, v10.4.0, win-x64-setup"
-      class="ms-Button ms-Button--compoundPrimary root-71"
+      class="ms-Button ms-Button--compoundPrimary root-63"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__83"
           >
             Windows (x64)
           </span>
           <span
-            class="ms-Button-description description-77"
+            class="ms-Button-description description-69"
             id="id__84"
           >
             v10.4.0
@@ -101,25 +101,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__87"
       aria-label="Stable, v10.4.0, linux-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__86"
           >
             Linux (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__87"
           >
             v10.4.0
@@ -130,25 +130,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__90"
       aria-label="Stable, v10.4.0, linux-deb-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi_10.4.0_amd64.deb"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__89"
           >
             Debian / Ubuntu (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__90"
           >
             v10.4.0
@@ -159,25 +159,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__93"
       aria-label="Stable, v10.4.0, linux-rpm-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.x86_64.rpm"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__92"
           >
             Fedora / CentOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__93"
           >
             v10.4.0
@@ -188,25 +188,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__96"
       aria-label="Stable, v10.4.0, macos-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.dmg"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__95"
           >
             macOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__96"
           >
             v10.4.0
@@ -217,25 +217,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__99"
       aria-label="Stable, v10.4.0, win-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__98"
           >
             Windows (x64) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__99"
           >
             v10.4.0
@@ -246,25 +246,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__102"
       aria-label="Stable, v10.4.0, win-ia32-setup"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__101"
           >
             Windows (x86)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__102"
           >
             v10.4.0
@@ -275,25 +275,25 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__105"
       aria-label="Stable, v10.4.0, win-ia32"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-ia32-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__104"
           >
             Windows (x86) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__105"
           >
             v10.4.0
@@ -311,27 +311,27 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__108"
       aria-label="Old versions"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__107"
           >
             Old versions
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__108"
           >
             Hosted at TAONPM
@@ -342,27 +342,27 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__111"
       aria-label="Windows nightlies"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://ci.appveyor.com/project/KochiyaOcean/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__110"
           >
             Windows nightlies
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__111"
           >
             Hosted at AppVeyor
@@ -373,27 +373,27 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__114"
       aria-label="Linux and macOS nightlies"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://nightly.poi.moe/"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__113"
           >
             Linux and macOS nightlies
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__114"
           >
             Hosted at poi.moe
@@ -404,27 +404,27 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
     <a
       aria-describedby="id__117"
       aria-label="Source code"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://github.com/poooi/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__116"
           >
             Source code
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__117"
           >
             Hosted at GitHub
@@ -692,20 +692,20 @@ exports[`<Content /> with beta < stable renders 1`] = `
       class="c14"
     >
       <button
-        class="ms-Button ms-Button--action ms-Button--command c15 root-53"
+        class="ms-Button ms-Button--action ms-Button--command c15 root-45"
         data-is-focusable="true"
         data-testid="open-dialog"
         type="button"
       >
         <span
-          class="ms-Button-flexContainer flexContainer-54"
+          class="ms-Button-flexContainer flexContainer-46"
           data-automationid="splitbuttonprimary"
         >
           <span
-            class="ms-Button-textContainer textContainer-55"
+            class="ms-Button-textContainer textContainer-47"
           >
             <span
-              class="ms-Button-label label-57"
+              class="ms-Button-label label-49"
               id="id__73"
             >
               Choose another platform
@@ -755,13 +755,13 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="ms-Button ms-Button--action ms-Button--command c1 root-53"
+    class="ms-Button ms-Button--action ms-Button--command c1 root-45"
     data-is-focusable="true"
     data-testid="close-dialog"
     type="button"
   >
     <span
-      class="ms-Button-flexContainer flexContainer-54"
+      class="ms-Button-flexContainer flexContainer-46"
       data-automationid="splitbuttonprimary"
     >
       <svg
@@ -790,25 +790,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__13"
       aria-label="Stable, v10.4.0, win-x64-setup"
-      class="ms-Button ms-Button--compoundPrimary root-71"
+      class="ms-Button ms-Button--compoundPrimary root-63"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__12"
           >
             Windows (x64)
           </span>
           <span
-            class="ms-Button-description description-77"
+            class="ms-Button-description description-69"
             id="id__13"
           >
             v10.4.0
@@ -819,25 +819,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__16"
       aria-label="Stable, v10.4.0, linux-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__15"
           >
             Linux (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__16"
           >
             v10.4.0
@@ -848,25 +848,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__19"
       aria-label="Stable, v10.4.0, linux-deb-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi_10.4.0_amd64.deb"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__18"
           >
             Debian / Ubuntu (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__19"
           >
             v10.4.0
@@ -877,25 +877,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__22"
       aria-label="Stable, v10.4.0, linux-rpm-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.x86_64.rpm"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__21"
           >
             Fedora / CentOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__22"
           >
             v10.4.0
@@ -906,25 +906,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__25"
       aria-label="Stable, v10.4.0, macos-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.dmg"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__24"
           >
             macOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__25"
           >
             v10.4.0
@@ -935,25 +935,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__28"
       aria-label="Stable, v10.4.0, win-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__27"
           >
             Windows (x64) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__28"
           >
             v10.4.0
@@ -964,25 +964,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__31"
       aria-label="Stable, v10.4.0, win-ia32-setup"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-setup-10.4.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__30"
           >
             Windows (x86)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__31"
           >
             v10.4.0
@@ -993,25 +993,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__34"
       aria-label="Stable, v10.4.0, win-ia32"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0-ia32-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__33"
           >
             Windows (x86) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__34"
           >
             v10.4.0
@@ -1029,25 +1029,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__37"
       aria-label="Beta, v10.5.0-beta.0, win-x64-setup"
-      class="ms-Button ms-Button--compoundPrimary root-71"
+      class="ms-Button ms-Button--compoundPrimary root-63"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-setup-10.5.0-beta.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__36"
           >
             Windows (x64)
           </span>
           <span
-            class="ms-Button-description description-77"
+            class="ms-Button-description description-69"
             id="id__37"
           >
             v10.5.0-beta.0
@@ -1058,25 +1058,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__40"
       aria-label="Beta, v10.5.0-beta.0, linux-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-10.5.0-beta.0.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__39"
           >
             Linux (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__40"
           >
             v10.5.0-beta.0
@@ -1087,25 +1087,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__43"
       aria-label="Beta, v10.5.0-beta.0, linux-deb-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi_10.5.0-beta.0_amd64.deb"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__42"
           >
             Debian / Ubuntu (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__43"
           >
             v10.5.0-beta.0
@@ -1116,25 +1116,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__46"
       aria-label="Beta, v10.5.0-beta.0, linux-rpm-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-10.5.0-beta.0.x86_64.rpm"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__45"
           >
             Fedora / CentOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__46"
           >
             v10.5.0-beta.0
@@ -1145,25 +1145,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__49"
       aria-label="Beta, v10.5.0-beta.0, macos-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-10.5.0-beta.0.dmg"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__48"
           >
             macOS (x64)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__49"
           >
             v10.5.0-beta.0
@@ -1174,25 +1174,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__52"
       aria-label="Beta, v10.5.0-beta.0, win-x64"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-10.5.0-beta.0-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__51"
           >
             Windows (x64) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__52"
           >
             v10.5.0-beta.0
@@ -1203,25 +1203,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__55"
       aria-label="Beta, v10.5.0-beta.0, win-ia32-setup"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-setup-10.5.0-beta.0.exe"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__54"
           >
             Windows (x86)
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__55"
           >
             v10.5.0-beta.0
@@ -1232,25 +1232,25 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__58"
       aria-label="Beta, v10.5.0-beta.0, win-ia32"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0-beta.0/poi-10.5.0-beta.0-ia32-win.7z"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__57"
           >
             Windows (x86) Portable
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__58"
           >
             v10.5.0-beta.0
@@ -1268,27 +1268,27 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__61"
       aria-label="Old versions"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://npm.taobao.org/mirrors/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__60"
           >
             Old versions
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__61"
           >
             Hosted at TAONPM
@@ -1299,27 +1299,27 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__64"
       aria-label="Windows nightlies"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://ci.appveyor.com/project/KochiyaOcean/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__63"
           >
             Windows nightlies
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__64"
           >
             Hosted at AppVeyor
@@ -1330,27 +1330,27 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__67"
       aria-label="Linux and macOS nightlies"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://nightly.poi.moe/"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__66"
           >
             Linux and macOS nightlies
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__67"
           >
             Hosted at poi.moe
@@ -1361,27 +1361,27 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
     <a
       aria-describedby="id__70"
       aria-label="Source code"
-      class="ms-Button ms-Button--compound root-78"
+      class="ms-Button ms-Button--compound root-70"
       data-is-focusable="true"
       href="https://github.com/poooi/poi"
       rel="noopener noreferrer"
       target="_blank"
     >
       <span
-        class="ms-Button-flexContainer flexContainer-72"
+        class="ms-Button-flexContainer flexContainer-64"
         data-automationid="splitbuttonprimary"
       >
         <span
-          class="ms-Button-textContainer textContainer-73"
+          class="ms-Button-textContainer textContainer-65"
         >
           <span
-            class="ms-Button-label label-75"
+            class="ms-Button-label label-67"
             id="id__69"
           >
             Source code
           </span>
           <span
-            class="ms-Button-description description-79"
+            class="ms-Button-description description-71"
             id="id__70"
           >
             Hosted at GitHub
@@ -1692,20 +1692,20 @@ exports[`<Content /> with beta > stable renders 1`] = `
       class="c15"
     >
       <button
-        class="ms-Button ms-Button--action ms-Button--command c16 root-53"
+        class="ms-Button ms-Button--action ms-Button--command c16 root-45"
         data-is-focusable="true"
         data-testid="open-dialog"
         type="button"
       >
         <span
-          class="ms-Button-flexContainer flexContainer-54"
+          class="ms-Button-flexContainer flexContainer-46"
           data-automationid="splitbuttonprimary"
         >
           <span
-            class="ms-Button-textContainer textContainer-55"
+            class="ms-Button-textContainer textContainer-47"
           >
             <span
-              class="ms-Button-label label-57"
+              class="ms-Button-label label-49"
               id="id__2"
             >
               Choose another platform
