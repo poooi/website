@@ -9,5 +9,8 @@
   "eslint.autoFixOnSave": true,
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
