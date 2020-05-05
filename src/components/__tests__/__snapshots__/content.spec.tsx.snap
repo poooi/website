@@ -31,6 +31,26 @@ exports[`<Content /> with beta < stable opens target list 1`] = `
   font-size: 2em;
 }
 
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
 <div
   class="c0"
   data-testid="modal-container"
@@ -612,6 +632,10 @@ exports[`<Content /> with beta < stable renders 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+
+}
+
 <div
     class="c0"
   >
@@ -747,6 +771,30 @@ exports[`<Content /> with beta > stable opens target list 1`] = `
   right: 1em;
   top: 1ex;
   font-size: 2em;
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
+
 }
 
 <div
@@ -1588,6 +1636,10 @@ exports[`<Content /> with beta > stable renders 1`] = `
   .c11 {
     font-size: 26px;
   }
+}
+
+@media screen and (min-width:768px) {
+
 }
 
 @media screen and (min-width:768px) {

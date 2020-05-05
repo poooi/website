@@ -13,7 +13,7 @@ exports[`<Header /> changes language: en 2`] = `
 @@ -22,11 +22,11 @@
         />
         <div
-          class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
+          class=\\"header-command__CommandBar-sc-12edzi8-0 LZobN\\"
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-40\\"
@@ -47,20 +47,20 @@ exports[`<Header /> changes language: ja 1`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           機能紹介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           プラグイン一覧
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
 @@ -45,11 +45,11 @@
                 <path
@@ -99,20 +99,20 @@ exports[`<Header /> changes language: ja 2`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           機能紹介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           プラグイン一覧
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
 @@ -45,11 +45,11 @@
                 <path
@@ -151,23 +151,23 @@ exports[`<Header /> changes language: zh-Hans 1`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           功能简介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           插件列表
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
         <div
-          class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
+          class=\\"header-command__CommandBar-sc-12edzi8-0 LZobN\\"
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-40\\"
@@ -221,23 +221,23 @@ exports[`<Header /> changes language: zh-Hans 2`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           功能简介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           插件列表
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
         <div
-          class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
+          class=\\"header-command__CommandBar-sc-12edzi8-0 LZobN\\"
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-40\\"
@@ -291,23 +291,23 @@ exports[`<Header /> changes language: zh-Hant 1`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           功能簡介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           擴展列表
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
         <div
-          class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
+          class=\\"header-command__CommandBar-sc-12edzi8-0 LZobN\\"
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-40\\"
@@ -361,23 +361,23 @@ exports[`<Header /> changes language: zh-Hant 2`] = `
       >
         <div>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Explore
 +           功能簡介
           </a>
           <a
-            class=\\"header__LinkItem-sc-1tvdqys-2 jbpaBb\\"
+            class=\\"header__LinkItem-sc-1tvdqys-2 dPZqZy\\"
           >
 -           Plugins
 +           擴展列表
           </a>
         </div>
         <div
-          class=\\"header__Spacer-sc-1tvdqys-3 jcPYuy\\"
+          class=\\"header__Spacer-sc-1tvdqys-3 dsEGAX\\"
         />
         <div
-          class=\\"header-command__CommandBar-sc-12edzi8-0 kVKwvn\\"
+          class=\\"header-command__CommandBar-sc-12edzi8-0 LZobN\\"
         >
           <button
 -           class=\\"ms-Button ms-Button--commandBar root-40\\"
