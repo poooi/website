@@ -1,4 +1,5 @@
-import { fireEvent, waitFor } from '@testing-library/react'
+import { fireEvent } from '@testing-library/react'
+import { waitFor } from '@testing-library/dom'
 import React from 'react'
 import { renderWithTheme } from '../../testing-utils'
 
