@@ -1,4 +1,4 @@
-import { fireEvent, waitForElement } from '@testing-library/react'
+import { fireEvent, waitFor } from '@testing-library/react'
 import React from 'react'
 import { renderWithTheme } from '../../testing-utils'
 
@@ -26,15 +26,15 @@ describe('<Content /> with beta > stable', () => {
 
   it('renders', async () => {
     const { asFragment, getByTestId } = renderWithTheme(<Content />)
-    await waitForElement(() => getByTestId('download-stable-version'))
+    await waitFor(() => getByTestId('download-stable-version'))
     expect(asFragment()).toMatchSnapshot()
   })
 
   it('opens target list', async () => {
     const { getByTestId, baseElement } = renderWithTheme(<Content />)
-    await waitForElement(() => getByTestId('download-stable-version'))
+    await waitFor(() => getByTestId('download-stable-version'))
     fireEvent.click(getByTestId('open-dialog'))
-    await waitForElement(() => getByTestId('modal-container'))
+    await waitFor(() => getByTestId('modal-container'))
     expect(
       baseElement.querySelector('[data-testid="modal-container"]'),
     ).toMatchSnapshot()
@@ -61,15 +61,15 @@ describe('<Content /> with beta < stable', () => {
 
   it('renders', async () => {
     const { asFragment, getByTestId } = renderWithTheme(<Content />)
-    await waitForElement(() => getByTestId('download-stable-version'))
+    await waitFor(() => getByTestId('download-stable-version'))
     expect(asFragment()).toMatchSnapshot()
   })
 
   it('opens target list', async () => {
     const { getByTestId, baseElement } = renderWithTheme(<Content />)
-    await waitForElement(() => getByTestId('download-stable-version'))
+    await waitFor(() => getByTestId('download-stable-version'))
     fireEvent.click(getByTestId('open-dialog'))
-    await waitForElement(() => getByTestId('modal-container'))
+    await waitFor(() => getByTestId('modal-container'))
     expect(
       baseElement.querySelector('[data-testid="modal-container"]'),
     ).toMatchSnapshot()
