@@ -1,4 +1,4 @@
-import { getByText, wait } from '@testing-library/dom'
+import { getByText, waitFor } from '@testing-library/dom'
 import { act, fireEvent } from '@testing-library/react'
 import _ from 'lodash'
 import React from 'react'
@@ -7,14 +7,10 @@ import { i18n } from '../../i18n'
 import { renderWithTheme } from '../../testing-utils'
 import { Header, languages } from '../header'
 
-const noop = () => {
-  /* */
-}
-
 describe('<Header />', () => {
   it('renders', async () => {
     const { asFragment, getByTestId, baseElement } = renderWithTheme(<Header />)
-    await wait(() => getByTestId('language-dropdown'))
+    await waitFor(() => getByTestId('language-dropdown'))
     fireEvent.click(getByTestId('language-dropdown'))
     const layer = baseElement.querySelector('.ms-Layer')
     expect(layer).toBeDefined()
