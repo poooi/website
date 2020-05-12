@@ -1,12 +1,12 @@
-version: 10.6.0-beta.1
+version: 10.6.0-beta.2
 files:
-  - url: poi-10.6.0-beta.1-mac.zip
-    sha512: JiVAEVRs+NnR9zZdUPgo262TuJOfINuKwk8jjn8PBK4U3N/aT8r6V73CdeO7HiV9R2JflPNZhXy1rYAAy/5Uew==
-    size: 101834321
-    blockMapSize: 107524
-  - url: poi-10.6.0-beta.1.dmg
-    sha512: MrUIH3Xk5zQZ0iXidJzJK+VoNai1y0WGyoMedIJbNNrBtbL4DYsdvm77PGQs5CelD/wjP0Kl0zy3haX0H0PAmg==
-    size: 106416971
-path: poi-10.6.0-beta.1-mac.zip
-sha512: JiVAEVRs+NnR9zZdUPgo262TuJOfINuKwk8jjn8PBK4U3N/aT8r6V73CdeO7HiV9R2JflPNZhXy1rYAAy/5Uew==
-releaseDate: '2020-05-05T18:02:05.835Z'
+  - url: poi-10.6.0-beta.2-mac.zip
+    sha512: ziFsglSrGoIxB0Hce6ZS8fS9sw67wlbO1YXgkDQDTS9uEfRNfbbjV8d+oKSArRFj73CT/RPoduRuWPg53AP8ww==
+    size: 101834963
+    blockMapSize: 108035
+  - url: poi-10.6.0-beta.2.dmg
+    sha512: mEg7XQrmpmeRNmMeIcYyQoNmVbE89EY9TXfhLD4IAX0A9hFsApCUM51sFNnxKt0PhW5ndKnLrvS22hFsLCg0Mw==
+    size: 106414313
+path: poi-10.6.0-beta.2-mac.zip
+sha512: ziFsglSrGoIxB0Hce6ZS8fS9sw67wlbO1YXgkDQDTS9uEfRNfbbjV8d+oKSArRFj73CT/RPoduRuWPg53AP8ww==
+releaseDate: '2020-05-12T20:30:17.481Z'
