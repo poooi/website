@@ -4,6 +4,7 @@
 
 - Add support of Kongo Class nighttime special attack
 - Add display of AA and LoS sum value in fleet panel
+- Add new OASW type: `Fletcher Kai Mod.2` and `Fletcher Mk.II`
 - Update to Electron@8 (Chromium@80)
 
 ### Changes

@@ -4,6 +4,7 @@
 
 - 增加僚艦夜戰突擊支援
 - 艦隊面板支援顯示總對空值和總索敵值
+- 增加 `Fletcher 改 Mod.2` 和 `Fletcher Mk.II` 的開幕對潛支持
 - 升級至 Electron@8 (Chromium@80)
 
 ### 變更
