@@ -15,7 +15,7 @@
     "i18next-browser-languagedetector": "^4.2.0",
     "lodash": "^4.17.15",
     "modern-normalize": "^0.6.0",
-    "office-ui-fabric-react": "^7.110.2",
+    "office-ui-fabric-react": "^7.117.4",
     "polished": "^3.6.4",
     "random": "^2.2.0",
     "react": "^16.13.1",
