@@ -1,6 +1,8 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
+
+import HeaderCommand from './header-command'
 
 export const languages = {
   en: 'English',
@@ -8,8 +10,6 @@ export const languages = {
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
-
-const HeaderCommand = lazy(() => import('./header-command'))
 
 const Container = styled.div`
   height: 60px;
@@ -63,9 +63,7 @@ export const Header = () => {
           <LinkItem>{t('Plugins')}</LinkItem>
         </div>
         <Spacer />
-        <Suspense fallback={<div />}>
-          <HeaderCommand />
-        </Suspense>
+        <HeaderCommand />
       </Wrapper>
     </Container>
   )

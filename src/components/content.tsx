@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 
@@ -7,8 +7,8 @@ import { TypeCat } from './type-cat'
 
 import poi from '../assets/poi.png'
 
-const Download = lazy(() => import('./download'))
-const IconLoader = lazy(() => import('./icon-loader'))
+import Download from './download'
+import IconLoader from './icon-loader'
 
 const Container = styled.div`
   flex: 1;
@@ -96,10 +96,8 @@ export const Content = () => {
         <Description>
           <TypeCat text={t('description')} />
         </Description>
-        <Suspense fallback={<div />}>
-          <IconLoader />
-          <Download />
-        </Suspense>
+        <IconLoader />
+        <Download />
       </ErrorBoundary>
     </Container>
   )
