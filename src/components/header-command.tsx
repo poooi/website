@@ -2,7 +2,7 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { Button } from '@blueprintjs/core'
+import { Button, ButtonGroup, Popover, Menu, MenuItem } from '@blueprintjs/core'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { createGlobalStyle } from 'styled-components/macro'
@@ -23,16 +23,9 @@ const GlobalFontFamily = createGlobalStyle<{ fontFamily?: string }>`
   }
 `
 
-const CommandBar = styled.div`
-  display: flex;
-  align-items: center;
+const CommandBar = styled(ButtonGroup)`
   height: 60px;
   line-height: 60px;
-
-  button {
-    height: 44px;
-    padding: 0 1ex;
-  }
 `
 
 const Icon = styled(FontAwesomeIcon)`
@@ -58,21 +51,33 @@ const HeaderCommand = () => {
   )
 
   return (
-    <CommandBar>
+    <CommandBar minimal>
       <Button onClick={dispatch}>
         <Icon icon={faSwatchbook} />
         {t('current-theme')}
         {t(isDark ? 'Chibaheit' : 'Lilywhite')}
       </Button>
-      <Button
-        menuProps={{
-          items: options,
-        }}
-        data-testid="language-dropdown"
+      <Popover
+        minimal
+        content={
+          <Menu>
+            {map(languages, (value, key) => (
+              <MenuItem
+                text={value}
+                key={key}
+                onClick={() => {
+                  i18n.changeLanguage(key)
+                }}
+              />
+            ))}
+          </Menu>
+        }
       >
-        <Icon icon={faLanguage} />
-        {t('language')}
-      </Button>
+        <Button data-testid="language-dropdown">
+          <Icon icon={faLanguage} />
+          {t('language')}
+        </Button>
+      </Popover>
     </CommandBar>
   )
 }

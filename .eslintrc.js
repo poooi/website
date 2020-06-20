@@ -47,5 +47,6 @@ module.exports = {
     '@typescript-eslint/require-await': 'off',
     'react/jsx-props-no-spreading': 'off',
     "prettier/prettier": "error",
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
 }

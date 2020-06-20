@@ -1,3 +1,3 @@
-import { App } from '../app'
+import { Content } from '../components/content'
 
-export default App
+export default Content
