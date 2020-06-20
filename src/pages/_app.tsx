@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app'
-
+import dynamic from 'next/dynamic'
 import React, { FC, useEffect, useReducer } from 'react'
 import styled, {
   createGlobalStyle,
@@ -24,11 +24,20 @@ import '../i18n'
 
 import '@blueprintjs/core/lib/css/blueprint.css'
 
+const FoucFix = dynamic<any>(
+  () => import('../components/fouc-fix').then((mod) => mod.FoucFix),
+  { ssr: false },
+)
+
 config.autoAddCss = false
 
 const GlobalStyle = createGlobalStyle`
   html, body {
     font-size: 16px;
+  }
+
+  body {
+    display: none;
   }
 
   a {
@@ -85,6 +94,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <ThemeIsDarkContext.Provider value={isDark}>
           <ModernNormalize />
           <GlobalStyle />
+          <FoucFix />
           <Background />
           <Container className={classNames({ 'bp3-dark': isDark })}>
             <Wrapper>
