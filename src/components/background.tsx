@@ -10,7 +10,7 @@ const Canvas = styled.canvas`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: ${props => props.theme.palette.white};
+  background-color: ${(props) => props.theme.palette.white};
   transition: 0.3s;
 `
 

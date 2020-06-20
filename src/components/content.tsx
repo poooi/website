@@ -69,7 +69,6 @@ const ImageContainer = styled.div`
 `
 
 const Logo = () => {
-
   return (
     <ImageContainer>
       <Image src={poi} />

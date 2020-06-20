@@ -41,7 +41,9 @@ export const ErrorBoundary = withTranslation()(
           <Container>
             <Text>{t('error-message')}</Text>
             <div>
-              <button type="button" onClick={this.handleReload}>{t('Reload')}</button>
+              <button type="button" onClick={this.handleReload}>
+                {t('Reload')}
+              </button>
             </div>
           </Container>
         )

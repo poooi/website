@@ -35,7 +35,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  color: ${props => props.theme.palette.neutralPrimary};
+  color: ${(props) => props.theme.palette.neutralPrimary};
   flex: 1;
   line-height: 1.5;
   display: flex;

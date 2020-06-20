@@ -27,13 +27,13 @@ const Header = styled.div`
 `
 
 const Button = styled.button<{ isBeta?: boolean }>`
-  background-color: ${props => rgba(props.theme.palette.white, 0.75)};
-  border: ${props => props.theme.palette.neutralDark} solid 1px;
+  background-color: ${(props) => rgba(props.theme.palette.white, 0.75)};
+  border: ${(props) => props.theme.palette.neutralDark} solid 1px;
   border-radius: 1px;
-  color: ${props => props.theme.palette.neutralDark};
+  color: ${(props) => props.theme.palette.neutralDark};
   cursor: pointer;
   display: inline;
-  display: ${props => props.isBeta && 'none'};
+  display: ${(props) => props.isBeta && 'none'};
   font-size: 22px;
   padding: 8px 12px;
   margin: 4px 8px;
@@ -41,12 +41,13 @@ const Button = styled.button<{ isBeta?: boolean }>`
   min-width: 12em;
 
   :hover {
-    background-color: ${props => rgba(props.theme.palette.themePrimary, 0.75)};
+    background-color: ${(props) =>
+      rgba(props.theme.palette.themePrimary, 0.75)};
     color: #fff;
   }
 
   @media screen and (min-width: 768px) {
-    display: ${props => props.isBeta && 'inline'};
+    display: ${(props) => props.isBeta && 'inline'};
   }
 }
 `
@@ -77,7 +78,11 @@ export const DownloadCards = ({ target, version }: Props) => {
               <Description>{t('stable-hint')}</Description>
             </Button>
           </a>
-          {compareVersions.compare(version.version, version.betaVersion, '<') && (
+          {compareVersions.compare(
+            version.version,
+            version.betaVersion,
+            '<',
+          ) && (
             <a href={getDownloadLink(version.betaVersion, target)}>
               <Button isBeta>
                 <div>{version.betaVersion}</div>

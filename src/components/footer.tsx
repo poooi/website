@@ -21,7 +21,7 @@ const Container = styled.div`
   min-height: 50px;
   line-height: 50px;
   margin-bottom: 1em;
-  color: ${props => props.theme.palette.neutralSecondary};
+  color: ${(props) => props.theme.palette.neutralSecondary};
 
   a {
     margin: 0 1em;
@@ -30,7 +30,7 @@ const Container = styled.div`
     white-space: nowrap;
 
     :hover {
-      color: ${props => props.theme.palette.themePrimary};
+      color: ${(props) => props.theme.palette.themePrimary};
     }
   }
 `
@@ -48,9 +48,7 @@ export const Footer = () => {
 
   return (
     <Container>
-      <Copyright>
-        {`© ${new Date().getFullYear()} poi Contributors`}
-      </Copyright>
+      <Copyright>{`© ${new Date().getFullYear()} poi Contributors`}</Copyright>
       {['zh-Hans', 'zh-Hant'].includes(lang) ? (
         <>
           <a href="http://weibo.com/letspoi">

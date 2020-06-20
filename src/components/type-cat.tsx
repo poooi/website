@@ -8,8 +8,8 @@ const Container = styled.div`
 `
 
 const Mirror = styled.div<{ show: boolean; hide?: boolean }>`
-  opacity: ${props => (props.show ? 1 : 0)};
-  display: ${props => props.hide && 'none'};
+  opacity: ${(props) => (props.show ? 1 : 0)};
+  display: ${(props) => props.hide && 'none'};
 
   .Cursor--blinking {
     opacity: 1;

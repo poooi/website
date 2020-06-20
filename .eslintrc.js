@@ -10,7 +10,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'prettier'],
   extends: [
     'airbnb',
     'plugin:import/typescript',
@@ -18,6 +18,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier',
+    'prettier/react',
     'prettier/@typescript-eslint',
   ],
   settings: {
@@ -45,5 +46,6 @@ module.exports = {
     'react/prop-types': 'off',
     '@typescript-eslint/require-await': 'off',
     'react/jsx-props-no-spreading': 'off',
+    "prettier/prettier": "error",
   },
 }

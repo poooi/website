@@ -21,7 +21,7 @@ interface Props {
   version: Version
 }
 
-const sortedTargets = sortBy(targets, target => target !== autoDetectedTarget)
+const sortedTargets = sortBy(targets, (target) => target !== autoDetectedTarget)
 
 export const TargetList = ({ version }: Props) => {
   const { t } = useTranslation()
@@ -29,7 +29,7 @@ export const TargetList = ({ version }: Props) => {
     <>
       <h2>{t('Stable')}</h2>
       <DownloadList>
-        {map(sortedTargets, target => (
+        {map(sortedTargets, (target) => (
           <CompoundButton
             primary={autoDetectedTarget === target}
             key={target}
@@ -41,24 +41,25 @@ export const TargetList = ({ version }: Props) => {
           </CompoundButton>
         ))}
       </DownloadList>
-      {version.version && compareVersions.compare(version.version, version.betaVersion, '<') && (
-        <>
-          <h2>{t('Beta')}</h2>
-          <DownloadList>
-            {map(sortedTargets, target => (
-              <CompoundButton
-                primary={autoDetectedTarget === target}
-                key={target}
-                secondaryText={version.betaVersion}
-                href={getDownloadLink(version.betaVersion, target)}
-                ariaLabel={`${t('Beta')}, ${version.betaVersion}, ${target}`}
-              >
-                {t(target)}
-              </CompoundButton>
-            ))}
-          </DownloadList>
-        </>
-      )}
+      {version.version &&
+        compareVersions.compare(version.version, version.betaVersion, '<') && (
+          <>
+            <h2>{t('Beta')}</h2>
+            <DownloadList>
+              {map(sortedTargets, (target) => (
+                <CompoundButton
+                  primary={autoDetectedTarget === target}
+                  key={target}
+                  secondaryText={version.betaVersion}
+                  href={getDownloadLink(version.betaVersion, target)}
+                  ariaLabel={`${t('Beta')}, ${version.betaVersion}, ${target}`}
+                >
+                  {t(target)}
+                </CompoundButton>
+              ))}
+            </DownloadList>
+          </>
+        )}
       <h2>{t('Others')}</h2>
       <DownloadList>
         <CompoundButton

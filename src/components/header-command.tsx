@@ -23,7 +23,7 @@ export const languages = {
 
 const GlobalFontFamily = createGlobalStyle<{ fontFamily?: string }>`
   body {
-    font-family: ${props => props.fontFamily};
+    font-family: ${(props) => props.fontFamily};
   }
 `
 
