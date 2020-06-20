@@ -6,6 +6,7 @@ import styled, {
   ThemeProvider,
 } from 'styled-components/macro'
 import classNames from 'classnames'
+import { config } from '@fortawesome/fontawesome-svg-core'
 
 import {
   darkTheme,
@@ -23,7 +24,13 @@ import '../i18n'
 
 import '@blueprintjs/core/lib/css/blueprint.css'
 
+config.autoAddCss = false
+
 const GlobalStyle = createGlobalStyle`
+  html, body {
+    font-size: 16px;
+  }
+
   a {
     color: inherit;
     text-decoration: none;

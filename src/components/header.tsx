@@ -57,12 +57,12 @@ export const Header = () => {
           <Link href="/explore" passHref>
             <Button>{t('Explore')}</Button>
           </Link>
-          <Link href="/download" passHref>
-            <Button>{t('Download')}</Button>
+          <Link href="/downloads" passHref>
+            <Button>{t('Downloads')}</Button>
           </Link>
-          <Link href="/plugins" passHref>
+          {/* <Link href="/plugins" passHref>
             <Button>{t('Plugins')}</Button>
-          </Link>
+          </Link> */}
         </ButtonGroup>
         <Spacer />
         <HeaderCommand />

@@ -8,7 +8,7 @@ import ja from './resources/i18n/ja.json'
 import zhHans from './resources/i18n/zh-hans.json'
 import zhHant from './resources/i18n/zh-hant.json'
 
-const resources = {
+export const resources = {
   en: { translation: en },
   fr: { translation: fr },
   ja: { translation: ja },

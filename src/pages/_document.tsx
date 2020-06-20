@@ -1,6 +1,7 @@
 import React, { ComponentType } from 'react'
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { dom } from '@fortawesome/fontawesome-svg-core'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -21,6 +22,7 @@ export default class MyDocument extends Document {
           <>
             {initialProps.styles}
             {sheet.getStyleElement()}
+            <style id="fontawesome">{dom.css()}</style>
           </>
         ),
       }

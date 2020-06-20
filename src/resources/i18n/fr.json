@@ -6,7 +6,7 @@
   "telegram": "Telegram",
   "opencollective": "OpenCollective",
   "weibo": "Weibo",
-  "download-for": "Téléchargez pour {{version}}",
+  "download": "Téléchargez {{version}}",
   "linux-x64": "Linux (x64)",
   "linux-deb-x64": "Debian / Ubuntu (x64)",
   "linux-rpm-x64": "Fedora / CentOS (x64)",
@@ -36,5 +36,7 @@
   "Source code": "Code source",
   "Close dialog": "Fermer le dialogue",
   "error-message": "Ah, la page Web est devenue 🐢. Nous allons le réparer.",
-  "Reload": "Rechargez"
+  "Reload": "Rechargez",
+  "Downloads": "Téléchargements",
+  "no-content": "Nous y travaillons, veuillez vérifier plus tard."
 }

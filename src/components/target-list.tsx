@@ -1,12 +1,14 @@
 import map from 'lodash/map'
 import sortBy from 'lodash/sortBy'
-import { Card, Button } from '@blueprintjs/core'
+import { Card, AnchorButton, Intent } from '@blueprintjs/core'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'
 import { Version, targets } from '../model'
 import { autoDetectedTarget, getDownloadLink } from './utils'
+
+import { DownloadCards } from './download-cards'
 
 const DownloadList = styled.div`
   display: flex;
@@ -28,36 +30,43 @@ export const TargetList = ({ version }: Props) => {
   return (
     <>
       <Card>
-        <h2>{t('Stable')}</h2>
+        <DownloadCards target={autoDetectedTarget} version={version} />
+      </Card>
+      <Card>
+        <h2>
+          {t('Stable')} {version.version}
+        </h2>
         <DownloadList>
           {map(sortedTargets, (target) => (
-            <Button
-              primary={autoDetectedTarget === target}
+            <AnchorButton
+              intent={
+                autoDetectedTarget === target ? Intent.SUCCESS : Intent.NONE
+              }
               key={target}
-              secondaryText={version.version}
               href={getDownloadLink(version.version, target)}
-              ariaLabel={`${t('Stable')}, ${version.version}, ${target}`}
             >
               {t(target)}
-            </Button>
+            </AnchorButton>
           ))}
         </DownloadList>
       </Card>
       {version.version &&
         compareVersions.compare(version.version, version.betaVersion, '<') && (
           <Card>
-            <h2>{t('Beta')}</h2>
+            <h2>
+              {t('Beta')} {version.betaVersion}
+            </h2>
             <DownloadList>
               {map(sortedTargets, (target) => (
-                <Button
-                  primary={autoDetectedTarget === target}
+                <AnchorButton
+                  intent={
+                    autoDetectedTarget === target ? Intent.SUCCESS : Intent.NONE
+                  }
                   key={target}
-                  secondaryText={version.betaVersion}
                   href={getDownloadLink(version.betaVersion, target)}
-                  ariaLabel={`${t('Beta')}, ${version.betaVersion}, ${target}`}
                 >
                   {t(target)}
-                </Button>
+                </AnchorButton>
               ))}
             </DownloadList>
           </Card>
@@ -65,42 +74,42 @@ export const TargetList = ({ version }: Props) => {
       <Card>
         <h2>{t('Others')}</h2>
         <DownloadList>
-          <Button
+          <AnchorButton
             href="https://npm.taobao.org/mirrors/poi"
             target="_blank"
             rel="noopener noreferrer"
-            secondaryText={t('HostedAt', { site: 'TAONPM' })}
-            ariaLabel={t('Old versions')}
           >
             {t('Old versions')}
-          </Button>
-          <Button
+            <br />
+            {t('HostedAt', { site: 'TAONPM' })}
+          </AnchorButton>
+          <AnchorButton
             href="https://ci.appveyor.com/project/KochiyaOcean/poi"
             target="_blank"
             rel="noopener noreferrer"
-            secondaryText={t('HostedAt', { site: 'AppVeyor' })}
-            ariaLabel={t('Windows nightlies')}
           >
             {t('Windows nightlies')}
-          </Button>
-          <Button
+            <br />
+            {t('HostedAt', { site: 'AppVeyor' })}
+          </AnchorButton>
+          <AnchorButton
             href="https://nightly.poi.moe/"
             target="_blank"
             rel="noopener noreferrer"
-            secondaryText={t('HostedAt', { site: 'poi.moe' })}
-            ariaLabel={t('Linux and macOS nightlies')}
           >
             {t('Linux and macOS nightlies')}
-          </Button>
-          <Button
+            <br />
+            {t('HostedAt', { site: 'poi.moe' })}
+          </AnchorButton>
+          <AnchorButton
             href="https://github.com/poooi/poi"
             target="_blank"
             rel="noopener noreferrer"
-            secondaryText={t('HostedAt', { site: 'GitHub' })}
-            ariaLabel={t('Source code')}
           >
             {t('Source code')}
-          </Button>
+            <br />
+            {t('HostedAt', { site: 'GitHub' })}
+          </AnchorButton>
         </DownloadList>
       </Card>
     </>
