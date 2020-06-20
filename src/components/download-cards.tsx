@@ -1,4 +1,3 @@
-import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
 import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
@@ -27,10 +26,10 @@ const Header = styled.div`
 `
 
 const Button = styled.button<{ isBeta?: boolean }>`
-  background-color: ${(props) => rgba(props.theme.palette.white, 0.75)};
-  border: ${(props) => props.theme.palette.neutralDark} solid 1px;
+  background-color: ${(props) => rgba(props.theme.colors.WHITE, 0.75)};
+  border: ${(props) => props.theme.colors.BLUE1} solid 1px;
   border-radius: 1px;
-  color: ${(props) => props.theme.palette.neutralDark};
+  color: ${(props) => props.theme.colors.BLUE1};
   cursor: pointer;
   display: inline;
   display: ${(props) => props.isBeta && 'none'};
@@ -41,8 +40,7 @@ const Button = styled.button<{ isBeta?: boolean }>`
   min-width: 12em;
 
   :hover {
-    background-color: ${(props) =>
-      rgba(props.theme.palette.themePrimary, 0.75)};
+    background-color: ${(props) => rgba(props.theme.colors.BLUE1, 0.75)};
     color: #fff;
   }
 
@@ -92,7 +90,7 @@ export const DownloadCards = ({ target, version }: Props) => {
           )}
         </>
       ) : (
-        <Spinner label={t('lsc')} size={SpinnerSize.large} />
+        <div>{t('lsc')}</div>
       )}
     </Container>
   )

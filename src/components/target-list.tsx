@@ -1,6 +1,6 @@
 import map from 'lodash/map'
 import sortBy from 'lodash/sortBy'
-import { CompoundButton } from 'office-ui-fabric-react'
+import { Button } from '@blueprintjs/core'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
@@ -30,7 +30,7 @@ export const TargetList = ({ version }: Props) => {
       <h2>{t('Stable')}</h2>
       <DownloadList>
         {map(sortedTargets, (target) => (
-          <CompoundButton
+          <Button
             primary={autoDetectedTarget === target}
             key={target}
             secondaryText={version.version}
@@ -38,7 +38,7 @@ export const TargetList = ({ version }: Props) => {
             ariaLabel={`${t('Stable')}, ${version.version}, ${target}`}
           >
             {t(target)}
-          </CompoundButton>
+          </Button>
         ))}
       </DownloadList>
       {version.version &&
@@ -47,7 +47,7 @@ export const TargetList = ({ version }: Props) => {
             <h2>{t('Beta')}</h2>
             <DownloadList>
               {map(sortedTargets, (target) => (
-                <CompoundButton
+                <Button
                   primary={autoDetectedTarget === target}
                   key={target}
                   secondaryText={version.betaVersion}
@@ -55,14 +55,14 @@ export const TargetList = ({ version }: Props) => {
                   ariaLabel={`${t('Beta')}, ${version.betaVersion}, ${target}`}
                 >
                   {t(target)}
-                </CompoundButton>
+                </Button>
               ))}
             </DownloadList>
           </>
         )}
       <h2>{t('Others')}</h2>
       <DownloadList>
-        <CompoundButton
+        <Button
           href="https://npm.taobao.org/mirrors/poi"
           target="_blank"
           rel="noopener noreferrer"
@@ -70,8 +70,8 @@ export const TargetList = ({ version }: Props) => {
           ariaLabel={t('Old versions')}
         >
           {t('Old versions')}
-        </CompoundButton>
-        <CompoundButton
+        </Button>
+        <Button
           href="https://ci.appveyor.com/project/KochiyaOcean/poi"
           target="_blank"
           rel="noopener noreferrer"
@@ -79,8 +79,8 @@ export const TargetList = ({ version }: Props) => {
           ariaLabel={t('Windows nightlies')}
         >
           {t('Windows nightlies')}
-        </CompoundButton>
-        <CompoundButton
+        </Button>
+        <Button
           href="https://nightly.poi.moe/"
           target="_blank"
           rel="noopener noreferrer"
@@ -88,8 +88,8 @@ export const TargetList = ({ version }: Props) => {
           ariaLabel={t('Linux and macOS nightlies')}
         >
           {t('Linux and macOS nightlies')}
-        </CompoundButton>
-        <CompoundButton
+        </Button>
+        <Button
           href="https://github.com/poooi/poi"
           target="_blank"
           rel="noopener noreferrer"
@@ -97,7 +97,7 @@ export const TargetList = ({ version }: Props) => {
           ariaLabel={t('Source code')}
         >
           {t('Source code')}
-        </CompoundButton>
+        </Button>
       </DownloadList>
     </>
   )

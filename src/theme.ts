@@ -1,35 +1,22 @@
-import { createFontStyles, createTheme, IPalette } from '@uifabric/styling'
 import { createContext } from 'react'
-import { DefaultTheme } from 'styled-components/macro'
 
-import colorDark from './resources/colors/dark.json'
-import colorLight from './resources/colors/light.json'
+import { Colors } from '@blueprintjs/core'
 
-export const enFontStyles = createFontStyles(null)
-export const frFontStyles = createFontStyles('fr')
-export const jaFontStyles = createFontStyles('ja')
-export const zhHansFontStyles = createFontStyles('zh-hans')
-export const zhHantFontStyles = createFontStyles('zh-hant')
-
-const localeFontFamilyMap = {
-  en: enFontStyles.medium.fontFamily,
-  fr: frFontStyles.medium.fontFamily,
-  ja: jaFontStyles.medium.fontFamily,
-  'zh-Hans': zhHansFontStyles.medium.fontFamily,
-  'zh-Hant': zhHansFontStyles.medium.fontFamily,
+export const darkTheme = {
+  colors: Colors,
+  name: 'bp3-dark',
+  variant: 'dark',
+  text: Colors.LIGHT_GRAY1,
+  background: Colors.DARK_GRAY3,
 }
 
-export const getLocaleFontFamily = (locale: string) =>
-  localeFontFamilyMap[locale as keyof typeof localeFontFamilyMap] ||
-  localeFontFamilyMap.en
-
-export const darkTheme: DefaultTheme = createTheme({
-  palette: colorDark as IPalette,
-})
-
-export const lightTheme: DefaultTheme = createTheme({
-  palette: colorLight as IPalette,
-})
+export const lightTheme = {
+  colors: Colors,
+  name: 'bp3-light',
+  variant: 'light',
+  text: Colors.DARK_GRAY1,
+  background: Colors.LIGHT_GRAY5,
+}
 
 export const DispatchThemeChangeContext = createContext<(value: any) => void>(
   () => {

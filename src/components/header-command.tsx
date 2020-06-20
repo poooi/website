@@ -2,16 +2,12 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
+import { Button } from '@blueprintjs/core'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { createGlobalStyle } from 'styled-components/macro'
 
-import {
-  DispatchThemeChangeContext,
-  getLocaleFontFamily,
-  ThemeIsDarkContext,
-} from '../theme'
+import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
 
 export const languages = {
   en: 'English',
@@ -46,10 +42,6 @@ const Icon = styled(FontAwesomeIcon)`
 const HeaderCommand = () => {
   const { t, i18n } = useTranslation()
 
-  const [fontFamily, setFontfamily] = useState(
-    getLocaleFontFamily(i18n.language),
-  )
-
   const dispatch = useContext(DispatchThemeChangeContext)
   const isDark = useContext(ThemeIsDarkContext)
 
@@ -65,24 +57,14 @@ const HeaderCommand = () => {
     [i18n.changeLanguage], // eslint-disable-line
   )
 
-  useEffect(() => {
-    loadTheme({
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-    setFontfamily(getLocaleFontFamily(i18n.language))
-  }, [i18n.language]) // eslint-disable-line
-
   return (
     <CommandBar>
-      <GlobalFontFamily fontFamily={fontFamily} />
-      <CommandBarButton onClick={dispatch}>
+      <Button onClick={dispatch}>
         <Icon icon={faSwatchbook} />
         {t('current-theme')}
         {t(isDark ? 'Chibaheit' : 'Lilywhite')}
-      </CommandBarButton>
-      <CommandBarButton
+      </Button>
+      <Button
         menuProps={{
           items: options,
         }}
@@ -90,7 +72,7 @@ const HeaderCommand = () => {
       >
         <Icon icon={faLanguage} />
         {t('language')}
-      </CommandBarButton>
+      </Button>
     </CommandBar>
   )
 }

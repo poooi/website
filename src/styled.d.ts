@@ -1,12 +1,16 @@
 // tslint:disable
 
 // import original module declarations
-import { IPalette } from 'office-ui-fabric-react'
+import { Colors } from '@blueprintjs/core'
 import 'styled-components'
 
 // and extend them!
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    palette: IPalette
+  export interface DefaultTheme extends Colors {
+    colors: Colors
+    name: string
+    variant: string
+    text: string
+    background: string
   }
 }

@@ -1,6 +1,6 @@
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ActionButton, Modal } from 'office-ui-fabric-react'
+import { Button, Dialog } from '@blueprintjs/core'
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
@@ -16,7 +16,7 @@ const CenterContainer = styled.div`
   margin: 0 auto;
 `
 
-const FullListLink = styled(ActionButton)`
+const FullListLink = styled(Button)`
   font-size: 1em;
 `
 
@@ -28,7 +28,7 @@ const ModalContainer = styled.div`
   padding: 2em;
 `
 
-const CloseButton = styled(ActionButton)`
+const CloseButton = styled(Button)`
   position: absolute;
   right: 1em;
   top: 1ex;
@@ -68,7 +68,7 @@ const Download = () => {
           </FullListLink>
         )}
       </CenterContainer>
-      <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
+      <Dialog isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
         <ModalContainer data-testid="modal-container">
           <CloseButton
             data-testid="close-dialog"
@@ -79,7 +79,7 @@ const Download = () => {
           </CloseButton>
           <TargetList version={version} />
         </ModalContainer>
-      </Modal>
+      </Dialog>
     </>
   )
 }

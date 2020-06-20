@@ -3,7 +3,7 @@ import styled, {
   createGlobalStyle,
   ThemeProvider,
 } from 'styled-components/macro'
-import { CustomizerContext } from 'office-ui-fabric-react'
+import classNames from 'classnames'
 
 import {
   darkTheme,
@@ -35,7 +35,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  color: ${(props) => props.theme.palette.neutralPrimary};
+  color: ${(props) => props.theme.text};
   flex: 1;
   line-height: 1.5;
   display: flex;
@@ -63,30 +63,21 @@ export const App = () => {
   }, [isDark])
 
   return (
-    <CustomizerContext.Provider
-      value={{
-        customizations: {
-          scopedSettings: {},
-          settings: { theme: isDark ? darkTheme : lightTheme },
-        },
-      }}
-    >
-      <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-        <DispatchThemeChangeContext.Provider value={dispatch}>
-          <ThemeIsDarkContext.Provider value={isDark}>
-            <ModernNormalize />
-            <GlobalStyle />
-            <Background />
-            <Container>
-              <Wrapper>
-                <Header />
-                <Content />
-                <Footer />
-              </Wrapper>
-            </Container>
-          </ThemeIsDarkContext.Provider>
-        </DispatchThemeChangeContext.Provider>
-      </ThemeProvider>
-    </CustomizerContext.Provider>
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+      <DispatchThemeChangeContext.Provider value={dispatch}>
+        <ThemeIsDarkContext.Provider value={isDark}>
+          <ModernNormalize />
+          <GlobalStyle />
+          <Background />
+          <Container className={classNames({ 'bp3-dark': isDark })}>
+            <Wrapper>
+              <Header />
+              <Content />
+              <Footer />
+            </Wrapper>
+          </Container>
+        </ThemeIsDarkContext.Provider>
+      </DispatchThemeChangeContext.Provider>
+    </ThemeProvider>
   )
 }

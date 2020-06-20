@@ -14,7 +14,7 @@ export const languages = {
 const Container = styled.div`
   height: 60px;
 
-  background-color: ${(props) => props.theme.palette.white};
+  background-color: ${(props) => props.theme.background};
 `
 
 const Wrapper = styled.div`
