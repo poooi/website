@@ -12,7 +12,7 @@ import {
   ThemeIsDarkContext,
 } from './theme'
 
-
+import { ModernNormalize } from './components/modern-normalize'
 import { Background } from './components/background'
 import { Content } from './components/content'
 import { Footer } from './components/footer'
@@ -74,6 +74,7 @@ export const App = () => {
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
         <DispatchThemeChangeContext.Provider value={dispatch}>
           <ThemeIsDarkContext.Provider value={isDark}>
+            <ModernNormalize />
             <GlobalStyle />
             <Background />
             <Container>

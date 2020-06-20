@@ -44,5 +44,6 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'off',
     'react/prop-types': 'off',
     '@typescript-eslint/require-await': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 }
