@@ -7,6 +7,7 @@ import styled, {
 } from 'styled-components/macro'
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
+import * as Sentry from '@sentry/browser'
 
 import {
   darkTheme,
@@ -23,6 +24,12 @@ import { Header } from '../components/header'
 import '../i18n'
 
 import '@blueprintjs/core/lib/css/blueprint.css'
+
+if (process.env.NODE_ENV === 'production') {
+  Sentry.init({
+    dsn: 'https://119091520e0b47809be0b51bd6313c6d@sentry.io/1505313',
+  })
+}
 
 const FoucFix = dynamic<any>(
   () => import('../components/no-ssr/fouc-fix').then((mod) => mod.FoucFix),
