@@ -16,7 +16,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         class="bp3-button-text"
       >
         <div>
-          Download　v10.4.0
+          Download v10.4.0
         </div>
         <div
           class="download-cards__Description-k88p0k-2 eTXLWI"
@@ -40,7 +40,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         class="bp3-button-text"
       >
         <div>
-          Download　v10.5.0
+          Download v10.5.0
         </div>
         <div
           class="download-cards__Description-k88p0k-2 eTXLWI"
@@ -92,7 +92,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         class="bp3-button-text"
       >
         <div>
-          Download　v10.4.0
+          Download v10.4.0
         </div>
         <div
           class="c2"
@@ -116,7 +116,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         class="bp3-button-text"
       >
         <div>
-          Download　v10.5.0
+          Download v10.5.0
         </div>
         <div
           class="c2"
@@ -168,7 +168,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
         class="bp3-button-text"
       >
         <div>
-          Download　v10.4.0
+          Download v10.4.0
         </div>
         <div
           class="c2"

@@ -8,18 +8,20 @@ import { GetStaticProps } from 'next'
 import { NonIdealState } from '@blueprintjs/core'
 
 import { resources } from '../i18n'
+import { Contents } from '../model'
+import { getLanguageFallbackContent } from '../components/utils'
 
 interface Props {
-  contents: {
-    [key: string]: string
-  }
+  contents: Contents
 }
 
 const ExplorePage: FC<Props> = ({ contents }) => {
   const { i18n, t } = useTranslation()
 
-  return contents[i18n.language] ? (
-    <ReactMarkdown source={contents[i18n.language]} />
+  const content = getLanguageFallbackContent(contents, i18n.language)
+
+  return content ? (
+    <ReactMarkdown source={content} />
   ) : (
     <NonIdealState
       title={t('lsc')}
