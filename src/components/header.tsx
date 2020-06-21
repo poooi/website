@@ -1,6 +1,13 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
+import Link from 'next/link'
+import { Button, ButtonGroup } from '@blueprintjs/core'
+import { useRouter } from 'next/router'
+
+import HeaderCommand from './header-command'
+
+import poi from '../assets/poi.png'
 
 export const languages = {
   en: 'English',
@@ -9,12 +16,10 @@ export const languages = {
   'zh-Hant': '繁體中文',
 }
 
-const HeaderCommand = lazy(() => import('./header-command'))
-
 const Container = styled.div`
   height: 60px;
 
-  background-color: ${props => props.theme.palette.white};
+  background-color: ${(props) => props.theme.background};
 `
 
 const Wrapper = styled.div`
@@ -24,48 +29,46 @@ const Wrapper = styled.div`
   font-size: 20px;
 `
 
-const LinkItem = styled.a`
-  padding: 0 1ex;
-  line-height: 60px;
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.3s;
-  position: relative;
-
-  display: none;
-
-  :hover {
-    ::before {
-      content: '';
-      display: block;
-      background-color: #333;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-    }
-  }
-`
+const LinkItem = styled.a``
 
 const Spacer = styled.div`
   flex: 1;
 `
 
+const Image = styled.img`
+  height: 40px;
+`
+
+const HomeNav = styled(Button)<{ $hidden: boolean }>`
+  opacity: ${({ $hidden }) => ($hidden ? 0 : 1)};
+  transition: 0.3s;
+`
+
 export const Header = () => {
   const { t } = useTranslation()
+  const router = useRouter()
 
   return (
     <Container>
       <Wrapper>
-        <div>
-          <LinkItem>{t('Explore')}</LinkItem>
-          <LinkItem>{t('Plugins')}</LinkItem>
-        </div>
+        <ButtonGroup minimal>
+          <Link href="/" passHref>
+            <HomeNav $hidden={router.pathname === '/'}>
+              <Image src={poi} />
+            </HomeNav>
+          </Link>
+          <Link href="/explore" passHref>
+            <Button>{t('Explore')}</Button>
+          </Link>
+          <Link href="/downloads" passHref>
+            <Button>{t('Downloads')}</Button>
+          </Link>
+          {/* <Link href="/plugins" passHref>
+            <Button>{t('Plugins')}</Button>
+          </Link> */}
+        </ButtonGroup>
         <Spacer />
-        <Suspense fallback={<div />}>
-          <HeaderCommand />
-        </Suspense>
+        <HeaderCommand />
       </Wrapper>
     </Container>
   )

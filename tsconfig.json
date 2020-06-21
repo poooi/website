@@ -19,8 +19,5 @@
     "noEmit": true,
     "jsx": "preserve",
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
-  },
-  "include": [
-    "src"
-  ]
+  }
 }

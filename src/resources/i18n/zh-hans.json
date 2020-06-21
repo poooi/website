@@ -6,7 +6,7 @@
   "telegram": "Telegram",
   "opencollective": "OpenCollective ",
   "weibo": "新浪微博",
-  "download-for": "下载 {{version}}",
+  "download": "下载 {{version}}",
   "linux-x64": "64 位 Linux 版",
   "linux-deb-x64": "64 位 Debian / Ubuntu 版",
   "linux-rpm-x64": "64 位 Fedora / CentOS 版",
@@ -39,5 +39,7 @@
   "Source code": "源代码",
   "Close dialog": "关闭弹出框",
   "error-message": "啊啦啦，网页变成了 🐢。我们会进行修复。",
-  "Reload": "重新载入"
+  "Reload": "重新载入",
+  "Downloads": "下载列表",
+  "no-content": "我们正在努力，请稍后再来。"
 }

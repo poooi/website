@@ -1,9 +1,9 @@
-import { Spinner, SpinnerSize } from 'office-ui-fabric-react'
 import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'
+import { AnchorButton, Intent } from '@blueprintjs/core'
 
 import { Version, targets } from '../model'
 import { getDownloadLink } from './utils'
@@ -26,33 +26,21 @@ const Header = styled.div`
   }
 `
 
-const Button = styled.button<{ isBeta?: boolean }>`
-  background-color: ${props => rgba(props.theme.palette.white, 0.75)};
-  border: ${props => props.theme.palette.neutralDark} solid 1px;
-  border-radius: 1px;
-  color: ${props => props.theme.palette.neutralDark};
-  cursor: pointer;
-  display: inline;
-  display: ${props => props.isBeta && 'none'};
-  font-size: 22px;
-  padding: 8px 12px;
-  margin: 4px 8px;
-  transition: all 300ms;
-  min-width: 12em;
-
-  :hover {
-    background-color: ${props => rgba(props.theme.palette.themePrimary, 0.75)};
-    color: #fff;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: ${props => props.isBeta && 'inline'};
-  }
-}
+const Description = styled.span`
+  display: block;
+  font-size: 1rem;
 `
 
-const Description = styled.div`
-  font-size: 14px;
+const DownloadButton = styled(AnchorButton)`
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+
+  && {
+    background-color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    background-image: none;
+    border: 1px solid ${({ theme }) => theme.text};
+  }
 `
 
 interface Props {
@@ -65,29 +53,31 @@ export const DownloadCards = ({ target, version }: Props) => {
 
   return (
     <Container>
-      <Header>{t('download-for', { version: t(target) })}</Header>
       {version.version ? (
         <>
-          <a
+          <DownloadButton
             href={getDownloadLink(version.version, target)}
             data-testid="download-stable-version"
+            intent={Intent.PRIMARY}
           >
-            <Button>
-              <div>{version.version}</div>
-              <Description>{t('stable-hint')}</Description>
-            </Button>
-          </a>
-          {compareVersions.compare(version.version, version.betaVersion, '<') && (
-            <a href={getDownloadLink(version.betaVersion, target)}>
-              <Button isBeta>
-                <div>{version.betaVersion}</div>
-                <Description>{t('beta-hint')}</Description>
-              </Button>
-            </a>
+            <span>{t('download', { version: version.version })}</span>
+            <Description>{t(target)}</Description>
+            <Description>{t('stable-hint')}</Description>
+          </DownloadButton>
+          {compareVersions.compare(
+            version.version,
+            version.betaVersion,
+            '<',
+          ) && (
+            <DownloadButton href={getDownloadLink(version.betaVersion, target)}>
+              <div>{t('download', { version: version.betaVersion })}</div>
+              <Description>{t(target)}</Description>
+              <Description>{t('beta-hint')}</Description>
+            </DownloadButton>
           )}
         </>
       ) : (
-        <Spinner label={t('lsc')} size={SpinnerSize.large} />
+        <div>{t('lsc')}</div>
       )}
     </Container>
   )

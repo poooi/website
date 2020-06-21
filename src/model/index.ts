@@ -13,3 +13,7 @@ export enum targets {
   win32Setup = 'win-ia32-setup',
   win32 = 'win-ia32',
 }
+
+export interface Contents {
+  [key: string]: string
+}

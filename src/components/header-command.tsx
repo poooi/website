@@ -2,16 +2,12 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
-import { CommandBarButton, loadTheme } from 'office-ui-fabric-react'
+import { Button, ButtonGroup, Popover, Menu, MenuItem } from '@blueprintjs/core'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { createGlobalStyle } from 'styled-components/macro'
 
-import {
-  DispatchThemeChangeContext,
-  getLocaleFontFamily,
-  ThemeIsDarkContext,
-} from '../theme'
+import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
 
 export const languages = {
   en: 'English',
@@ -23,20 +19,13 @@ export const languages = {
 
 const GlobalFontFamily = createGlobalStyle<{ fontFamily?: string }>`
   body {
-    font-family: ${props => props.fontFamily};
+    font-family: ${(props) => props.fontFamily};
   }
 `
 
-const CommandBar = styled.div`
-  display: flex;
-  align-items: center;
+const CommandBar = styled(ButtonGroup)`
   height: 60px;
   line-height: 60px;
-
-  button {
-    height: 44px;
-    padding: 0 1ex;
-  }
 `
 
 const Icon = styled(FontAwesomeIcon)`
@@ -46,51 +35,42 @@ const Icon = styled(FontAwesomeIcon)`
 const HeaderCommand = () => {
   const { t, i18n } = useTranslation()
 
-  const [fontFamily, setFontfamily] = useState(
-    getLocaleFontFamily(i18n.language),
-  )
-
   const dispatch = useContext(DispatchThemeChangeContext)
   const isDark = useContext(ThemeIsDarkContext)
 
-  const options = useMemo(
-    () =>
-      map(languages, (value, key) => ({
-        key,
-        onClick: () => {
-          i18n.changeLanguage(key)
-        },
-        text: value,
-      })),
-    [i18n.changeLanguage], // eslint-disable-line
-  )
-
-  useEffect(() => {
-    loadTheme({
-      defaultFontStyle: {
-        fontFamily,
-      },
-    })
-    setFontfamily(getLocaleFontFamily(i18n.language))
-  }, [i18n.language]) // eslint-disable-line
-
   return (
-    <CommandBar>
-      <GlobalFontFamily fontFamily={fontFamily} />
-      <CommandBarButton onClick={dispatch}>
+    <CommandBar minimal>
+      <Button
+        onClick={() => {
+          dispatch(!isDark)
+          localStorage.setItem('theme', isDark ? 'light' : 'dark')
+        }}
+      >
         <Icon icon={faSwatchbook} />
         {t('current-theme')}
         {t(isDark ? 'Chibaheit' : 'Lilywhite')}
-      </CommandBarButton>
-      <CommandBarButton
-        menuProps={{
-          items: options,
-        }}
-        data-testid="language-dropdown"
+      </Button>
+      <Popover
+        minimal
+        content={
+          <Menu>
+            {map(languages, (value, key) => (
+              <MenuItem
+                text={value}
+                key={key}
+                onClick={() => {
+                  i18n.changeLanguage(key)
+                }}
+              />
+            ))}
+          </Menu>
+        }
       >
-        <Icon icon={faLanguage} />
-        {t('language')}
-      </CommandBarButton>
+        <Button data-testid="language-dropdown">
+          <Icon icon={faLanguage} />
+          {t('language')}
+        </Button>
+      </Popover>
     </CommandBar>
   )
 }

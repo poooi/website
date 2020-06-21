@@ -8,7 +8,7 @@ import ja from './resources/i18n/ja.json'
 import zhHans from './resources/i18n/zh-hans.json'
 import zhHant from './resources/i18n/zh-hant.json'
 
-const resources = {
+export const resources = {
   en: { translation: en },
   fr: { translation: fr },
   ja: { translation: ja },
@@ -19,6 +19,16 @@ const resources = {
 const SFallback = ['zh-Hans', 'zh-Hant', 'en']
 const TFallback = ['zh-Hant', 'zh-Hans', 'en']
 
+export const languageFallback = {
+  default: ['en'],
+  'zh-CN': SFallback,
+  'zh-HK': TFallback,
+  'zh-MO': TFallback,
+  'zh-MY': SFallback,
+  'zh-SG': SFallback,
+  'zh-TW': TFallback,
+}
+
 export const i18n = i18next.createInstance()
 
 i18n
@@ -26,15 +36,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: process.env.NODE_ENV === 'development',
-    fallbackLng: {
-      default: ['en'],
-      'zh-CN': SFallback,
-      'zh-HK': TFallback,
-      'zh-MO': TFallback,
-      'zh-MY': SFallback,
-      'zh-SG': SFallback,
-      'zh-TW': TFallback,
-    },
+    fallbackLng: languageFallback,
     interpolation: {
       escapeValue: false,
     },

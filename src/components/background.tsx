@@ -10,8 +10,7 @@ const Canvas = styled.canvas`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: ${props => props.theme.palette.white};
-  transition: 0.3s;
+  background-color: ${(props) => props.theme.background};
 `
 
 /**
@@ -91,26 +90,12 @@ export const Background = () => {
       times(30, () => {
         const { x, y } = getRandomXY(w, h)
 
-        drawHexagone(
-          ctx,
-          x,
-          y,
-          50,
-          `${rgba(theme.palette.black, 0.1)}`,
-          'transparent',
-        )
+        drawHexagone(ctx, x, y, 50, `${rgba(theme.text, 0.1)}`, 'transparent')
       })
       times(30, () => {
         const { x, y } = getRandomXY(w, h)
 
-        drawHexagone(
-          ctx,
-          x,
-          y,
-          50,
-          'transparent',
-          `${rgba(theme.palette.black, 0.1)}`,
-        )
+        drawHexagone(ctx, x, y, 50, 'transparent', `${rgba(theme.text, 0.1)}`)
       })
     }
 

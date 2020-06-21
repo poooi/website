@@ -6,7 +6,7 @@
   "telegram": "Telegram",
   "opencollective": "OpenCollective",
   "weibo": "Weibo",
-  "download-for": "ダウンロード：",
+  "download": "{{version}} をダウンロードする",
   "linux-x64": "64 ビット Linux バージョン",
   "linux-deb-x64": "64 ビット Debian / Ubuntu バージョン",
   "linux-rpm-x64": "64 ビット Fedora / CentOS バージョン",
@@ -39,5 +39,7 @@
   "Source code": "ソースコード",
   "Close dialog": "ダイアログを閉じる",
   "error-message": "ああ、ウェブページは 🐢 になっています。 修正します。",
-  "Reload": "再起動"
+  "Reload": "再起動",
+  "Downloads": "ダウンロード",
+  "no-content": "作業中です。後で確認してください。"
 }

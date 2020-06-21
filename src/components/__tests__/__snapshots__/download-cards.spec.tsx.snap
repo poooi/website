@@ -5,43 +5,54 @@ exports[`<DownloadCards /> renders with beta 1`] = `
   <div
     class="download-cards__Container-k88p0k-0 hRWHDF"
   >
-    <div
-      class="download-cards__Header-k88p0k-1 fpNLrA"
-    >
-      Download for Linux (x64)
-    </div>
     <a
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-3 jkiaFq"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+      role="button"
+      tabindex="0"
     >
-      <button
-        class="download-cards__Button-k88p0k-2 pREgw"
+      <span
+        class="bp3-button-text"
       >
-        <div>
-          v10.4.0
-        </div>
-        <div
-          class="download-cards__Description-k88p0k-3 ewZaUr"
+        <span>
+          Download v10.4.0
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 eLepwu"
+        >
+          Linux (x64)
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Stable, for most users
-        </div>
-      </button>
+        </span>
+      </span>
     </a>
     <a
+      class="bp3-button download-cards__DownloadButton-k88p0k-3 jkiaFq"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
+      role="button"
+      tabindex="0"
     >
-      <button
-        class="download-cards__Button-k88p0k-2 eYZOqn"
+      <span
+        class="bp3-button-text"
       >
         <div>
-          v10.5.0
+          Download v10.5.0
         </div>
-        <div
-          class="download-cards__Description-k88p0k-3 ewZaUr"
+        <span
+          class="download-cards__Description-k88p0k-2 eLepwu"
+        >
+          Linux (x64)
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Beta, for new features
-        </div>
-      </button>
+        </span>
+      </span>
     </a>
   </div>
 </DocumentFragment>
@@ -58,112 +69,74 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
   font-size: 20px;
 }
 
-.c1 {
-  font-size: 22px;
-  margin-bottom: 2vh;
-}
-
 .c2 {
-  background-color: rgba(255,255,255,0.75);
-  border: #646464 solid 1px;
-  border-radius: 1px;
-  color: #646464;
-  cursor: pointer;
-  display: inline;
-  font-size: 22px;
-  padding: 8px 12px;
-  margin: 4px 8px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  min-width: 12em;
+  display: block;
+  font-size: 1rem;
 }
 
-.c2:hover {
-  background-color: rgba(16,107,163,0.75);
-  color: #fff;
+.c1 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
-.c4 {
-  background-color: rgba(255,255,255,0.75);
-  border: #646464 solid 1px;
-  border-radius: 1px;
-  color: #646464;
-  cursor: pointer;
-  display: inline;
-  display: none;
-  font-size: 22px;
-  padding: 8px 12px;
-  margin: 4px 8px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  min-width: 12em;
-}
-
-.c4:hover {
-  background-color: rgba(16,107,163,0.75);
-  color: #fff;
-}
-
-.c3 {
-  font-size: 14px;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: 26px;
-  }
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
+.c1.c1 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 <div
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      Download for chiba
-    </div>
     <a
+      class="bp3-button bp3-intent-primary c1"
       data-testid="download-stable-version"
       href="https://github.com/poooi/poi/releases"
+      role="button"
+      tabindex="0"
     >
-      <button
-        class="c2"
+      <span
+        class="bp3-button-text"
       >
-        <div>
-          v10.4.0
-        </div>
-        <div
-          class="c3"
+        <span>
+          Download v10.4.0
+        </span>
+        <span
+          class="c2"
+        >
+          chiba
+        </span>
+        <span
+          class="c2"
         >
           Stable, for most users
-        </div>
-      </button>
+        </span>
+      </span>
     </a>
     <a
+      class="bp3-button c1"
       href="https://github.com/poooi/poi/releases"
+      role="button"
+      tabindex="0"
     >
-      <button
-        class="c4"
+      <span
+        class="bp3-button-text"
       >
         <div>
-          v10.5.0
+          Download v10.5.0
         </div>
-        <div
-          class="c3"
+        <span
+          class="c2"
+        >
+          chiba
+        </span>
+        <span
+          class="c2"
         >
           Beta, for new features
-        </div>
-      </button>
+        </span>
+      </span>
     </a>
   </div>
 </DocumentFragment>
@@ -180,69 +153,50 @@ exports[`<DownloadCards /> renders without beta 1`] = `
   font-size: 20px;
 }
 
-.c1 {
-  font-size: 22px;
-  margin-bottom: 2vh;
-}
-
 .c2 {
-  background-color: rgba(255,255,255,0.75);
-  border: #646464 solid 1px;
-  border-radius: 1px;
-  color: #646464;
-  cursor: pointer;
-  display: inline;
-  font-size: 22px;
-  padding: 8px 12px;
-  margin: 4px 8px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  min-width: 12em;
+  display: block;
+  font-size: 1rem;
 }
 
-.c2:hover {
-  background-color: rgba(16,107,163,0.75);
-  color: #fff;
+.c1 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
-.c3 {
-  font-size: 14px;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: 26px;
-  }
-}
-
-@media screen and (min-width:768px) {
-
+.c1.c1 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 <div
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      Download for Linux (x64)
-    </div>
     <a
+      class="bp3-button bp3-intent-primary c1"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+      role="button"
+      tabindex="0"
     >
-      <button
-        class="c2"
+      <span
+        class="bp3-button-text"
       >
-        <div>
-          v10.4.0
-        </div>
-        <div
-          class="c3"
+        <span>
+          Download v10.4.0
+        </span>
+        <span
+          class="c2"
+        >
+          Linux (x64)
+        </span>
+        <span
+          class="c2"
         >
           Stable, for most users
-        </div>
-      </button>
+        </span>
+      </span>
     </a>
   </div>
 </DocumentFragment>

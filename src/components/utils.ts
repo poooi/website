@@ -1,7 +1,10 @@
 import trimStart from 'lodash/trimStart'
 import { UAParser } from 'ua-parser-js'
+import size from 'lodash/size'
 
-import { targets } from '../model'
+import { languageFallback } from '../i18n'
+
+import { targets, Contents } from '../model'
 
 const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
 const DEFAULT_URI = 'https://github.com/poooi/poi/releases'
@@ -64,3 +67,30 @@ const detectTarget = () => {
 }
 
 export const autoDetectedTarget = detectTarget()
+
+export const getLanguageFallbackContent = (
+  contents: Contents,
+  lang: string,
+): string => {
+  if (contents[lang]) {
+    return contents[lang]
+  }
+
+  if (languageFallback[lang as keyof typeof languageFallback]) {
+    for (
+      let i = 0;
+      i < size(languageFallback[lang as keyof typeof languageFallback]);
+      i += 1
+    ) {
+      const res = getLanguageFallbackContent(
+        contents,
+        languageFallback[lang as keyof typeof languageFallback][i],
+      )
+      if (res) {
+        return res
+      }
+    }
+  }
+
+  return ''
+}
