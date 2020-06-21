@@ -4,6 +4,7 @@ import 'jest-canvas-mock'
 import 'jest-styled-components'
 import 'snapshot-diff' // for typings
 import 'snapshot-diff/extend-expect'
+import 'whatwg-fetch'
 
 import './i18n'
 

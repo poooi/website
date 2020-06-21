@@ -7,7 +7,6 @@ exports[`<Footer /> renders with non zh 1`] = `
   min-height: 50px;
   line-height: 50px;
   margin-bottom: 1em;
-  color: #1f1f1f;
 }
 
 .c0 a {
@@ -16,10 +15,6 @@ exports[`<Footer /> renders with non zh 1`] = `
   transition: 0.3s;
   cursor: pointer;
   white-space: nowrap;
-}
-
-.c0 a:hover {
-  color: #106BA3;
 }
 
 .c1 {
@@ -106,7 +101,6 @@ exports[`<Footer /> renders with zh 1`] = `
   min-height: 50px;
   line-height: 50px;
   margin-bottom: 1em;
-  color: #1f1f1f;
 }
 
 .c0 a {
@@ -115,10 +109,6 @@ exports[`<Footer /> renders with zh 1`] = `
   transition: 0.3s;
   cursor: pointer;
   white-space: nowrap;
-}
-
-.c0 a:hover {
-  color: #106BA3;
 }
 
 .c1 {

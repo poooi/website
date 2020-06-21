@@ -30,16 +30,6 @@ describe('<Content /> with beta > stable', () => {
     await waitFor(() => getByTestId('download-stable-version'))
     expect(asFragment()).toMatchSnapshot()
   })
-
-  it('opens target list', async () => {
-    const { getByTestId, baseElement } = renderWithTheme(<Content />)
-    await waitFor(() => getByTestId('download-stable-version'))
-    fireEvent.click(getByTestId('open-dialog'))
-    await waitFor(() => getByTestId('modal-container'))
-    expect(
-      baseElement.querySelector('[data-testid="modal-container"]'),
-    ).toMatchSnapshot()
-  })
 })
 
 describe('<Content /> with beta < stable', () => {
@@ -64,15 +54,5 @@ describe('<Content /> with beta < stable', () => {
     const { asFragment, getByTestId } = renderWithTheme(<Content />)
     await waitFor(() => getByTestId('download-stable-version'))
     expect(asFragment()).toMatchSnapshot()
-  })
-
-  it('opens target list', async () => {
-    const { getByTestId, baseElement } = renderWithTheme(<Content />)
-    await waitFor(() => getByTestId('download-stable-version'))
-    fireEvent.click(getByTestId('open-dialog'))
-    await waitFor(() => getByTestId('modal-container'))
-    expect(
-      baseElement.querySelector('[data-testid="modal-container"]'),
-    ).toMatchSnapshot()
   })
 })
