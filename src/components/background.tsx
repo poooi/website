@@ -11,7 +11,6 @@ const Canvas = styled.canvas`
   top: 0;
   left: 0;
   background-color: ${(props) => props.theme.background};
-  transition: 0.3s;
 `
 
 /**

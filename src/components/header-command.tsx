@@ -38,21 +38,14 @@ const HeaderCommand = () => {
   const dispatch = useContext(DispatchThemeChangeContext)
   const isDark = useContext(ThemeIsDarkContext)
 
-  const options = useMemo(
-    () =>
-      map(languages, (value, key) => ({
-        key,
-        onClick: () => {
-          i18n.changeLanguage(key)
-        },
-        text: value,
-      })),
-    [i18n.changeLanguage], // eslint-disable-line
-  )
-
   return (
     <CommandBar minimal>
-      <Button onClick={dispatch}>
+      <Button
+        onClick={() => {
+          dispatch(!isDark)
+          localStorage.setItem('theme', isDark ? 'light' : 'dark')
+        }}
+      >
         <Icon icon={faSwatchbook} />
         {t('current-theme')}
         {t(isDark ? 'Chibaheit' : 'Lilywhite')}

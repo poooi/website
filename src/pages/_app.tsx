@@ -25,7 +25,15 @@ import '../i18n'
 import '@blueprintjs/core/lib/css/blueprint.css'
 
 const FoucFix = dynamic<any>(
-  () => import('../components/fouc-fix').then((mod) => mod.FoucFix),
+  () => import('../components/no-ssr/fouc-fix').then((mod) => mod.FoucFix),
+  { ssr: false },
+)
+
+const ThemeDetection = dynamic<any>(
+  () =>
+    import('../components/no-ssr/theme-detection').then(
+      (mod) => mod.ThemeDetection,
+    ),
   { ssr: false },
 )
 
@@ -68,25 +76,15 @@ const ContentWrapper = styled.div`
   padding-top: 2rem;
 `
 
-// const getDefaultIsDark = (): boolean => {
-//   if (window.localStorage?.getItem('theme')) {
-//     return localStorage.getItem('theme') === 'dark'
-//   }
-//   return (
-//     window.matchMedia &&
-//     window.matchMedia('(prefers-color-scheme: dark)').matches
-//   )
-// }
-
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   const [isDark, dispatch] = useReducer(
-    (state: boolean, value: any) => !state,
+    (state: boolean, value: any) => value,
     true,
   )
 
-  useEffect(() => {
-    localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  }, [isDark])
+  // useEffect(() => {
+  //   localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  // }, [isDark])
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
@@ -95,6 +93,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <ModernNormalize />
           <GlobalStyle />
           <FoucFix />
+          <ThemeDetection />
           <Background />
           <Container className={classNames({ 'bp3-dark': isDark })}>
             <Wrapper>
