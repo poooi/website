@@ -39,6 +39,11 @@ const Image = styled.img`
   height: 40px;
 `
 
+const HomeNav = styled(Button)<{ $hidden: boolean }>`
+  opacity: ${({ $hidden }) => ($hidden ? 0 : 1)};
+  transition: 0.3s;
+`
+
 export const Header = () => {
   const { t } = useTranslation()
   const router = useRouter()
@@ -47,13 +52,11 @@ export const Header = () => {
     <Container>
       <Wrapper>
         <ButtonGroup minimal>
-          {router.pathname !== '/' && (
-            <Link href="/" passHref>
-              <Button>
-                <Image src={poi} />
-              </Button>
-            </Link>
-          )}
+          <Link href="/" passHref>
+            <HomeNav $hidden={router.pathname === '/'}>
+              <Image src={poi} />
+            </HomeNav>
+          </Link>
           <Link href="/explore" passHref>
             <Button>{t('Explore')}</Button>
           </Link>

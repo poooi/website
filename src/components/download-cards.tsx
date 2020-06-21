@@ -27,13 +27,13 @@ const Header = styled.div`
 `
 
 const Description = styled.span`
-  font-size: 1.2rem;
   display: block;
+  font-size: 1rem;
 `
 
 const DownloadButton = styled(AnchorButton)`
-  padding: 1rem 3em;
-  font-size: 2rem;
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 
   && {
     background-color: ${({ theme }) => theme.background};

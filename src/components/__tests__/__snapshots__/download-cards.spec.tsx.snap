@@ -6,7 +6,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     class="download-cards__Container-k88p0k-0 hRWHDF"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-3 kEELpj"
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-3 jkiaFq"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -19,19 +19,19 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="download-cards__Description-k88p0k-2 hFCFoy"
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-2 hFCFoy"
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Stable, for most users
         </span>
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-k88p0k-3 kEELpj"
+      class="bp3-button download-cards__DownloadButton-k88p0k-3 jkiaFq"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -43,12 +43,12 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.5.0
         </div>
         <span
-          class="download-cards__Description-k88p0k-2 hFCFoy"
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-2 hFCFoy"
+          class="download-cards__Description-k88p0k-2 eLepwu"
         >
           Beta, for new features
         </span>
@@ -70,13 +70,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 }
 
 .c2 {
-  font-size: 1.2rem;
   display: block;
+  font-size: 1rem;
 }
 
 .c1 {
-  padding: 1rem 3em;
-  font-size: 2rem;
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
 .c1.c1 {
@@ -154,13 +154,13 @@ exports[`<DownloadCards /> renders without beta 1`] = `
 }
 
 .c2 {
-  font-size: 1.2rem;
   display: block;
+  font-size: 1rem;
 }
 
 .c1 {
-  padding: 1rem 3em;
-  font-size: 2rem;
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
 .c1.c1 {

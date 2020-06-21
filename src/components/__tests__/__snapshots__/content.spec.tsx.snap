@@ -38,13 +38,13 @@ exports[`<Content /> with beta < stable renders 1`] = `
 }
 
 .c11 {
-  font-size: 1.2rem;
   display: block;
+  font-size: 1rem;
 }
 
 .c10 {
-  padding: 1rem 3em;
-  font-size: 2rem;
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
 .c10.c10 {
@@ -279,13 +279,13 @@ exports[`<Content /> with beta > stable renders 1`] = `
 }
 
 .c11 {
-  font-size: 1.2rem;
   display: block;
+  font-size: 1rem;
 }
 
 .c10 {
-  padding: 1rem 3em;
-  font-size: 2rem;
+  padding: 1rem 2em;
+  font-size: 1.5rem;
 }
 
 .c10.c10 {
