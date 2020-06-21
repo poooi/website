@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-conventional": "^9.0.1",
     "@poooi/coveralls": "^3.0.7",
     "@testing-library/dom": "^7.16.2",
     "@testing-library/jest-dom": "^5.10.1",
