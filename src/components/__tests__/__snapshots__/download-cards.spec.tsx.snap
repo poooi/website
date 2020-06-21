@@ -6,7 +6,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     class="download-cards__Container-k88p0k-0 hRWHDF"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-3 knWbpS"
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-3 kEELpj"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -15,23 +15,23 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       <span
         class="bp3-button-text"
       >
-        <div>
+        <span>
           Download v10.4.0
-        </div>
-        <div
-          class="download-cards__Description-k88p0k-2 eTXLWI"
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 hFCFoy"
         >
           Linux (x64)
-        </div>
-        <div
-          class="download-cards__Description-k88p0k-2 eTXLWI"
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 hFCFoy"
         >
           Stable, for most users
-        </div>
+        </span>
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-k88p0k-3 knWbpS"
+      class="bp3-button download-cards__DownloadButton-k88p0k-3 kEELpj"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -42,16 +42,16 @@ exports[`<DownloadCards /> renders with beta 1`] = `
         <div>
           Download v10.5.0
         </div>
-        <div
-          class="download-cards__Description-k88p0k-2 eTXLWI"
+        <span
+          class="download-cards__Description-k88p0k-2 hFCFoy"
         >
           Linux (x64)
-        </div>
-        <div
-          class="download-cards__Description-k88p0k-2 eTXLWI"
+        </span>
+        <span
+          class="download-cards__Description-k88p0k-2 hFCFoy"
         >
           Beta, for new features
-        </div>
+        </span>
       </span>
     </a>
   </div>
@@ -71,11 +71,19 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 
 .c2 {
   font-size: 1.2rem;
+  display: block;
 }
 
 .c1 {
   padding: 1rem 3em;
   font-size: 2rem;
+}
+
+.c1.c1 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 <div
@@ -91,19 +99,19 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       <span
         class="bp3-button-text"
       >
-        <div>
+        <span>
           Download v10.4.0
-        </div>
-        <div
+        </span>
+        <span
           class="c2"
         >
           chiba
-        </div>
-        <div
+        </span>
+        <span
           class="c2"
         >
           Stable, for most users
-        </div>
+        </span>
       </span>
     </a>
     <a
@@ -118,16 +126,16 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
         <div>
           Download v10.5.0
         </div>
-        <div
+        <span
           class="c2"
         >
           chiba
-        </div>
-        <div
+        </span>
+        <span
           class="c2"
         >
           Beta, for new features
-        </div>
+        </span>
       </span>
     </a>
   </div>
@@ -147,11 +155,19 @@ exports[`<DownloadCards /> renders without beta 1`] = `
 
 .c2 {
   font-size: 1.2rem;
+  display: block;
 }
 
 .c1 {
   padding: 1rem 3em;
   font-size: 2rem;
+}
+
+.c1.c1 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 <div
@@ -167,19 +183,19 @@ exports[`<DownloadCards /> renders without beta 1`] = `
       <span
         class="bp3-button-text"
       >
-        <div>
+        <span>
           Download v10.4.0
-        </div>
-        <div
+        </span>
+        <span
           class="c2"
         >
           Linux (x64)
-        </div>
-        <div
+        </span>
+        <span
           class="c2"
         >
           Stable, for most users
-        </div>
+        </span>
       </span>
     </a>
   </div>

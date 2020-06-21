@@ -39,11 +39,19 @@ exports[`<Content /> with beta < stable renders 1`] = `
 
 .c11 {
   font-size: 1.2rem;
+  display: block;
 }
 
 .c10 {
   padding: 1rem 3em;
   font-size: 2rem;
+}
+
+.c10.c10 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 .c12 {
@@ -197,19 +205,19 @@ exports[`<Content /> with beta < stable renders 1`] = `
         <span
           class="bp3-button-text"
         >
-          <div>
+          <span>
             Download v10.4.0
-          </div>
-          <div
+          </span>
+          <span
             class="c11"
           >
             Windows (x64)
-          </div>
-          <div
+          </span>
+          <span
             class="c11"
           >
             Stable, for most users
-          </div>
+          </span>
         </span>
       </a>
     </div>
@@ -272,11 +280,19 @@ exports[`<Content /> with beta > stable renders 1`] = `
 
 .c11 {
   font-size: 1.2rem;
+  display: block;
 }
 
 .c10 {
   padding: 1rem 3em;
   font-size: 2rem;
+}
+
+.c10.c10 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
 }
 
 .c12 {
@@ -430,19 +446,19 @@ exports[`<Content /> with beta > stable renders 1`] = `
         <span
           class="bp3-button-text"
         >
-          <div>
+          <span>
             Download v10.4.0
-          </div>
-          <div
+          </span>
+          <span
             class="c11"
           >
             Windows (x64)
-          </div>
-          <div
+          </span>
+          <span
             class="c11"
           >
             Stable, for most users
-          </div>
+          </span>
         </span>
       </a>
       <a
@@ -457,16 +473,16 @@ exports[`<Content /> with beta > stable renders 1`] = `
           <div>
             Download v10.5.0-beta.0
           </div>
-          <div
+          <span
             class="c11"
           >
             Windows (x64)
-          </div>
-          <div
+          </span>
+          <span
             class="c11"
           >
             Beta, for new features
-          </div>
+          </span>
         </span>
       </a>
     </div>

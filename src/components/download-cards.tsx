@@ -26,13 +26,21 @@ const Header = styled.div`
   }
 `
 
-const Description = styled.div`
+const Description = styled.span`
   font-size: 1.2rem;
+  display: block;
 `
 
 const DownloadButton = styled(AnchorButton)`
   padding: 1rem 3em;
   font-size: 2rem;
+
+  && {
+    background-color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    background-image: none;
+    border: 1px solid ${({ theme }) => theme.text};
+  }
 `
 
 interface Props {
@@ -52,7 +60,7 @@ export const DownloadCards = ({ target, version }: Props) => {
             data-testid="download-stable-version"
             intent={Intent.PRIMARY}
           >
-            <div>{t('download', { version: version.version })}</div>
+            <span>{t('download', { version: version.version })}</span>
             <Description>{t(target)}</Description>
             <Description>{t('stable-hint')}</Description>
           </DownloadButton>
