@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@sentry/browser": "^5.17.0",
     "@zeit/next-css": "^1.0.1",
-    "camelcase": "^5.3.1",
+    "camelcase": "^6.0.0",
     "classnames": "^2.2.6",
     "compare-versions": "^3.6.0",
     "framer-motion": "^1.11.1",
