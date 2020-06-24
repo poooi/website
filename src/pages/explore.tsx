@@ -11,6 +11,7 @@ import { resources } from '../i18n'
 import { Contents } from '../model'
 import { getLanguageFallbackContent } from '../components/utils'
 import { AnimatedContainer } from '../components/animated-container'
+import { PageHeadTitle } from '../components/page-head-title'
 
 interface Props {
   contents: Contents
@@ -22,16 +23,19 @@ const ExplorePage: FC<Props> = ({ contents }) => {
   const content = getLanguageFallbackContent(contents, i18n.language)
 
   return (
-    <AnimatedContainer>
-      {content ? (
-        <ReactMarkdown source={content} />
-      ) : (
-        <NonIdealState
-          title={t('lsc')}
-          description={<div>{t('no-content')}</div>}
-        />
-      )}
-    </AnimatedContainer>
+    <>
+      <PageHeadTitle title={t('Explore')} />
+      <AnimatedContainer>
+        {content ? (
+          <ReactMarkdown source={content} />
+        ) : (
+          <NonIdealState
+            title={t('lsc')}
+            description={<div>{t('no-content')}</div>}
+          />
+        )}
+      </AnimatedContainer>
+    </>
   )
 }
 

@@ -1,4 +1,3 @@
-import { rgba } from 'polished'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
@@ -14,15 +13,6 @@ const Container = styled.div`
 
   .ms-Spinner-label {
     font-size: 20px;
-  }
-`
-
-const Header = styled.div`
-  font-size: 22px;
-  margin-bottom: 2vh;
-
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
   }
 `
 

@@ -1,6 +1,4 @@
-import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Button, Dialog } from '@blueprintjs/core'
+import { Button } from '@blueprintjs/core'
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
@@ -8,7 +6,6 @@ import Link from 'next/link'
 
 import { Version } from '../model'
 import { DownloadCards } from './download-cards'
-import { TargetList } from './target-list'
 import { autoDetectedTarget } from './utils'
 
 const CenterContainer = styled.div`

@@ -29,8 +29,6 @@ const Wrapper = styled.div`
   font-size: 20px;
 `
 
-const LinkItem = styled.a``
-
 const Spacer = styled.div`
   flex: 1;
 `

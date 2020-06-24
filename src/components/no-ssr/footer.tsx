@@ -10,7 +10,7 @@ import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram'
 import { faWeibo } from '@fortawesome/free-brands-svg-icons/faWeibo'
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 
-import { getExactLanguage } from '../utils'
+import { getExactLanguage } from '../../utils'
 
 const Icon = ({ icon }: { icon: IconProp }) => (
   <FontAwesomeIcon icon={icon} size="lg" fixedWidth />
