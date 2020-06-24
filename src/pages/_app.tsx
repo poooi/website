@@ -21,7 +21,7 @@ import {
 
 import { ModernNormalize } from '../components/modern-normalize'
 import { Background } from '../components/background'
-import { Footer } from '../components/footer'
+
 import { Header } from '../components/header'
 
 import '../i18n'
@@ -49,6 +49,11 @@ const ThemeDetection = dynamic<any>(
     import('../components/no-ssr/theme-detection').then(
       (mod) => mod.ThemeDetection,
     ),
+  { ssr: false },
+)
+
+const Footer = dynamic<any>(
+  () => import('../components/no-ssr/footer').then((mod) => mod.Footer),
   { ssr: false },
 )
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { i18n } from '../../i18n'
 
 import { renderWithTheme } from '../../testing-utils'
-import { Footer } from '../footer'
+import { Footer } from '../no-ssr/footer'
 
 describe('<Footer />', () => {
   it('renders with non zh', () => {
