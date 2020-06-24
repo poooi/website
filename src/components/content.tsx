@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 
@@ -8,7 +8,6 @@ import { TypeCat } from './type-cat'
 import poi from '../assets/poi.png'
 
 import Download from './download'
-import IconLoader from './icon-loader'
 
 const Container = styled.div`
   flex: 1;
@@ -88,7 +87,6 @@ export const Content = () => {
         <Description>
           <TypeCat text={t('description')} />
         </Description>
-        <IconLoader />
         <Download />
       </ErrorBoundary>
     </Container>

@@ -3,9 +3,9 @@ import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
 import { Button, ButtonGroup, Popover, Menu, MenuItem } from '@blueprintjs/core'
-import React, { useContext, useEffect, useMemo, useState } from 'react'
+import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled, { createGlobalStyle } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 
 import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
 
@@ -16,12 +16,6 @@ export const languages = {
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
-
-const GlobalFontFamily = createGlobalStyle<{ fontFamily?: string }>`
-  body {
-    font-family: ${(props) => props.fontFamily};
-  }
-`
 
 const CommandBar = styled(ButtonGroup)`
   height: 60px;
