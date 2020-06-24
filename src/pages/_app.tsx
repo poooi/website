@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
-import React, { FC, useReducer } from 'react'
+import React, { FC, useReducer, useEffect } from 'react'
 import styled, {
   createGlobalStyle,
   ThemeProvider,
@@ -8,6 +8,9 @@ import styled, {
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import * as Sentry from '@sentry/browser'
+import Head from 'next/head'
+import ReactGA from 'react-ga'
+import Router from 'next/router'
 
 import {
   darkTheme,
@@ -29,6 +32,11 @@ if (process.env.NODE_ENV === 'production') {
   Sentry.init({
     dsn: 'https://119091520e0b47809be0b51bd6313c6d@sentry.io/1505313',
   })
+}
+
+const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
 }
 
 const FoucFix = dynamic<any>(
@@ -89,14 +97,33 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     true,
   )
 
-  // useEffect(() => {
-  //   localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  // }, [isDark])
+  useEffect(() => {
+    ReactGA.initialize('UA-83274947-1')
+    logPageView()
+    Router.events.on('routeChangeComplete', logPageView)
+  }, [])
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <DispatchThemeChangeContext.Provider value={dispatch}>
         <ThemeIsDarkContext.Provider value={isDark}>
+          <Head>
+            <meta charSet="utf-8" />
+            <link rel="shortcut icon" href="favicon.ico" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <meta name="theme-color" content={darkTheme.background} />
+            <link rel="manifest" href="manifest.json" />
+            <meta
+              name="description"
+              content="Scalable KanColle browser and tool, for Windows, macOS and Linux. 一个可扩展的舰队Collection浏览器。拡張可能な艦隊これくしょんブラウザ。"
+            />
+            <title>
+              poi | KanColle Browser | 舰娘专用浏览器 | 艦これ専ブラ
+            </title>
+          </Head>
           <ModernNormalize />
           <GlobalStyle />
           <FoucFix />
