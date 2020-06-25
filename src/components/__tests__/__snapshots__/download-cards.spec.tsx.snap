@@ -6,7 +6,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     class="download-cards__Container-k88p0k-0 hRWHDF"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 dwyTTj"
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 dtFVoj"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -31,7 +31,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-k88p0k-2 dwyTTj"
+      class="bp3-button download-cards__DownloadButton-k88p0k-2 dtFVoj"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -69,28 +69,32 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
   font-size: 20px;
 }
 
-.c2 {
+.c3 {
   display: block;
   font-size: 1rem;
 }
 
-.c1 {
+.c2 {
   padding: 1rem 2em;
   font-size: 1.5rem;
 }
 
-.c1.c1 {
+.c2.c2 {
   background-color: #F5F8FA;
   color: #182026;
   background-image: none;
   border: 1px solid #182026;
 }
 
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
 <div
     class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary c1"
+      class="bp3-button bp3-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://github.com/poooi/poi/releases"
       role="button"
@@ -103,19 +107,19 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="c2"
+          class="c3"
         >
           chiba
         </span>
         <span
-          class="c2"
+          class="c3"
         >
           Stable, for most users
         </span>
       </span>
     </a>
     <a
-      class="bp3-button c1"
+      class="bp3-button c1 c2"
       href="https://github.com/poooi/poi/releases"
       role="button"
       tabindex="0"
@@ -127,12 +131,12 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
           Download v10.5.0
         </div>
         <span
-          class="c2"
+          class="c3"
         >
           chiba
         </span>
         <span
-          class="c2"
+          class="c3"
         >
           Beta, for new features
         </span>
@@ -153,28 +157,32 @@ exports[`<DownloadCards /> renders without beta 1`] = `
   font-size: 20px;
 }
 
-.c2 {
+.c3 {
   display: block;
   font-size: 1rem;
 }
 
-.c1 {
+.c2 {
   padding: 1rem 2em;
   font-size: 1.5rem;
 }
 
-.c1.c1 {
+.c2.c2 {
   background-color: #F5F8FA;
   color: #182026;
   background-image: none;
   border: 1px solid #182026;
 }
 
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
 <div
     class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary c1"
+      class="bp3-button bp3-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -187,12 +195,12 @@ exports[`<DownloadCards /> renders without beta 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="c2"
+          class="c3"
         >
           Linux (x64)
         </span>
         <span
-          class="c2"
+          class="c3"
         >
           Stable, for most users
         </span>

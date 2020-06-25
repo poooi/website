@@ -1,35 +1,211 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Background Dark 1`] = `
+exports[`Storyshots Animated Container Normal 1`] = `
 .c0 {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #293742;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
-<canvas
+<div
   class="c0"
-  height="768"
-  style="width: 1024px; height: 768px;"
-  width="1024"
-/>
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Background Dark 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Background Light 1`] = `
 .c0 {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #F5F8FA;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
-<canvas
+<div
   class="c0"
-  height="768"
-  style="width: 1024px; height: 768px;"
-  width="1024"
-/>
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Download Beta Version Available 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Download Stable Version Only 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header Normal 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <label
+      class="bp3-control bp3-switch"
+    >
+      <input
+        checked=""
+        type="checkbox"
+      />
+      <span
+        class="bp3-control-indicator"
+      />
+      Dark theme
+    </label>
+  </div>
+</div>
 `;
