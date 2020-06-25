@@ -1,5 +1,5 @@
 import { Button } from '@blueprintjs/core'
-import React, { useEffect, useState } from 'react'
+import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 import Link from 'next/link'
@@ -14,24 +14,12 @@ const CenterContainer = styled.div`
   margin: 1rem auto;
 `
 
-const Download = () => {
+interface Props {
+  version: Version
+}
+
+const Download: FC<Props> = ({ version }) => {
   const { t } = useTranslation()
-
-  const [version, setVersion] = useState<Version>(({} as any) as Version)
-
-  useEffect(() => {
-    const getUpdate = async () => {
-      try {
-        const resp = await fetch('/update/latest.json')
-        const result: Version = await resp.json()
-        setVersion(result)
-      } catch (e) {
-        console.error(e)
-      }
-    }
-
-    getUpdate()
-  }, [])
 
   return (
     <>
