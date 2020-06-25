@@ -19,13 +19,13 @@ import {
   ThemeIsDarkContext,
 } from '../theme'
 
-import { ModernNormalize } from '../components/modern-normalize'
 import { Background } from '../components/background'
 
 import { Header } from '../components/header'
 
 import '../i18n'
 
+import 'modern-normalize/modern-normalize.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
 
 if (process.env.NODE_ENV === 'production') {
@@ -129,7 +129,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
               poi | KanColle Browser | 舰娘专用浏览器 | 艦これ専ブラ
             </title>
           </Head>
-          <ModernNormalize />
           <GlobalStyle />
           <FoucFix />
           <ThemeDetection />

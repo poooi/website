@@ -7,6 +7,7 @@ import { RouterContext } from 'next/dist/next-server/lib/router-context'
 
 import { darkTheme, lightTheme } from '../src/theme'
 
+import 'modern-normalize/modern-normalize.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
 
 const Center = styled.div`
