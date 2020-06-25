@@ -2,10 +2,11 @@
 const path = require('path')
 const { NormalModuleReplacementPlugin } = require('webpack')
 const withImages = require('next-images')
+const withSourceMaps = require('@zeit/next-source-maps')
 const withCSS = require('@zeit/next-css')
 const { flow } = require('lodash')
 
-module.exports = flow([withImages, withCSS])({
+module.exports = flow([withImages, withCSS, withSourceMaps])({
   webpack: (config) => {
     config.plugins.push(
       new NormalModuleReplacementPlugin(
