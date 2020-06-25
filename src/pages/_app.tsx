@@ -57,6 +57,14 @@ const Footer = dynamic<any>(
   { ssr: false },
 )
 
+const LocalizedFontFamily = dynamic<any>(
+  () =>
+    import('../components/no-ssr/localized-font-family').then(
+      (mode) => mode.LocalizedFontFamily,
+    ),
+  { ssr: false },
+)
+
 config.autoAddCss = false
 
 const GlobalStyle = createGlobalStyle`
@@ -132,6 +140,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <GlobalStyle />
           <FoucFix />
           <ThemeDetection />
+          <LocalizedFontFamily />
           <Background />
           <Container className={classNames({ 'bp3-dark': isDark })}>
             <Wrapper>
