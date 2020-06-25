@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Background Dark 1`] = `
+.c0 {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #293742;
+}
+
+<canvas
+  class="c0"
+  height="768"
+  style="width: 1024px; height: 768px;"
+  width="1024"
+/>
+`;
+
+exports[`Storyshots Background Light 1`] = `
+.c0 {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F5F8FA;
+}
+
+<canvas
+  class="c0"
+  height="768"
+  style="width: 1024px; height: 768px;"
+  width="1024"
+/>
+`;
