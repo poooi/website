@@ -4,7 +4,8 @@ import { render } from '@testing-library/react'
 import type { Plugin } from 'pretty-format'
 
 const reactTestingLibrarySerializer: Plugin = {
-  print: (val: any, serialize) => serialize(val.container.firstChild),
+  print: (val: any, serialize) =>
+    serialize(val.getByTestId('storybook-content')),
   test: (val: any) =>
     val && Object.prototype.hasOwnProperty.call(val, 'container'),
 }

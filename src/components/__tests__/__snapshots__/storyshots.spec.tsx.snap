@@ -1,211 +1,1147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Animated Container Normal 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0.5rem;
-}
-
 <div
-  class="c0"
+  data-testid="storybook-content"
 >
-  <div
-    class="bp3-card bp3-elevation-0"
-  >
-    <label
-      class="bp3-control bp3-switch"
-    >
-      <input
-        checked=""
-        type="checkbox"
-      />
-      <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
+  <div>
+    Hello world
   </div>
 </div>
 `;
 
 exports[`Storyshots Background Dark 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0.5rem;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #293742;
 }
 
 <div
-  class="c0"
+  data-testid="storybook-content"
 >
-  <div
-    class="bp3-card bp3-elevation-0"
-  >
-    <label
-      class="bp3-control bp3-switch"
-    >
-      <input
-        checked=""
-        type="checkbox"
-      />
-      <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
-  </div>
+  <canvas
+    class="c0"
+    height="768"
+    style="width: 1024px; height: 768px;"
+    width="1024"
+  />
 </div>
 `;
 
 exports[`Storyshots Background Light 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0.5rem;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F5F8FA;
 }
 
 <div
-  class="c0"
+  data-testid="storybook-content"
 >
-  <div
-    class="bp3-card bp3-elevation-0"
-  >
-    <label
-      class="bp3-control bp3-switch"
-    >
-      <input
-        checked=""
-        type="checkbox"
-      />
-      <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
-  </div>
+  <canvas
+    class="c0"
+    height="768"
+    style="width: 1024px; height: 768px;"
+    width="1024"
+  />
 </div>
 `;
 
 exports[`Storyshots Download Beta Version Available 1`] = `
 .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+}
+
+.c2 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+}
+
+.c2.c2 {
+  background-color: #293742;
+  color: #CED9E0;
+  background-image: none;
+  border: 1px solid #CED9E0;
+}
+
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0.5rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1rem auto;
 }
 
 <div
-  class="c0"
+  data-testid="storybook-content"
 >
   <div
-    class="bp3-card bp3-elevation-0"
+    class="c0"
   >
-    <label
-      class="bp3-control bp3-switch"
+    <a
+      class="bp3-button bp3-intent-primary c1 c2"
+      data-testid="download-stable-version"
+      href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+      role="button"
+      tabindex="0"
     >
-      <input
-        checked=""
-        type="checkbox"
-      />
       <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
+        class="bp3-button-text"
+      >
+        <span>
+          Download v10.2.4
+        </span>
+        <span
+          class="c3"
+        >
+          Windows (x64)
+        </span>
+        <span
+          class="c3"
+        >
+          Stable, for most users
+        </span>
+      </span>
+    </a>
+    <a
+      class="bp3-button c1 c2"
+      href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-setup-11.0.0-beta.0.exe"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="bp3-button-text"
+      >
+        <div>
+          Download v11.0.0-beta.0
+        </div>
+        <span
+          class="c3"
+        >
+          Windows (x64)
+        </span>
+        <span
+          class="c3"
+        >
+          Beta, for new features
+        </span>
+      </span>
+    </a>
+  </div>
+  <div
+    class="c4"
+  >
+    <button
+      class="bp3-button bp3-minimal"
+      data-testid="open-dialog"
+      href="/downloads"
+      type="button"
+    >
+      <span
+        class="bp3-button-text"
+      >
+        Choose another platform
+      </span>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Download Stable Version Only 1`] = `
 .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+}
+
+.c2 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+}
+
+.c2.c2 {
+  background-color: #293742;
+  color: #CED9E0;
+  background-image: none;
+  border: 1px solid #CED9E0;
+}
+
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+<div
+  data-testid="storybook-content"
+>
+  <div
+    class="c0"
+  >
+    <a
+      class="bp3-button bp3-intent-primary c1 c2"
+      data-testid="download-stable-version"
+      href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="bp3-button-text"
+      >
+        <span>
+          Download v10.2.4
+        </span>
+        <span
+          class="c3"
+        >
+          Windows (x64)
+        </span>
+        <span
+          class="c3"
+        >
+          Stable, for most users
+        </span>
+      </span>
+    </a>
+  </div>
+  <div
+    class="c4"
+  >
+    <button
+      class="bp3-button bp3-minimal"
+      data-testid="open-dialog"
+      href="/downloads"
+      type="button"
+    >
+      <span
+        class="bp3-button-text"
+      >
+        Choose another platform
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Error Boundary Throws 1`] = `
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0.5rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.c1 {
+  margin-bottom: 1em;
 }
 
 <div
-  class="c0"
+  data-testid="storybook-content"
 >
   <div
-    class="bp3-card bp3-elevation-0"
+    class="c0"
   >
-    <label
-      class="bp3-control bp3-switch"
+    <div
+      class="c1"
     >
-      <input
-        checked=""
-        type="checkbox"
-      />
-      <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
+      Ah, the webpage has become 🐢. We will fix it.
+    </div>
+    <div>
+      <button
+        type="button"
+      >
+        Reload
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Header Normal 1`] = `
+.c5 {
+  height: 60px;
+  line-height: 60px;
+}
+
+.c6 {
+  margin-right: 1ex;
+}
+
 .c0 {
+  height: 60px;
+  background-color: #293742;
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 960px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.c4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  height: 40px;
+}
+
+.c2 {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 <div
-  class="c0"
+  data-testid="storybook-content"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="bp3-button-group bp3-minimal"
+      >
+        <button
+          class="bp3-button c2"
+          href="/"
+          type="button"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            <img
+              class="c3"
+              src="poi.png"
+            />
+          </span>
+        </button>
+        <button
+          class="bp3-button"
+          href="/explore"
+          type="button"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            Explore
+          </span>
+        </button>
+        <button
+          class="bp3-button"
+          href="/downloads"
+          type="button"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            Downloads
+          </span>
+        </button>
+      </div>
+      <div
+        class="c4"
+      />
+      <div
+        class="bp3-button-group bp3-minimal c5"
+      >
+        <button
+          class="bp3-button"
+          type="button"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-swatchbook fa-w-16 c6"
+              data-icon="swatchbook"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M434.66,167.71h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320ZM192,32A32,32,0,0,0,160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z"
+                fill="currentColor"
+              />
+            </svg>
+            Theme 
+            Chibaheit
+          </span>
+        </button>
+        <span
+          class="bp3-popover-wrapper"
+        >
+          <span
+            class="bp3-popover-target"
+          >
+            <button
+              class="bp3-button"
+              data-testid="language-dropdown"
+              type="button"
+            >
+              <span
+                class="bp3-button-text"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-language fa-w-20 c6"
+                  data-icon="language"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z"
+                    fill="currentColor"
+                  />
+                </svg>
+                English
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Target List Beta Version Available 1`] = `
+.c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+}
+
+.c2 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+}
+
+.c2.c2 {
+  background-color: #293742;
+  color: #CED9E0;
+  background-image: none;
+  border: 1px solid #CED9E0;
+}
+
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c4 button,
+.c4 a {
+  margin: 1ex 1ex;
+}
+
+<div
+  data-testid="storybook-content"
 >
   <div
     class="bp3-card bp3-elevation-0"
   >
-    <label
-      class="bp3-control bp3-switch"
+    <div
+      class="c0"
     >
-      <input
-        checked=""
-        type="checkbox"
-      />
-      <span
-        class="bp3-control-indicator"
-      />
-      Dark theme
-    </label>
+      <a
+        class="bp3-button bp3-intent-primary c1 c2"
+        data-testid="download-stable-version"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          <span>
+            Download v10.2.4
+          </span>
+          <span
+            class="c3"
+          >
+            Windows (x64)
+          </span>
+          <span
+            class="c3"
+          >
+            Stable, for most users
+          </span>
+        </span>
+      </a>
+      <a
+        class="bp3-button c1 c2"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-setup-11.0.0-beta.0.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          <div>
+            Download v11.0.0-beta.0
+          </div>
+          <span
+            class="c3"
+          >
+            Windows (x64)
+          </span>
+          <span
+            class="c3"
+          >
+            Beta, for new features
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <h2>
+      Stable
+       
+      v10.2.4
+    </h2>
+    <div
+      class="c4"
+    >
+      <a
+        class="bp3-button bp3-intent-success"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_amd64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.x86_64.rpm"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Fedora / CentOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-ia32-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86) Portable
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <h2>
+      Beta
+       
+      v11.0.0-beta.0
+    </h2>
+    <div
+      class="c4"
+    >
+      <a
+        class="bp3-button bp3-intent-success"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-setup-11.0.0-beta.0.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi_11.0.0-beta.0_amd64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0.x86_64.rpm"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Fedora / CentOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-setup-11.0.0-beta.0.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0-ia32-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86) Portable
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <h2>
+      Others
+    </h2>
+    <div
+      class="c4"
+    >
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Old versions
+          <br />
+          Hosted at TAONPM
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://ci.appveyor.com/project/KochiyaOcean/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows nightlies
+          <br />
+          Hosted at AppVeyor
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://nightly.poi.moe/"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux and macOS nightlies
+          <br />
+          Hosted at poi.moe
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://github.com/poooi/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Source code
+          <br />
+          Hosted at GitHub
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Target List Stable Version Only 1`] = `
+.c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+}
+
+.c2 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+}
+
+.c2.c2 {
+  background-color: #293742;
+  color: #CED9E0;
+  background-image: none;
+  border: 1px solid #CED9E0;
+}
+
+.c2 + .c1 {
+  margin-left: 2rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c4 button,
+.c4 a {
+  margin: 1ex 1ex;
+}
+
+<div
+  data-testid="storybook-content"
+>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <div
+      class="c0"
+    >
+      <a
+        class="bp3-button bp3-intent-primary c1 c2"
+        data-testid="download-stable-version"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          <span>
+            Download v10.2.4
+          </span>
+          <span
+            class="c3"
+          >
+            Windows (x64)
+          </span>
+          <span
+            class="c3"
+          >
+            Stable, for most users
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <h2>
+      Stable
+       
+      v10.2.4
+    </h2>
+    <div
+      class="c4"
+    >
+      <a
+        class="bp3-button bp3-intent-success"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_amd64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.x86_64.rpm"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Fedora / CentOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x64) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-setup-10.2.4.exe"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-ia32-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (x86) Portable
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="bp3-card bp3-elevation-0"
+  >
+    <h2>
+      Others
+    </h2>
+    <div
+      class="c4"
+    >
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Old versions
+          <br />
+          Hosted at TAONPM
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://ci.appveyor.com/project/KochiyaOcean/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows nightlies
+          <br />
+          Hosted at AppVeyor
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://nightly.poi.moe/"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux and macOS nightlies
+          <br />
+          Hosted at poi.moe
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://github.com/poooi/poi"
+        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Source code
+          <br />
+          Hosted at GitHub
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;

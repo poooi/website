@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import Router from 'next/router'
 import { Switch, Card } from '@blueprintjs/core'
 import { RouterContext } from 'next/dist/next-server/lib/router-context'
+import classNames from 'classnames'
 
 import { darkTheme, lightTheme } from '../src/theme'
 
@@ -28,8 +29,8 @@ const Wrapper = ({ children }) => {
             </Switch>
           </Card>
         </Center>
-        <Center>
-          <div>{children}</div>
+        <Center className={classNames({ 'bp3-dark': isDark })}>
+          <div data-testid="storybook-content">{children}</div>
         </Center>
       </ThemeProvider>
     </RouterContext.Provider>
