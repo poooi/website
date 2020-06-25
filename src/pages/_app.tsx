@@ -19,13 +19,13 @@ import {
   ThemeIsDarkContext,
 } from '../theme'
 
-import { ModernNormalize } from '../components/modern-normalize'
 import { Background } from '../components/background'
 
 import { Header } from '../components/header'
 
 import '../i18n'
 
+import 'modern-normalize/modern-normalize.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
 
 if (process.env.NODE_ENV === 'production') {
@@ -54,6 +54,14 @@ const ThemeDetection = dynamic<any>(
 
 const Footer = dynamic<any>(
   () => import('../components/no-ssr/footer').then((mod) => mod.Footer),
+  { ssr: false },
+)
+
+const LocalizedFontFamily = dynamic<any>(
+  () =>
+    import('../components/no-ssr/localized-font-family').then(
+      (mode) => mode.LocalizedFontFamily,
+    ),
   { ssr: false },
 )
 
@@ -129,10 +137,10 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
               poi | KanColle Browser | 舰娘专用浏览器 | 艦これ専ブラ
             </title>
           </Head>
-          <ModernNormalize />
           <GlobalStyle />
           <FoucFix />
           <ThemeDetection />
+          <LocalizedFontFamily />
           <Background />
           <Container className={classNames({ 'bp3-dark': isDark })}>
             <Wrapper>

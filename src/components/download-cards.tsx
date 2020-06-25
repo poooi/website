@@ -31,6 +31,10 @@ const DownloadButton = styled(AnchorButton)`
     background-image: none;
     border: 1px solid ${({ theme }) => theme.text};
   }
+
+  & + & {
+    margin-left: 2rem;
+  }
 `
 
 interface Props {
