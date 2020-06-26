@@ -38,7 +38,7 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/_next/**/*.js'",
-    "lint": "eslint . --ext .ts --ext .tsx --fix",
+    "lint": "eslint src --ext .ts --ext .tsx --fix",
     "typecheck": "tsc --noEmit --project .",
     "build": "next build && next export -o build",
     "test": "jest",
