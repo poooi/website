@@ -22,7 +22,7 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.background};
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.nav`
   margin: 0 auto;
   max-width: 960px;
   display: flex;
@@ -47,7 +47,7 @@ export const Header = () => {
   const router = useRouter()
 
   return (
-    <Container>
+    <Container id="header">
       <Wrapper>
         <ButtonGroup minimal>
           <Link href="/" passHref>

@@ -359,8 +359,9 @@ exports[`Storyshots Header Normal 1`] = `
 >
   <div
     class="c0"
+    id="header"
   >
-    <div
+    <nav
       class="c1"
     >
       <div
@@ -470,7 +471,7 @@ exports[`Storyshots Header Normal 1`] = `
           </span>
         </span>
       </div>
-    </div>
+    </nav>
   </div>
 </div>
 `;
