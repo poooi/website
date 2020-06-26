@@ -35,7 +35,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: process.env.NODE_ENV === 'development',
+    debug: process.env.I18NEXT_ENV === 'development',
     fallbackLng: languageFallback,
     interpolation: {
       escapeValue: false,

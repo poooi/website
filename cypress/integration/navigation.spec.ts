@@ -1,6 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import 'cypress'
-
 describe('site navigation', () => {
   it('downloads', () => {
     cy.visit('/')
