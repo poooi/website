@@ -8,9 +8,9 @@ describe('site navigation', () => {
     cy.location('pathname').should('equal', '/')
 
     cy.get('#header nav .bp3-button').eq(1).click()
-    cy.location('pathname').should('equal', '/explore')
+    cy.location('pathname', { timeout: 10000 }).should('equal', '/explore')
 
     cy.get('#header nav .bp3-button').eq(2).click()
-    cy.location('pathname').should('equal', '/downloads')
+    cy.location('pathname', { timeout: 10000 }).should('equal', '/downloads')
   })
 })
