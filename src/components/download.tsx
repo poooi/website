@@ -1,12 +1,12 @@
 import { Button } from '@blueprintjs/core'
-import React, { FC } from 'react'
+import React, { FC, useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 import Link from 'next/link'
 
-import { Version } from '../model'
+import { Version, targets } from '../model'
 import { DownloadCards } from './download-cards'
-import { autoDetectedTarget } from './utils'
+import { detectTarget } from './utils'
 
 const CenterContainer = styled.div`
   display: flex;
@@ -21,9 +21,13 @@ interface Props {
 const Download: FC<Props> = ({ version }) => {
   const { t } = useTranslation()
 
+  const [target, setTarget] = useState(targets.win64)
+
+  useEffect(() => setTarget(detectTarget()), [])
+
   return (
     <>
-      <DownloadCards target={autoDetectedTarget} version={version} />
+      <DownloadCards target={target} version={version} />
       <CenterContainer>
         {version.version && (
           <Link href="/downloads" passHref>
