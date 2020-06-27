@@ -43,7 +43,7 @@ export const getDownloadLink = (
   }
 }
 
-const detectTarget = () => {
+export const detectTarget = () => {
   const { os, cpu } = new UAParser().getResult()
   if (os.name === 'Linux') {
     return targets.linux
@@ -65,8 +65,6 @@ const detectTarget = () => {
   }
   return targets.linux
 }
-
-export const autoDetectedTarget = detectTarget()
 
 export const getLanguageFallbackContent = (
   contents: Contents,

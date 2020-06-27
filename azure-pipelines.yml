@@ -42,7 +42,11 @@ steps:
 
 - script: |
     yarn test:ci
-  displayName: 'Test'
+  displayName: 'Unit test'
+
+- script: |
+    yarn cy:ci
+  displayName: 'Cypress test'
 
 - script: |
     yarn build

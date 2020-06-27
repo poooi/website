@@ -1,12 +1,12 @@
 import map from 'lodash/map'
 import sortBy from 'lodash/sortBy'
 import { Card, AnchorButton, Intent } from '@blueprintjs/core'
-import React from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'
 import { Version, targets } from '../model'
-import { autoDetectedTarget, getDownloadLink } from './utils'
+import { detectTarget, getDownloadLink } from './utils'
 
 import { DownloadCards } from './download-cards'
 
@@ -23,29 +23,33 @@ interface Props {
   version: Version
 }
 
-const sortedTargets = sortBy(targets, (target) => target !== autoDetectedTarget)
-
 export const TargetList = ({ version }: Props) => {
   const { t } = useTranslation()
+
+  const [target, setTarget] = useState(targets.win64)
+
+  useEffect(() => setTarget(detectTarget()), [])
+
+  const sortedTargets = useMemo(() => sortBy(targets, (s) => s !== target), [
+    target,
+  ])
   return (
     <>
       <Card>
-        <DownloadCards target={autoDetectedTarget} version={version} />
+        <DownloadCards target={target} version={version} />
       </Card>
       <Card>
         <h2>
           {t('Stable')} {version.version}
         </h2>
         <DownloadList>
-          {map(sortedTargets, (target) => (
+          {map(sortedTargets, (s) => (
             <AnchorButton
-              intent={
-                autoDetectedTarget === target ? Intent.SUCCESS : Intent.NONE
-              }
-              key={target}
-              href={getDownloadLink(version.version, target)}
+              intent={s === target ? Intent.SUCCESS : Intent.NONE}
+              key={s}
+              href={getDownloadLink(version.version, s)}
             >
-              {t(target)}
+              {t(s)}
             </AnchorButton>
           ))}
         </DownloadList>
@@ -57,15 +61,13 @@ export const TargetList = ({ version }: Props) => {
               {t('Beta')} {version.betaVersion}
             </h2>
             <DownloadList>
-              {map(sortedTargets, (target) => (
+              {map(sortedTargets, (s) => (
                 <AnchorButton
-                  intent={
-                    autoDetectedTarget === target ? Intent.SUCCESS : Intent.NONE
-                  }
-                  key={target}
-                  href={getDownloadLink(version.betaVersion, target)}
+                  intent={s === target ? Intent.SUCCESS : Intent.NONE}
+                  key={s}
+                  href={getDownloadLink(version.betaVersion, s)}
                 >
-                  {t(target)}
+                  {t(s)}
                 </AnchorButton>
               ))}
             </DownloadList>
