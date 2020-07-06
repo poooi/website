@@ -117,6 +117,6 @@
     "source-map-explorer": "^2.4.2",
     "start-server-and-test": "^1.11.0",
     "typescript": "^3.9.6",
-    "typescript-plugin-css-modules": "^2.3.0"
+    "typescript-plugin-css-modules": "^2.4.0"
   }
 }
