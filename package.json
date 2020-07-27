@@ -69,7 +69,7 @@
     "@storybook/addon-actions": "^6.0.0-rc.11",
     "@storybook/addon-links": "^6.0.0-rc.11",
     "@storybook/addon-storyshots": "^6.0.0-rc.3",
-    "@storybook/addons": "^6.0.0-beta.35",
+    "@storybook/addons": "^6.0.0-rc.15",
     "@storybook/react": "^6.0.0-rc.11",
     "@testing-library/dom": "^7.16.2",
     "@testing-library/jest-dom": "^5.11.0",
