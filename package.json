@@ -14,7 +14,7 @@
     "camelcase": "^6.0.0",
     "classnames": "^2.2.6",
     "compare-versions": "^3.6.0",
-    "framer-motion": "^1.11.1",
+    "framer-motion": "^2.1.4",
     "fs-extra": "^9.0.1",
     "i18next": "^19.6.2",
     "i18next-browser-languagedetector": "^5.0.0",
