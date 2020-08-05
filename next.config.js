@@ -3,7 +3,7 @@ const path = require('path')
 const { NormalModuleReplacementPlugin } = require('webpack')
 const withImages = require('next-images')
 const withSourceMaps = require('@zeit/next-source-maps')
-const { flow } = require('lodash')
+const { flow, set } = require('lodash')
 
 module.exports = flow([withImages, withSourceMaps])({
   webpack: (config) => {
@@ -13,6 +13,7 @@ module.exports = flow([withImages, withSourceMaps])({
         path.resolve(__dirname, 'src', 'empty-blueprint-icons.js'),
       ),
     )
+    set(config, ['resolve', 'alias', 'path'], false)
     return config
   },
 })
