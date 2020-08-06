@@ -1,5 +1,5 @@
 import React from 'react'
-import Download from '../download'
+import { Download } from '../download'
 
 export default {
   title: 'Download',

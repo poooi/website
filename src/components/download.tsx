@@ -18,7 +18,7 @@ interface Props {
   version: Version
 }
 
-const Download: FC<Props> = ({ version }) => {
+export const Download: FC<Props> = ({ version }) => {
   const { t } = useTranslation()
 
   const [target, setTarget] = useState(targets.win64)
@@ -40,5 +40,3 @@ const Download: FC<Props> = ({ version }) => {
     </>
   )
 }
-
-export default Download

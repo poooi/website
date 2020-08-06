@@ -20,8 +20,7 @@ import {
 } from '../theme'
 
 import { Background } from '../components/background'
-
-import { Header } from '../components/header'
+import { ErrorBoundary } from '../components/error-boundary'
 
 import '../i18n'
 
@@ -63,6 +62,10 @@ const LocalizedFontFamily = dynamic<any>(
       (mode) => mode.LocalizedFontFamily,
     ),
   { ssr: false },
+)
+
+const Header = dynamic<any>(() =>
+  import('../components/header').then((mode) => mode.Header),
 )
 
 config.autoAddCss = false
@@ -144,11 +147,13 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <Background />
           <Container className={classNames({ 'bp3-dark': isDark })}>
             <Wrapper>
-              <Header />
-              <ContentWrapper>
-                <Component {...pageProps} />
-              </ContentWrapper>
-              <Footer />
+              <ErrorBoundary>
+                <Header />
+                <ContentWrapper>
+                  <Component {...pageProps} />
+                </ContentWrapper>
+                <Footer />
+              </ErrorBoundary>
             </Wrapper>
           </Container>
         </ThemeIsDarkContext.Provider>

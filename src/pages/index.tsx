@@ -4,13 +4,20 @@ import styled from 'styled-components/macro'
 import fs from 'fs-extra'
 import { GetStaticProps } from 'next'
 import path from 'path'
+import dynamic from 'next/dynamic'
 
 import { ErrorBoundary } from '../components/error-boundary'
-import { TypeCat } from '../components/type-cat'
-import Download from '../components/download'
 
 import poi from '../assets/poi.png'
 import { Version } from '../model'
+
+const TypeCat = dynamic<any>(() =>
+  import('../components/type-cat').then((mod) => mod.TypeCat),
+)
+
+const Download = dynamic<any>(() =>
+  import('../components/download').then((mod) => mod.Download),
+)
 
 const Container = styled.div`
   flex: 1;
