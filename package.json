@@ -90,7 +90,7 @@
     "babel-jest": "^26.2.2",
     "babel-loader": "^8.1.0",
     "babel-plugin-macros": "^2.8.0",
-    "cypress": "^4.11.0",
+    "cypress": "^4.12.1",
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
