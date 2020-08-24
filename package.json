@@ -15,7 +15,7 @@
     "compare-versions": "^3.6.0",
     "framer-motion": "^2.1.4",
     "fs-extra": "^9.0.1",
-    "i18next": "^19.6.3",
+    "i18next": "^19.7.0",
     "i18next-browser-languagedetector": "^6.0.0",
     "lodash": "^4.17.20",
     "modern-normalize": "^0.7.0",
