@@ -9324,7 +9324,7 @@ jest-resolve-dependencies@^26.4.2:
     jest-regex-util "^26.0.0"
     jest-snapshot "^26.4.2"
 
-jest-resolve@26.4.0, jest-resolve@^26.2.2:
+jest-resolve@26.4.0, jest-resolve@^26.2.2, jest-resolve@^26.4.0:
   version "26.4.0"
   resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-26.4.0.tgz#6dc0af7fb93e65b73fec0368ca2b76f3eb59a6d7"
   integrity sha512-bn/JoZTEXRSlEx3+SfgZcJAVuTMOksYq9xe9O6s4Ekg84aKBObEaVXKOEilULRqviSLAYJldnoWV9c07kwtiCg==
@@ -9350,20 +9350,6 @@ jest-resolve@^25.5.1:
     jest-pnp-resolver "^1.2.1"
     read-pkg-up "^7.0.1"
     realpath-native "^2.0.0"
-    resolve "^1.17.0"
-    slash "^3.0.0"
-
-jest-resolve@^26.4.0:
-  version "26.4.0"
-  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-26.4.0.tgz#6dc0af7fb93e65b73fec0368ca2b76f3eb59a6d7"
-  integrity sha512-bn/JoZTEXRSlEx3+SfgZcJAVuTMOksYq9xe9O6s4Ekg84aKBObEaVXKOEilULRqviSLAYJldnoWV9c07kwtiCg==
-  dependencies:
-    "@jest/types" "^26.3.0"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.4"
-    jest-pnp-resolver "^1.2.2"
-    jest-util "^26.3.0"
-    read-pkg-up "^7.0.1"
     resolve "^1.17.0"
     slash "^3.0.0"
 
@@ -11847,10 +11833,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+prettier@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.1.tgz#d9485dd5e499daa6cb547023b87a6cf51bee37d6"
+  integrity sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
 
 pretty-bytes@^5.3.0:
   version "5.3.0"
