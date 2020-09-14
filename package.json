@@ -118,7 +118,7 @@
     "source-map-explorer": "^2.5.0",
     "start-server-and-test": "^1.11.3",
     "typescript": "^3.9.7",
-    "typescript-plugin-css-modules": "^2.4.0"
+    "typescript-plugin-css-modules": "^2.5.0"
   },
   "resolutions": {
     "webpack": "^5.0.0-beta.22"
