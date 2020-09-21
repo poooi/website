@@ -116,7 +116,7 @@
     "react-test-renderer": "^16.13.1",
     "snapshot-diff": "^0.8.1",
     "source-map-explorer": "^2.5.0",
-    "start-server-and-test": "^1.11.3",
+    "start-server-and-test": "^1.11.4",
     "typescript": "^3.9.7",
     "typescript-plugin-css-modules": "^2.5.0"
   },
