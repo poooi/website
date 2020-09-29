@@ -79,7 +79,7 @@ exports[`Storyshots Download Beta Version Available 1`] = `
   border: 1px solid #CED9E0;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
@@ -197,7 +197,7 @@ exports[`Storyshots Download Stable Version Only 1`] = `
   border: 1px solid #CED9E0;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
@@ -503,7 +503,7 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
   border: 1px solid #CED9E0;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
@@ -905,7 +905,7 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
   border: 1px solid #CED9E0;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
