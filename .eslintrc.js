@@ -1,7 +1,7 @@
 
 // @ts-check
 
-/** @type { import("@types/eslint").Linter.Config } */
+/** @type { import("eslint").Linter.Config } */
 module.exports = {
   env: {
     browser: true,
@@ -15,7 +15,6 @@ module.exports = {
   extends: [
     'airbnb',
     'plugin:import/typescript',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:cypress/recommended',
@@ -30,6 +29,8 @@ module.exports = {
   },
   rules: {
     'no-console': ['error', { allow: ['info', 'error'] }],
+    'no-use-before-define': 'off',
+    'no-shadow': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'import/extensions': [
