@@ -69,7 +69,7 @@
     "@poooi/coveralls": "^3.0.7",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-links": "^6.0.22",
-    "@storybook/addon-storyshots": "^6.0.21",
+    "@storybook/addon-storyshots": "^6.0.25",
     "@storybook/addons": "^6.0.22",
     "@storybook/react": "^6.0.25",
     "@testing-library/dom": "^7.24.3",
