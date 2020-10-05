@@ -67,7 +67,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@poooi/coveralls": "^3.0.7",
-    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-actions": "^6.0.25",
     "@storybook/addon-links": "^6.0.22",
     "@storybook/addon-storyshots": "^6.0.21",
     "@storybook/addons": "^6.0.22",
