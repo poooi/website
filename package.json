@@ -80,7 +80,7 @@
     "@types/jest": "^26.0.14",
     "@types/lodash": "^4.14.162",
     "@types/random": "^2.1.1",
-    "@types/react": "^16.9.52",
+    "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-typist": "^2.0.1",
     "@types/semver": "^7.3.4",
