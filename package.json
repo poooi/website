@@ -76,7 +76,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@types/classnames": "^2.2.10",
-    "@types/fs-extra": "^9.0.1",
+    "@types/fs-extra": "^9.0.2",
     "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.162",
     "@types/random": "^2.1.1",
