@@ -13,7 +13,6 @@ module.exports = flow([withImages, withSourceMaps])({
         path.resolve(__dirname, 'src', 'empty-blueprint-icons.js'),
       ),
     )
-    set(config, ['resolve', 'alias', 'path'], false)
     return config
   },
 })
