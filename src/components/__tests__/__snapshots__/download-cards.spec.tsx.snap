@@ -3,10 +3,10 @@
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
   <div
-    class="download-cards__Container-k88p0k-0 hRWHDF"
+    class="download-cards__Container-k88p0k-0 OelCK"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 dtFVoj"
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 bSTRGw"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -19,19 +19,19 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 hdfLsN"
+          class="download-cards__Description-k88p0k-1 kkiaMq"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 hdfLsN"
+          class="download-cards__Description-k88p0k-1 kkiaMq"
         >
           Stable, for most users
         </span>
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-k88p0k-2 dtFVoj"
+      class="bp3-button download-cards__DownloadButton-k88p0k-2 bSTRGw"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -43,12 +43,12 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.5.0
         </div>
         <span
-          class="download-cards__Description-k88p0k-1 hdfLsN"
+          class="download-cards__Description-k88p0k-1 kkiaMq"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 hdfLsN"
+          class="download-cards__Description-k88p0k-1 kkiaMq"
         >
           Beta, for new features
         </span>
@@ -86,7 +86,7 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
   border: 1px solid #182026;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
@@ -174,7 +174,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
   border: 1px solid #182026;
 }
 
-.c2 + .c1 {
+.c1 + .c1 {
   margin-left: 2rem;
 }
 
