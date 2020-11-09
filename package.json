@@ -34,7 +34,7 @@
     "semver": "7.3.2",
     "styled-components": "^5.2.0",
     "ua-parser-js": "^0.7.22",
-    "whatwg-fetch": "^3.4.1"
+    "whatwg-fetch": "^3.5.0"
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/_next/**/*.js'",
