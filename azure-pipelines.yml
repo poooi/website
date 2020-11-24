@@ -15,6 +15,9 @@ trigger:
     - '*'
 
 steps:
+- checkout: self
+  fetchDepth: 1
+
 - task: NodeTool@0
   inputs:
     versionSpec: '>=12.3.1'
