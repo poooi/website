@@ -3,10 +3,10 @@
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
   <div
-    class="download-cards__Container-k88p0k-0 OelCK"
+    class="download-cards__Container-k88p0k-0 kLDOWf"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 bSTRGw"
+      class="bp3-button bp3-intent-primary download-cards__DownloadButton-k88p0k-2 xTeIF"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -19,19 +19,19 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 kkiaMq"
+          class="download-cards__Description-k88p0k-1 fLmetT"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 kkiaMq"
+          class="download-cards__Description-k88p0k-1 fLmetT"
         >
           Stable, for most users
         </span>
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-k88p0k-2 bSTRGw"
+      class="bp3-button download-cards__DownloadButton-k88p0k-2 xTeIF"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -43,12 +43,12 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.5.0
         </div>
         <span
-          class="download-cards__Description-k88p0k-1 kkiaMq"
+          class="download-cards__Description-k88p0k-1 fLmetT"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-k88p0k-1 kkiaMq"
+          class="download-cards__Description-k88p0k-1 fLmetT"
         >
           Beta, for new features
         </span>
