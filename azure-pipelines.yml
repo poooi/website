@@ -4,6 +4,7 @@ pool:
 variables:
   CI: true
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+  THIS_MONTH: $[format('{0:yyyyMM}', pipeline.startTime)]
 
 trigger:
   branches:
@@ -14,6 +15,9 @@ trigger:
     - '*'
 
 steps:
+- checkout: self
+  fetchDepth: 1
+
 - task: NodeTool@0
   inputs:
     versionSpec: '>=12.3.1'
@@ -21,11 +25,11 @@ steps:
 
 - task: Cache@2
   inputs:
-    key: v1 | yarn | $(Agent.OS) | yarn.lock
+    key: $(THIS_MONTH) | yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
     restoreKeys: |
-      v1 | yarn | $(Agent.OS)
-      v1 | yarn
+      $(THIS_MONTH) | yarn | $(Agent.OS)
+      $(THIS_MONTH) | yarn
   displayName: Cache Yarn packages
 
 - script: |
