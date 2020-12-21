@@ -8,7 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
-    "@sentry/browser": "^5.29.0",
+    "@sentry/browser": "^5.29.2",
     "@zeit/next-source-maps": "^0.0.3",
     "camelcase": "^6.2.0",
     "classnames": "^2.2.6",
