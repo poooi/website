@@ -3,7 +3,7 @@ import { faSwatchbook } from '@fortawesome/free-solid-svg-icons/faSwatchbook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import map from 'lodash/map'
 import { Button, ButtonGroup, Popover, Menu, MenuItem } from '@blueprintjs/core'
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 

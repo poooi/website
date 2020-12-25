@@ -1,6 +1,5 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 import { AnchorButton, ButtonGroup, Intent } from '@blueprintjs/core'

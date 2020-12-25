@@ -1,4 +1,4 @@
-import React, { ComponentType } from 'react'
+import { ComponentType } from 'react'
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import { dom } from '@fortawesome/fontawesome-svg-core'

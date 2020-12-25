@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import { render, RenderResult } from '@testing-library/react'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import { ThemeProvider } from 'styled-components/macro'
 import { lightTheme } from './theme'
 

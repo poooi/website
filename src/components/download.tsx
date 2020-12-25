@@ -1,5 +1,5 @@
 import { Button } from '@blueprintjs/core'
-import React, { FC, useState, useEffect } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
 import Link from 'next/link'
