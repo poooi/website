@@ -1,4 +1,4 @@
-import React from 'react'
+import { Component } from 'react'
 import Typist from 'react-typist'
 import styled from 'styled-components/macro'
 
@@ -37,7 +37,7 @@ interface State {
   stage: string
 }
 
-export class TypeCat extends React.Component<Props, State> {
+export class TypeCat extends Component<Props, State> {
   public state = {
     stage: 'loaded',
   }

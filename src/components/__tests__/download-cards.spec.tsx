@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { targets } from '../../model'
 import { renderWithTheme } from '../../testing-utils'
 import { DownloadCards } from '../download-cards'

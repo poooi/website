@@ -2,7 +2,7 @@ import debounce from 'lodash/debounce'
 import times from 'lodash/times'
 import { rgba } from 'polished'
 import random from 'random'
-import React, { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import styled, { ThemeContext } from 'styled-components/macro'
 
 const Canvas = styled.canvas`

@@ -1,7 +1,7 @@
 import map from 'lodash/map'
 import sortBy from 'lodash/sortBy'
 import { Card, AnchorButton, Intent } from '@blueprintjs/core'
-import React, { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
 import styled from 'styled-components/macro'

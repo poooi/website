@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { GetStaticProps } from 'next'
 import fs from 'fs-extra'
 import path from 'path'

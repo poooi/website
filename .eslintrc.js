@@ -60,5 +60,6 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    'react/react-in-jsx-scope': 'off'
   },
 }

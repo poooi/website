@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
-import React, { FC, useReducer, useEffect } from 'react'
+import { FC, useReducer, useEffect } from 'react'
 import styled, {
   createGlobalStyle,
   ThemeProvider,

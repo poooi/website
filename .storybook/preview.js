@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import { addDecorator } from '@storybook/react'
 import styled, { ThemeProvider } from 'styled-components'
 import Router from 'next/router'

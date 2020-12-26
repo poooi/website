@@ -1,4 +1,3 @@
-import React from 'react'
 import { TargetList } from '../target-list'
 
 export default {

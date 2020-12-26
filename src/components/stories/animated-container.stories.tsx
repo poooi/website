@@ -1,4 +1,3 @@
-import React from 'react'
 import { AnimatedContainer } from '../animated-container'
 
 export default {
