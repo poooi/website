@@ -23,7 +23,7 @@ exports[`<Footer /> renders with non zh 1`] = `
     <span
       class="c1"
     >
-      © 2020 poi Contributors
+      © 2021 poi Contributors
     </span>
     <div
       class="bp3-button-group bp3-minimal"
@@ -137,7 +137,7 @@ exports[`<Footer /> renders with zh 1`] = `
     <span
       class="c1"
     >
-      © 2020 poi Contributors
+      © 2021 poi Contributors
     </span>
     <div
       class="bp3-button-group bp3-minimal"
