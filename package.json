@@ -6,7 +6,7 @@
     "@blueprintjs/core": "^3.36.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@sentry/browser": "^5.30.0",
     "@zeit/next-source-maps": "^0.0.3",
