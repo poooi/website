@@ -20,7 +20,7 @@
     "lodash": "^4.17.20",
     "modern-normalize": "^1.0.0",
     "next": "^10.0.5",
-    "next-images": "^1.6.2",
+    "next-images": "^1.7.0",
     "p-map": "^4.0.0",
     "p-props": "^4.0.0",
     "polished": "^4.0.5",
