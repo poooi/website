@@ -13,6 +13,7 @@ export const languages = {
   en: 'English',
   fr: 'français',
   ja: '日本語',
+  ko: '한국어',
   'zh-Hans': '简体中文',
   'zh-Hant': '繁體中文',
 }
