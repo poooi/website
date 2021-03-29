@@ -64,7 +64,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.13",
     "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-conventional": "^12.0.1",
     "@poooi/coveralls": "^3.0.7",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
