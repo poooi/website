@@ -1,19 +1,19 @@
-version: 10.7.0-beta.1
+version: 10.7.0-beta.2
 files:
-  - url: poi-10.7.0-beta.1-mac.zip
-    sha512: 4+phGko5idpsyWmLz29/aeGVzC18QzG3Qwo4CvzQTobJ0iO7jvGL+C9BfdyqASIZGsrIBLFG9Lfu2T3eOA8imQ==
-    size: 115216242
-    blockMapSize: 120740
-  - url: poi-10.7.0-beta.1-arm64-mac.zip
-    sha512: AiRNA4Cg0+zIYnbFAlf3oZo0vOtLlVIxYSUQ6hTKzROxhf5Q8fD28Q4WyjTMDDExYMzq5s4y8wDUavKtoWWNRA==
-    size: 118318995
-    blockMapSize: 122907
-  - url: poi-10.7.0-beta.1.dmg
-    sha512: uLfcy09epi2EFce0iMAsdkBSNym8h9FCQX8ORN8QJMNbw04sEjILuijOB4NKSrxj0qkWH2LgTZs+NwnHxuyyJQ==
-    size: 120163421
-  - url: poi-10.7.0-beta.1-arm64.dmg
-    sha512: 5P1EZBBZXNEv0B6z2/EBL16KDdkVwFxrIha3XwtIeec6o0pTJ6V6zMn5yb2NO3BzDKObrIsbNi33X0Fjdg+sjg==
-    size: 123577838
-path: poi-10.7.0-beta.1-mac.zip
-sha512: 4+phGko5idpsyWmLz29/aeGVzC18QzG3Qwo4CvzQTobJ0iO7jvGL+C9BfdyqASIZGsrIBLFG9Lfu2T3eOA8imQ==
-releaseDate: '2021-03-30T20:12:25.630Z'
+  - url: poi-10.7.0-beta.2-mac.zip
+    sha512: b3wMjoSgrD105TDp/V9C9ufTQTcv7b09uFfGAq3wAQqZZmgvtNp3YywsN8jg10qKki7O0rrwf9gbOA5VbNUenQ==
+    size: 117844087
+    blockMapSize: 123255
+  - url: poi-10.7.0-beta.2-arm64-mac.zip
+    sha512: 5EEmrIzK0UylPlRuOE+NvwUaPua8TLN8+9WzbS3sXAqB1bDL/XYaMPJWV0gi7mBLEq6z3UIo+BM4OVgyPX8unA==
+    size: 120947478
+    blockMapSize: 126060
+  - url: poi-10.7.0-beta.2.dmg
+    sha512: sXKhmNVD06gqFnKMWjLrF0AD1xNoT2SmXmTE6JtY/HHd9uR7xF9wRUtvSFJbZL7kYkgW/UOYImnkWMPPq3QEdg==
+    size: 122925959
+  - url: poi-10.7.0-beta.2-arm64.dmg
+    sha512: 7y+WfJ6xHTQUBgw0Q67gHgwLz7ztT2HvF3HUJTO+JJcd99P3vUutdIRJq8GTORrHg4spkWm/wl3dOZNsE/1uVw==
+    size: 126333480
+path: poi-10.7.0-beta.2-mac.zip
+sha512: b3wMjoSgrD105TDp/V9C9ufTQTcv7b09uFfGAq3wAQqZZmgvtNp3YywsN8jg10qKki7O0rrwf9gbOA5VbNUenQ==
+releaseDate: '2021-03-31T07:08:21.501Z'
