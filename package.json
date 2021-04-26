@@ -33,7 +33,7 @@
     "react-typist": "^2.0.5",
     "semver": "7.3.2",
     "styled-components": "^5.2.1",
-    "ua-parser-js": "^0.7.24",
+    "ua-parser-js": "^0.7.28",
     "whatwg-fetch": "^3.6.2"
   },
   "scripts": {
