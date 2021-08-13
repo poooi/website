@@ -19,7 +19,7 @@
     "i18next-browser-languagedetector": "^6.0.1",
     "lodash": "^4.17.21",
     "modern-normalize": "^1.0.0",
-    "next": "^10.2.0",
+    "next": "^11.1.0",
     "next-images": "^1.7.0",
     "p-map": "^5.0.0",
     "p-props": "^4.0.0",
