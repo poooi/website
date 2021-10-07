@@ -1,8 +1,8 @@
-version: 10.7.0-beta.2
+version: 10.7.0-beta.3
 files:
-  - url: poi-setup-10.7.0-beta.2.exe
-    sha512: 2QVU13zEtqEatBGNA2jxfMBy9nBnRk4ikPH6NA4AGlfDgUtfiJ6NKni49dhW8OXPW+8pETX5S4XgfA2fBXcwqA==
-    size: 168621366
-path: poi-setup-10.7.0-beta.2.exe
-sha512: 2QVU13zEtqEatBGNA2jxfMBy9nBnRk4ikPH6NA4AGlfDgUtfiJ6NKni49dhW8OXPW+8pETX5S4XgfA2fBXcwqA==
-releaseDate: '2021-03-31T07:12:59.738Z'
+  - url: poi-setup-10.7.0-beta.3.exe
+    sha512: p7DC6hgN+gox5WMLbr0t2cjYElwC9fs6J4snOLQ8rPOEBNIBpvPkerYS1XImz686bXCVaBlEE/37/pM7udkZkQ==
+    size: 164766710
+path: poi-setup-10.7.0-beta.3.exe
+sha512: p7DC6hgN+gox5WMLbr0t2cjYElwC9fs6J4snOLQ8rPOEBNIBpvPkerYS1XImz686bXCVaBlEE/37/pM7udkZkQ==
+releaseDate: '2021-10-07T05:10:15.003Z'

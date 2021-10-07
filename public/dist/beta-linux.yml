@@ -1,9 +1,9 @@
-version: 10.7.0-beta.2
+version: 10.7.0-beta.3
 files:
-  - url: poi-10.7.0-beta.2.AppImage
-    sha512: 8G+pYn3noNBPl1ptN8aUpBbRzw+IAicJEl9xc6SGeyG5ijUbPy8cIUnrj/fV0TIYVYd2GwoJr7wxnS4UvS2Kyw==
-    size: 123969335
-    blockMapSize: 130891
-path: poi-10.7.0-beta.2.AppImage
-sha512: 8G+pYn3noNBPl1ptN8aUpBbRzw+IAicJEl9xc6SGeyG5ijUbPy8cIUnrj/fV0TIYVYd2GwoJr7wxnS4UvS2Kyw==
-releaseDate: '2021-03-31T07:18:23.990Z'
+  - url: poi-10.7.0-beta.3.AppImage
+    sha512: xnK7DDk5djOwwJkCyC9aCGpB5YspZncMc2Kp7Zq5Gmd7cZ/5O0bMLFV1jEZg2HNveA4AfM6sZfATlyxqAHFDfQ==
+    size: 131711155
+    blockMapSize: 139463
+path: poi-10.7.0-beta.3.AppImage
+sha512: xnK7DDk5djOwwJkCyC9aCGpB5YspZncMc2Kp7Zq5Gmd7cZ/5O0bMLFV1jEZg2HNveA4AfM6sZfATlyxqAHFDfQ==
+releaseDate: '2021-10-07T05:14:23.958Z'
