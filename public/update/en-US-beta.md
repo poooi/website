@@ -1,5 +1,7 @@
 ## POI v10.7.0 changelog
 
+Note: It's recommended to upgrade to v10.7.0 because some network-related functionality of former version is not working
+
 ### Features
 
 - Added new equip icon
@@ -9,6 +11,7 @@
 - Added new countdown for quarterly quest update
 - New plugin: `poi-plugin-quest-info-2` (The original quest plugin is deprecated)
 - Update to Electron@15 (Chromium@94)
+- Add support of arm build (Experimental)
 
 ### Changes
 

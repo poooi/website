@@ -24,12 +24,18 @@ export const getDownloadLink = (
   switch (target) {
     case targets.linux:
       return `${BASE_URI}/${version}/poi-${pure}.7z`
+    case targets.linuxArm:
+      return `${BASE_URI}/${version}/poi-${pure}-arm64.7z`
     case targets.linuxDeb:
       return `${BASE_URI}/${version}/poi_${pure}_amd64.deb`
+    case targets.linuxDebArm:
+      return `${BASE_URI}/${version}/poi_${pure}_arm64.deb`
     case targets.linuxRpm:
       return `${BASE_URI}/${version}/poi-${pure}.x86_64.rpm`
     case targets.macos:
       return `${BASE_URI}/${version}/poi-${pure}.dmg`
+    case targets.macosArm:
+      return `${BASE_URI}/${version}/poi-${pure}-arm64.dmg`
     case targets.win32:
       return `${BASE_URI}/${version}/poi-${pure}-ia32-win.7z`
     case targets.win32Setup:
@@ -38,6 +44,8 @@ export const getDownloadLink = (
       return `${BASE_URI}/${version}/poi-${pure}-win.7z`
     case targets.win64Setup:
       return `${BASE_URI}/${version}/poi-setup-${pure}.exe`
+    case targets.winArm:
+      return `${BASE_URI}/${version}/poi-${pure}-arm64-win.7z`
     default:
       return DEFAULT_URI
   }
@@ -46,15 +54,24 @@ export const getDownloadLink = (
 export const detectTarget = () => {
   const { os, cpu } = new UAParser().getResult()
   if (os.name === 'Linux') {
+    if (cpu.architecture === 'arm64' || cpu.architecture === 'arm') {
+      return targets.linuxArm
+    }
     return targets.linux
   }
   if (os.name === 'Debian' || os.name === 'Ubuntu') {
+    if (cpu.architecture === 'arm64' || cpu.architecture === 'arm') {
+      return targets.linuxDebArm
+    }
     return targets.linuxDeb
   }
   if (os.name === 'CentOS' || os.name === 'Fedora') {
     return targets.linuxRpm
   }
   if (os.name === 'Mac OS') {
+    if (cpu.architecture === 'arm64' || cpu.architecture === 'arm') {
+      return targets.macosArm
+    }
     return targets.macos
   }
   if (os.name === 'Windows') {

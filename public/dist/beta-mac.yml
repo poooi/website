@@ -1,17 +1,17 @@
-version: 10.7.0-beta.4
+version: 10.7.0
 files:
-  - url: poi-10.7.0-beta.4-mac.zip
-    sha512: GlSMTFM7V9LxwEeLJIw8QrwtCZwxp4xjwMC2YXq4GMeXQTV1FOEx9zI/AnuZ/YOfmbONcQukzr7ua1xqlKhDNA==
-    size: 109772210
-  - url: poi-10.7.0-beta.4-arm64-mac.zip
-    sha512: gZ6xEKlD8wZtDc+W0m/PCq3ohbzAqxyiouXO5GoYdvpb9kuhVveTpTRs4Lcxmb9mfas8MFcex8CTU0k9v54YHA==
-    size: 113185642
-  - url: poi-10.7.0-beta.4.dmg
-    sha512: fOCG9JZkX6X//AhoK9YzCG/rtRk9ladz0RYxu7TdmbPrdFAjfMX5rer/A86GObKWL72lPzrbHZTNxa/Jgt/1Xw==
-    size: 114507760
-  - url: poi-10.7.0-beta.4-arm64.dmg
-    sha512: GAE4HhfCUjIybEXibBbFN/8nFd94vn6//LQRJUtVNGxOxVizt6rUrLsi25ckIuJZEkuv7X0Qt8RR4EbtQlui0g==
-    size: 118178280
-path: poi-10.7.0-beta.4-mac.zip
-sha512: GlSMTFM7V9LxwEeLJIw8QrwtCZwxp4xjwMC2YXq4GMeXQTV1FOEx9zI/AnuZ/YOfmbONcQukzr7ua1xqlKhDNA==
-releaseDate: '2021-10-26T13:30:12.943Z'
+  - url: poi-10.7.0-mac.zip
+    sha512: LrGSXwAdhaP9dI/P8v6e9VDOTx1OuGvkOdNTXf/HehDaf1GLdWFxNE4Pr1P9XyHJ26p6bLbgOag2AWY0stYvfQ==
+    size: 109774233
+  - url: poi-10.7.0-arm64-mac.zip
+    sha512: BlmAP4MU1pmQ1L50U5ccuqKx3oYQwUJ48Vwux4q82EB4Rqb/oSUtkhl6s+97SRyYt57iBCw7B4LW0B1BWeDf7A==
+    size: 113187959
+  - url: poi-10.7.0.dmg
+    sha512: ox7Z5psr6LpRikE8y78nmyoych5gDKSsfBHRAC9Wb9QtLfSIjaldpaJi/5BanCDRYgljKKSJIAEJ+jXNDBuftA==
+    size: 114509018
+  - url: poi-10.7.0-arm64.dmg
+    sha512: /G5yGwEl1nptJkKbJetV/2dD1n98epljTlNgWptHY8/JK2hMoa4SW74IDCM97KsfLNS/SYAcIxToi00NzmTiTQ==
+    size: 118187584
+path: poi-10.7.0-mac.zip
+sha512: LrGSXwAdhaP9dI/P8v6e9VDOTx1OuGvkOdNTXf/HehDaf1GLdWFxNE4Pr1P9XyHJ26p6bLbgOag2AWY0stYvfQ==
+releaseDate: '2021-11-22T13:32:25.453Z'

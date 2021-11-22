@@ -1,8 +1,8 @@
-version: 10.6.0
+version: 10.7.0
 files:
-  - url: poi-setup-10.6.0.exe
-    sha512: TVIZmR0q7meWDQkW2KOjKFdCvsg6TBv/eHHQgyAHFPIcNt5kA/a7kDvBqOTQ/why4JQgW4Q+py+vHPCK7b5hlw==
-    size: 138988059
-path: poi-setup-10.6.0.exe
-sha512: TVIZmR0q7meWDQkW2KOjKFdCvsg6TBv/eHHQgyAHFPIcNt5kA/a7kDvBqOTQ/why4JQgW4Q+py+vHPCK7b5hlw==
-releaseDate: '2020-06-07T17:01:39.351Z'
+  - url: poi-setup-10.7.0.exe
+    sha512: M8o9dqc2hl6v28S7C4ejaWkk/EAVlVIvphsO4wX0FBczcgAPVNaB7PJQEkk+e4KkQP939ZuddcAnBtx38mqs8Q==
+    size: 162960767
+path: poi-setup-10.7.0.exe
+sha512: M8o9dqc2hl6v28S7C4ejaWkk/EAVlVIvphsO4wX0FBczcgAPVNaB7PJQEkk+e4KkQP939ZuddcAnBtx38mqs8Q==
+releaseDate: '2021-11-22T14:02:30.369Z'

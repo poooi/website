@@ -1,0 +1,9 @@
+version: 10.7.0
+files:
+  - url: poi-10.7.0-arm64.AppImage
+    sha512: RxQ0KCrpIR7kGsg6StE5FTStGj6oYVEdLSxngmBwb+Plc4utAXRwpmAyXnH7600t8TIh0B3lweyZQEtX6ZukGA==
+    size: 137920352
+    blockMapSize: 146092
+path: poi-10.7.0-arm64.AppImage
+sha512: RxQ0KCrpIR7kGsg6StE5FTStGj6oYVEdLSxngmBwb+Plc4utAXRwpmAyXnH7600t8TIh0B3lweyZQEtX6ZukGA==
+releaseDate: '2021-11-22T13:44:01.618Z'
