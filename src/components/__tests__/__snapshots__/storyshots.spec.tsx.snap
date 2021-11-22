@@ -619,6 +619,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
       </a>
       <a
         class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (ARM)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
         href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_amd64.deb"
         role="button"
         tabindex="0"
@@ -627,6 +639,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_arm64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (ARM)
         </span>
       </a>
       <a
@@ -651,6 +675,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (ARM)
         </span>
       </a>
       <a
@@ -687,6 +723,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           Windows (x86) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (ARM)
         </span>
       </a>
     </div>
@@ -728,6 +776,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
       </a>
       <a
         class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0-arm64.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (ARM)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
         href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi_11.0.0-beta.0_amd64.deb"
         role="button"
         tabindex="0"
@@ -736,6 +796,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi_11.0.0-beta.0_arm64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (ARM)
         </span>
       </a>
       <a
@@ -760,6 +832,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0-arm64.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (ARM)
         </span>
       </a>
       <a
@@ -796,6 +880,18 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
           class="bp3-button-text"
         >
           Windows (x86) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v11.0.0-beta.0/poi-11.0.0-beta.0-arm64-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (ARM)
         </span>
       </a>
     </div>
@@ -997,6 +1093,18 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
       </a>
       <a
         class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Linux (ARM)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
         href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_amd64.deb"
         role="button"
         tabindex="0"
@@ -1005,6 +1113,18 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
           class="bp3-button-text"
         >
           Debian / Ubuntu (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi_10.2.4_arm64.deb"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Debian / Ubuntu (ARM)
         </span>
       </a>
       <a
@@ -1029,6 +1149,18 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
           class="bp3-button-text"
         >
           macOS (x64)
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64.dmg"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          macOS (ARM)
         </span>
       </a>
       <a
@@ -1065,6 +1197,18 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
           class="bp3-button-text"
         >
           Windows (x86) Portable
+        </span>
+      </a>
+      <a
+        class="bp3-button"
+        href="https://npm.taobao.org/mirrors/poi/v10.2.4/poi-10.2.4-arm64-win.7z"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="bp3-button-text"
+        >
+          Windows (ARM)
         </span>
       </a>
     </div>
