@@ -25,7 +25,7 @@ import { ErrorBoundary } from '../components/error-boundary'
 import '../i18n'
 
 import 'modern-normalize/modern-normalize.css'
-import '../blueprint.scss'
+import '@blueprintjs/core/lib/css/blueprint.css'
 
 if (process.env.NODE_ENV === 'production') {
   Sentry.init({
