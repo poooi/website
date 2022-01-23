@@ -1,10 +1,20 @@
 name = "poi-web"
-type = "webpack"
+type = "javascript"
 route = ''
 zone_id = ''
 usage_model = ''
 compatibility_flags = []
 workers_dev = true
-site = {bucket = "build",entry-point = "workers-site"}
 compatibility_date = "2022-01-23"
 account_id = "2dc3483aa62d4b5dc774ec04713893de"
+
+[site]
+bucket = "build"
+entry-point = "cloudflare-worker"
+
+[build]
+command = "yarn esbuild index.ts --bundle --outfile=dist/index.js"
+cwd = "cloudflare-worker"
+
+[build.upload]
+format = "service-worker"
