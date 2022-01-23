@@ -88,3 +88,4 @@ junit.xml
 
 cypress/videos
 cypress/screenshots
+dist
