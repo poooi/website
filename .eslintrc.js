@@ -7,9 +7,10 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: '**/tsconfig.json',
   },
   plugins: ['@typescript-eslint', 'import', 'prettier'],
   extends: [
