@@ -26,6 +26,12 @@ jobs:
       - name: Yarn install
         run: yarn install --frozen-lockfile
 
+      - name: Lint
+        run: yarn lint
+
+      - name: Typecheck
+        run: yarn workspaces run typecheck
+
       - name: Build Web
         run: yarn workspace web build
 
