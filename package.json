@@ -7,7 +7,9 @@
     "lint": "eslint packages --ext .ts --ext .tsx --fix",
     "dev": "next dev packages/web",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "wrangler:dev": "wrangler dev",
+    "test:e2e": "start-server-and-test wrangler:dev http://127.0.0.1:8787 'yarn workspace worker playwright test'"
   },
   "browserslist": {
     "production": [

@@ -38,9 +38,8 @@ jobs:
       - name: Build Web
         run: yarn workspace web build
 
-      - name: Build worker
-        uses: poooi/wrangler-action@23e3ebb1486e79006f7b3c89cd87bff99c6d9b9c
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          publish: false
-          preCommands: wrangler build
+      - name: E2E tests
+        run: |
+          npm i -g @cloudflare/wrangler
+          yarn playwright install-deps chromium
+          yarn test:e2e
