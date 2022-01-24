@@ -1,4 +1,8 @@
-import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
+import {
+  getAssetFromKV,
+  mapRequestToAsset,
+  Options,
+} from '@cloudflare/kv-asset-handler'
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -9,24 +13,26 @@ import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
  */
 const DEBUG = false
 
-addEventListener('fetch', event => {
+// eslint-disable-next-line no-restricted-globals
+addEventListener('fetch', (event: FetchEvent) => {
   try {
     event.respondWith(handleEvent(event))
-  } catch (e) {
+  } catch (e: any) {
     if (DEBUG) {
-      return event.respondWith(
+      event.respondWith(
         new Response(e.message || e.toString(), {
           status: 500,
         }),
       )
+      return
     }
     event.respondWith(new Response('Internal Error', { status: 500 }))
   }
 })
 
-async function handleEvent(event) {
+async function handleEvent(event: FetchEvent) {
   const url = new URL(event.request.url)
-  let options = {}
+  const options: Partial<Options> = {}
 
   /**
    * You can add custom logic to how we fetch your assets
@@ -39,31 +45,36 @@ async function handleEvent(event) {
       // customize caching
       options.cacheControl = {
         bypassCache: true,
-      };
+      }
     }
-    const page = await getAssetFromKV(event, options);
+    const page = await getAssetFromKV(event, options)
 
     // allow headers to be altered
-    const response = new Response(page.body, page);
+    const response = new Response(page.body, page)
 
-    response.headers.set("X-XSS-Protection", "1; mode=block");
-    response.headers.set("X-Content-Type-Options", "nosniff");
-    response.headers.set("X-Frame-Options", "DENY");
-    response.headers.set("Referrer-Policy", "unsafe-url");
-    response.headers.set("Feature-Policy", "none");
+    response.headers.set('X-XSS-Protection', '1; mode=block')
+    response.headers.set('X-Content-Type-Options', 'nosniff')
+    response.headers.set('X-Frame-Options', 'DENY')
+    response.headers.set('Referrer-Policy', 'unsafe-url')
+    response.headers.set('Feature-Policy', 'none')
 
-    return response;
-
-  } catch (e) {
+    return response
+  } catch (e: any) {
     // if an error is thrown try to serve the asset at 404.html
     if (!DEBUG) {
       try {
-        let notFoundResponse = await getAssetFromKV(event, {
-          mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
+        const notFoundResponse = await getAssetFromKV(event, {
+          mapRequestToAsset: (req) =>
+            new Request(`${new URL(req.url).origin}/404.html`, req),
         })
 
-        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404 })
-      } catch (e) {}
+        return new Response(notFoundResponse.body, {
+          ...notFoundResponse,
+          status: 404,
+        })
+      } catch (e) {
+        /* do nothing */
+      }
     }
 
     return new Response(e.message || e.toString(), { status: 500 })
@@ -77,11 +88,11 @@ async function handleEvent(event) {
  * route on a zone, or if you only want your static content
  * to exist at a specific path.
  */
-function handlePrefix(prefix) {
-  return request => {
+function handlePrefix(prefix: string | RegExp) {
+  return (request: Request) => {
     // compute the default (e.g. / -> index.html)
-    let defaultAssetKey = mapRequestToAsset(request)
-    let url = new URL(defaultAssetKey.url)
+    const defaultAssetKey = mapRequestToAsset(request)
+    const url = new URL(defaultAssetKey.url)
 
     // strip the prefix from the path for lookup
     url.pathname = url.pathname.replace(prefix, '/')

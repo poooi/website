@@ -41,11 +41,12 @@ steps:
   displayName: 'Lint'
 
 - script: |
-    yarn typecheck
+    yarn workspace web typecheck
+    yarn workspace worker typecheck
   displayName: 'Typecheck'
 
 - script: |
-    yarn test:ci
+    yarn workspace web test:ci
   displayName: 'Unit test'
 
 - script: |
@@ -53,13 +54,13 @@ steps:
   displayName: 'Cypress test'
 
 - script: |
-    yarn build
+    yarn workspace web build
   displayName: 'Build'
 
 - task: CopyFiles@2
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: build/**/*
+    Contents: packages/web/build/**/*
 
 - task: PublishBuildArtifacts@1
   inputs:
@@ -79,7 +80,7 @@ steps:
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 
 - script: |
-    cat ./coverage/lcov.info | yarn coveralls
+    cat ./packages/**/coverage/lcov.info | yarn coveralls
   displayName: 'Publish code coverage to Coveralls'
   continueOnError: true
   env:
