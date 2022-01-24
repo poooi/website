@@ -1,9 +1,7 @@
-name: Deploy
+name: Gated
 
 on:
-  push:
-    branches:
-      - master
+  - push
 
 jobs:
   deploy:
@@ -28,10 +26,12 @@ jobs:
       - name: Yarn install
         run: yarn install --frozen-lockfile
 
-      - name: Build
+      - name: Build Web
         run: yarn workspace web build
 
-      - name: Publish
+      - name: Build worker
         uses: poooi/wrangler-action@23e3ebb1486e79006f7b3c89cd87bff99c6d9b9c
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          publish: false
+          preCommands: wrangler build
