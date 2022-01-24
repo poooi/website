@@ -2,11 +2,41 @@
 
 exports[`<DownloadCards /> renders with beta 1`] = `
 <DocumentFragment>
-  <div
-    class="download-cards__Container-sc-838nkj-0 dcOYdR"
+  .c0 {
+  text-align: center;
+  min-height: 150px;
+}
+
+.c0 .ms-Spinner-label {
+  font-size: 20px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+}
+
+.c2 {
+  padding: 1rem 2em;
+  font-size: 1.5rem;
+}
+
+.c2.c2 {
+  background-color: #F5F8FA;
+  color: #182026;
+  background-image: none;
+  border: 1px solid #182026;
+}
+
+.c1 + .c1 {
+  margin-left: 2rem;
+}
+
+<div
+    class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary download-cards__DownloadButton-sc-838nkj-2 buguFz"
+      class="bp3-button bp3-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
@@ -19,19 +49,19 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.4.0
         </span>
         <span
-          class="download-cards__Description-sc-838nkj-1 bwEIlV"
+          class="c3"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-sc-838nkj-1 bwEIlV"
+          class="c3"
         >
           Stable, for most users
         </span>
       </span>
     </a>
     <a
-      class="bp3-button download-cards__DownloadButton-sc-838nkj-2 buguFz"
+      class="bp3-button c1 c2"
       href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
@@ -43,12 +73,12 @@ exports[`<DownloadCards /> renders with beta 1`] = `
           Download v10.5.0
         </div>
         <span
-          class="download-cards__Description-sc-838nkj-1 bwEIlV"
+          class="c3"
         >
           Linux (x64)
         </span>
         <span
-          class="download-cards__Description-sc-838nkj-1 bwEIlV"
+          class="c3"
         >
           Beta, for new features
         </span>
