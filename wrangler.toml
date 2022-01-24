@@ -9,7 +9,7 @@ compatibility_date = "2022-01-23"
 account_id = "2dc3483aa62d4b5dc774ec04713893de"
 
 [site]
-bucket = "build"
+bucket = "packages/web/build"
 entry-point = "packages/worker"
 
 [build]
