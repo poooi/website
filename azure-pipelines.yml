@@ -53,13 +53,13 @@ steps:
   displayName: 'Cypress test'
 
 - script: |
-    yarn build
+    yarn workspace web build
   displayName: 'Build'
 
 - task: CopyFiles@2
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: build/**/*
+    Contents: packages/web/build/**/*
 
 - task: PublishBuildArtifacts@1
   inputs:

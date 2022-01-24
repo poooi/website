@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { GetStaticProps } from 'next'
 import fs from 'fs-extra'
 import path from 'path'
+import getConfig from 'next/config'
 
 import { useTranslation } from 'react-i18next'
 import { TargetList } from '../components/target-list'
@@ -26,8 +27,11 @@ const DownloadPage: FC<Props> = ({ version }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const {
+    serverRuntimeConfig: { projectRoot },
+  } = getConfig()
   const version = await fs.readJson(
-    path.resolve(process.cwd(), 'public', 'update', 'latest.json'),
+    path.resolve(projectRoot, 'public/update/latest.json'),
   )
 
   return {

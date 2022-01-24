@@ -5,6 +5,7 @@ import fs from 'fs-extra'
 import { GetStaticProps } from 'next'
 import path from 'path'
 import dynamic from 'next/dynamic'
+import getConfig from 'next/config'
 
 import { ErrorBoundary } from '../components/error-boundary'
 
@@ -77,13 +78,11 @@ const ImageContainer = styled.div`
   }
 `
 
-const Logo = () => {
-  return (
-    <ImageContainer>
-      <Image src={poi} />
-    </ImageContainer>
-  )
-}
+const Logo = () => (
+  <ImageContainer>
+    <Image src={poi} />
+  </ImageContainer>
+)
 
 interface Props {
   version: Version
@@ -110,8 +109,11 @@ const Content: FC<Props> = ({ version }) => {
 export default Content
 
 export const getStaticProps: GetStaticProps = async () => {
+  const {
+    serverRuntimeConfig: { projectRoot },
+  } = getConfig()
   const version = await fs.readJson(
-    path.resolve(process.cwd(), 'public', 'update', 'latest.json'),
+    path.resolve(projectRoot, 'public/update/latest.json'),
   )
 
   return {

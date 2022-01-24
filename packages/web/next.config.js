@@ -6,6 +6,9 @@ const withSourceMaps = require('@zeit/next-source-maps')
 const { flow, set } = require('lodash')
 
 module.exports = flow([withImages, withSourceMaps])({
+  serverRuntimeConfig: {
+    projectRoot: __dirname,
+  },
   webpack: (config) => {
     config.plugins.push(
       new NormalModuleReplacementPlugin(
