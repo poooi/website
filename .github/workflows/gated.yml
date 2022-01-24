@@ -33,7 +33,7 @@ jobs:
         run: yarn workspaces run typecheck
 
       - name: Unit tests
-        run: yarn workspace web test:ci
+        run: yarn workspace web test
 
       - name: E2E tests
         run: yarn cy:ci
