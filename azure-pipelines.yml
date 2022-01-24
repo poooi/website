@@ -80,7 +80,7 @@ steps:
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 
 - script: |
-    cat ./coverage/lcov.info | yarn coveralls
+    cat ./packages/**/coverage/lcov.info | yarn coveralls
   displayName: 'Publish code coverage to Coveralls'
   continueOnError: true
   env:
