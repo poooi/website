@@ -1,4 +1,3 @@
-
 // @ts-check
 
 /** @type { import("@types/eslint").Linter.Config } */
@@ -50,7 +49,7 @@ module.exports = {
     'react/prop-types': 'off',
     '@typescript-eslint/require-await': 'off',
     'react/jsx-props-no-spreading': 'off',
-    "prettier/prettier": "error",
+    'prettier/prettier': 'error',
     'no-shadow': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -61,6 +60,14 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.spec.ts', '**/*.spec.tsx'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
 }
