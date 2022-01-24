@@ -46,7 +46,7 @@ steps:
   displayName: 'Typecheck'
 
 - script: |
-    yarn test:ci
+    yarn workspace web test:ci
   displayName: 'Unit test'
 
 - script: |

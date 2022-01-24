@@ -40,6 +40,8 @@
   },
   "scripts": {
     "build": "next build && next export -o build",
+    "test": "jest",
+    "test:ci": "jest --coverage --reporters=default --reporters=jest-junit --coverageReporters=cobertura --coverageReporters=lcov",
     "typecheck": "tsc --noEmit"
   }
 }
