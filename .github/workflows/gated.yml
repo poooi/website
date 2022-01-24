@@ -38,8 +38,12 @@ jobs:
       - name: Build Web
         run: yarn workspace web build
 
-      - name: E2E tests
+      - name: E2E tests preparation
         run: |
           npm i -g @cloudflare/wrangler
           yarn playwright install-deps chromium
-          yarn test:e2e
+
+      - name: E2E tests
+        run: yarn test:e2e
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
