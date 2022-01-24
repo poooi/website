@@ -10,11 +10,11 @@ account_id = "2dc3483aa62d4b5dc774ec04713893de"
 
 [site]
 bucket = "build"
-entry-point = "cloudflare-worker"
+entry-point = "packages/cloudflare-worker"
 
 [build]
 command = "yarn esbuild index.ts --bundle --outfile=dist/index.js"
-cwd = "cloudflare-worker"
+cwd = "packages/cloudflare-worker"
 
 [build.upload]
 format = "service-worker"
