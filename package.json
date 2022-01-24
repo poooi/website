@@ -5,7 +5,6 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/_next/**/*.js'",
     "lint": "eslint packages --ext .ts --ext .tsx --fix",
-    "typecheck": "tsc --noEmit --project .",
     "test": "jest",
     "test:ci": "jest --coverage --reporters=default --reporters=jest-junit --coverageReporters=cobertura --coverageReporters=lcov",
     "dev": "next dev packages/web",

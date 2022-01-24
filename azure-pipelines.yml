@@ -41,7 +41,8 @@ steps:
   displayName: 'Lint'
 
 - script: |
-    yarn typecheck
+    yarn workspace web typecheck
+    yarn workspace worker typecheck
   displayName: 'Typecheck'
 
 - script: |
