@@ -49,15 +49,18 @@ const HeaderCommand = () => {
         minimal
         content={
           <Menu>
-            {map(languages, (value, key) => (
-              <MenuItem
-                text={value}
-                key={key}
-                onClick={() => {
-                  i18n.changeLanguage(key)
-                }}
-              />
-            ))}
+            {
+              // eslint-disable-next-line react/no-unstable-nested-components
+              map(languages, (value, key) => (
+                <MenuItem
+                  text={value}
+                  key={key}
+                  onClick={() => {
+                    i18n.changeLanguage(key)
+                  }}
+                />
+              ))
+            }
           </Menu>
         }
       >

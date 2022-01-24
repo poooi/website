@@ -21,8 +21,7 @@ const resources = {
 const googleFontlink = {
   en: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap',
   fr: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap',
-  ja:
-    'https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap',
+  ja: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap',
   'zh-Hans':
     'https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Open+Sans&display=swap',
   'zh-Hant':

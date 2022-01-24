@@ -19,6 +19,8 @@ const Text = styled.div`
   margin-bottom: 1em;
 `
 
+const handleReload = () => window.location.reload()
+
 export const ErrorBoundary = withTranslation()(
   class ErrorBoundaryBase extends Component<WithTranslation, State> {
     public state = {
@@ -31,8 +33,6 @@ export const ErrorBoundary = withTranslation()(
       })
     }
 
-    public handleReload = () => window.location.reload()
-
     public render() {
       const { children, t } = this.props
       const { hasError } = this.state
@@ -41,7 +41,7 @@ export const ErrorBoundary = withTranslation()(
           <Container>
             <Text>{t('error-message')}</Text>
             <div>
-              <button type="button" onClick={this.handleReload}>
+              <button type="button" onClick={handleReload}>
                 {t('Reload')}
               </button>
             </div>

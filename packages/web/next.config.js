@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 const { NormalModuleReplacementPlugin } = require('webpack')
-const withImages = require('next-images')
 const withSourceMaps = require('@zeit/next-source-maps')
 const { flow, set } = require('lodash')
 
-module.exports = flow([withImages, withSourceMaps])({
+module.exports = flow([withSourceMaps])({
   serverRuntimeConfig: {
     projectRoot: __dirname,
   },

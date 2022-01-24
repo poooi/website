@@ -5,9 +5,7 @@ export default {
   component: ErrorBoundary,
 }
 
-const RenderError = () => {
-  return <div>{({} as any).foo()}</div>
-}
+const RenderError = () => <div>{({} as any).foo()}</div>
 
 export const Throws = () => (
   <ErrorBoundary>
