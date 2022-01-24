@@ -14,6 +14,15 @@ describe('<DownloadCards />', () => {
   )
 
   it('renders with beta', () => {
+    rerender(
+      <DownloadCards
+        target={targets.linux}
+        version={{
+          betaVersion: 'v10.5.0',
+          version: 'v10.4.0',
+        }}
+      />,
+    )
     expect(asFragment()).toMatchSnapshot()
   })
 

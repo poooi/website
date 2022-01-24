@@ -377,7 +377,6 @@ exports[`Storyshots Header Normal 1`] = `
           >
             <img
               class="c3"
-              src="poi.png"
             />
           </span>
         </button>
@@ -440,6 +439,7 @@ exports[`Storyshots Header Normal 1`] = `
           class="bp3-popover-wrapper"
         >
           <span
+            aria-haspopup="true"
             class="bp3-popover-target"
           >
             <button

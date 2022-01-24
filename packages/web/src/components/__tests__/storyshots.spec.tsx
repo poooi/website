@@ -1,4 +1,3 @@
-import path from 'path'
 import initStoryshots from '@storybook/addon-storyshots'
 import { render } from '@testing-library/react'
 // eslint-disable-next-line import/no-extraneous-dependencies

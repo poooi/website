@@ -3,7 +3,7 @@ import { addDecorator } from '@storybook/react'
 import styled, { ThemeProvider } from 'styled-components'
 import Router from 'next/router'
 import { Switch, Card } from '@blueprintjs/core'
-import { RouterContext } from 'next/dist/next-server/lib/router-context'
+import { RouterContext } from 'next/dist/shared/lib/router-context'
 import classNames from 'classnames'
 
 import { darkTheme, lightTheme } from '../src/theme'

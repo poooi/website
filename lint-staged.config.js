@@ -1,4 +1,9 @@
+const lintScripts = ['eslint --fix']
+
 module.exports = {
-  'src/*.{ts,tsx}': ['eslint --fix', 'git add'],
-  '*.md': ['prettier --write', 'git add'],
+  '*.js': lintScripts,
+  '*.ts': lintScripts,
+  '*.es': lintScripts,
+  '*.tsx': lintScripts,
+  '*.md': ['prettier --write'],
 }

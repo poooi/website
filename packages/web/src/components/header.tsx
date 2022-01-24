@@ -51,7 +51,7 @@ export const Header = () => {
         <ButtonGroup minimal>
           <Link href="/" passHref>
             <HomeNav $hidden={router.pathname === '/'}>
-              <Image src={poi} />
+              <Image src={poi.src} />
             </HomeNav>
           </Link>
           <Link href="/explore" passHref>

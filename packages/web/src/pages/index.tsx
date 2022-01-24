@@ -80,7 +80,7 @@ const ImageContainer = styled.div`
 
 const Logo = () => (
   <ImageContainer>
-    <Image src={poi} />
+    <Image src={poi.src} />
   </ImageContainer>
 )
 

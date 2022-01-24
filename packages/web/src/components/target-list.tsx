@@ -30,9 +30,10 @@ export const TargetList = ({ version }: Props) => {
 
   useEffect(() => setTarget(detectTarget()), [])
 
-  const sortedTargets = useMemo(() => sortBy(targets, (s) => s !== target), [
-    target,
-  ])
+  const sortedTargets = useMemo(
+    () => sortBy(targets, (s) => s !== target),
+    [target],
+  )
   return (
     <>
       <Card>

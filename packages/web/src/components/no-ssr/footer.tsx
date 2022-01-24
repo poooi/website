@@ -2,7 +2,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
-import { AnchorButton, ButtonGroup, Intent } from '@blueprintjs/core'
+import { AnchorButton, ButtonGroup } from '@blueprintjs/core'
 
 import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'

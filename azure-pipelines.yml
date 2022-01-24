@@ -50,10 +50,6 @@ steps:
   displayName: 'Unit test'
 
 - script: |
-    yarn cy:ci
-  displayName: 'Cypress test'
-
-- script: |
     yarn workspace web build
   displayName: 'Build'
 

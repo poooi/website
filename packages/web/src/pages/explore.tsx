@@ -27,7 +27,7 @@ const ExplorePage: FC<Props> = ({ contents }) => {
       <PageHeadTitle title={t('Explore')} />
       <AnimatedContainer>
         {content ? (
-          <ReactMarkdown source={content} />
+          <ReactMarkdown>{content}</ReactMarkdown>
         ) : (
           <NonIdealState
             title={t('lsc')}
