@@ -15,9 +15,11 @@ test('Web navigation', async ({ page }) => {
   await page.click('text=English')
 
   await page.click('button:has-text("Explore")')
+  await page.waitForLoadState('networkidle')
   await expect(page).toHaveURL('http://127.0.0.1:3000/explore')
 
   await page.click('button:has-text("Downloads")')
+  await page.waitForLoadState('networkidle')
   await expect(page).toHaveURL('http://127.0.0.1:3000/downloads')
 
   await Promise.all([
