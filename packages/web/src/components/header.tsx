@@ -50,7 +50,10 @@ export const Header = () => {
       <Wrapper>
         <ButtonGroup minimal>
           <Link href="/" passHref>
-            <HomeNav $hidden={router.pathname === '/'}>
+            <HomeNav
+              $hidden={router.pathname === '/'}
+              aria-label={t('Return to home')}
+            >
               <Image src={poi.src} />
             </HomeNav>
           </Link>

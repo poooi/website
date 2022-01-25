@@ -43,5 +43,6 @@
   "error-message": "Ah, the webpage has become 🐢. We will fix it.",
   "Reload": "Reload",
   "Downloads": "Downloads",
-  "no-content": "We're working on it, please check later."
+  "no-content": "We're working on it, please check later.",
+  "Return to home": "Return to home"
 }

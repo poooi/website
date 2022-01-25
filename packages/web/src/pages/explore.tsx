@@ -6,6 +6,7 @@ import path from 'path'
 import pprops from 'p-props'
 import { GetStaticProps } from 'next'
 import { NonIdealState } from '@blueprintjs/core'
+import getConfig from 'next/config'
 
 import { resources } from '../i18n'
 import { Contents } from '../model'
@@ -41,9 +42,12 @@ const ExplorePage: FC<Props> = ({ contents }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const contents = await pprops(resources, async (_, lang) => {
+    const {
+      serverRuntimeConfig: { projectRoot },
+    } = getConfig()
     try {
       const md = await fs.readFile(
-        path.resolve(process.cwd(), 'src', 'data', 'explore', `${lang}.md`),
+        path.resolve(projectRoot, 'src', 'data', 'explore', `${lang}.md`),
       )
       return md.toString()
     } catch {
