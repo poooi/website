@@ -35,6 +35,11 @@ jobs:
       - name: Unit tests
         run: yarn workspace web test:ci
 
+      - name: E2E tests preparation
+        run: |
+          yarn global add @cloudflare/wrangler
+          yarn playwright install chromium --with-deps
+
       - name: E2E
         run: yarn test:e2e
 
