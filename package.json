@@ -8,8 +8,9 @@
     "dev": "next dev packages/web",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "wrangler:dev": "wrangler dev",
-    "test:integration": "start-server-and-test wrangler:dev http://127.0.0.1:8787 'yarn workspace integration playwright test'"
+    "wrangler:dev": "wrangler dev --port 3000",
+    "test:e2e": "start-server-and-test dev http://127.0.0.1:3000 'yarn workspace integration playwright test'",
+    "test:integration": "start-server-and-test wrangler:dev http://127.0.0.1:3000 'yarn workspace integration playwright test'"
   },
   "browserslist": {
     "production": [

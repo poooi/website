@@ -35,5 +35,8 @@ jobs:
       - name: Unit tests
         run: yarn workspace web test:ci
 
+      - name: E2E
+        run: yarn test:e2e
+
       - name: Build Web
         run: yarn workspace web build
