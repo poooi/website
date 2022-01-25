@@ -35,6 +35,8 @@ jobs:
       - name: Unit tests
         run: yarn workspace web test:ci
 
+      - uses: codecov/codecov-action@v2
+
       - name: E2E tests preparation
         run: |
           yarn global add @cloudflare/wrangler
