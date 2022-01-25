@@ -43,26 +43,46 @@ export const Footer = () => {
       <ButtonGroup minimal>
         {['zh-Hans', 'zh-Hant'].includes(lang) ? (
           <>
-            <AnchorButton href="http://weibo.com/letspoi">
+            <AnchorButton
+              href="http://weibo.com/letspoi"
+              target="_blank"
+              rel="noopener"
+            >
               <Icon icon={faWeibo} />
               {t('weibo')}
             </AnchorButton>
-            <AnchorButton href={t('telegram-group-link')}>
+            <AnchorButton
+              href={t('telegram-group-link')}
+              target="_blank"
+              rel="noopener"
+            >
               <Icon icon={faTelegram} />
               {t('telegram')}
             </AnchorButton>
           </>
         ) : (
-          <AnchorButton href={t('discord-channel-link')}>
+          <AnchorButton
+            href={t('discord-channel-link')}
+            target="_blank"
+            rel="noopener"
+          >
             <Icon icon={faDiscord} />
             {t('Discord sub-channel')}
           </AnchorButton>
         )}
-        <AnchorButton href="https://github.com/poooi/poi">
+        <AnchorButton
+          href="https://github.com/poooi/poi"
+          target="_blank"
+          rel="noopener"
+        >
           <Icon icon={faGithub} />
           {t('github')}
         </AnchorButton>
-        <AnchorButton href="https://opencollective.com/poi">
+        <AnchorButton
+          href="https://opencollective.com/poi"
+          target="_blank"
+          rel="noopener"
+        >
           <Icon icon={faHeart} />
           {t('opencollective')}
         </AnchorButton>

@@ -45,5 +45,6 @@
   "error-message": "ああ、ウェブページは 🐢 になっています。 修正します。",
   "Reload": "再起動",
   "Downloads": "ダウンロード",
-  "no-content": "作業中です。後で確認してください。"
+  "no-content": "作業中です。後で確認してください。",
+  "Return to home": "ホームに戻る"
 }

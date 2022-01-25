@@ -31,8 +31,10 @@ exports[`<Footer /> renders with non zh 1`] = `
       <a
         class="bp3-button"
         href="https://discordapp.com/channels/118339803660943369/367575898313981952"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -58,8 +60,10 @@ exports[`<Footer /> renders with non zh 1`] = `
       <a
         class="bp3-button"
         href="https://github.com/poooi/poi"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -85,8 +89,10 @@ exports[`<Footer /> renders with non zh 1`] = `
       <a
         class="bp3-button"
         href="https://opencollective.com/poi"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -145,8 +151,10 @@ exports[`<Footer /> renders with zh 1`] = `
       <a
         class="bp3-button"
         href="http://weibo.com/letspoi"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -172,8 +180,10 @@ exports[`<Footer /> renders with zh 1`] = `
       <a
         class="bp3-button"
         href="https://t.me/joinchat/ENYTx0Cr6B9OxSCRKUzYUw"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -199,8 +209,10 @@ exports[`<Footer /> renders with zh 1`] = `
       <a
         class="bp3-button"
         href="https://github.com/poooi/poi"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"
@@ -226,8 +238,10 @@ exports[`<Footer /> renders with zh 1`] = `
       <a
         class="bp3-button"
         href="https://opencollective.com/poi"
+        rel="noopener"
         role="button"
         tabindex="0"
+        target="_blank"
       >
         <span
           class="bp3-button-text"

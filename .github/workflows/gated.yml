@@ -35,12 +35,15 @@ jobs:
       - name: Unit tests
         run: yarn workspace web test:ci
 
+      - uses: codecov/codecov-action@v2
+
+      - name: E2E tests preparation
+        run: |
+          yarn global add @cloudflare/wrangler
+          yarn playwright install chromium --with-deps
+
+      - name: E2E
+        run: yarn test:e2e
+
       - name: Build Web
         run: yarn workspace web build
-
-      - name: Build worker
-        uses: poooi/wrangler-action@23e3ebb1486e79006f7b3c89cd87bff99c6d9b9c
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          publish: false
-          preCommands: wrangler build

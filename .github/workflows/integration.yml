@@ -1,14 +1,11 @@
-name: Deploy
+name: Integration
 
-on:
-  push:
-    branches:
-      - master
+on: workflow_dispatch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Integration
     steps:
       - uses: actions/checkout@v2
 
@@ -41,7 +38,3 @@ jobs:
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
-      - name: Publish
-        run: wrangler publish
-        env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

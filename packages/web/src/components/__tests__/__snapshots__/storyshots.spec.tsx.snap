@@ -368,6 +368,7 @@ exports[`Storyshots Header Normal 1`] = `
         class="bp3-button-group bp3-minimal"
       >
         <button
+          aria-label="Return to home"
           class="bp3-button c2"
           href="/"
           type="button"
