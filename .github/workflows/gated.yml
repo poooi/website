@@ -44,8 +44,11 @@ jobs:
           yarn global add @cloudflare/wrangler
           yarn playwright install chromium --with-deps
 
-      - name: E2E
+      - name: E2E with nextjs
         run: yarn test:e2e
 
       - name: Build Web
         run: yarn workspace web build
+
+      - name: E2E with minifalre
+        run: yarn test:integration-miniflare

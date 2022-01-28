@@ -69,7 +69,7 @@ router.get('/dist/*?', async ({ url }: Request) => {
   }
 })
 
-router.get('*', async (request: Request, env, ctx) => {
+router.all('*', async (request: Request, env, ctx) => {
   try {
     const page = await getAssetFromKV(
       {

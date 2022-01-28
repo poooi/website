@@ -198,3 +198,56 @@ describe('Router with /dist', () => {
     `)
   })
 })
+
+describe('Other methods than GET', () => {
+  it('POST /dist/poi-10.7.0-arm64-mac.zip', async () => {
+    const req = new Request(
+      'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
+      { method: 'POST' },
+    )
+    const res = await router.handle(req)
+
+    expect(res.status).toBe(404)
+
+    const result = await res.json()
+    expect(result).toMatchInlineSnapshot(`
+      Object {
+        "erorr": true,
+        "message": "poi?",
+      }
+    `)
+  })
+
+  it('POST /', async () => {
+    const req = new Request('http://example.com/', { method: 'POST' })
+    const res = await router.handle(req)
+
+    expect(res.status).toBe(404)
+
+    const result = await res.json()
+    expect(result).toMatchInlineSnapshot(`
+      Object {
+        "erorr": true,
+        "message": "poi?",
+      }
+    `)
+  })
+
+  it('HEAD /dist/poi-10.7.0-arm64-mac.zip', async () => {
+    const req = new Request(
+      'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
+      { method: 'HEAD' },
+    )
+    const res = await router.handle(req)
+
+    expect(res.status).toBe(404)
+
+    const result = await res.json()
+    expect(result).toMatchInlineSnapshot(`
+      Object {
+        "erorr": true,
+        "message": "poi?",
+      }
+    `)
+  })
+})
