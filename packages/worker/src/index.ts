@@ -13,6 +13,7 @@ const safeFetch = async (url: string) => {
     if (resp.ok) {
       const response = new Response(resp.body, resp)
       response.headers.set('X-Poi-Real-Url', url)
+      return response
     }
     return new Response(makeErrorMessage('poi?'), { status: 404 })
   } catch (e) {
