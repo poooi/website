@@ -33,7 +33,9 @@ jobs:
         run: yarn workspaces run typecheck
 
       - name: Unit tests
-        run: yarn workspace web test:ci
+        run: |
+          yarn workspace web test:ci
+          yarn workspace worker test:ci
 
       - uses: codecov/codecov-action@v2
 

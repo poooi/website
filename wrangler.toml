@@ -9,12 +9,22 @@ compatibility_date = "2022-01-23"
 account_id = "2dc3483aa62d4b5dc774ec04713893de"
 
 [site]
-bucket = "packages/web/build"
-entry-point = "packages/worker"
+bucket = "./packages/web/build"
+entry-point = "./packages/worker"
 
 [build]
-command = "yarn esbuild index.ts --bundle --outfile=dist/index.js"
-cwd = "packages/worker"
+command = "yarn build"
+cwd = "./packages/worker"
+watch_dir = "./packages/worker/src"
 
 [build.upload]
-format = "service-worker"
+format = "modules"
+dir = "./packages/worker/dist"
+main = "./index.js"
+
+[[build.upload.rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
+[miniflare]
+watch = true
