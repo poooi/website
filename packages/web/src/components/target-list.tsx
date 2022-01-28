@@ -78,9 +78,10 @@ export const TargetList = ({ version }: Props) => {
         <h2>{t('Others')}</h2>
         <DownloadList>
           <AnchorButton
-            href="https://npm.taobao.org/mirrors/poi"
+            href="https://npmmirror.com//mirrors/poi"
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="old-versions"
           >
             {t('Old versions')}
             <br />

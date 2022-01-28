@@ -71,21 +71,34 @@ router.get('/dist/*?', async ({ url }: Request) => {
   }
 })
 
-router.all('*', async (request: Request, env, ctx) => {
+router.all('*', async (request: Request, env: WorkerEnv, ctx) => {
+  // we call this object event because of service worker version
+  const event = {
+    request,
+    waitUntil: (promise: Promise<any>) => ctx.waitUntil(promise),
+  }
+
   try {
-    const page = await getAssetFromKV(
-      {
-        request,
-        waitUntil: (promise) => ctx.waitUntil(promise),
-      },
-      {
+    try {
+      const page = await getAssetFromKV(event, {
         // eslint-disable-next-line no-underscore-dangle
         ASSET_NAMESPACE: env.__STATIC_CONTENT,
         ASSET_MANIFEST: assetManifest,
-      },
-    )
-    // allow headers to be altered
-    return new Response(page.body, page)
+      })
+      return new Response(page.body, page)
+    } catch (e) {
+      // next.js will build an HTML for each route, try with html extension
+      const indexPage = await getAssetFromKV(event, {
+        // eslint-disable-next-line no-underscore-dangle
+        ASSET_NAMESPACE: env.__STATIC_CONTENT,
+        ASSET_MANIFEST: assetManifest,
+        mapRequestToAsset: (req) => {
+          const uri = new URL(req.url)
+          return new Request(`${uri.origin}${uri.pathname}.html`, req)
+        },
+      })
+      return new Response(indexPage.body, indexPage)
+    }
   } catch (e) {
     return new Response(makeErrorMessage('poi?'), { status: 404 })
   }
