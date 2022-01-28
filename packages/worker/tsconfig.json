@@ -5,7 +5,8 @@
     "module": "CommonJS",
     "lib": ["ES2020"],
     "types": [
-      "@cloudflare/workers-types"
+      "@cloudflare/workers-types",
+      "jest"
     ]
   },
   "include": [

@@ -1,5 +1,5 @@
-import { fetch } from './src'
+import { handleFetch } from './src'
 
 export default {
-  fetch,
+  fetch: handleFetch,
 }
