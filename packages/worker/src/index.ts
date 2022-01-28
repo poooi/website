@@ -11,7 +11,8 @@ const safeFetch = async (url: string) => {
   try {
     const resp = await fetch(url)
     if (resp.ok) {
-      return new Response(resp.body, resp)
+      const response = new Response(resp.body, resp)
+      response.headers.set('X-Poi-Real-Url', url)
     }
     return new Response(makeErrorMessage('poi?'), { status: 404 })
   } catch (e) {
