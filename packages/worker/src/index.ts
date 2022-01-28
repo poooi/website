@@ -11,7 +11,9 @@ const safeFetch = async (url: string) => {
   try {
     const resp = await fetch(url)
     if (resp.ok) {
-      return resp
+      const response = new Response(resp.body, resp)
+      response.headers.set('X-Poi-Real-Url', url)
+      return response
     }
     return new Response(makeErrorMessage('poi?'), { status: 404 })
   } catch (e) {
@@ -106,6 +108,7 @@ export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
     response.headers.set('X-Frame-Options', 'DENY')
     response.headers.set('Referrer-Policy', 'unsafe-url')
     response.headers.set('Feature-Policy', 'none')
+    response.headers.set('X-Poi-Greetings', 'poi?')
 
     return response
   } catch (e: any) {

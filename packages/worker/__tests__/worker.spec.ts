@@ -6,9 +6,6 @@ describe('Router with /update', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(200)
-    expect(res.url).toMatchInlineSnapshot(
-      `"https://poi.moe/update/latest.json"`,
-    )
 
     const result = await res.json()
     expect(result.version).toBeTruthy()
@@ -19,9 +16,6 @@ describe('Router with /update', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(200)
-    expect(res.url).toMatchInlineSnapshot(
-      `"https://poi.moe/update/latest.json"`,
-    )
 
     const result = await res.json()
     expect(result.version).toBeTruthy()
@@ -32,7 +26,6 @@ describe('Router with /update', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(404)
-    expect(res.url).toMatchInlineSnapshot(`""`)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
@@ -48,7 +41,6 @@ describe('Router with /update', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(404)
-    expect(res.url).toMatchInlineSnapshot(`""`)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
@@ -66,9 +58,6 @@ describe('Router with /fcd', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(200)
-    expect(res.url).toMatchInlineSnapshot(
-      `"https://raw.githubusercontent.com/poooi/poi/master/assets/data/fcd/meta.json"`,
-    )
 
     const result = await res.json()
     expect(result.length).toBeTruthy()
@@ -79,9 +68,6 @@ describe('Router with /fcd', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(200)
-    expect(res.url).toMatchInlineSnapshot(
-      `"https://raw.githubusercontent.com/poooi/poi/master/assets/data/fcd/meta.json"`,
-    )
 
     const result = await res.json()
     expect(result.length).toBeTruthy()
@@ -92,7 +78,6 @@ describe('Router with /fcd', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(404)
-    expect(res.url).toMatchInlineSnapshot(`""`)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
@@ -108,7 +93,6 @@ describe('Router with /fcd', () => {
     const res = await router.handle(req)
 
     expect(res.status).toBe(404)
-    expect(res.url).toMatchInlineSnapshot(`""`)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
