@@ -22,6 +22,9 @@ test('Web navigation', async ({ page }) => {
   await page.waitForLoadState('networkidle')
   await expect(page).toHaveURL('http://127.0.0.1:3000/downloads')
 
+  await page.reload()
+  await page.isEnabled('[data-testid="old-versions"]')
+
   await Promise.all([
     testExternalLink(page, 'https://github.com/poooi/poi'),
     page.click('a[role="button"]:has-text("GitHub")'),
