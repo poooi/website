@@ -13,7 +13,7 @@ bucket = "./packages/web/build"
 entry-point = "./packages/worker"
 
 [build]
-command = "yarn esbuild index.ts --bundle --external:__STATIC_CONTENT_MANIFEST --format=esm --outfile=dist/index.js"
+command = "yarn build"
 cwd = "./packages/worker"
 watch_dir = "./packages/worker/src"
 
