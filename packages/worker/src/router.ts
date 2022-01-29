@@ -3,7 +3,9 @@
 import { getAssetFromKV, NotFoundError } from '@cloudflare/kv-asset-handler'
 import { Router } from 'itty-router'
 import manifestJSON from '__STATIC_CONTENT_MANIFEST'
-import { safeFetch } from './utils'
+import mime from 'mime'
+
+import { ensureRemoteFile, fetchPoiVersions, safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -56,34 +58,73 @@ router.get(
 )
 
 const distRegExp = [
+  /^\/dist\/poi-setup-(.*).exe$/,
+  /^\/dist\/mac\/poi-(.*)-arm64-mac.zip$/,
+  /^\/dist\/mac\/poi-(.*)-arm64-mac.dmg$/,
   /^\/dist\/mac\/poi-(.*)-mac.zip$/,
   /^\/dist\/mac\/poi-(.*)-mac.dmg$/,
+  /^\/dist\/poi-(.*)-arm64-mac.zip$/,
   /^\/dist\/poi-(.*)-mac.zip$/,
+  /^\/dist\/poi-(.*)-arm64-mac.dmg$/,
   /^\/dist\/poi-(.*)-mac.dmg$/,
-  /^\/dist\/poi-setup-(.*).exe$/,
-  /^\/dist\/poi-(.*)-x86_64.appImage$/,
 ]
 
-router.get('/dist/*?', async ({ url }: Request, { sentry }: RouteContext) => {
-  const uri = new URL(url)
-  const filename = uri.pathname.split('/').pop()!
-  if (filename.endsWith('.yml')) {
-    return safeFetch(sentry)(
-      `https://raw.githubusercontent.com/poooi/website/master/packages/web/public/dist/${filename}`,
-    )
-  }
-  // eslint-disable-next-line no-restricted-syntax
-  for (const exp of distRegExp) {
-    const match = exp.exec(uri.pathname)
-    if (match) {
-      const version = match[1]
-      return Response.redirect(
-        `https://npmmirror.com/mirrors/poi/${version}/${filename}`,
-        301,
+router.get(
+  '/dist/*?',
+  async ({ url, cf }: Request, { sentry }: RouteContext) => {
+    const uri = new URL(url)
+    const filename = uri.pathname.split('/').pop()!
+
+    let resp
+    if (filename.endsWith('.yml')) {
+      const poiVersions = await fetchPoiVersions()
+      if (filename.startsWith('beta')) {
+        const distFileName = filename.replace('beta', 'latest')
+        resp = await safeFetch(sentry)(
+          `https://github.com/poooi/poi/releases/download/${poiVersions.betaVersion}/${distFileName}`,
+        )
+      }
+      if (filename.startsWith('latest')) {
+        resp = await safeFetch(sentry)(
+          `https://github.com/poooi/poi/releases/download/${poiVersions.version}/${filename}`,
+        )
+      } else {
+        return
+      }
+
+      resp.headers.append(
+        'Content-Type',
+        mime.getType(filename) || 'text/plain',
       )
+
+      return resp
     }
-  }
-})
+
+    const destination = (() => {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const exp of distRegExp) {
+        const match = exp.exec(uri.pathname)
+        if (match) {
+          const version = match[1]
+
+          return cf?.country === 'CN'
+            ? `https://npmmirror.com/mirrors/poi/${version}/${filename}`
+            : `https://github.com/poooi/poi/releases/download/v${version}/${filename}`
+        }
+      }
+    })()
+
+    if (!destination) {
+      return
+    }
+
+    await ensureRemoteFile(sentry)(destination)
+
+    const response = new Response('', { status: 301 })
+    response.headers.set('Location', destination)
+    return response
+  },
+)
 
 router.all(
   '*',
