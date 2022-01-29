@@ -1,3 +1,19 @@
+## POI v10.8.0 changelog
+
+### Features
+
+- Added support of new equipment count rule
+
+### Changes
+
+- Update to Electron@16 (Chromium 96)
+- Add code sigining for macOS version
+
+### Fixes
+
+- Fixes crash on Windows 7/8 and macOS 10.x
+- Miscellaneous UI fix
+
 ## POI v10.7.0 changelog
 
 Note: It's recommended to upgrade to v10.7.0 because some network-related functionality of former version is not working
