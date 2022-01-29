@@ -9,10 +9,12 @@
   "dependencies": {
     "@cloudflare/kv-asset-handler": "~0.2.0",
     "itty-router": "^2.4.10",
+    "mime": "^3.0.0",
     "toucan-js": "^2.5.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.3.1",
+    "@types/mime": "^2.0.3",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.13",
     "jest-environment-miniflare": "^2.2.0",

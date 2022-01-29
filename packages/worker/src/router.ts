@@ -3,7 +3,9 @@
 import { getAssetFromKV, NotFoundError } from '@cloudflare/kv-asset-handler'
 import { Router } from 'itty-router'
 import manifestJSON from '__STATIC_CONTENT_MANIFEST'
-import { safeFetch } from './utils'
+import mime from 'mime'
+
+import { fetchPoiVersions, safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -64,29 +66,54 @@ const distRegExp = [
   /^\/dist\/poi-(.*)-x86_64.appImage$/,
 ]
 
-router.get('/dist/*?', async ({ url }: Request, { sentry }: RouteContext) => {
-  const uri = new URL(url)
-  const filename = uri.pathname.split('/').pop()!
-  if (filename.endsWith('.yml')) {
-    return safeFetch(sentry)(
-      `https://raw.githubusercontent.com/poooi/website/master/packages/web/public/dist/${filename}`,
-    )
-  }
-  // eslint-disable-next-line no-restricted-syntax
-  for (const exp of distRegExp) {
-    const match = exp.exec(uri.pathname)
-    if (match) {
-      const version = match[1]
+router.get(
+  '/dist/*?',
+  async ({ url, cf }: Request, { sentry }: RouteContext) => {
+    const uri = new URL(url)
+    const filename = uri.pathname.split('/').pop()!
 
-      const response = new Response('', { status: 301 })
-      response.headers.set(
-        'Location',
-        `https://npmmirror.com/mirrors/poi/${version}/${filename}`,
+    let resp
+    if (filename.endsWith('.yml')) {
+      const poiVersions = await fetchPoiVersions()
+      if (filename.startsWith('beta')) {
+        const distFileName = filename.replace('beta', 'latest')
+        resp = await safeFetch(sentry)(
+          `https://github.com/poooi/poi/releases/download/${poiVersions.betaVersion}/${distFileName}`,
+        )
+      }
+      if (filename.startsWith('latest')) {
+        resp = await safeFetch(sentry)(
+          `https://github.com/poooi/poi/releases/download/${poiVersions.version}/${filename}`,
+        )
+      } else {
+        return
+      }
+
+      resp.headers.append(
+        'Content-Type',
+        mime.getType(filename) || 'text/plain',
       )
-      return response
+
+      return resp
     }
-  }
-})
+    // eslint-disable-next-line no-restricted-syntax
+    for (const exp of distRegExp) {
+      const match = exp.exec(uri.pathname)
+      if (match) {
+        const version = match[1]
+
+        const destination =
+          cf?.country === 'CN'
+            ? `https://npmmirror.com/mirrors/poi/${version}/${filename}`
+            : `https://github.com/poooi/poi/releases/download/v${version}/${filename}`
+
+        const response = new Response('', { status: 301 })
+        response.headers.set('Location', destination)
+        return response
+      }
+    }
+  },
+)
 
 router.all(
   '*',

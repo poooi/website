@@ -1,6 +1,8 @@
 import { NotFoundError } from '@cloudflare/kv-asset-handler'
 import Toucan from 'toucan-js'
 
+import { PoiVersions } from './types'
+
 export const makeErrorMessage = (message: string) =>
   JSON.stringify({
     erorr: true,
@@ -10,7 +12,7 @@ export const makeErrorMessage = (message: string) =>
 export const safeFetch = (sentry: Toucan | null) => async (url: string) => {
   const resp = await fetch(url)
   if (resp.ok) {
-    const response = new Response(resp.body, resp)
+    const response = new Response(resp.body)
     response.headers.set('X-Poi-Real-Url', url)
     return response
   }
@@ -19,4 +21,12 @@ export const safeFetch = (sentry: Toucan | null) => async (url: string) => {
     throw new NotFoundError(`${url} not available with ${resp.status}`)
   }
   throw new Error(`${url} not available with ${resp.status}`)
+}
+
+export const fetchPoiVersions = async (): Promise<PoiVersions> => {
+  const resp = await fetch(
+    'https://raw.githubusercontent.com/poooi/website/master/packages/web/public/update/latest.json',
+  )
+
+  return resp.json()
 }
