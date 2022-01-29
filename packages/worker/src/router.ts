@@ -77,10 +77,13 @@ router.get('/dist/*?', async ({ url }: Request, { sentry }: RouteContext) => {
     const match = exp.exec(uri.pathname)
     if (match) {
       const version = match[1]
-      return Response.redirect(
+
+      const response = new Response('', { status: 301 })
+      response.headers.set(
+        'Location',
         `https://npmmirror.com/mirrors/poi/${version}/${filename}`,
-        301,
       )
+      return response
     }
   }
 })

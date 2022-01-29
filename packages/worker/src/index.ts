@@ -38,7 +38,7 @@ export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
       response.headers.set('Feature-Policy', 'none')
       response.headers.set('X-Poi-Greetings', 'poi?')
     } catch (e) {
-      /* do nothing */
+      sentry?.captureException(e)
     }
 
     return response
