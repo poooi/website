@@ -48,3 +48,12 @@ export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
     return new Response(makeErrorMessage('poi???'), { status: 500 })
   }
 }
+
+export const handleFetchWithLogs: ExportedHandlerFetchHandler<
+  WorkerEnv
+> = async (request, ...args) => {
+  const resp = await handleFetch(request, ...args)
+  // eslint-disable-next-line no-console
+  console.log(`${request.method} ${request.url} - ${resp.status}`)
+  return resp
+}
