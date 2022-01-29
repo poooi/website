@@ -1,29 +1,29 @@
-import { router } from '../src'
+import { handleFetch } from '../src'
 
 describe('Router with /update', () => {
   it('handles normal requests', async () => {
     const req = new Request('http://example.com/update/latest.json')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
-    const result = await res.json()
+    const result = await res.json<any>()
     expect(result.version).toBeTruthy()
   })
 
   it('handles requests with query', async () => {
     const req = new Request('http://example.com/update/latest.json?foo=bar#baz')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
-    const result = await res.json()
+    const result = await res.json<any>()
     expect(result.version).toBeTruthy()
   })
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/update/lovelive.exe')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -38,7 +38,7 @@ describe('Router with /update', () => {
 
   it('handles requests deeper path', async () => {
     const req = new Request('http://example.com/update/foo/bar')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -55,27 +55,27 @@ describe('Router with /update', () => {
 describe('Router with /fcd', () => {
   it('handles normal requests', async () => {
     const req = new Request('http://example.com/fcd/meta.json')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
-    const result = await res.json()
+    const result = await res.json<any>()
     expect(result.length).toBeTruthy()
   })
 
   it('handles requests with query', async () => {
     const req = new Request('http://example.com/fcd/meta.json?foo=bar#baz')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
-    const result = await res.json()
+    const result = await res.json<any>()
     expect(result.length).toBeTruthy()
   })
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/fcd/lovelive.exe')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -90,7 +90,7 @@ describe('Router with /fcd', () => {
 
   it('handles requests deeper path', async () => {
     const req = new Request('http://example.com/fcd/foo/bar')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -107,7 +107,7 @@ describe('Router with /fcd', () => {
 describe('Router with /dist', () => {
   it('handles normal requests: redirect', async () => {
     const req = new Request('http://example.com/dist/poi-10.7.0-arm64-mac.zip')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
@@ -117,7 +117,7 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: yaml', async () => {
     const req = new Request('http://example.com/dist/latest.yml')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
     const content = await res.text()
@@ -128,7 +128,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       'http://example.com/dist/mac/poi-10.7.0-arm64-mac.zip',
     )
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
@@ -140,7 +140,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       'http://example.com/dist/mac/poi-10.7.0-arm64-mac.zip?foo=bar#baz',
     )
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
@@ -150,7 +150,7 @@ describe('Router with /dist', () => {
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/dist/lovelive.exe')
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
     expect(res.url).toMatchInlineSnapshot(`""`)
@@ -168,7 +168,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       'http://example.com/dist/next/poi-10.7.0-arm64-mac.zip',
     )
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
     expect(res.url).toMatchInlineSnapshot(`""`)
@@ -189,7 +189,7 @@ describe('Other methods than GET', () => {
       'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
       { method: 'POST' },
     )
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -204,7 +204,7 @@ describe('Other methods than GET', () => {
 
   it('POST /', async () => {
     const req = new Request('http://example.com/', { method: 'POST' })
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -222,7 +222,7 @@ describe('Other methods than GET', () => {
       'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
       { method: 'HEAD' },
     )
-    const res = await router.handle(req)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
