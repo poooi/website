@@ -43,13 +43,13 @@ export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
 
     return response
   } catch (e: any) {
+    sentry?.captureException(e)
     if (e instanceof NotFoundError) {
       return new Response(makeErrorMessage('poi?'), { status: 404 })
     }
     if (e instanceof MethodNotAllowedError) {
       return new Response(makeErrorMessage('poi?'), { status: 405 })
     }
-    sentry?.captureException(e)
     return new Response(makeErrorMessage('poi???'), { status: 500 })
   }
 }

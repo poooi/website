@@ -33,11 +33,10 @@ export const fetchPoiVersions = async (): Promise<PoiVersions> => {
 
 export const ensureRemoteFile =
   (sentry: Toucan | null) => async (url: string) => {
+    sentry?.addBreadcrumb({ message: `detecting ${url}` })
     const resp = await fetch(url, { method: 'HEAD' })
 
     if (!resp.ok) {
-      sentry?.captureException(
-        new Error(`${url} not available with ${resp.status}`),
-      )
+      throw new NotFoundError(`${url} not available with ${resp.status}`)
     }
   }
