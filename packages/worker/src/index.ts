@@ -29,12 +29,17 @@ export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
     const response = await router.handle(request, { env, context, sentry })
 
     sentry?.addBreadcrumb({ message: 'data fetched' })
-    response.headers.set('X-XSS-Protection', '1; mode=block')
-    response.headers.set('X-Content-Type-Options', 'nosniff')
-    response.headers.set('X-Frame-Options', 'DENY')
-    response.headers.set('Referrer-Policy', 'unsafe-url')
-    response.headers.set('Feature-Policy', 'none')
-    response.headers.set('X-Poi-Greetings', 'poi?')
+
+    try {
+      response.headers.set('X-XSS-Protection', '1; mode=block')
+      response.headers.set('X-Content-Type-Options', 'nosniff')
+      response.headers.set('X-Frame-Options', 'DENY')
+      response.headers.set('Referrer-Policy', 'unsafe-url')
+      response.headers.set('Feature-Policy', 'none')
+      response.headers.set('X-Poi-Greetings', 'poi?')
+    } catch (e) {
+      /* do nothing */
+    }
 
     return response
   } catch (e: any) {

@@ -1,4 +1,4 @@
-name = "poi-web"
+name = "poi-web-dev"
 type = "javascript"
 route = ''
 zone_id = ''
@@ -30,4 +30,5 @@ globs = ["**/*.js"]
 watch = true
 
 [env.production]
+name = "poi-web"
 vars = { SENTRY_DSN = "https://ab382b24a2434e6ebbff671ff09385b7@o171991.ingest.sentry.io/6172856" }
