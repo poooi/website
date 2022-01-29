@@ -5,7 +5,7 @@ import { Router } from 'itty-router'
 import manifestJSON from '__STATIC_CONTENT_MANIFEST'
 import mime from 'mime'
 
-import { fetchPoiVersions, safeFetch } from './utils'
+import { ensureRemoteFile, fetchPoiVersions, safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -58,12 +58,15 @@ router.get(
 )
 
 const distRegExp = [
+  /^\/dist\/poi-setup-(.*).exe$/,
+  /^\/dist\/mac\/poi-(.*)-arm64-mac.zip$/,
+  /^\/dist\/mac\/poi-(.*)-arm64-mac.dmg$/,
   /^\/dist\/mac\/poi-(.*)-mac.zip$/,
   /^\/dist\/mac\/poi-(.*)-mac.dmg$/,
+  /^\/dist\/poi-(.*)-arm64-mac.zip$/,
   /^\/dist\/poi-(.*)-mac.zip$/,
+  /^\/dist\/poi-(.*)-arm64-mac.dmg$/,
   /^\/dist\/poi-(.*)-mac.dmg$/,
-  /^\/dist\/poi-setup-(.*).exe$/,
-  /^\/dist\/poi-(.*)-x86_64.appImage$/,
 ]
 
 router.get(
@@ -96,22 +99,30 @@ router.get(
 
       return resp
     }
-    // eslint-disable-next-line no-restricted-syntax
-    for (const exp of distRegExp) {
-      const match = exp.exec(uri.pathname)
-      if (match) {
-        const version = match[1]
 
-        const destination =
-          cf?.country === 'CN'
+    const destination = (() => {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const exp of distRegExp) {
+        const match = exp.exec(uri.pathname)
+        if (match) {
+          const version = match[1]
+
+          return cf?.country === 'CN'
             ? `https://npmmirror.com/mirrors/poi/${version}/${filename}`
             : `https://github.com/poooi/poi/releases/download/v${version}/${filename}`
-
-        const response = new Response('', { status: 301 })
-        response.headers.set('Location', destination)
-        return response
+        }
       }
+    })()
+
+    if (!destination) {
+      return
     }
+
+    await ensureRemoteFile(sentry)(destination)
+
+    const response = new Response('', { status: 301 })
+    response.headers.set('Location', destination)
+    return response
   },
 )
 

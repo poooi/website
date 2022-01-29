@@ -30,3 +30,14 @@ export const fetchPoiVersions = async (): Promise<PoiVersions> => {
 
   return resp.json()
 }
+
+export const ensureRemoteFile =
+  (sentry: Toucan | null) => async (url: string) => {
+    const resp = await fetch(url, { method: 'HEAD' })
+
+    if (!resp.ok) {
+      sentry?.captureException(
+        new Error(`${url} not available with ${resp.status}`),
+      )
+    }
+  }

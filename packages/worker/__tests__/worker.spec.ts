@@ -111,7 +111,7 @@ describe('Router with /dist', () => {
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://npmmirror.com/mirrors/poi/10.7.0-arm64/poi-10.7.0-arm64-mac.zip"`,
+      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
     )
   })
 
@@ -132,7 +132,7 @@ describe('Router with /dist', () => {
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://npmmirror.com/mirrors/poi/10.7.0-arm64/poi-10.7.0-arm64-mac.zip"`,
+      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
     )
   })
 
@@ -144,7 +144,7 @@ describe('Router with /dist', () => {
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://npmmirror.com/mirrors/poi/10.7.0-arm64/poi-10.7.0-arm64-mac.zip"`,
+      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
     )
   })
 
