@@ -10,11 +10,21 @@ const assetManifest = JSON.parse(manifestJSON)
 
 export const router = Router()
 
-interface RequestWithPossibleParams {
+interface RequestWithPossibleParams extends Request {
   params: {
     filename: string
   }
 }
+
+router.get(
+  '/status',
+  async (_, { sentry }: RouteContext) =>
+    new Response(
+      JSON.stringify({
+        sentry: sentry ? 'up' : 'down',
+      }),
+    ),
+)
 
 router.get(
   '/update/:filename',
