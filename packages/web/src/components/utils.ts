@@ -6,7 +6,7 @@ import { languageFallback } from '../i18n'
 
 import { targets, Contents } from '../model'
 
-const BASE_URI = 'https://npm.taobao.org/mirrors/poi'
+const BASE_URI = 'https://npmmirror.com/mirrors/poi'
 const DEFAULT_URI = 'https://github.com/poooi/poi/releases'
 
 // the semver-regex package does not support `-beta.0` prerelase version, have to host one here

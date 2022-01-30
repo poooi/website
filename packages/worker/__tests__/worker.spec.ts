@@ -1,4 +1,8 @@
+import poiVersions from '@poi-web/data/update/latest.json'
+
 import { handleFetch } from '../src'
+
+const stableSemver = poiVersions.version.replace(/^v/, '')
 
 describe('Router with /update', () => {
   it('handles normal requests', async () => {
@@ -106,12 +110,14 @@ describe('Router with /fcd', () => {
 
 describe('Router with /dist', () => {
   it('handles normal requests: redirect', async () => {
-    const req = new Request('http://example.com/dist/poi-10.7.0-arm64-mac.zip')
+    const req = new Request(
+      `http://example.com/dist/poi-${stableSemver}-arm64-mac.zip`,
+    )
     const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
-    expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
+    expect(res.headers.get('Location')).toEqual(
+      `https://github.com/poooi/poi/releases/download/v${stableSemver}/poi-${stableSemver}-arm64-mac.zip`,
     )
   })
 
@@ -126,25 +132,25 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: /dist/mac', async () => {
     const req = new Request(
-      'http://example.com/dist/mac/poi-10.7.0-arm64-mac.zip',
+      `http://example.com/dist/mac/poi-${stableSemver}-arm64-mac.zip`,
     )
     const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
-    expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
+    expect(res.headers.get('Location')).toEqual(
+      `https://github.com/poooi/poi/releases/download/v${stableSemver}/poi-${stableSemver}-arm64-mac.zip`,
     )
   })
 
   it('handles extra query strings: /dist/mac', async () => {
     const req = new Request(
-      'http://example.com/dist/mac/poi-10.7.0-arm64-mac.zip?foo=bar#baz',
+      `http://example.com/dist/mac/poi-${stableSemver}-arm64-mac.zip?foo=bar#baz`,
     )
     const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
-    expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64-mac.zip"`,
+    expect(res.headers.get('Location')).toEqual(
+      `https://github.com/poooi/poi/releases/download/v${stableSemver}/poi-${stableSemver}-arm64-mac.zip`,
     )
   })
 
@@ -166,20 +172,14 @@ describe('Router with /dist', () => {
 
   it('handles requests deeper path', async () => {
     const req = new Request(
-      'http://example.com/dist/next/poi-10.7.0-arm64-mac.zip',
+      `http://example.com/dist/next/poi-${stableSemver}-arm64-mac.zip`,
     )
     const res = await handleFetch(req, {}, {} as ExecutionContext)
 
-    expect(res.status).toBe(404)
-    expect(res.url).toMatchInlineSnapshot(`""`)
-
-    const result = await res.json()
-    expect(result).toMatchInlineSnapshot(`
-      Object {
-        "erorr": true,
-        "message": "poi?",
-      }
-    `)
+    expect(res.status).toBe(301)
+    expect(res.headers.get('Location')).toEqual(
+      `https://github.com/poooi/poi/releases/download/v${stableSemver}/poi-${stableSemver}-arm64-mac.zip`,
+    )
   })
 })
 

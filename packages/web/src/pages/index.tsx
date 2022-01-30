@@ -1,16 +1,13 @@
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components/macro'
-import fs from 'fs-extra'
-import { GetStaticProps } from 'next'
-import path from 'path'
 import dynamic from 'next/dynamic'
-import getConfig from 'next/config'
+
+import version from '@poi-web/data/update/latest.json'
 
 import { ErrorBoundary } from '../components/error-boundary'
 
 import poi from '../assets/poi.png'
-import { Version } from '../model'
 
 const TypeCat = dynamic<any>(() =>
   import('../components/type-cat').then((mod) => mod.TypeCat),
@@ -84,11 +81,7 @@ const Logo = () => (
   </ImageContainer>
 )
 
-interface Props {
-  version: Version
-}
-
-const Content: FC<Props> = ({ version }) => {
+const Content: FC = () => {
   const { t } = useTranslation()
   return (
     <Container>
@@ -107,16 +100,3 @@ const Content: FC<Props> = ({ version }) => {
 }
 
 export default Content
-
-export const getStaticProps: GetStaticProps = async () => {
-  const {
-    serverRuntimeConfig: { projectRoot },
-  } = getConfig()
-  const version = await fs.readJson(
-    path.resolve(projectRoot, 'public/update/latest.json'),
-  )
-
-  return {
-    props: { version },
-  }
-}
