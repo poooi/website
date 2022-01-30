@@ -38,7 +38,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     <a
       class="bp3-button bp3-intent-primary c1 c2"
       data-testid="download-stable-version"
-      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+      href="https://npmmirror.com/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
       tabindex="0"
     >
@@ -62,7 +62,7 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     </a>
     <a
       class="bp3-button c1 c2"
-      href="https://npm.taobao.org/mirrors/poi/v10.5.0/poi-10.5.0.7z"
+      href="https://npmmirror.com/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
     >
@@ -214,7 +214,7 @@ exports[`<DownloadCards /> renders without beta 1`] = `
     <a
       class="bp3-button bp3-intent-primary c1 c2"
       data-testid="download-stable-version"
-      href="https://npm.taobao.org/mirrors/poi/v10.4.0/poi-10.4.0.7z"
+      href="https://npmmirror.com/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
       tabindex="0"
     >

@@ -1,7 +1,8 @@
 import { NotFoundError } from '@cloudflare/kv-asset-handler'
 import Toucan from 'toucan-js'
 
-import { PoiVersions } from './types'
+import stableRelease from '@poi-web/data/releases/latest.json'
+import betaRelease from '@poi-web/data/releases/beta.json'
 
 export const makeErrorMessage = (message: string) =>
   JSON.stringify({
@@ -23,14 +24,6 @@ export const safeFetch = (sentry: Toucan | null) => async (url: string) => {
   throw new Error(`${url} not available with ${resp.status}`)
 }
 
-export const fetchPoiVersions = async (): Promise<PoiVersions> => {
-  const resp = await fetch(
-    'https://raw.githubusercontent.com/poooi/website/master/packages/web/public/update/latest.json',
-  )
-
-  return resp.json()
-}
-
 export const ensureRemoteFile =
   (sentry: Toucan | null) => async (url: string) => {
     sentry?.addBreadcrumb({ message: `detecting ${url}` })
@@ -40,3 +33,16 @@ export const ensureRemoteFile =
       throw new NotFoundError(`${url} not available with ${resp.status}`)
     }
   }
+
+export const releaseAssets = new Map<string, string>()
+
+const addReleaseAsset = (release: typeof stableRelease) => {
+  release.assets.forEach((asset) => {
+    if (!asset.name.endsWith('.yml')) {
+      releaseAssets.set(asset.name, asset.browser_download_url)
+    }
+  })
+}
+
+addReleaseAsset(stableRelease)
+addReleaseAsset(betaRelease)

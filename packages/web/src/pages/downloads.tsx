@@ -1,20 +1,12 @@
 import { FC } from 'react'
-import { GetStaticProps } from 'next'
-import fs from 'fs-extra'
-import path from 'path'
-import getConfig from 'next/config'
+import version from '@poi-web/data/update/latest.json'
 
 import { useTranslation } from 'react-i18next'
 import { TargetList } from '../components/target-list'
-import { Version } from '../model'
 import { AnimatedContainer } from '../components/animated-container'
 import { PageHeadTitle } from '../components/page-head-title'
 
-interface Props {
-  version: Version
-}
-
-const DownloadPage: FC<Props> = ({ version }) => {
+const DownloadPage: FC = () => {
   const { t } = useTranslation()
   return (
     <>
@@ -24,19 +16,6 @@ const DownloadPage: FC<Props> = ({ version }) => {
       </AnimatedContainer>
     </>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  const {
-    serverRuntimeConfig: { projectRoot },
-  } = getConfig()
-  const version = await fs.readJson(
-    path.resolve(projectRoot, 'public/update/latest.json'),
-  )
-
-  return {
-    props: { version },
-  }
 }
 
 export default DownloadPage

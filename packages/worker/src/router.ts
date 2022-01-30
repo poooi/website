@@ -5,7 +5,9 @@ import { Router } from 'itty-router'
 import manifestJSON from '__STATIC_CONTENT_MANIFEST'
 import mime from 'mime'
 
-import { ensureRemoteFile, fetchPoiVersions, safeFetch } from './utils'
+import poiVersions from '@poi-web/data/update/latest.json'
+
+import { safeFetch, releaseAssets } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -57,18 +59,6 @@ router.get(
   },
 )
 
-const distRegExp = [
-  /^\/dist\/poi-setup-(.*).exe$/,
-  /^\/dist\/mac\/poi-(.*)-arm64-mac.zip$/,
-  /^\/dist\/mac\/poi-(.*)-arm64-mac.dmg$/,
-  /^\/dist\/mac\/poi-(.*)-mac.zip$/,
-  /^\/dist\/mac\/poi-(.*)-mac.dmg$/,
-  /^\/dist\/poi-(.*)-arm64-mac.zip$/,
-  /^\/dist\/poi-(.*)-mac.zip$/,
-  /^\/dist\/poi-(.*)-arm64-mac.dmg$/,
-  /^\/dist\/poi-(.*)-mac.dmg$/,
-]
-
 router.get(
   '/dist/*?',
   async ({ url, cf }: Request, { sentry }: RouteContext) => {
@@ -77,7 +67,6 @@ router.get(
 
     let resp
     if (filename.endsWith('.yml')) {
-      const poiVersions = await fetchPoiVersions()
       if (filename.startsWith('beta')) {
         const distFileName = filename.replace('beta', 'latest')
         resp = await safeFetch(sentry)(
@@ -100,25 +89,18 @@ router.get(
       return resp
     }
 
-    const destination = (() => {
-      // eslint-disable-next-line no-restricted-syntax
-      for (const exp of distRegExp) {
-        const match = exp.exec(uri.pathname)
-        if (match) {
-          const version = match[1]
-
-          return cf?.country === 'CN'
-            ? `https://npmmirror.com/mirrors/poi/${version}/${filename}`
-            : `https://github.com/poooi/poi/releases/download/v${version}/${filename}`
-        }
-      }
-    })()
-
-    if (!destination) {
+    if (!releaseAssets.has(filename)) {
       return
     }
 
-    await ensureRemoteFile(sentry)(destination)
+    const githubUrl = releaseAssets.get(filename)!
+    const destination =
+      cf?.country === 'CN'
+        ? githubUrl.replace(
+            'https://github.com/poooi/poi/releases/download',
+            'https://npmmirror.com/mirrors/poi',
+          )
+        : githubUrl
 
     const response = new Response('', { status: 301 })
     response.headers.set('Location', destination)

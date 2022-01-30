@@ -10,8 +10,3 @@ export interface RouteContext {
   context: ExecutionContext
   sentry: Toucan | null
 }
-
-export interface PoiVersions {
-  version: string
-  betaVersion: string
-}

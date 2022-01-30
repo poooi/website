@@ -1,0 +1,9 @@
+{
+  "name": "@poi-web/data",
+  "version": "1.0.0",
+  "main": "./update/latest.json",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "echo \"No typescript files to check\""
+  }
+}
