@@ -7,7 +7,7 @@ import mime from 'mime'
 
 import poiVersions from '@poi-web/data/update/latest.json'
 
-import { safeFetch } from './utils'
+import { ensureRemoteFile, safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -103,6 +103,8 @@ router.get(
       cf?.country === 'CN'
         ? `https://npmmirror.com/mirrors/poi/v${tag}/${filename}`
         : `https://github.com/poooi/poi/releases/download/v${tag}/${filename}`
+
+    await ensureRemoteFile(sentry)(destination)
 
     const response = new Response('', { status: 301 })
     response.headers.set('Location', destination)

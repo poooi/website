@@ -123,13 +123,13 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: redirect with old releases', async () => {
     const req = new Request(
-      `https://example.com/dist/poi-10.0.0-arm64.dmg.blockmap`,
+      `https://example.com/dist/poi-10.7.0-arm64.dmg.blockmap`,
     )
     const res = await handleFetch(req, {}, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
-      `"https://github.com/poooi/poi/releases/download/v10.0.0/poi-10.0.0-arm64.dmg.blockmap"`,
+      `"https://github.com/poooi/poi/releases/download/v10.7.0/poi-10.7.0-arm64.dmg.blockmap"`,
     )
   })
 
