@@ -121,6 +121,28 @@ describe('Router with /dist', () => {
     )
   })
 
+  it('handles normal requests: redirect with old releases', async () => {
+    const req = new Request(
+      `https://example.com/dist/poi-10.0.0-arm64.dmg.blockmap`,
+    )
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
+
+    expect(res.status).toBe(301)
+    expect(res.headers.get('Location')).toMatchInlineSnapshot(
+      `"https://github.com/poooi/poi/releases/download/v10.0.0/poi-10.0.0-arm64.dmg.blockmap"`,
+    )
+  })
+
+  it('handles normal requests: redirect with old deb', async () => {
+    const req = new Request(`https://example.com/dist/poi_10.8.0_amd64.deb`)
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
+
+    expect(res.status).toBe(301)
+    expect(res.headers.get('Location')).toMatchInlineSnapshot(
+      `"https://github.com/poooi/poi/releases/download/v10.8.0/poi_10.8.0_amd64.deb"`,
+    )
+  })
+
   it('handles normal requests: yaml', async () => {
     const req = new Request('http://example.com/dist/latest.yml')
     const res = await handleFetch(req, {}, {} as ExecutionContext)

@@ -7,7 +7,7 @@ import mime from 'mime'
 
 import poiVersions from '@poi-web/data/update/latest.json'
 
-import { safeFetch, releaseAssets } from './utils'
+import { safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
 
 const assetManifest = JSON.parse(manifestJSON)
@@ -89,18 +89,20 @@ router.get(
       return resp
     }
 
-    if (!releaseAssets.has(filename)) {
+    const tag = /(\d+\.\d+\.\d+(-beta\.\d)?)/.exec(filename)?.[1]
+
+    sentry?.addBreadcrumb({
+      message: `guessing tag: ${tag} from filename ${filename}`,
+    })
+
+    if (!tag) {
       return
     }
 
-    const githubUrl = releaseAssets.get(filename)!
     const destination =
       cf?.country === 'CN'
-        ? githubUrl.replace(
-            'https://github.com/poooi/poi/releases/download',
-            'https://npmmirror.com/mirrors/poi',
-          )
-        : githubUrl
+        ? `https://npmmirror.com/mirrors/poi/v${tag}/${filename}`
+        : `https://github.com/poooi/poi/releases/download/v${tag}/${filename}`
 
     const response = new Response('', { status: 301 })
     response.headers.set('Location', destination)
