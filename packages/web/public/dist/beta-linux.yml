@@ -1,9 +1,0 @@
-version: 10.8.0
-files:
-  - url: poi-10.8.0.AppImage
-    sha512: Xr+Aaj33HKAKms0f/lY3+hf+NQAhB82kD+qePC0aRe+6AaWLNxzrQJmMHL9R/QhVofxw337KkR5gHjN4r0gMwQ==
-    size: 162911731
-    blockMapSize: 169479
-path: poi-10.8.0.AppImage
-sha512: Xr+Aaj33HKAKms0f/lY3+hf+NQAhB82kD+qePC0aRe+6AaWLNxzrQJmMHL9R/QhVofxw337KkR5gHjN4r0gMwQ==
-releaseDate: '2022-01-29T14:49:43.213Z'
