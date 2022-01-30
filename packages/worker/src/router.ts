@@ -39,7 +39,7 @@ router.get(
     sentry?.addBreadcrumb({ message: '/update' })
     if (filename.endsWith('.json') || filename.endsWith('.md')) {
       return safeFetch(sentry)(
-        `https://raw.githubusercontent.com/poooi/website/master/packages/web/public/update/${filename}`,
+        `https://raw.githubusercontent.com/poooi/website/master/packages/data/update/${filename}`,
       )
     }
   },
