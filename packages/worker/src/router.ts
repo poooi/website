@@ -39,7 +39,7 @@ router.get(
     sentry?.addBreadcrumb({ message: '/update' })
     if (filename.endsWith('.json') || filename.endsWith('.md')) {
       return safeFetch(sentry)(
-        `https://raw.githubusercontent.com/poooi/website/master/packages/web/public/update/${filename}`,
+        `https://raw.githubusercontent.com/poooi/website/master/packages/data/update/${filename}`,
       )
     }
   },
@@ -133,7 +133,9 @@ router.all(
       return new Response(page.body, page)
     } catch (e) {
       sentry?.addBreadcrumb({ message: 'first KV search failed' })
-      if (e instanceof NotFoundError) {
+      const uri = new URL(request.url)
+      const filename = uri.pathname.split('/').pop()!
+      if (e instanceof NotFoundError && !filename.includes('.')) {
         // next.js will build an HTML for each route, try with html extension
         const indexPage = await getAssetFromKV(event, {
           // eslint-disable-next-line no-underscore-dangle

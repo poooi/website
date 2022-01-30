@@ -1,8 +1,0 @@
-version: 10.8.0
-files:
-  - url: poi-setup-10.8.0.exe
-    sha512: 40E8Js5DTKtDdYCokVngr3JHQFq5okMtD4tqFW48IQfeHPIbaIn2um/t1p0VrsPT9Muv3EeatPesdM1vbCXt8A==
-    size: 164157647
-path: poi-setup-10.8.0.exe
-sha512: 40E8Js5DTKtDdYCokVngr3JHQFq5okMtD4tqFW48IQfeHPIbaIn2um/t1p0VrsPT9Muv3EeatPesdM1vbCXt8A==
-releaseDate: '2022-01-29T14:33:04.159Z'
