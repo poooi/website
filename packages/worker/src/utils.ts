@@ -1,9 +1,6 @@
 import { NotFoundError } from '@cloudflare/kv-asset-handler'
 import Toucan from 'toucan-js'
 
-import stableRelease from '@poi-web/data/releases/latest.json'
-import betaRelease from '@poi-web/data/releases/beta.json'
-
 export const makeErrorMessage = (message: string) =>
   JSON.stringify({
     erorr: true,
@@ -33,16 +30,3 @@ export const ensureRemoteFile =
       throw new NotFoundError(`${url} not available with ${resp.status}`)
     }
   }
-
-export const releaseAssets = new Map<string, string>()
-
-const addReleaseAsset = (release: typeof stableRelease) => {
-  release.assets.forEach((asset) => {
-    if (!asset.name.endsWith('.yml')) {
-      releaseAssets.set(asset.name, asset.browser_download_url)
-    }
-  })
-}
-
-addReleaseAsset(stableRelease)
-addReleaseAsset(betaRelease)
