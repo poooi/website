@@ -100,7 +100,7 @@ router.get(
 
     const destination =
       cf?.country === 'CN'
-        ? `https://npmmirror.com/mirrors/poi/v${tag}/${filename}`
+        ? `https://registry.npmmirror.com/-/binary/poi/v${tag}/${filename}`
         : `https://github.com/poooi/poi/releases/download/v${tag}/${filename}`
 
     await ensureRemoteFile(sentry)(destination)

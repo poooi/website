@@ -909,7 +909,7 @@ exports[`Storyshots Target List Beta Version Available 1`] = `
       <a
         class="bp3-button"
         data-testid="old-versions"
-        href="https://npmmirror.com/mirrors/poi"
+        href="https://registry.npmmirror.com/binary.html?path=poi/"
         rel="noopener noreferrer"
         role="button"
         tabindex="0"
@@ -1227,7 +1227,7 @@ exports[`Storyshots Target List Stable Version Only 1`] = `
       <a
         class="bp3-button"
         data-testid="old-versions"
-        href="https://npmmirror.com/mirrors/poi"
+        href="https://registry.npmmirror.com/binary.html?path=poi/"
         rel="noopener noreferrer"
         role="button"
         tabindex="0"

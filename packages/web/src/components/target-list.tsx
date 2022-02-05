@@ -78,7 +78,7 @@ export const TargetList = ({ version }: Props) => {
         <h2>{t('Others')}</h2>
         <DownloadList>
           <AnchorButton
-            href="https://npmmirror.com/mirrors/poi"
+            href="https://registry.npmmirror.com/binary.html?path=poi/"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="old-versions"
