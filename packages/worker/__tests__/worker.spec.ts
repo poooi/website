@@ -152,6 +152,15 @@ describe('Router with /dist', () => {
     expect(content.includes('size')).toBe(true)
   })
 
+  it('handles normal requests: beta yaml', async () => {
+    const req = new Request('http://example.com/dist/beta.yml')
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
+
+    expect(res.status).toBe(200)
+    const content = await res.text()
+    expect(content.includes('size')).toBe(true)
+  })
+
   it('handles normal requests: /dist/mac', async () => {
     const req = new Request(
       `http://example.com/dist/mac/poi-${stableSemver}-arm64-mac.zip`,
