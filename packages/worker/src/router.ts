@@ -72,8 +72,7 @@ router.get(
         resp = await safeFetch(sentry)(
           `https://github.com/poooi/poi/releases/download/${poiVersions.betaVersion}/${distFileName}`,
         )
-      }
-      if (filename.startsWith('latest')) {
+      } else if (filename.startsWith('latest')) {
         resp = await safeFetch(sentry)(
           `https://github.com/poooi/poi/releases/download/${poiVersions.version}/${filename}`,
         )
