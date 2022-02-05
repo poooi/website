@@ -121,6 +121,26 @@ describe('Router with /dist', () => {
     )
   })
 
+  it('handles normal requests: CN redirect', async () => {
+    const req = new Request(
+      `http://example.com/dist/poi-${stableSemver}-arm64-mac.zip`,
+      {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore: mocking cf object
+        cf: {
+          country: 'CN',
+        },
+      },
+    )
+
+    const res = await handleFetch(req, {}, {} as ExecutionContext)
+
+    expect(res.status).toBe(301)
+    expect(res.headers.get('Location')).toEqual(
+      `https://registry.npmmirror.com/-/binary/poi/v${stableSemver}/poi-${stableSemver}-arm64-mac.zip`,
+    )
+  })
+
   it('handles normal requests: redirect with old releases', async () => {
     const req = new Request(
       `https://example.com/dist/poi-10.7.0-arm64.dmg.blockmap`,
