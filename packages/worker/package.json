@@ -16,7 +16,7 @@
     "@cloudflare/workers-types": "^3.3.1",
     "@types/mime": "^2.0.3",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.14.14",
+    "esbuild": "^0.14.19",
     "jest-environment-miniflare": "^2.2.0",
     "miniflare": "^2.2.0",
     "ts-jest": "^27.1.3"
