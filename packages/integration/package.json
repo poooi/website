@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@playwright/test": "^1.18.1"
+    "@playwright/test": "^1.19.1"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
