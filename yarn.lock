@@ -8655,10 +8655,10 @@ iterate-value@^1.0.0:
     es-get-iterator "^1.0.2"
     iterate-iterator "^1.0.1"
 
-itty-router@^2.4.10:
-  version "2.4.10"
-  resolved "https://registry.yarnpkg.com/itty-router/-/itty-router-2.4.10.tgz#23c7e44e36784e106f71ae6b1ec0fd4b95c70978"
-  integrity sha512-6z8UO4MoJRCdgLRVU++L6QTHJwU2pCAYFM8+9HjjcneRM5DqYyF5g6tsgIw24xXLFJlpvVrIzVzhjn862ZQZcQ==
+itty-router@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/itty-router/-/itty-router-2.6.1.tgz#eecb59fa25b5f6f519276cc5bcaaa1cb341d5fee"
+  integrity sha512-l9gxWe5TOLUESYnBn85Jxd6tIZLWdRX5YKkHIBfSgbNQ7UFPNUGuWihRV+LlEbfJJIzgLmhwAbaWRi5yWJm8kg==
 
 jake@^10.6.1:
   version "10.6.1"
