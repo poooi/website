@@ -27,7 +27,7 @@
     "p-props": "^5.0.0",
     "polished": "^4.1.4",
     "random": "^3.0.6",
-    "react": "^17.0.2",
+    "react": "^18.1.0",
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
     "react-i18next": "^11.15.4",
