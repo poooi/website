@@ -14,7 +14,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - uses: actions/cache@v3.0.3
+      - uses: actions/cache@v3.0.4
         name: Caching Node.js dependencies
         id: yarn-cache
         with:
