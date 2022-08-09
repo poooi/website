@@ -1,16 +1,16 @@
 ## POI v10.9.0 changelog
 
-# Features
+### Features
 
 - Added new special attack type: `Yamato Kai Ni / Kai Ni Heavy` `Musashi Kai Ni` `Maryland`
 - Added new OASW type: `Samuel B Roberts Mk.II`
 - Added new equipment icon
 
-# Changes
+### Changes
 
 - Changed UI color scheme
 
-# Fixes
+### Fixes
 
 - Fixed screenshot failure in isolate mode
 - Fixed GPU info page cannot be loaded correctly
@@ -29,5 +29,5 @@
 
 ### Fixes
 
-- Fixes crash on Windows 7/8 and macOS 10.x
+- Fixed crash on Windows 7/8 and macOS 10.x
 - Miscellaneous UI fix
