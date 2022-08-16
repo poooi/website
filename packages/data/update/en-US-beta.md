@@ -13,6 +13,7 @@
 ### Fixes
 
 - Fixed screenshot failure in isolate mode
+- Fixed capture by canvas not working
 - Fixed GPU info page cannot be loaded correctly
 - Fixed socks5 proxy could not work correctly in certain cases
 
@@ -20,12 +21,12 @@
 
 ### Features
 
-- Added support of new equipment count rule
+- Added support for the new equipment count rule
 
 ### Changes
 
 - Update to Electron@16 (Chromium 96)
-- Add code sigining for macOS version
+- Add code signing for macOS version
 
 ### Fixes
 
