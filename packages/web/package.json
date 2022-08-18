@@ -46,5 +46,8 @@
   },
   "peerDependencies": {
     "@poi-web/data": "*"
+  },
+  "devDependencies": {
+    "jest-environment-jsdom": "^28.1.3"
   }
 }

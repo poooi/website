@@ -145,7 +145,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <ThemeDetection />
           <LocalizedFontFamily />
           <Background />
-          <Container className={classNames({ 'bp3-dark': isDark })}>
+          <Container className={classNames({ 'bp4-dark': isDark })}>
             <Wrapper>
               <ErrorBoundary>
                 <Header />

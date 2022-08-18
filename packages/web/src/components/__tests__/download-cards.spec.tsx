@@ -3,18 +3,8 @@ import { renderWithTheme } from '../../testing-utils'
 import { DownloadCards } from '../download-cards'
 
 describe('<DownloadCards />', () => {
-  const { asFragment, rerender } = renderWithTheme(
-    <DownloadCards
-      target={targets.linux}
-      version={{
-        betaVersion: 'v10.5.0',
-        version: 'v10.4.0',
-      }}
-    />,
-  )
-
   it('renders with beta', () => {
-    rerender(
+    const { asFragment } = renderWithTheme(
       <DownloadCards
         target={targets.linux}
         version={{
@@ -27,7 +17,7 @@ describe('<DownloadCards />', () => {
   })
 
   it('renders without beta', () => {
-    rerender(
+    const { asFragment } = renderWithTheme(
       <DownloadCards
         target={targets.linux}
         version={{
@@ -40,7 +30,7 @@ describe('<DownloadCards />', () => {
   })
 
   it('renders with invalid target', () => {
-    rerender(
+    const { asFragment } = renderWithTheme(
       <DownloadCards
         target={'chiba' as targets}
         version={{

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const path = require('path')
-const camelcase = require('camelcase')
+const _ = require('lodash')
 
 // This is a custom Jest transformer turning file imports into filenames.
 // http://facebook.github.io/jest/docs/en/webpack.html
@@ -13,7 +13,7 @@ module.exports = {
     if (filename.match(/\.svg$/)) {
       // Based on how SVGR generates a component name:
       // https://github.com/smooth-code/svgr/blob/01b194cf967347d43d4cbe6b434404731b87cf27/packages/core/src/state.js#L6
-      const pascalCaseFilename = camelcase(path.parse(filename).name, {
+      const pascalCaseFilename = _.camelcase(path.parse(filename).name, {
         pascalCase: true,
       })
       const componentName = `Svg${pascalCaseFilename}`
