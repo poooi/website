@@ -41,7 +41,7 @@ jobs:
 
       - name: E2E tests preparation
         run: |
-          yarn global add wrangler
+          npm i -g wrangler
           yarn playwright install chromium --with-deps
 
       - name: E2E with nextjs
