@@ -1,13 +1,23 @@
 import poiVersions from '@poi-web/data/update/latest.json'
 
 import { handleFetch } from '../src'
+import { WorkerEnv } from '../src/types'
 
 const stableSemver = poiVersions.version.replace(/^v/, '')
+
+declare global {
+  function getMiniflareBindings(): any
+  function getMiniflareDurableObjectStorage(
+    id: DurableObjectId,
+  ): Promise<DurableObjectStorage>
+}
+
+const env = getMiniflareBindings() as WorkerEnv
 
 describe('Router with /update', () => {
   it('handles normal requests', async () => {
     const req = new Request('http://example.com/update/latest.json')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
@@ -17,7 +27,7 @@ describe('Router with /update', () => {
 
   it('handles requests with query', async () => {
     const req = new Request('http://example.com/update/latest.json?foo=bar#baz')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
@@ -27,7 +37,7 @@ describe('Router with /update', () => {
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/update/lovelive.exe')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -42,7 +52,7 @@ describe('Router with /update', () => {
 
   it('handles requests deeper path', async () => {
     const req = new Request('http://example.com/update/foo/bar')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -59,7 +69,7 @@ describe('Router with /update', () => {
 describe('Router with /fcd', () => {
   it('handles normal requests', async () => {
     const req = new Request('http://example.com/fcd/meta.json')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
@@ -69,7 +79,7 @@ describe('Router with /fcd', () => {
 
   it('handles requests with query', async () => {
     const req = new Request('http://example.com/fcd/meta.json?foo=bar#baz')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
 
@@ -79,7 +89,7 @@ describe('Router with /fcd', () => {
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/fcd/lovelive.exe')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -94,7 +104,7 @@ describe('Router with /fcd', () => {
 
   it('handles requests deeper path', async () => {
     const req = new Request('http://example.com/fcd/foo/bar')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
@@ -113,7 +123,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       `http://example.com/dist/poi-${stableSemver}-arm64-mac.zip`,
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toEqual(
@@ -133,7 +143,7 @@ describe('Router with /dist', () => {
       },
     )
 
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toEqual(
@@ -145,7 +155,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       `https://example.com/dist/poi-10.7.0-arm64.dmg.blockmap`,
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
@@ -155,7 +165,7 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: redirect with old deb', async () => {
     const req = new Request(`https://example.com/dist/poi_10.8.0_amd64.deb`)
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toMatchInlineSnapshot(
@@ -165,7 +175,7 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: yaml', async () => {
     const req = new Request('http://example.com/dist/latest.yml')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
     const content = await res.text()
@@ -174,7 +184,7 @@ describe('Router with /dist', () => {
 
   it('handles normal requests: beta yaml', async () => {
     const req = new Request('http://example.com/dist/beta.yml')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(200)
     const content = await res.text()
@@ -185,7 +195,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       `http://example.com/dist/mac/poi-${stableSemver}-arm64-mac.zip`,
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toEqual(
@@ -197,7 +207,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       `http://example.com/dist/mac/poi-${stableSemver}-arm64-mac.zip?foo=bar#baz`,
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toEqual(
@@ -207,7 +217,7 @@ describe('Router with /dist', () => {
 
   it('handles requests inexisting file', async () => {
     const req = new Request('http://example.com/dist/lovelive.exe')
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
     expect(res.url).toMatchInlineSnapshot(`""`)
@@ -225,7 +235,7 @@ describe('Router with /dist', () => {
     const req = new Request(
       `http://example.com/dist/next/poi-${stableSemver}-arm64-mac.zip`,
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(301)
     expect(res.headers.get('Location')).toEqual(
@@ -240,9 +250,9 @@ describe('Other methods than GET', () => {
       'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
       { method: 'POST' },
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
-    expect(res.status).toBe(404)
+    expect(res.status).toBe(405)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
@@ -255,9 +265,9 @@ describe('Other methods than GET', () => {
 
   it('POST /', async () => {
     const req = new Request('http://example.com/', { method: 'POST' })
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
-    expect(res.status).toBe(404)
+    expect(res.status).toBe(405)
 
     const result = await res.json()
     expect(result).toMatchInlineSnapshot(`
@@ -273,7 +283,7 @@ describe('Other methods than GET', () => {
       'http://example.com/dist/poi-10.7.0-arm64-mac.zip',
       { method: 'HEAD' },
     )
-    const res = await handleFetch(req, {}, {} as ExecutionContext)
+    const res = await handleFetch(req, env, {} as ExecutionContext)
 
     expect(res.status).toBe(404)
 
