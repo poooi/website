@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import Link from 'next/link'
 import { Button, ButtonGroup } from '@blueprintjs/core'
 import { useRouter } from 'next/router'

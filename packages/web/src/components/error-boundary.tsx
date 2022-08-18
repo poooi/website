@@ -1,6 +1,6 @@
 import { Component, ReactNode } from 'react'
 import { withTranslation, WithTranslation } from 'react-i18next'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 interface State {
   hasError: boolean

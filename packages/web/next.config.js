@@ -12,4 +12,7 @@ module.exports = flow([withSourceMaps])({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  compiler: {
+    styledComponents: true,
+  },
 })

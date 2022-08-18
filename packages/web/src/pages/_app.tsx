@@ -1,10 +1,7 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import { FC, useReducer, useEffect } from 'react'
-import styled, {
-  createGlobalStyle,
-  ThemeProvider,
-} from 'styled-components/macro'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import * as Sentry from '@sentry/browser'

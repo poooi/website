@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { AnchorButton, Intent } from '@blueprintjs/core'
 
 import { Version, targets } from '../model'
