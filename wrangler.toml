@@ -1,28 +1,20 @@
 name = "poi-web-dev"
-type = "javascript"
-route = ''
-zone_id = ''
-usage_model = ''
+usage_model = 'bundled'
 compatibility_flags = []
 workers_dev = true
 compatibility_date = "2022-01-23"
 account_id = "2dc3483aa62d4b5dc774ec04713893de"
+main = "packages/worker/dist/index.js"
 
 [site]
 bucket = "./packages/web/build"
-entry-point = "./packages/worker"
 
 [build]
 command = "yarn build"
 cwd = "./packages/worker"
 watch_dir = "./packages/worker/src"
 
-[build.upload]
-format = "modules"
-dir = "./packages/worker/dist"
-main = "./index.js"
-
-[[build.upload.rules]]
+[[rules]]
 type = "ESModule"
 globs = ["**/*.js"]
 
