@@ -4,7 +4,7 @@ import { Colors } from '@blueprintjs/core'
 
 export const darkTheme = {
   colors: Colors,
-  name: 'bp3-dark',
+  name: 'bp4-dark',
   variant: 'dark',
   text: Colors.LIGHT_GRAY1,
   background: Colors.DARK_GRAY3,
@@ -12,7 +12,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   colors: Colors,
-  name: 'bp3-light',
+  name: 'bp4-light',
   variant: 'light',
   text: Colors.DARK_GRAY1,
   background: Colors.LIGHT_GRAY5,

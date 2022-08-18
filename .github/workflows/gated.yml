@@ -19,9 +19,9 @@ jobs:
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-yarn-v2-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-v1
+            ${{ runner.os }}-yarn-v2
 
       - name: Yarn install
         run: yarn install --frozen-lockfile
@@ -41,7 +41,7 @@ jobs:
 
       - name: E2E tests preparation
         run: |
-          yarn global add @cloudflare/wrangler
+          npm i -g wrangler
           yarn playwright install chromium --with-deps
 
       - name: E2E with nextjs

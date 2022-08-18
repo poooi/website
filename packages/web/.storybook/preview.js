@@ -29,7 +29,7 @@ const Wrapper = ({ children }) => {
             </Switch>
           </Card>
         </Center>
-        <Center className={classNames({ 'bp3-dark': isDark })}>
+        <Center className={classNames({ 'bp4-dark': isDark })}>
           <div data-testid="storybook-content">{children}</div>
         </Center>
       </ThemeProvider>

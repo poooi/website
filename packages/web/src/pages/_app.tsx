@@ -1,10 +1,7 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import { FC, useReducer, useEffect } from 'react'
-import styled, {
-  createGlobalStyle,
-  ThemeProvider,
-} from 'styled-components/macro'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import * as Sentry from '@sentry/browser'
@@ -145,7 +142,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <ThemeDetection />
           <LocalizedFontFamily />
           <Background />
-          <Container className={classNames({ 'bp3-dark': isDark })}>
+          <Container className={classNames({ 'bp4-dark': isDark })}>
             <Wrapper>
               <ErrorBoundary>
                 <Header />

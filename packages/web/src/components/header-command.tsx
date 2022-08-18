@@ -5,7 +5,7 @@ import map from 'lodash/map'
 import { Button, ButtonGroup, Popover, Menu, MenuItem } from '@blueprintjs/core'
 import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import { DispatchThemeChangeContext, ThemeIsDarkContext } from '../theme'
 

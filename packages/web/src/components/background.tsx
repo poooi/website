@@ -3,7 +3,7 @@ import times from 'lodash/times'
 import { rgba } from 'polished'
 import random from 'random'
 import { useContext, useEffect, useRef } from 'react'
-import styled, { ThemeContext } from 'styled-components/macro'
+import styled, { ThemeContext } from 'styled-components'
 
 const Canvas = styled.canvas`
   z-index: -1;

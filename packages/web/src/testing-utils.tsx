@@ -2,7 +2,7 @@
 
 import { render, RenderResult } from '@testing-library/react'
 import { ReactElement } from 'react'
-import { ThemeProvider } from 'styled-components/macro'
+import { ThemeProvider } from 'styled-components'
 import { lightTheme } from './theme'
 
 export const renderWithTheme = (node: ReactElement): RenderResult => {

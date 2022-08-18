@@ -1,9 +1,13 @@
-import { Component } from 'react'
+import { Component, ReactNode } from 'react'
 import { withTranslation, WithTranslation } from 'react-i18next'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 interface State {
   hasError: boolean
+}
+
+interface Props extends WithTranslation {
+  children: ReactNode
 }
 
 const Container = styled.div`
@@ -22,7 +26,7 @@ const Text = styled.div`
 const handleReload = () => window.location.reload()
 
 export const ErrorBoundary = withTranslation()(
-  class ErrorBoundaryBase extends Component<WithTranslation, State> {
+  class ErrorBoundaryBase extends Component<Props, State> {
     public state = {
       hasError: false,
     }

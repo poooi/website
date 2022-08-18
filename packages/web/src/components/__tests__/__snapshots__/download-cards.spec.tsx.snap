@@ -22,10 +22,10 @@ exports[`<DownloadCards /> renders with beta 1`] = `
 }
 
 .c2.c2 {
-  background-color: #F5F8FA;
-  color: #182026;
+  background-color: #F6F7F9;
+  color: #1C2127;
   background-image: none;
-  border: 1px solid #182026;
+  border: 1px solid #1C2127;
 }
 
 .c1 + .c1 {
@@ -36,14 +36,14 @@ exports[`<DownloadCards /> renders with beta 1`] = `
     class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary c1 c2"
+      class="bp4-button bp4-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://npmmirror.com/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
       tabindex="0"
     >
       <span
-        class="bp3-button-text"
+        class="bp4-button-text"
       >
         <span>
           Download v10.4.0
@@ -61,13 +61,13 @@ exports[`<DownloadCards /> renders with beta 1`] = `
       </span>
     </a>
     <a
-      class="bp3-button c1 c2"
+      class="bp4-button c1 c2"
       href="https://npmmirror.com/mirrors/poi/v10.5.0/poi-10.5.0.7z"
       role="button"
       tabindex="0"
     >
       <span
-        class="bp3-button-text"
+        class="bp4-button-text"
       >
         <div>
           Download v10.5.0
@@ -110,10 +110,10 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
 }
 
 .c2.c2 {
-  background-color: #F5F8FA;
-  color: #182026;
+  background-color: #F6F7F9;
+  color: #1C2127;
   background-image: none;
-  border: 1px solid #182026;
+  border: 1px solid #1C2127;
 }
 
 .c1 + .c1 {
@@ -124,14 +124,14 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
     class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary c1 c2"
+      class="bp4-button bp4-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://github.com/poooi/poi/releases"
       role="button"
       tabindex="0"
     >
       <span
-        class="bp3-button-text"
+        class="bp4-button-text"
       >
         <span>
           Download v10.4.0
@@ -149,13 +149,13 @@ exports[`<DownloadCards /> renders with invalid target 1`] = `
       </span>
     </a>
     <a
-      class="bp3-button c1 c2"
+      class="bp4-button c1 c2"
       href="https://github.com/poooi/poi/releases"
       role="button"
       tabindex="0"
     >
       <span
-        class="bp3-button-text"
+        class="bp4-button-text"
       >
         <div>
           Download v10.5.0
@@ -198,10 +198,10 @@ exports[`<DownloadCards /> renders without beta 1`] = `
 }
 
 .c2.c2 {
-  background-color: #F5F8FA;
-  color: #182026;
+  background-color: #F6F7F9;
+  color: #1C2127;
   background-image: none;
-  border: 1px solid #182026;
+  border: 1px solid #1C2127;
 }
 
 .c1 + .c1 {
@@ -212,14 +212,14 @@ exports[`<DownloadCards /> renders without beta 1`] = `
     class="c0"
   >
     <a
-      class="bp3-button bp3-intent-primary c1 c2"
+      class="bp4-button bp4-intent-primary c1 c2"
       data-testid="download-stable-version"
       href="https://npmmirror.com/mirrors/poi/v10.4.0/poi-10.4.0.7z"
       role="button"
       tabindex="0"
     >
       <span
-        class="bp3-button-text"
+        class="bp4-button-text"
       >
         <span>
           Download v10.4.0

@@ -4,7 +4,7 @@ import { Card, AnchorButton, Intent } from '@blueprintjs/core'
 import { useState, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import compareVersions from 'compare-versions'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { Version, targets } from '../model'
 import { detectTarget, getDownloadLink } from './utils'
 
