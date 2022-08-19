@@ -1,5 +1,11 @@
 ## POI v10.9.0 changelog
 
+### Fixes
+
+- Fixed possible failure when loading plugins
+
+## POI v10.9.0 changelog
+
 ### Features
 
 - Added new special attack type: `Yamato Kai Ni / Kai Ni Heavy` `Musashi Kai Ni` `Maryland`
