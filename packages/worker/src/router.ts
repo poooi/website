@@ -60,15 +60,18 @@ router.get(
   },
 )
 
-router.get(
-  '/translator/en-US.json',
-  async (request, { sentry }: RouteContext) => {
-    const result = await getUpdateFromMediaWiki()
-    const resp = new Response(JSON.stringify(result))
+router.get('/translator/en-US.json', async (_, { env }: RouteContext) => {
+  const result = await env.TRANSLATOR.getWithMetadata<{ lastModified: number }>(
+    'en-US',
+  )
+  const resp = new Response(result.value)
+  resp.headers.append(
+    'POI-Last-Modified',
+    String(result.metadata?.lastModified ?? 0),
+  )
 
-    return resp
-  },
-)
+  return resp
+})
 
 router.get(
   '/dist/*?',
