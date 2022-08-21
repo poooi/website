@@ -61,14 +61,12 @@ router.get(
 )
 
 router.get('/translator/en-US.json', async (_, { env }: RouteContext) => {
-  const result = await env.TRANSLATOR.getWithMetadata<{ lastModified: number }>(
-    'en-US',
-  )
-  const resp = new Response(result.value)
-  resp.headers.append(
-    'POI-Last-Modified',
-    String(result.metadata?.lastModified ?? 0),
-  )
+  const { value, metadata } = await env.TRANSLATOR.getWithMetadata<{
+    lastModified: number
+  }>('en-US')
+  const resp = new Response(value)
+  resp.headers.set('Content-Type', 'application/json')
+  resp.headers.append('POI-Last-Modified', String(metadata?.lastModified ?? 0))
 
   return resp
 })
