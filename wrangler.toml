@@ -31,3 +31,7 @@ vars = { SENTRY_DSN = "https://ab382b24a2434e6ebbff671ff09385b7@o171991.ingest.s
 
 [env.edge]
 name = "poi-web-edge"
+
+kv_namespaces = [
+  { binding = "TRANSLATOR", id = "4495072f48924c68b4c76f1f9a963208" }
+]

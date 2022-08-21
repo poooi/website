@@ -7,6 +7,7 @@ import Toucan from 'toucan-js'
 import { makeErrorMessage } from './utils'
 import { WorkerEnv } from './types'
 import { router } from './router'
+import { getUpdateFromMediaWiki } from './translator'
 
 export const handleFetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
   request,
@@ -61,4 +62,13 @@ export const handleFetchWithLogs: ExportedHandlerFetchHandler<
   // eslint-disable-next-line no-console
   console.log(`${request.method} ${request.url} - ${resp.status}`)
   return resp
+}
+
+export const handleScheduledEvents: ExportedHandlerScheduledHandler<
+  WorkerEnv
+> = async (event, env) => {
+  const result = await getUpdateFromMediaWiki()
+  await env.TRANSLATOR.put('en-US', JSON.stringify(result), {
+    metadata: { lastModified: event.scheduledTime },
+  })
 }

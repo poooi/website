@@ -60,25 +60,18 @@ router.get(
   },
 )
 
-router.get(
-  '/translator/en-US.json',
-  async (request, { sentry }: RouteContext) => {
-    const cache = caches.default
-    const cacheUrl = new URL(request.url).toString()
-    const cacheKey = new Request(cacheUrl, request)
-    let resp = await cache.match(cacheKey)
-    if (!resp) {
-      sentry?.addBreadcrumb({ message: `${cacheUrl} cache not hit` })
-      const result = await getUpdateFromMediaWiki()
-      resp = new Response(JSON.stringify(result))
-      resp.headers.append('Cache-Control', 's-maxage=86400')
-      await cache.put(cacheKey, resp.clone())
-    } else {
-      sentry?.addBreadcrumb({ message: `${cacheUrl} cache hit` })
-    }
-    return resp
-  },
-)
+router.get('/translator/en-US.json', async (_, { env }: RouteContext) => {
+  const result = await env.TRANSLATOR.getWithMetadata<{ lastModified: number }>(
+    'en-US',
+  )
+  const resp = new Response(result.value)
+  resp.headers.append(
+    'POI-Last-Modified',
+    String(result.metadata?.lastModified ?? 0),
+  )
+
+  return resp
+})
 
 router.get(
   '/dist/*?',
