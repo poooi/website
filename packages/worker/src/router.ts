@@ -9,7 +9,7 @@ import poiVersions from '@poi-web/data/update/latest.json'
 
 import { ensureRemoteFile, safeFetch } from './utils'
 import { RouteContext, WorkerEnv } from './types'
-import { getUpdateFromMediaWiki } from './translator/indext'
+import { getUpdateFromMediaWiki } from './translator'
 
 const assetManifest = JSON.parse(manifestJSON)
 
