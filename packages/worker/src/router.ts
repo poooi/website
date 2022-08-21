@@ -63,19 +63,9 @@ router.get(
 router.get(
   '/translator/en-US.json',
   async (request, { sentry }: RouteContext) => {
-    const cache = caches.default
-    const cacheUrl = new URL(request.url).toString()
-    const cacheKey = new Request(cacheUrl, request)
-    let resp = await cache.match(cacheKey)
-    if (!resp) {
-      sentry?.addBreadcrumb({ message: `${cacheUrl} cache not hit` })
-      const result = await getUpdateFromMediaWiki()
-      resp = new Response(JSON.stringify(result))
-      resp.headers.append('Cache-Control', 's-maxage=86400')
-      await cache.put(cacheKey, resp.clone())
-    } else {
-      sentry?.addBreadcrumb({ message: `${cacheUrl} cache hit` })
-    }
+    const result = await getUpdateFromMediaWiki()
+    const resp = new Response(JSON.stringify(result))
+
     return resp
   },
 )

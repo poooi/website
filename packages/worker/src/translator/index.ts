@@ -19,6 +19,14 @@ const mapping: Record<Category, string> = {
   [Category.EnemyEquipment]: 'slotitem-abyssal',
 }
 
+const fetchWithCache = (url: string) =>
+  fetch(url, {
+    cf: {
+      cacheEverything: true,
+      cacheTtl: 60 * 60 * 24, // 24 hours
+    },
+  })
+
 /**
  * Downloads data on one page and converts to JSON
  * @param title data/page name
@@ -26,7 +34,7 @@ const mapping: Record<Category, string> = {
 const getLuaData = async (title: string): Promise<Record<string, string>> =>
   parse(
     await (
-      await fetch(`https://en.kancollewiki.net/${title}?action=raw`)
+      await fetchWithCache(`https://en.kancollewiki.net/${title}?action=raw`)
     ).text(),
   ) as Record<string, string>
 
@@ -93,7 +101,9 @@ const getLuaDataInCategory = async (
     }
     const url = new URL('w/api.php', 'https://en.kancollewiki.net')
     _.each(params, (v, k) => url.searchParams.append(k, String(v)))
-    const data: MediaWikiAPIData = await (await fetch(url.toString())).json()
+    const data: MediaWikiAPIData = await (
+      await fetchWithCache(url.toString())
+    ).json()
 
     const morePages = values(data.query.pages)
       .filter(
