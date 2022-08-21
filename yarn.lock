@@ -9910,6 +9910,19 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lua-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lua-json/-/lua-json-1.0.0.tgz#915b3271426674a4917a6d3e6f97988f6e917739"
+  integrity sha512-TrMvRPvrbOoPbEY79mIdZsMxwcEpzcUQ5iy9Vir6BmCOV9yOSkA3jHTFZklN1OUyx6F9o/dMLLS/Y6Urb063YQ==
+  dependencies:
+    lodash "^4.17.11"
+    luaparse "^0.2.1"
+
+luaparse@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/luaparse/-/luaparse-0.2.1.tgz#aa8f56132b0de97d37f3c991a9df42e0e17f656c"
+  integrity sha512-VKBcryd5nJte4ZNR29NOk8F/UkMipjeb4yoxcSS51z6QAzg9DXUC2WsfLniS0J1eh3pr/ZL3e9ha6V8fhoLbBQ==
+
 lz-string@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"

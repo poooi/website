@@ -9,7 +9,10 @@
   "dependencies": {
     "@cloudflare/kv-asset-handler": "~0.2.0",
     "itty-router": "^2.6.1",
+    "lodash": "^4.17.21",
+    "lua-json": "^1.0.0",
     "mime": "^3.0.0",
+    "p-map": "^4.0.0",
     "toucan-js": "^2.6.1"
   },
   "devDependencies": {
