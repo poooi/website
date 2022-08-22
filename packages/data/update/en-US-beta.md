@@ -1,4 +1,10 @@
-## POI v10.9.0 changelog
+## POI v10.9.2 changelog
+
+### Fixes
+
+- Fixed rule of Yamato special attack indicator
+
+## POI v10.9.1 changelog
 
 ### Fixes
 
