@@ -66,7 +66,7 @@ router.get('/translator/en-US.json', async (_, { env }: RouteContext) => {
   }>('en-US')
   const resp = new Response(value)
   resp.headers.set('Content-Type', 'application/json')
-  resp.headers.append('POI-Last-Modified', String(metadata?.lastModified ?? 0))
+  resp.headers.append('X-POI-Last-Modified', String(metadata?.lastModified ?? 0))
 
   return resp
 })
