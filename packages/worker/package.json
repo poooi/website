@@ -22,7 +22,7 @@
     "esbuild": "^0.15.10",
     "jest-environment-miniflare": "^2.7.0",
     "miniflare": "^2.7.1",
-    "ts-jest": "^29.0.2"
+    "ts-jest": "^29.0.3"
   },
   "peerDependencies": {
     "@poi-web/data": "*"
