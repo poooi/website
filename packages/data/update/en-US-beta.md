@@ -13,6 +13,7 @@
 - Add new Equipment icon
 - Update game data to match latest game version, including AACI / OASW / Special Attack / Fighter Power Formula / Task type
 - Add support of showing detailed fleet info tile on main panel (Thanks to [liu-ziyang](https://github.com/liu-ziyang))
+- Add support of new special attack
 - [Windows] Supports Windows 11 Arcylic style window (Experimental)
 
 ### Changes
