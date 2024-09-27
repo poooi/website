@@ -1,13 +1,11 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
-import { FC, useReducer, useEffect } from 'react'
+import { FC, useReducer } from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import * as Sentry from '@sentry/browser'
 import Head from 'next/head'
-import ReactGA from 'react-ga'
-import Router from 'next/router'
 
 import {
   darkTheme,
@@ -28,11 +26,6 @@ if (process.env.NODE_ENV === 'production') {
   Sentry.init({
     dsn: 'https://119091520e0b47809be0b51bd6313c6d@sentry.io/1505313',
   })
-}
-
-const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
 }
 
 const FoucFix = dynamic<any>(
@@ -109,12 +102,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     (state: boolean, value: any) => value,
     true,
   )
-
-  useEffect(() => {
-    ReactGA.initialize('UA-83274947-1')
-    logPageView()
-    Router.events.on('routeChangeComplete', logPageView)
-  }, [])
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
